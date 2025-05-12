@@ -1,0 +1,24 @@
+.adjusted-horizontally {
+    transform: rotateY(70deg) rotateX(70deg);
+    -webkit-transform: rotateY(70deg) rotateX(70deg);
+    transition: 2s;
+        line-height: 32px;
+        left: 36px;
+        color: white;
+        text-align: center;
+        top: 527px;
+        border: none;
+        font-family: arial;
+        font-size: 17px;
+        font-weight: 500;
+        width: 137px;
+        height: 30px;
+        border-radius: 2px;
+        background-color: #FFB630;
+        text-indent: 30px;
+     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+        }
+        .adjusted-horizontally:hover {   
+-webkit-transform: rotateY(0deg) rotateX(0deg);
+    transform: rotateY(0deg) rotateX(0deg);
+}
