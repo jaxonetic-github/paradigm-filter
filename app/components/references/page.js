@@ -6,7 +6,7 @@ import Options from '../media/options.js'
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,
             references as appRefs,categories, REFERENCE_TYPES} from './../../src/constants/references.js';
 import {ReferencesFilters} from '../filters';
-import {Input, Select, SelectItem} from "@heroui/react";
+import {Input, Select, SelectItem,Divider} from "@heroui/react";
 import { FaFilter } from "react-icons/fa";
 import AppNavBar from './../appnavbar.js';
 
@@ -70,10 +70,69 @@ export default function References({children, references =appRefs} ) {
             >
     {item => <SelectItem className="filter-select"  >{item.label}</SelectItem>}
     </Select>
-
 </div>
+     <Divider className="my-8" />
+     
+<h1>Available and Upcoming Subjects</h1>
+<div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 '>
+<div className=" border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
+  <div className="space-y-2 text-center sm:text-left">
+    <div className="space-y-0.5">
+      <p className="text-lg font-semibold text-black">Epistemology</p>
+      <p className="font-medium text-gray-500">Are your sure? Why? How do you know?</p>
+    </div>
+    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
+      Message
+    </button>
+  </div>
+</div><div className=" border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
+  <div className="space-y-2 text-center sm:text-left">
+    <div className="space-y-0.5">
+      <p className="text-lg font-semibold text-black">History</p>
+      <p className="font-medium text-gray-500">So many stories to filter and discern</p>
+    </div>
+    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
+      Message
+    </button>
+  </div>
+</div><div className="border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
+  <div className="space-y-2 text-center sm:text-left">
+    <div className="space-y-0.5">
+      <p className="text-lg font-semibold text-black">Civics and Law</p>
+      <p className="font-medium text-gray-500">Law and History go together.</p>
+    </div>
+    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
+      Message
+    </button>
+  </div>
+</div><div className=" border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
+  <div className="space-y-2 text-center sm:text-left">
+    <div className="space-y-0.5">
+      <p className="text-lg font-semibold text-black">Occult and Metaphysics</p>
+      <p className="font-medium text-gray-500">Where reality and spirituality diverge or converge depending on what you know or what your beliefs hinder you from knowing.</p>
+    </div>
+    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
+      Message
+    </button>
+  </div>
+</div>
+<div className="border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4sm:py-4 ">
+  <div className="space-y-2 text-center sm:text-left">
+    <div className="space-y-0.5">
+      <p className="text-lg font-semibold text-black">Communication</p>
+      <p className="font-medium text-gray-500">Law and History go together.</p>
+    </div>
+    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
+      Message
+    </button>
+  </div></div>
+</div>
+     <Divider className="my-8" />
 
 {children}
+     <Divider className="my-8" />
+
+<h1>Source and Resources</h1>
 {filteredReferences.length}---{selectedCategory}
   <ReferencesTable className={'-z-100'} columns={tableColumns} rows={filteredReferences}/>
   </div>);

@@ -1,5 +1,6 @@
 //import Image from "next/image";
-import {initialStoreState} from '../../../src/constants/state.js';
+
+import {initialStoreState} from './../../../src/constants/state.js';
 import PropTypes from 'prop-types'; // ES6
 import { Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 
@@ -34,26 +35,29 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  * @param dataArray : initialStoreState.resourcesData.youTubeResources
  *  
  */
-   export default async function ProfileView( args ) {
+   export default async function Illuminator( args ) {
+        console.log("1args=>",args);
+
         const { slug } = await args.params;
-    console.log("args=>",args);
+        const resources = await initialStoreState.resourcesData.youTubeResources;
+    console.log(slug,"args=>",args);
 
   const PROFILE_GRID_CSS = "grid grid-cols-1 sm:grid-cols-3 gap-5";
  
-     let resource = args.dataArray || initialStoreState.resourcesData.youTubeResources[slug];
+    // let resource = args.dataArray|| initialStoreState.resourcesData.youTubeResources ;
 
-      return(<div className={"hover:border-1" } href={`/components/videorepo/videoRepository.js`}>
+      return(resources[slug].images? <div className={"hover:border-1" } href={`/components/videorepo/videoRepository.js`}>
         
         <div><Avatar className='w-25 h-25 text-large rounded-full'
-            showFallback isBordered width='35' height='35' src={resource.images[0]}/>
-            <p>{resource.title}</p><p>{resource.description}</p>
+            name={resources[slug].title} isBordered width='35' height='35' src={resources[slug].images[0]}/>
+            <p>{resources[slug].title}</p><p>{resources[slug].description}</p>
             </div>
-            <div  aria-label={resource.title} subtitle={resource.generalCategory} title={'Videos'} >
+            <div  aria-label={resources[slug].title} subtitle={resources[slug].generalCategory} title={'Videos'} >
            
-                             <span>({resource?.payload?.items?.length})  Lectures </span>
+                             <span>({resources?.payload?.items?.length})  Lectures </span>
          
-              {resourceView(resource) }
-        </div></div>);
+              {resourceView(resources[slug]) }
+        </div></div>:<p>{slug+'----'+resource.length}</p>);
     
 }
 
@@ -66,10 +70,11 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  */  
  
   export  function resourceView(resource) {
-
+console.log("resource",resource);
       return (<div  className="bg-beige grid  sm:grid-cols-2 gap-2 md:grid-cols-2 video-repos">
               {resource?.payload?.items?.map(videoRecord =>
-                <Card  key={videoRecord.id.videoId} className="bg-gray border-1 "><CardHeader><Image  width={120} height={90} alt="NextUI hero Image" src={videoRecord.snippet.thumbnails.default.url}/></CardHeader>
+                <Card  key={videoRecord.id.videoId} className="bg-gray border-1 ">
+                <CardHeader><Image  width={120} height={90} alt="NextUI hero Image" src={videoRecord.snippet.thumbnails.default.url}/></CardHeader>
                 <CardBody className="bg-blue">
                 <div  className="" key={videoRecord.id.videoId}>
                 <div><p>{videoRecord.snippet.title}</p>
