@@ -2,7 +2,7 @@ const {nextui} = require("@heroui/react");
 // tailwind.config.js
 import {heroui} from "@heroui/react";
 
-const config: Config = {
+const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
