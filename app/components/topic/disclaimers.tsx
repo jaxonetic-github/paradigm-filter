@@ -39,7 +39,7 @@ console.log(profileRecord);
     <div className="p-8">
       <div className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">{profileRecord.name}</div>
        <p>{profileRecord.lifespan}</p> 
-       <p>Ngola of Ndongo and Matambe, present day Angola</p>
+       <p>Hubert Harrison</p>
 <p>Yet in fact, Harrison found answers to the questions
 that would haunt advocates of racial equality for years to come.
 Both the Black socialist tradition and the Black nationalist tradition
@@ -51,14 +51,6 @@ and the most race conscious of the class radicals of his day.3 </p>
     
   </div>
   </div>
-   <Accordion variant="shadow">
-      <AccordionItem key="References" aria-label="References" title=" References">
-     <ReferencesTable columns={tableColumns} rows={profileRecord.sources.map((referenceIndex)=>references[referenceIndex])} />
-      </AccordionItem>
-      <AccordionItem key="2" aria-label="Discussions" title="Discussions and Lectues">
-     <HonorableMentionVideos id="Discussions"  dataArray={profileRecord.videoArray}  /> 
-      </AccordionItem>
-
-    </Accordion>
+ 
 </div>);
 }
