@@ -9,7 +9,7 @@ import {Image} from "@heroui/image";
  * @Description This element displays a Card with information from @param dataArray
  * @param dataArray : initialStoreState.resourcesData.onlineMediaContent from initial state
  *  literally an arrary of 
- * 
+ * 	
  * 
  */
 //Franz Fernon--oppressed oppress themselves
@@ -30,7 +30,7 @@ export default function Quotes () {
 	   				]; 
       let _literaryQuoteArray = [{quoted:'C. J. Keyset', source:'Human Worth of Rigorous Thinking', quote:`Out of that past we have come. Into it we are constantly returning. Meanwhile it is of the utmost importance to our lives. It contains the roots of all we are, and of all we have of wisdom."`,}]
 
- let quoteArray =_quoteArray.map((quoteRecord, index) =>{
+ let quoteArray =_quoteArray.map((quoteRecord:any, index:number) =>{
 
 return (<div key={quoteRecord.quoted+index} className="md-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
       		
