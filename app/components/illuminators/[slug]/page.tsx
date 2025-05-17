@@ -1,7 +1,7 @@
 //import Image from "next/image";
 
 import {initialStoreState} from './../../../src/constants/state.js';
-import PropTypes from 'prop-types'; // ES6
+//import PropTypes from 'prop-types'; // ES6
 import { Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
 import {Accordion, AccordionItem, Avatar,Button, Image} from "@heroui/react";
