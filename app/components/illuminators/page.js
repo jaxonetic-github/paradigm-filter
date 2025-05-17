@@ -37,7 +37,6 @@ import Link from 'next/link';
      return (<div>
                  <div className="relative">
       <h2>Database of Illuminators</h2>
-      <Outlet/>
            <p>{filteredTeachers.length} {discipline} teachers</p>
            <div className={'h-800'}>
            
