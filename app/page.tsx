@@ -1,65 +1,15 @@
 'use client' 
 
-import {initialStoreState} from './src/constants/state.js';
-import AppNavBar from './components/appnavbar.js';
-import ReferencesTable from './components/references/page.js';
 import Home from './components/page.tsx';
 import Welcome from './components/home/welcome.tsx';
-import ParentLayout from './components/parentlayout.js';
-import ReferencesAPPLayout from './components/layout.tsx';
-import VideoRepo from './components/illuminators/videorepo/page.js';
-
-
-import { references} from './src/constants/references.js';
-
-import {Select,SelectSection, SelectItem,Image, Link} from "@heroui/react";
-import * as d3 from "d3";
 import React, { useState, useEffect, useRef } from 'react';
-import {Input} from "@heroui/input";
-import {Button} from "@heroui/button";
-import {Divider} from "@heroui/divider";
 import {HeroUIProvider} from "@heroui/system";
 import { useCallback } from 'react';
 
-
-//import Link from 'next/link';
-const ALL_OPTION  = {label: 'All', value: 'all', key: '0'};
-const headingClasses = "flex w-full sticky top-1 z-20 py-1.5 px-2 bg-default-100 shadow-small rounded-small";
 /*
 herbert henry harrison classified as white- youtubeTherapy Session with Sabir Bey- How Irish People become s0-called White?
 */
-/**
-const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: LandingPage,
-     children: [
-      {
-        path: "shows/:showId",
-        Component: Illuminators,
-        loader: ({ request, params }) =>
-          fetch(`/api/show/${params.id}.json`, {
-            signal: request.signal,
-          }),
-      },
-    ],
-  },
-  {
-    path: "/",
-    Component: LandingPage,
-     children: [
-      {
-        path: "shows/:showId",
-        Component: Illuminators,
-        loader: ({ request, params }) =>
-          fetch(`/api/show/${params.id}.json`, {
-            signal: request.signal,
-          }),
-      },
-    ],
-  },
-]);
-*/
+
   export default function RootLayout() {
     const [prevScrollY, setPrevScrollY] = useState(5);
     const [count, setCount] = useState(0);

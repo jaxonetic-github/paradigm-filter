@@ -86,6 +86,7 @@ análisis comparativo de datos que la propia historia oficial no suele tener en 
 oculta.`;
 
 export const NO_PHOTO_ALTERNATIVE_URI = '/images/imagenotavailable.jpeg';
+export const headingClasses = "flex w-full sticky top-1 z-20 py-1.5 px-2 bg-default-100 shadow-small rounded-small";
 
 export const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key: "type", label: "TYPE"},
   {    key: "title", label: "TITLE" },{    key: "subtitle", label: "SUBTITLE" },
