@@ -8,8 +8,6 @@ import { Button, Divider,  Avatar} from "@heroui/react";
 import { FaFilter } from "react-icons/fa";
 import Link from 'next/link';
 
-
-
 /**
  * 
  * @param children : initialStoreState.resourcesData.youTubeResources
@@ -24,15 +22,12 @@ import Link from 'next/link';
   const [teacher, setTeacher] = React.useState("all");
   const [filteredTeachers, setFilteredTeachers] = React.useState(initialStoreState.resourcesData.youTubeResources);
 
-
   //filter teachers by Category
   const filterCategory = (filterByCategory) =>
     initialStoreState.resourcesData.youTubeResources.filter(
                                                     function hasPayload(arg) {
                                                         return ((arg.generalCategory[0] == filterByCategory) || (filterByCategory === 'all'));     
                                                       });
-
-
 
      return (<div>
                  <div className="relative">
@@ -66,9 +61,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
 
 
   const PROFILE_GRID_CSS = "grid grid-cols-1 sm:grid-cols-3 gap-5";
-    //onClick={()=>console.log("Selecting specific Illuminator"); selectRecord(resource.key);} 
-console.log('dataArray',dataArray);
-console.log('filteredTeachers', filteredTeachers);
+
       let links =filteredTeachers?.map((resource, index)=><Link key={resource.key} className={"hover:border-1 p-2" } href={`illuminators/${resource.key}`} >
         <div  key={resource.key} className={"topdiv hover:border-1 m-5 p-2"+(resourceID==-1 || (hoveringKey==resourceID==resource.key))? "":"hidden" }
           onMouseEnter={() => {
@@ -87,26 +80,5 @@ console.log('filteredTeachers', filteredTeachers);
             <div  aria-label={resource.title} subtitle={resource.generalCategory} title={'Videos'} >
               </div></div></Link>);
      
-     return (<div id="linksdiv" className={ PROFILE_GRID_CSS } >{links}
-              </div>);
+     return (<div id="linksdiv" className={ PROFILE_GRID_CSS } >{links} </div>);
 }
-
-
-/**<div>
-     <Button  onPress={togglefilterView} color="warning" variant="faded" aria-label="Take a photo">
-       <div> <FaFilter /><span>Filters</span></div>
-      </Button>
-        {(showFilter?<Filters handleDisciplineFilterChange={handleDisciplineFilterChange} categories={categories}/> :null)}
-
-            <div className="relative">
-      <h2>Database of Illuminators</h2>
-
-           <p>{filteredTeachers.length} {discipline} teachers</p>
-           <div className='h=800'>
-           
-            <VideoRepository dataArray={filteredTeachers} selectRecord={setFilteredTeachers}/>
-            </div>
-            <span>** Please excuse any delay in removing bad links.</span>
-          </div>
-    </div></>
-*/
