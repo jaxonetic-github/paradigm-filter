@@ -1,53 +1,13 @@
 import React from "react";
 import  {Link,Image} from "@heroui/react";
-import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../src/constants/references.js';
+import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../src/constants/references.js';
 
-import ProfileHome from './topic/page.tsx';
-import Topic from './topic/topic.tsx';
-import Snippet from './topic/blackwhite.tsx';
 
-import {Popover, PopoverTrigger, PopoverContent, Divider, Button} from "@heroui/react";
-import ReferencesTable from './references/page.js'
+import { Divider, } from "@heroui/react";
 
 
 
-export  function ReferencePopover() {
-  return (
-    <Popover
-      showArrow
-      backdrop="opaque"
-      className={{
-        base: [
-          // arrow color
-          "before:bg-red-200",
-        ],
-        content: [
-          "py-3 px-4",
-          "bg-gradient-to-br from-white to-red-300",
-          "dark:from-default-100 dark:to-yellow-50",
-        ],
-      }}
-      placement="right"
-    >
-      <PopoverTrigger>
-        <Button  color={"success"} isBlock><p className='border border-1-radius' >Divine Laws</p></Button>
-      </PopoverTrigger>
-      <PopoverContent>
-        {(titleProps) => (
-          <div className="bg-red px-1 py-2">
-            <h3 className="text-small font-bold" {...titleProps}>
-              Divine Law
-            </h3>
-            <div className="text-tiny">The <Button isBlock  color={"success"} href="#"><span className='bg-red-200'>Corpos Hermiticus</span></Button> is a body of work from the 2nd century of the Gregorian Calender. It explores the divine and the way humanity functions within its macrocosm and it's relation or unity  with the divine. It is a blend of Kemitic, Vedic, and Hellenistic ideas of ascending in awareness of this unity. In the esoteric world, when someone speaks of (12) Divine Laws, they are ultimately refering to this Corpus.)</div>
-            <div className="text-tiny">The Kyballion is later esoteric book about 7 of the 12 Divine Laws </div>
-          </div>
-        )}
-      </PopoverContent>
-    </Popover>
-  );
-}
- 
-export default function ComponentsHome() {
+export default function Epistemology() {
   const items = [
     { id: 1, name: "Item 1" },
     { id: 2, name: "Item 2" },
@@ -56,7 +16,7 @@ export default function ComponentsHome() {
 
 
   return (<div className='mx-5'>
-          <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people's reality
+          <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality
       with the spell your words or other symbolic expressions or gestures which communicate to us.  We might say that bad 
       magick is akin to an untruth because it imposes a false or artificial idea, an illusion, in the perception of your victim.`}</p> 
            <p>{` In a world where we are spawning AI generated content and information, an ultra high level of Discernment is required to avoid following the incidental fallacies set by Cognigive Dissonance.`}</p> 
@@ -97,7 +57,7 @@ export default function ComponentsHome() {
       
       <p>{`Epistomology is the philosophy that deals with how we know what we know.`}</p>
 
-        <p>It seems appropriate to start this epistomological journey with a quick survey of what is meant by "Truth", and it's associates, "Belief", "Facts", Opinions. </p>
+        <p>It seems appropriate to start this epistomological journey with a quick survey of what is meant by &quot;Truth&quot;, and it&apos;s associates, &quot;Belief&quot;, &quot;Facts&quot;, Opinions. </p>
 
       <ul>
       <li>
@@ -130,7 +90,7 @@ export default function ComponentsHome() {
   <dd>an act of perceiving or discerning something</dd>
  
   <dt className='websters-online-dictionary-entry'><b>Opinions,</b>
-  <span>[noun opin'yon]</span></dt>
+  <span>[noun opin&apos;yon]</span></dt>
   <dd>[Latin opinio, from opinor, to thing, Gr., Latin suppono.]</dd>
   <dd>The judgment which the mind forms of any proposition, statement, theory or event, the truth or falsehood of which is supported by a degree of evidence that renders it probably, but does not produce absolute knowledge or certainty. It has been a received opinion that all matter is comprised in four elements. This opinion is proved by many discoveries to be false. From circumstances we form opinions respecting future events.</dd>
   <dd>OPINION is when the assent of the understanding is so far gained by evidence of probability, that it rather inclines to one persuasion than to another, yet not without a mixture of uncertainty or doubting.</dd>

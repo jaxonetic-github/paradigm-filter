@@ -9,16 +9,6 @@ import ParentLayout from './components/parentlayout.js';
 import ReferencesAPPLayout from './components/layout.tsx';
 import VideoRepo from './components/illuminators/videorepo/page.js';
 
-import Quotes from './components/quotes/page.js';
-import LandingPage from './home/page.js';
-import TestPage from './test/page.tsx';
-import Options from './src/menus/options.js';
-import threeDSpace from './threeDSpace.js';
-import Illuminators from './components/illuminators/page.js';
-import styles from './threedee.module.scss';
-import ModalDisplay from './components/modaldisplay/page.tsx';
-//import {Image, Button, Divider, HeroUIProvider, Link} from "@heroui/link";
-
 
 import { references} from './src/constants/references.js';
 
@@ -26,13 +16,9 @@ import {Select,SelectSection, SelectItem,Image, Link} from "@heroui/react";
 import * as d3 from "d3";
 import React, { useState, useEffect, useRef } from 'react';
 import {Input} from "@heroui/input";
-import {Tab} from "@heroui/tab";
-import {Tabs} from "@heroui/tabs";
-
 import {Button} from "@heroui/button";
 import {Divider} from "@heroui/divider";
 import {HeroUIProvider} from "@heroui/system";
-import { Canvas, useFrame } from '@react-three/fiber';
 import { useCallback } from 'react';
 
 
@@ -79,7 +65,7 @@ const router = createBrowserRouter([
     const [count, setCount] = useState(0);
     const [isScrolling, setIsScrolling] = useState(false); //neededto hide nav while scrolling
 
-    const onScroll = useCallback(event => {
+    const onScroll = useCallback((event:any) => {
       if(!isScrolling){// ignore if already scrolling
         setIsScrolling(true)
          setTimeout(() => {
@@ -90,14 +76,15 @@ const router = createBrowserRouter([
 
  const dataStore = /*webResources ||*/ initialStoreState.resourcesData.youTubeResources ;
 
-  const teachers = teacherArray => initialStoreState.resourcesData.youTubeResources.filter((resource)=>(resource.generalCategory[0]===discipline)|| discipline==='all');
- 
+  //const teachers = (teacherArray:any) => initialStoreState.resourcesData.youTubeResources.filter((resource)=>(resource.generalCategory[0]===discipline)|| discipline==='all');
   useEffect(() => {
     setPrevScrollY(window.scrollY);
     //add eventlistener to window
+    // @ts-ignore
     window.addEventListener("scroll", onScroll, { passive: true });
     // remove event on unmount to prevent a memory leak with the cleanup
     return () => {
+      // @ts-ignore
        window.removeEventListener("scroll", onScroll, { passive: true });
     }
   }, []);

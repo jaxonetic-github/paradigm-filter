@@ -1,6 +1,5 @@
+
 export const VIDEOS_PATH = "/videos/";
-
-
 
 export const SELECT_All_OPTION = 'All';
 export const TYPE_BOOK = 'Book';
@@ -31,6 +30,36 @@ export const categories = [
 ];
  
 
+export const faqs = [
+  { key : 1,
+    question: 'Where did "white" people come from?',
+    answers: [
+      {url: 'https://www.youtube.com/watch?v=YLgK0xzK_2U', desc: ''},
+      {
+        url: 'https://www.youtube.com/watch?v=I_v77StW7tM',
+        desc: 'Drs Imhotep and Hiawatha',
+        title:
+          'Ancient African History and the Six Physical Transmutations of the Human Family',
+      },
+    ],
+  },
+  { key : 2,
+    question: 'Why do we call some people white and others black?',
+    answers: [
+      {
+        url: 'https://www.youtube.com/watch?v=HhAjycvAN8k',
+        desc: 'Dr Jaqueline Battalora and Jane Elliot',
+        title:
+          'Dr. Jacqueline Battalora and Jane Elliott Debate White Privilege',
+      },
+      {
+        url: 'https://www.youtube.com/watch?v=rPhlteY1knA',
+        desc: 'Dr Jaqueline Battalora',
+        title: '1681 - The Invention of Race: The Laws that Changed the World!',
+      },
+    ],
+  },
+];
 
  export const _civicsFundamentalsArray=[{displayHeading:"The Money Master",pathName:"TheMoneyMasters.mp4", subject:'', comments:[' This gives context and details on US banking history and the corruptions that has caused to be in the bankrupt state it currently is in (as of 2025).','31 CFR 800.253 US NATIONAL, 8 usc 1101 22a and b, GPO Styles section 5.23, 8 Foreign Affaires manual section 505.2 (Passport Induction9)']},
                    {displayHeading:'dflt_What\'s the big deal about the Constitution?', markers:[{timestamp:"1:52:00- history of rights and British colonizers"}], pathName:"MichaelBadnarik-ConstitutionClass.mp4", subject:'', comments:['Michael Badnarik - Constitution Class (Complete), Michael has run for President a few times.','We are a Republic not a Democracy.Learn  the difference and the benefits of the rights of the republic verse the priveledges of a democracy.']},
@@ -41,18 +70,13 @@ export const categories = [
                    {displayHeading:"The Money Master",pathName:"TheMoneyMasters.mp4", subject:'', comments:[' This gives context and details on US banking history and the corruptions that has caused to be in the bankrupt state it currently is in (as of 2025).','31 CFR 800.253 US NATIONAL, 8 usc 1101 22a and b, GPO Styles section 5.23, 8 Foreign Affaires manual section 505.2 (Passport Induction9)']},
   ];
 
- export const _njingaArray=[{displayHeading:"Nzinga From Historical Context", pathName:"njinga/kofi_historicalcontext1.mp4", subject:'',
-                             comments:['The Legacy of Queen Njinga/Nzinga From Historical Context','']},   
-                           {displayHeading:"Njinga Warrior Queen", pathName:"njinga/NjingaWarriorQueen.mp4", subject:'',
-                             comments:['Lecture on the Diplomacy of Ngolo Njinga Mbande','']}   
-                            ];
+                     
+
  export const _badWolf_Videos={
             videos:[{key:"James Lovett", displayHeading:"(Mr == mentally retar....)",pathName:"https://youtu.be/xY7Fu7k_bmM?si=RM21lQm9_WX10xzG", subject:'', markers:[{timestamp:'35:10', comments:'Necropan...Atlantis and the Law of One'},{timestamp:'21:14:00', comment:'How Mr. may carry hidden connotations'},{timestamp:'20:20:00',comment:'Notice the blend of law, history, and the occult ...- the esotoric significance of naming and the notion that he who creates has the "right" to control...'}],  comments:['Deep dive into the significance of Mr. in many venues','']},
                    {displayHeading:"More than one type of citizen?", pathName:"BIgBadWolf_USNAtional_codes.mp4", subject:'',  comments:['Do you know what type of citizen you are?  There are many types of citizens or ways to contract with the government.However when contracting it is important to know what role you play in the contract and the role any others must play in the execution of the contract.','31 CFR 800.253 US NATIONAL, 8 usc 1101 22a and b, GPO Styles section 5.23, 8 Foreign Affaires manual section 505.2 (Passport Induction9)']},
                   ]};
-                  
-export const specificallyCompiledVideos={'Njinga Mbande':_njingaArray, "Money Matters":_moneyAndBankingArray, 'Civics': _civicsFundamentalsArray, };
-
+    
 
 
  export const AvAautobio = `Luisa Isabel Álvarez de Toledo, Duquesa de Medina Sidonia, investiga allí donde la historia
@@ -73,10 +97,15 @@ export const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key
   {    key: "authors", label: "AUTHOR(S)" }, {    key: "url",label: "url" },
 ];
 
+  const _njingaArray=[{displayHeading:"Nzinga From Historical Context", pathName:"njinga/kofi_historicalcontext1.mp4", subject:'', comments:['The Legacy of Queen Njinga/Nzinga From Historical Context','']},   
+                           {displayHeading:"Njinga Warrior Queen", pathName:"njinga/NjingaWarriorQueen.mp4", subject:'', comments:['Lecture on the Diplomacy of Ngolo Njinga Mbande','']},];
+ 
+export const MONEYMATTERS_VIDEOLIST_KEY =  "Money Matters";             
+export const specificallyCompiledVideos={'Njinga Mbande':_njingaArray, "Money Matters":_moneyAndBankingArray, 'Civics': _civicsFundamentalsArray, };
 
+      
 export const nzingaProfileRecord = 
     { id: 1, name: "Njinga Mbande", lifespan:'(1582 Ndongo - December 17, 1663 Matamba)', thumbnail:'/images/profiles/njinga/njingaDrawing.jpg', sources:[15], videoArray:_njingaArray };
-
 
 
 export const huberthProfileRecord = 
@@ -110,8 +139,9 @@ export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70
     { id: 20, subcategory:'repository', category:'reference', type:TYPE_WEBSITE, title: "Carolana", subtitle:'One Unique Vision! Two Very Different Results!',  relevance:'primary sources',   authors:['J.D. Lewis'] ,  description:'Information about the Carolina colonies dating from 1600\'s', url:'https://www.carolana.com/'}, 
     { id: 21, subcategory:'repository', category:CATEGORY_HISTORY,  type:TYPE_WEBSITE, title:'Omnika', subtitle:'Documents in Law, History, and Diplomacy',iconurl:'',relevance:'translations',description:'Excellent for finding translations of old ancient documents', authors:'Omnika', url:'https://omnika.org/'},
     { id: 22, subcategory:'dictionary', category:'reference', type:'book', title: "Oxford English Dictionary", subtitle:'',  relevance:'',   authors:['Noah Webster'] ,  description:'', url:'https://www.oed.com/'}, 
-    {id:23, subcategory:'repository', category:CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'Library of Congress', subtitle:'',iconurl:'',description:'',relevance:'A wealth of artifacts', authors:'', url:'https://www.loc.gov/collections/'},
-    {id:24, subcategory:'commentary', category:CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'American Heritage', subtitle:'Black Pawn On A Field Of Peril',iconurl:'',description:'December 1963 Volume 15 Issue 1',relevance:'Summary', authors:'Bruce Catton', url:'https://www.americanheritage.com/black-pawn-field-peril'},
-    {id:25, subcategory:'repository', category:CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'Early Americas Digital Archive', subtitle:'',iconurl:'',description:'a collection of electronic texts originally written in or about the Americas from 1492 to approximately 1820',relevance:'Primary Sources', authors:'Various', url:'https://eada.lib.umd.edu/'},
-    {id:26, subcategory:'repository', category :CATEGORY_HISTORY ,type:'TYPE_WEBSITE', title:'The Founder\'s Convention', subtitle:'',iconurl:'',relevance:'primary sources', authors:'Philip B. Kurland and Ralph Lerner ', url:'https://press-pubs.uchicago.edu/founders/'},
+    { id: 23, subcategory:'repository', category:CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'Library of Congress', subtitle:'',iconurl:'',description:'',relevance:'A wealth of artifacts', authors:'', url:'https://www.loc.gov/collections/'},
+    { id: 24, subcategory:'commentary', category:CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'American Heritage', subtitle:'Black Pawn On A Field Of Peril',iconurl:'',description:'December 1963 Volume 15 Issue 1',relevance:'Summary', authors:'Bruce Catton', url:'https://www.americanheritage.com/black-pawn-field-peril'},
+    { id: 25, subcategory:'repository', category:CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'Early Americas Digital Archive', subtitle:'',iconurl:'',description:'a collection of electronic texts originally written in or about the Americas from 1492 to approximately 1820',relevance:'Primary Sources', authors:'Various', url:'https://eada.lib.umd.edu/'},
+    { id: 26, subcategory:'repository', category :CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'The Founder\'s Convention', subtitle:'',iconurl:'',relevance:'primary sources', authors:'Philip B. Kurland and Ralph Lerner ', url:'https://press-pubs.uchicago.edu/founders/'},
+    { id: 27, subcategory:'', category :CATEGORY_HISTORY ,type:TYPE_BOOK, title:'Africans and Native Americans', subtitle:'The Language of Race and Red - Black peoples',iconurl:'', relevance:'', authors:'Jack D Forbes', url:'https://archive.org/details/africansnativeam0000forb'},
   ];

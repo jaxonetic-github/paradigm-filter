@@ -26,7 +26,7 @@ export default function Welcome(){
         <p>...the Family, The Tribe</p>
         <h2>Why?</h2>
         <p>...so that there might be a reservoir, a modern or reincarnated Akashic Record (perhaps Tree of Record?) of sorts specifically,
-       so that conversations, discussions, debates, and interactions about today's problems, can be had more productively by 
+       so that conversations, discussions, debates, and interactions about today&apos;s problems, can be had more productively by 
        having quick access to facts and evidences. </p>
         <h2>How?</h2>
         <p>...by your support.  </p>

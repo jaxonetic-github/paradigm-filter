@@ -543,39 +543,10 @@ const digitalResources = [
   {key: '2', title: '1804', description: 'The Haitian Revolution'},
   {key: '3', title: 'Out of Darkness', description: ''},
 ];
+
 const misConceptions = [
   "India didn't exist before 1940's Hindustan, so why did he label the Africans that he found as Indians",
   '',
-];
-const faqs = [
-  {
-    question: 'Where did "white" people come from?',
-    answers: [
-      {url: 'https://www.youtube.com/watch?v=YLgK0xzK_2U', desc: ''},
-      {
-        url: 'https://www.youtube.com/watch?v=I_v77StW7tM',
-        desc: 'Drs Imhotep and Hiawatha',
-        title:
-          'Ancient African History and the Six Physical Transmutations of the Human Family',
-      },
-    ],
-  },
-  {
-    question: 'Why do we call some people white and others black?',
-    answers: [
-      {
-        url: 'https://www.youtube.com/watch?v=HhAjycvAN8k',
-        desc: 'Dr Jaqueline Battalora and Jane Elliot',
-        title:
-          'Dr. Jacqueline Battalora and Jane Elliott Debate White Privilege',
-      },
-      {
-        url: 'https://www.youtube.com/watch?v=rPhlteY1knA',
-        desc: 'Dr Jaqueline Battalora',
-        title: '1681 - The Invention of Race: The Laws that Changed the World!',
-      },
-    ],
-  },
 ];
 
 export const videoMediaPromotions = [

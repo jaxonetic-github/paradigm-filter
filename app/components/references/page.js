@@ -9,6 +9,7 @@ import {ReferencesFilters} from '../filters';
 import {Input, Select, SelectItem,Divider} from "@heroui/react";
 import { FaFilter } from "react-icons/fa";
 import AppNavBar from './../appnavbar.js';
+import Topics from './../topic/page.tsx';
 
 //      <ReferencesTable columns={tableColumns} rows={references}/>
 
@@ -60,7 +61,7 @@ export default function References({children, references =appRefs} ) {
 
   return (<div> 
 
-<div className="sticky top-10 py-2 z-10 bg-white">
+<div className="sticky top-25 py-2 z-10 bg-white">
    <Select color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
             label="Filter By Category" placeholder="Select a Category"
             className=" max-w-xs"
@@ -81,19 +82,19 @@ export default function References({children, references =appRefs} ) {
       <p className="text-lg font-semibold text-black">Epistemology</p>
       <p className="font-medium text-gray-500">Are your sure? Why? How do you know?</p>
     </div>
-    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
-      Message
-    </button>
+<Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+        href='/components/epistemology'>Epistemology</Link>
+
   </div>
 </div><div className=" border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
       <p className="text-lg font-semibold text-black">History</p>
-      <p className="font-medium text-gray-500">So many stories to filter and discern</p>
+      <p className="font-medium text-gray-500">Bios, Events, &amp; Religous</p>
     </div>
-    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
-      Message
-    </button>
+     <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+     href='/components/topic/bible'>Bible</Link>
+    
   </div>
 </div><div className="border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
@@ -101,9 +102,13 @@ export default function References({children, references =appRefs} ) {
       <p className="text-lg font-semibold text-black">Civics and Law</p>
       <p className="font-medium text-gray-500">Law and History go together.</p>
     </div>
-    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
-      Message
-    </button>
+    <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+        href='/components/topic/constitution'>Constitution</Link>
+    <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+        href={'/components/topic/money'}>Money</Link>
+    <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+        href={'/components/topic/blackandwhite'}>Black</Link>
+
   </div>
 </div><div className=" border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
@@ -122,9 +127,13 @@ export default function References({children, references =appRefs} ) {
       <p className="text-lg font-semibold text-black">Communication</p>
       <p className="font-medium text-gray-500">Law and History go together.</p>
     </div>
-    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
-      Message
-    </button>
+    <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+        href='/components/topic/communication'>Communication</Link>
+  </div></div>
+  <div className="border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4sm:py-4 ">
+  <div className="space-y-2 text-center sm:text-left">
+<Topics/>
+
   </div></div>
 </div>
      <Divider className="my-8" />

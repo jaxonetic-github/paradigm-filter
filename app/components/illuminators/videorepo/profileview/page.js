@@ -1,6 +1,6 @@
 'use client' 
 //import Image from "next/image";
-import {initialStoreState} from '../../../src/constants/state.js';
+import {initialStoreState} from './../../../../src/constants/state.js';
 import PropTypes from 'prop-types'; // ES6
 import { Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 
@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 
 
-export const YoutubeEmbed = ({ embedId }) => (
+ const YoutubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
     <iframe
       width="480"
@@ -35,14 +35,14 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  * @param dataArray : initialStoreState.resourcesData.youTubeResources
  *  
  */
-  export default function ProfileView({dataArray}) {
+  export default function ProfileView({params}) {
   const [isHovering, setHovering] = React.useState(true);
     const [hoveringKey, setHoveringKey] = React.useState(true);
 
   const [resourceID, setResourceID] = React.useState(-1);
   var [showVideos, toggleShowVideos] = React.useState(false);
   const PROFILE_GRID_CSS = "grid grid-cols-1 sm:grid-cols-3 gap-5 md:grid-cols-4";
-     let itemLinks = dataArray;
+     let itemLinks = initialStoreState.resourcesData.youTubeResources;
 
       let links =itemLinks.map((resource, index)=><Button key={resource.key} className={"hover:border-1" } onPress={`/components/videorepo/videoRepository.js`}>
         <div  key={resource.key} className={"topdiv hover:border-1 m-5 p-2"+(resourceID==-1 || (hoveringKey==resourceID==resource.key))? "":"hidden" }
@@ -76,7 +76,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  * @param dataArray : initialStoreState.resourcesData.youTubeResources
  */  
  
-  export  function resourceView(resource) {
+    function resourceView(resource) {
 
       return (<div  className="bg-beige grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-3 video-repos">
               {resource?.payload?.items?.map(videoRecord =>

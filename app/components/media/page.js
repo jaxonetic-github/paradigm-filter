@@ -4,7 +4,7 @@ import {specificallyCompiledVideos} from './../../src/constants/references.js';
 import OnlineMedia from './onlineMedia.js';
 import HonorableMentionVideos from './honorableMentionVideos.js';
 import Options from './options.js';
-import Quotes from '../quotes/page.js';
+import Quotes from './../quotes/page.tsx';
 import React from "react";
 import {Tabs, Tab, Card, CardHeader, CardBody, CardFooter, Switch} from "@heroui/react";
 import { Outlet } from "react-router";
@@ -26,14 +26,14 @@ export default function MediaTabView() {
         <div className="flex w-full flex-col">
           <Tabs aria-label="Options" isVertical={isVertical}>
             <Tab className="py-4" key="themes" title="Fundamentals"> 
-                <Options className="bg-blue" navIndexUpdater={navSetter} optionsArray={Object.keys(specificallyCompiledVideos)}/>
-                <HonorableMentionVideos id="hmv"  dataArray={specificallyCompiledVideos[navIndex]}  /> 
+                <Options navIndexUpdater={navSetter} optionsArray={Object.keys(specificallyCompiledVideos)}/>
+                <HonorableMentionVideos  dataArray={specificallyCompiledVideos[navIndex]}  /> 
             </Tab> 
             <Tab key="videos" title="Recommended Outlets">
                 <OnlineMedia dataArray={initialStoreState.resourcesData.onlineMediaContent}/> 
             </Tab>
             <Tab key="quotes" title="Quotes of Wisdom">
-                <Quotes dataArray={initialStoreState.resourcesData.onlineMediaContent}/> 
+                <Quotes /> 
             </Tab>
           </Tabs>
         </div>

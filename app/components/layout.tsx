@@ -11,9 +11,8 @@ export default function ReferenceAppLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <section className="">
-
-        <AppNavBar  className="sticky top-10 py-2 z-10 bg-white" />
+  return <section>
+<div  className={"sticky top-10 py-2 z-1000 bg-white"}><AppNavBar  /></div>
 
           <ReferencesTable references={references}> {children}</ReferencesTable>
          </section>

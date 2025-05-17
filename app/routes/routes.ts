@@ -1,11 +1,11 @@
-import {
+ /*import {
   type RouteConfig,
   route,
 } from "@react-router/dev/routes";
 
 
 import type { NextRequest } from 'next/server'
- /*
+
  createBrowserRouter([
   {
     path: "/",
@@ -31,9 +31,10 @@ import type { NextRequest } from 'next/server'
       },
     ],
   },
-]);**/
+]);
 
 export async function GET(request: NextRequest) {
   const url = request.nextUrl
   console.log('request -->',request);
 }
+**/

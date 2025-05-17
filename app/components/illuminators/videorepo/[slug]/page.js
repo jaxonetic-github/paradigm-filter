@@ -8,8 +8,7 @@ import React from "react";
 import Link from 'next/link'
 
 
-
-export const YoutubeEmbed = ({ embedId }) => (
+ const YoutubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
     <iframe
       width="480"
@@ -75,7 +74,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  * @param dataArray : initialStoreState.resourcesData.youTubeResources
  */  
  
-  export  function resourceView(resource) {
+    function resourceView(resource) {
 
       return (<div  className="bg-beige grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-3 video-repos">
               {resource?.payload?.items?.map(videoRecord =>

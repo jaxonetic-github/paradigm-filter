@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 //import { Inter } from "next/font/google";
-import { Welcome } from "./components/home/welcome.tsx";
+import  Welcome  from "./components/home/welcome.tsx";
 import { WebVitals } from "./_utils/web-vitals";
 import "./globals.css";
 
@@ -17,12 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html  name="viewport" content="width=device-width, initial-scale=1.0" lang="en">
+    <html  data-name="viewport" data-content="width=device-width, initial-scale=1.0" data-lang="en">
       <body >
-        <a href='/' className=''>** Pre-Beta Home**</a>
+        <a href='/' className='static'>** Pre-Beta Home**</a>
         <main className="dark text-foreground bg-background">
 
         <WebVitals />
+        
           {children}
         </main>
       </body>

@@ -19,8 +19,9 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  * href={`/reference_spa/illuminators/${resource.key}`
  */
 
-  export default function VideoRepository({dataArray,selectRecord}) {
-      const [filteredTeachers,filterTeachers] =React.useState(dataArray);
+  export default function VideoRepository({params}) {
+    return null;
+   /*   const [filteredTeachers,filterTeachers] =React.useState(dataArray);
 
   const [isHovering, setHovering] = React.useState(true);
     const [hoveringKey, setHoveringKey] = React.useState(true);
@@ -53,5 +54,5 @@ console.log('filteredTeachers', filteredTeachers);
      
      return (<div id="linksdiv" className={ PROFILE_GRID_CSS } >{links}
               <Outlet/>
-              </div>);
+              </div>);*/
 }
