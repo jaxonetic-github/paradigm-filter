@@ -5,6 +5,7 @@ import Welcome from './components/home/welcome.tsx';
 import React, { useState, useEffect, useRef } from 'react';
 import {HeroUIProvider} from "@heroui/system";
 import { useCallback } from 'react';
+import {initialStoreState} from "./src/constants/state.js";
 
 /*
 herbert henry harrison classified as white- youtubeTherapy Session with Sabir Bey- How Irish People become s0-called White?
