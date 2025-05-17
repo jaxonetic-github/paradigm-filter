@@ -88,7 +88,6 @@ console.log('filteredTeachers', filteredTeachers);
               </div></div></Link>);
      
      return (<div id="linksdiv" className={ PROFILE_GRID_CSS } >{links}
-              <Outlet/>
               </div>);
 }
 
