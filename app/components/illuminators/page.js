@@ -1,16 +1,10 @@
 'use client' 
-import Image from "next/image";
-import {initialStoreState} from '../../src/constants/state.js';
-import PropTypes from 'prop-types'; // ES6
-import { Button, Divider, HeroUIProvider} from "@heroui/react";
-import {Accordion, AccordionItem, Avatar} from "@heroui/react";
-import { Outlet } from "react-router";
 import React from "react";
-import {COMMON_DARK_BACKGROUND, categories} from '../../src/constants/constants.js';
+import {initialStoreState} from '../../src/constants/state.js';
+//import PropTypes from 'prop-types'; // ES6
+import { Button, Divider,  Avatar} from "@heroui/react";
+
 //import VideoRepository from './videorepo/page.js'
-import Quotes from '../quotes/page.tsx'
-import TabViews from '../../tabviews';
-import {Filters} from './../filters';
 import { FaFilter } from "react-icons/fa";
 import Link from 'next/link';
 
@@ -108,7 +102,7 @@ console.log('filteredTeachers', filteredTeachers);
 
             <div className="relative">
       <h2>Database of Illuminators</h2>
-      <Outlet/>
+
            <p>{filteredTeachers.length} {discipline} teachers</p>
            <div className='h=800'>
            
