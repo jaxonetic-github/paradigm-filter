@@ -1,6 +1,6 @@
 
 import React from "react";
-import Home from "./page.tsx";
+import Home from "./home.tsx";
 /*//import {nzingaProfileRecord,VIDEOS_PATH,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references,ProfileReferencesTable,} from './../../src/constants/references.js';
 
 export const theodoreAllenQuote0 = 'When the first Africans arrived in Virginia in 1619 there were no white people, nor according to the colonial records, would there be for another 60 years';
@@ -15,22 +15,23 @@ export const quote = {src:'The Invention of the White Race, Vol 1. 1994',
 */
 export default function Welcome(){
 
-
   return (<div className='mx-5'>
-<div className='welcome'><h1>The Akashic Reservoir</h1>
+<div className='welcome'><h1>Welcome to...</h1>
+<div>
         <h2>What?</h2>
-          <p>...a reservoir </p>
+          <p>...a reservoir of sources and resources...</p>
           <h2>For?</h2>
-          <p>...the Family, the Tribe, and all who are trying to make sense of the apparent sense-less chaos around us.</p>
+          <p>...Us, the Family, the Tribe, The Empire, and all who are trying to make sense of the apparent sense-less chaos around us...</p>
         <h2>By?</h2>
-        <p>...the Family, The Tribe</p>
+          <p>...the Family and the Tribe...</p>
         <h2>Why?</h2>
-        <p>...so that there might be a reservoir, a modern or reincarnated Akashic Record (perhaps Tree of Record?) of sorts specifically,
-       so that conversations, discussions, debates, and interactions about today&apos;s problems, can be had more productively by 
-       having quick access to facts and evidences. </p>
+          <p>...so that conversations, discussions, debates, and interactions about today&apos;s problems can occur more productively by 
+       having quick access to facts and evidences and sources...</p>
         <h2>How?</h2>
-        <p>...by your support.  </p>
+        <p>...by your support. Support the soldiers on here like the House of Reawakening Minds, Sabir Bey, Sevan Bomar, Yusef El and others who are doing The Work that needs doing and providing clarity to those of us searching for freedom and information.</p>
+        <p>If, you have a little left over, contributions toward this effort are very much appreciated...</p>
          <h2>Where?</h2>
+         </div>
        <Home/>
         </div>
 </div>);

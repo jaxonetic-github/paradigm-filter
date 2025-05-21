@@ -1,6 +1,5 @@
 'use client' 
 
-import Home from './components/page.tsx';
 import Welcome from './components/home/welcome.tsx';
 import React, { useState, useEffect, useRef } from 'react';
 import {HeroUIProvider} from "@heroui/system";
@@ -42,7 +41,6 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
  
   return (<HeroUIProvider>
           <Welcome/>
-<Home/>
     </HeroUIProvider>);
     
 }

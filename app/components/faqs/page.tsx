@@ -4,7 +4,7 @@ import {faqs} from './../../src/constants/references.js';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 
-import ReferencesTable from './../references/page.js';
+import ReferencesTable from './../subjects/references/page.js';
 import {Accordion, AccordionItem} from "@heroui/accordion";
   
 export default async function faqsHome() {

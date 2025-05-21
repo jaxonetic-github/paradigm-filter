@@ -77,7 +77,11 @@ export const faqs = [
                    {displayHeading:"More than one type of citizen?", pathName:"BIgBadWolf_USNAtional_codes.mp4", subject:'',  comments:['Do you know what type of citizen you are?  There are many types of citizens or ways to contract with the government.However when contracting it is important to know what role you play in the contract and the role any others must play in the execution of the contract.','31 CFR 800.253 US NATIONAL, 8 usc 1101 22a and b, GPO Styles section 5.23, 8 Foreign Affaires manual section 505.2 (Passport Induction9)']},
                   ]};
     
-
+ export const _negro_videos=[{displayHeading:'"Negro, Black, & Moor" Applied To American Indians & Others',pathName:"kurimeo_negroblackmoor.mp4", subject:'Negro, Black, and Moor', comments:['Details about the reclassification from Moor to Negro to Black','']},
+                   {displayHeading:"Sabir Bey May 2025",pathName:"", subject:'The meanings of Black', comments:['']},
+                  {displayHeading:"The Invention of the White Race, Vol 1. 1994",pathName:"'videos/history/commentaries/TheInventionOfTheWhiteRacebyTheodoreWAllenPresentationbyJeffreyBPerry.mp4'",
+                   subject:'"white" people', comments:['']},
+  ];
 
  export const AvAautobio = `Luisa Isabel Álvarez de Toledo, Duquesa de Medina Sidonia, investiga allí donde la historia
 oficialmente aceptada hace aguas. Su libro África versus América es el resultado de toda una vida
@@ -101,8 +105,10 @@ export const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key
   const _njingaArray=[{displayHeading:"Nzinga From Historical Context", pathName:"njinga/kofi_historicalcontext1.mp4", subject:'', comments:['The Legacy of Queen Njinga/Nzinga From Historical Context','']},   
                            {displayHeading:"Njinga Warrior Queen", pathName:"njinga/NjingaWarriorQueen.mp4", subject:'', comments:['Lecture on the Diplomacy of Ngolo Njinga Mbande','']},];
  
+export const NJINGA_VIDEOLIST_KEY =  'Njinga Mbande';             
 export const MONEYMATTERS_VIDEOLIST_KEY =  "Money Matters";             
-export const specificallyCompiledVideos={'Njinga Mbande':_njingaArray, "Money Matters":_moneyAndBankingArray, 'Civics': _civicsFundamentalsArray, };
+export const BLACKVWHITE_VIDEOLIST_KEY =  'White vs Black';             
+export const specificallyCompiledVideos={'Njinga Mbande':_njingaArray, "Money Matters":_moneyAndBankingArray, 'Civics': _civicsFundamentalsArray, 'White vs Black': _negro_videos };
 
       
 export const nzingaProfileRecord = 
@@ -144,5 +150,7 @@ export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70
     { id: 24, subcategory:'commentary', category:CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'American Heritage', subtitle:'Black Pawn On A Field Of Peril',iconurl:'',description:'December 1963 Volume 15 Issue 1',relevance:'Summary', authors:'Bruce Catton', url:'https://www.americanheritage.com/black-pawn-field-peril'},
     { id: 25, subcategory:'repository', category:CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'Early Americas Digital Archive', subtitle:'',iconurl:'',description:'a collection of electronic texts originally written in or about the Americas from 1492 to approximately 1820',relevance:'Primary Sources', authors:'Various', url:'https://eada.lib.umd.edu/'},
     { id: 26, subcategory:'repository', category :CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'The Founder\'s Convention', subtitle:'',iconurl:'',relevance:'primary sources', authors:'Philip B. Kurland and Ralph Lerner ', url:'https://press-pubs.uchicago.edu/founders/'},
-    { id: 27, subcategory:'', category :CATEGORY_HISTORY ,type:TYPE_BOOK, title:'Africans and Native Americans', subtitle:'The Language of Race and Red - Black peoples',iconurl:'', relevance:'', authors:'Jack D Forbes', url:'https://archive.org/details/africansnativeam0000forb'},
+    { id: 27, subcategory:'repository', category :CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'Interpretes do Brasil', subtitle:'Brazilian sources', iconurl:'',relevance:'primary sources', authors:'', url:'http://www.interpretesdobrasil.org/'},
+    { id: 28, subcategory:'', category:'reference', type:'book', title: "Interpretes do Brasil", subtitle:'',  relevance:'primary source,  Brazil -- Civilization',   authors:['Editora Nova Aguilar'] ,  description:' Brazil -- Civilization', url:'https://archive.org/details/interpretesdobra0001unse/mode/2up'}, 
+    { id: 29, subcategory:'', category :CATEGORY_HISTORY ,type:TYPE_BOOK, title:'Africans and Native Americans', subtitle:'The Language of Race and Red - Black peoples',iconurl:'', relevance:'', authors:'Jack D Forbes', url:'https://archive.org/details/africansnativeam0000forb'},
   ];
