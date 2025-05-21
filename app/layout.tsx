@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import  Welcome  from "./components/home/welcome.tsx";
 import { WebVitals } from "./_utils/web-vitals";
 import "./globals.css";
-import './hero.ts'
 //const inter = Inter({ subsets: ["greek"] });
 
 export const metadata: Metadata = {

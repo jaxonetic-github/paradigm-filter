@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    exclude: ['public/books'],
     images: {
     remotePatterns: [
       {
