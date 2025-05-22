@@ -60,7 +60,7 @@ export default function ComponentsHome() {
           <Card>
             <CardBody>
               [Complete Magicians Table]
-              Flat Earth::== <video key={'sevanbomarflatearth'} width="320" height="240" controls preload="none"><source src={'videos/history/sabir_chineseasblack.mp4'} type="video/mp4" />Your browser does not support the video tag.</video>
+              Flat Earth::== <video key={'sevanbomarflatearth'} width="320" height="240" controls preload="none"><source src={'https://1024terabox.com/s/1MjULJ_5uNKDCitVWJS3v2A'} type="video/mp4" />Your browser does not support the video tag.</video>
             </CardBody>
           </Card>
         </Tab>
