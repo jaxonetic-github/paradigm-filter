@@ -14,20 +14,20 @@ export default function ComponentsHome() {
     <div className='flex max-w-sm'>
         <Image
         className=" p-1   "
-        src={'images/truth-sohom-one.jpeg'} 
-        fallbackSrc={'images/imagenotavailable.jpeg'}
+        src={'/images/truth-sohom-one.jpeg'} 
+        fallbackSrc={'/images/imagenotavailable.jpeg'}
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
       />
           <Image
         className=" p-1  "
-        src={'images/truth-sohom-two.jpg'} 
-        fallbackSrc={'images/imagenotavailable.jpeg'}
+        src={'/images/truth-sohom-two.jpg'} 
+        fallbackSrc={'/images/imagenotavailable.jpeg'}
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
       />
               <Image
         className=" p-1  "
-        src={'images/truth-sohom-end.jpg'} 
-        fallbackSrc={'images/imagenotavailable.jpeg'}
+        src={'/images/truth-sohom-end.jpg'} 
+        fallbackSrc={'/images/imagenotavailable.jpeg'}
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
       />
       </div>

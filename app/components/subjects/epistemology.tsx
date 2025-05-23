@@ -1,9 +1,8 @@
 import React from "react";
-import  {Link,Image} from "@heroui/react";
+import  {Link,Image, Divider} from "@heroui/react";
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../src/constants/references.js';
 
 
-import { Divider, } from "@heroui/react";
 
 
 
@@ -20,21 +19,21 @@ export default function Epistemology() {
     <div className='flex max-w-sm'>
         <Image
         className=" p-1   "
-        src={'images/truth-sohom-one.jpeg'} 
-        fallbackSrc={'images/imagenotavailable.jpeg'}
-        alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
+        src={'/images/truth-sohom-one.jpeg'} 
+        fallbackSrc={'/images/imagenotavailable.jpeg'}
+        alt={`Default Image not found for ['/images/imagenotavailable.jpeg']`}
       />
           <Image
         className=" p-1  "
-        src={'images/truth-sohom-two.jpg'} 
-        fallbackSrc={'images/imagenotavailable.jpeg'}
-        alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
+        src={'/images/truth-sohom-two.jpg'} 
+        fallbackSrc={'/images/imagenotavailable.jpeg'}
+        alt={`Default Image not found for ['/images/imagenotavailable.jpeg']`}
       />
               <Image
         className=" p-1  "
-        src={'images/truth-sohom-end.jpg'} 
-        fallbackSrc={'images/imagenotavailable.jpeg'}
-        alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
+        src={'/images/truth-sohom-end.jpg'} 
+        fallbackSrc={'/images/imagenotavailable.jpeg'}
+        alt={`Default Image not found for ['/images/imagenotavailable.jpeg']`}
       />
       </div>
       <p className='flex float-right'>(17)--Truth by Swami, Paramhangsa Sohom</p>

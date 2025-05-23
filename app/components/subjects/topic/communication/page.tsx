@@ -19,9 +19,9 @@ export default function ReferenceSnippet(){
    <div className=" flex-row ">
     <Image
         className="my-auto p-4 h-[12%] w-48 object-cover sm:w-full md:h-full md:w-48"
-        src={'images/profiles/DrBen.jpg'} 
-        fallbackSrc={'images/imagenotavailable.jpeg'}
-        alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
+        src={'/images/profiles/DrBen.jpg'} 
+        fallbackSrc={'/images/imagenotavailable.jpeg'}
+        alt={`Dr Ben Image`}
       />
       <p className=" w-[220px]">{'Truth is a continuous examination, and Fact... always supersedes belief'}</p>
    </div>

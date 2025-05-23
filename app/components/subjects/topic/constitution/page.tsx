@@ -12,16 +12,12 @@ import {
   getKeyValue, 
 } from "@heroui/react";
 
-
-
  
 export default function Constitution() {
   const columns = [
     { key: 'republic', label: "Republic" },
     { key: 'democracy', label: "Democracy" },
   ];
-
-
 
 const rows = [
   {
@@ -48,10 +44,11 @@ const rows = [
 
 
   return (<div className='mx-5'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wp-48d_jSb4?si=DDK3NUmwLY3QzqYI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
     <div className='mx-5'><h3 className="font-bold">The 1787 Constitution as a contract</h3>
   <p>The US Constitution of 1787 is a contract much like a trust in which the Trustee, the Federal or State government will protect and secure the human rights of it&apos;s Beneficiaries, The People or citizens of one of  the states of the Union,
   in exchange for their allegiance and participation.</p>
-<p>The historically, laws are enacted to protect and allow the free use of one&apos;s property and to ensure that everyone is unhindered (as much as possible) by the the exercise of rights (usage of property). </p>
+<p>Historically, laws are enacted to protect and allow the free use of one&apos;s property and to ensure that everyone is unhindered (as much as possible) by the the exercise of rights (usage of property). </p>
     
     <Table aria-label="Example table with dynamic content">
       <TableHeader>
