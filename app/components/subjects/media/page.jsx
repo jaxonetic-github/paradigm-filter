@@ -24,10 +24,7 @@ export default function MediaTabView() {
       <div className="flex flex-col px-4">
         <div className="flex w-full flex-col">
           <Tabs aria-label="Options" isVertical={isVertical}>
-            <Tab className="py-4" key="themes" title="Fundamentals"> 
-                <Options navIndexUpdater={navSetter} optionsArray={Object.keys(specificallyCompiledVideos)}/>
-                <HonorableMentionVideos  dataArray={specificallyCompiledVideos[navIndex]}  /> 
-            </Tab> 
+  
             <Tab key="videos" title="Recommended Outlets">
                 <OnlineMedia dataArray={initialStoreState.resourcesData.onlineMediaContent}/> 
             </Tab>

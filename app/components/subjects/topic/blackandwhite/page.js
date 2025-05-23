@@ -2,7 +2,9 @@
 import React from "react";
 import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
-import Link from 'next/link'
+import Link from 'next/link';
+import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}
 /**       <div className='mx-5'>
@@ -26,29 +28,28 @@ export default function Blackness(){
 
   return (<><div className='mx-5'>
         <div>
-   
+   <p>Sabir is always reliable for verifiable sources...</p>
         <h3 className="font-bold text-lg">What is the difference between &quot;black&quot; and Moor?</h3>
-        <Link  href={'https://www.youtube.com/live/bA9-pwts4Tg?si=Eay3Md664ZvfvCoi&t=3215'}><p className={'support-sabir-buybook'}>101 Facts about the Negro J.A. Rogers, The Meaning of the Word Negro</p></Link>
+<iframe width="560" height="315" src="https://www.youtube.com/live/bA9-pwts4Tg&t=3215" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+
       {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
-        <div>
+    <div>
         Chinese as Black and sources about the usage of black:: Sabir Bey 
-            <video key={'sabir_chineseasblack'} width="320" height="240" controls preload="none"><source src={'videos/history/sabir_chineseasblack.mp4'} type="video/mp4" />Your browser does not support the video tag.</video>
-    </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SrxJcik7O-4?si=T8p0kDRT_7gxFR3I" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></div>
 
 <div>
 <p>Kurimeo is known for finding, showing, and even reading primary and secondary sources.  
 Here, he reads from sources like Africans and Native Americans which illustrates how the terms negro and black has been applied to people of American decent. </p>
-            <video key={'kurimeo_negroblackmoor'} width="320" height="240" controls preload="none"><source src={'videos/history/sabir_chineseasblack.mp4'} type="video/mp4" />Your browser does not support the video tag.</video>
-
+{YoutubeEmbed('a3GaFbkRwYo')}
 </div>
 
 
     <div>
         <h1 className="font-bold text-lg">{snippet.src}</h1>
         <p>{snippet.quote}</p>
-        <video key={snippet.commentaries[0]} width="320" height="240" controls preload="none"><source src={ snippet.commentaries[0]} type="video/mp4" />Your browser does not support the video tag.</video>
-    <p>Presentation by Jeffrey B. Perry (2013)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Gq77rOuZck?si=pr7vvhKARH5ScOWw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>    <p>Presentation by Jeffrey B. Perry (2013)</p>
     <p>How many years of records? did Allen go through?  (13:28) This is one example of researching the researches.  </p>
     <p>Back in the 16th century negro was used with an uppercase N.</p>
     <p>A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>

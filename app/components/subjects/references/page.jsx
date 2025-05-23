@@ -62,10 +62,6 @@ export default function ReferencesMain( ) {
     </Select>
 </div>
      <Divider className="my-8" />
- 
-     <Divider className="my-8" />
-
-     <Divider className="my-8" />
 
 <h1>Source and Resources</h1>
 {filteredReferences.length}---{selectedCategory}
