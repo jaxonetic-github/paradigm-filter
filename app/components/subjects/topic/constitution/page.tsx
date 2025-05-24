@@ -1,6 +1,8 @@
 "use client"
 import React from "react";
-import  {Image} from "@heroui/react";
+import  {Image, Link, Divider} from "@heroui/react";
+import {Popover, PopoverTrigger, PopoverContent, Button} from "@heroui/react";
+import {Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 
 import {
   Table,
@@ -14,70 +16,55 @@ import {
 
  
 export default function Constitution() {
-  const columns = [
-    { key: 'republic', label: "Republic" },
-    { key: 'democracy', label: "Democracy" },
-  ];
 
-const rows = [
-  {
-    key: "1",
-    republic: "Creater",
-    democracy:'X'
-  },
-  {
-    key: "2",
-    republic: "Individual",
-    democracy:'Individual'
-  },
-  {
-    key: "3",
-   republic: "Constitution",
-    democracy:'Government'
-  },
-  {
-    key: "4",
-    republic: "Public Servants",
-    democracy:'Governemnt'
-  },
-];
-
+const naturalizationact=
+{what:'H. R. 40, Naturalization Bill', when:'March 4, 1790', imgURL:'/images/naturalizationActP1.jpg',
+ desc:'The First Congress (1789-1791) established federal procedures and criteria for foreign-born individuals to become U.S. citizens. These criteria permitted free whites of good character with two years&apos; residence in the United States to become naturalized citizens. Congress also allowed citizens’ children born outside the U.S. to be considered natural-born citizens. Over the following centuries, Congress readdressed the issue in a series of naturalization acts that sometimes excluded, but increasingly included, people of diverse races and origins.'
+}
 
   return (<div className='mx-5'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wp-48d_jSb4?si=DDK3NUmwLY3QzqYI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-    <div className='mx-5'><h3 className="font-bold">The 1787 Constitution as a contract</h3>
-  <p>The US Constitution of 1787 is a contract much like a trust in which the Trustee, the Federal or State government will protect and secure the human rights of it&apos;s Beneficiaries, The People or citizens of one of  the states of the Union,
-  in exchange for their allegiance and participation.</p>
-<p>Historically, laws are enacted to protect and allow the free use of one&apos;s property and to ensure that everyone is unhindered (as much as possible) by the the exercise of rights (usage of property). </p>
+    <div className='mx-auto'><h3 className="font-bold">The 1787 Constitution for the United States of America</h3>
     
-    <Table aria-label="Example table with dynamic content">
-      <TableHeader>
-        {columns.map((column) =>
-          <TableColumn key={column.key}>{column.label}</TableColumn>
-        )}
-      </TableHeader>
-      <TableBody>
-        {rows.map((row) =>
-          <TableRow key={row.key}>
-            {(columnKey) => <TableCell>{getKeyValue(row, columnKey)}</TableCell>}
-          </TableRow>
-        )}
-      </TableBody>
-    </Table>
-
-    <ul><h3>N.B.</h3>
-      <li>
-          <p className='my-2  indent-12'>
-          One of the biggest rights the Constitution protects is the right to contract unlimited.
-           This right is superior to even the Bill of Rights because all the rights secured by the
-           Bill of Rights can be contracted away.  You are free to give up your rights or simply 
-           not defend or assert them.
-           </p>
+  <p>View Michael Badnarik's class on the basics of the <Link href='https://www.youtube.com/embed/wp-48d_jSb4?si=DDK3NUmwLY3QzqYI'>US Constitution</Link> </p>
+<p></p>
+<p></p>
+<div className='my-2 '>
+    <ol className='border-1 '><h3>Citizenship and the 14th Amendment</h3>
+    <li><p className='my-2  indent-12'>The <Popover placement="right">
+      <PopoverTrigger>
+        <Button className={'underline'}>Naturalization Act</Button>
+      </PopoverTrigger>
+      <PopoverContent>
+       
+         <Card className="py-4 bg-[#deb887]">
+      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">{naturalizationact.what}</p>
+        <small className="text-default-500">{naturalizationact.when}</small>
+        <h4 className="font-bold text-large">{naturalizationact.desc}</h4>
+      </CardHeader>
+      <CardBody className="overflow-visible py-2">
+        <Image
+          alt="Card background"
+          className="object-cover rounded-xl"
+          src={naturalizationact.imgURL}
+          width={270}
+        />
+        <Divider/>
+      </CardBody>
+      <CardFooter>
+        <p>Law Reviews</p>
+        <p>William &amp; Mary Law Review ::</p><Link target='_blank' href="https://scholarship.law.wm.edu/wmlr/vol65/iss5/3/">The "Free White Person" Clause of the Naturalization Act of 1790 as Super-Statute</Link>
+      </CardFooter>
+    </Card>
+      </PopoverContent>
+    </Popover>sheds light on the early recognized citizenship</p></li>
+      <li><p className='my-2  indent-12'>The first lowercase instance of the word "citizen" in the U.S. Constitution is found in the 14th Amendment. <Link  target='_blank' href={'http://www.pulj.org/the-roundtable/the-influence-of-grammar-upon-law'}>(@See The Influence of Grammer Upon Law</Link></p></li>
+      <li><p className='my-2  indent-12'>The United States of America, and the Republic for which it stands, only recognized state citizenship before the 14th Amendment<Link target='_blank' href={'https://1024terabox.com/s/1lFKs0OECUS_zg80BITw2Zg'}>(@See Dred Scott case)</Link></p></li>
+      <li><p>For example, George Washington was a Citizen of Virginia; he was Virginian, not a US citizen which did not exist 1868</p></li>
+      <li><p className='my-2 indent-12'>&quot;The federal and state governments are in fact but different agents and trustees of the people, constituted with different powers, and designed for different purposes.&quot; -James Madison, Federalist No. 46.</p></li>
+      </ol>
+</div>
           
-          <p className='my-2  indent-12'>
-&quot;The federal and state governments are in fact but different agents and trustees of the people, constituted with different powers, and designed for different purposes.&quot; -James Madison, Federalist No. 46.
-           </p></li>
-      </ul>
     </div>
 </div>);
 }

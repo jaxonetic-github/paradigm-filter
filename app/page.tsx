@@ -2,7 +2,7 @@
 
 import Welcome from './components/home/welcome.tsx';
 import React, { useState, useEffect, useRef } from 'react';
-import {HeroUIProvider} from "@heroui/system";
+import {HeroUIProvider} from "@heroui/react";
 import { useCallback } from 'react';
 import {initialStoreState} from "./src/constants/state.js";
 

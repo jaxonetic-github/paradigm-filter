@@ -62,13 +62,15 @@ export default function ReferencesMain( ) {
     </Select>
 </div>
      <Divider className="my-8" />
+     <Link href='https://www.gilderlehrman.org/collection-search'>https://www.gilderlehrman.org/</Link>
+     <Divider className="my-8" />
 
-<h1>Source and Resources</h1>
-{filteredReferences.length}---{selectedCategory}
+<div>
+{filteredReferences.length}<h1>Source and Resources</h1>
+</div>
   <ReferencesView className={'-z-100'} columns={tableColumns} rows={filteredReferences}/>
   </div>);
 }
-
 
 
 //    console.log(referenceRecord,'----',(selectedCategory=='all'||referenceRecord.category==selectedCategory);

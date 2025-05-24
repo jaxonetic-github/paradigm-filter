@@ -4,6 +4,7 @@ import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import Link from 'next/link';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import {Accordion, AccordionItem} from "@heroui/accordion";
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}
@@ -28,17 +29,20 @@ export default function Blackness(){
 
   return (<><div className='mx-5'>
         <div>
-   <p>Sabir is always reliable for verifiable sources...</p>
-        <h3 className="font-bold text-lg">What is the difference between &quot;black&quot; and Moor?</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/live/bA9-pwts4Tg&t=3215" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <h3 className="font-bold text-lg">The colorable "b(B)lack" Construct</h3>
+        <p>These videos should make the conversation about, &quot;how much black lives matter?&quot; more interesting.</p>
+        <p></p>
 
 
+           <p>Sabir is always reliable for verifiable sources...</p>
+    {YoutubeEmbed('1O1cy-z1tYk')}
       {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
     <div>
         Chinese as Black and sources about the usage of black:: Sabir Bey 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SrxJcik7O-4?si=T8p0kDRT_7gxFR3I" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></div>
+{YoutubeEmbed('SrxJcik7O')}
 
+</div>
 <div>
 <p>Kurimeo is known for finding, showing, and even reading primary and secondary sources.  
 Here, he reads from sources like Africans and Native Americans which illustrates how the terms negro and black has been applied to people of American decent. </p>
@@ -49,11 +53,12 @@ Here, he reads from sources like Africans and Native Americans which illustrates
     <div>
         <h1 className="font-bold text-lg">{snippet.src}</h1>
         <p>{snippet.quote}</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2Gq77rOuZck?si=pr7vvhKARH5ScOWw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>    <p>Presentation by Jeffrey B. Perry (2013)</p>
-    <p>How many years of records? did Allen go through?  (13:28) This is one example of researching the researches.  </p>
-    <p>Back in the 16th century negro was used with an uppercase N.</p>
-    <p>A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>
-    <p>The invention of the white race was polical and no part of genetic evolution</p>
+        {YoutubeEmbed('2Gq77rOuZck')}
+        <span>Takeaways</span>
+    <p>***How many years of records? did Allen go through?  (13:28) This is an example of researching the researches.  </p>
+    <p>***Back in the 16th century negro was used with an uppercase N.</p>
+    <p>***A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>
+    <p>***The invention of the white race was political and no part of genetic evolution</p>
      </div>
           
 </div></>);

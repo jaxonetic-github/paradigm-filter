@@ -45,24 +45,14 @@ import Link from 'next/link';
 </div></div>);
 
 export default function Epistemology() {
-  const items = [
-    { id: 1, name: "Item 1" },
-    { id: 2, name: "Item 2" },
-    { id: 3, name: "Item 3" },
-  ];
-
 
   return (<div className='mx-5'>
-          <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality
+      <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality
       with the spell your words or other symbolic expressions or gestures which communicate to us.  We might say that bad 
       magick is akin to an untruth because it imposes a false or artificial idea, an illusion, in the perception of your victim.`}</p> 
-           <p>{` In a world of infinite beliefs and opinions and AI generated content and information, an ultra high level of Discernment is required to avoid following the incidental fallacies set by Cognigive Dissonance.`}</p> 
+      <p>{` In a world of infinite beliefs and opinions and AI generated content and information, an ultra high level of Discernment is required to avoid following the incidental fallacies set by Cognigive Dissonance.`}</p> 
       <p>Epistomology is the philosophy that deals with how we know what we know.  After over a millenia of book burnings, destruction of evidence, and a willfull transplantation of education into indoctrination(@See <a target="_blank" href='/videos/history/sabir_cartergwoodsonquote.mp4'>Carter G Woodson</a>, @See Osage schools), it seems wise to audit and verify what we think we know to be true with facts.  The alternative is to risk following the paradigm, the wish or even spell of someone else, instead of your purpose.</p>
-      <p> </p>
-<p></p>
-        <p>It seems appropriate to start this epistomological journey with a quick survey of what is meant by &quot;Truth&quot;, and it&apos;s associates, &quot;Belief&quot;, &quot;Facts&quot;, Opinions. </p>
-
-
+      <p>It seems appropriate to start this epistomological journey with a quick survey of what is meant by &quot;Truth&quot;, and it&apos;s associates, &quot;Belief&quot;, &quot;Facts&quot;, Opinions. </p>
     <Divider />
  <div className="flex w-full flex-col">
       <Tabs aria-label="Options">
@@ -74,10 +64,7 @@ export default function Epistemology() {
             <CardBody>
             <Link target="_blank" href=''>Critical Thinking</Link>
             <Link target="_blank" href=''>Unseen Hand</Link>
-                <Image
-      alt="HeroUI hero Image"
-      src="/images/HistoricalThinking.png"
-      className={'max-w-108'}/>
+            <Image alt="HeroUI hero Image" src="/images/HistoricalThinking.png" className={'max-w-108'}/>
              Historical Thinking
             </CardBody>
           </Card>

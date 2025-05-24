@@ -1,6 +1,6 @@
 import React from "react";
-import Link from 'next/link';
-import {Button, Divider} from "@heroui/react";
+//import Link from 'next/link';
+import {Button, Divider, Link} from "@heroui/react";
 
 
  
@@ -15,7 +15,6 @@ export default function ContentMap() {
         <Button as={Link} color={"primary"} href={"/components/subjects/epistemology"} variant={"flat"}> <p className={"font-bold text-inherit"}>Epistemology</p></Button>
     </div>
     <Divider className="my-1" />
-<Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/epistemology'>Epistemology</Link>
 
   </div>
 </div><div className=" border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
@@ -24,21 +23,21 @@ export default function ContentMap() {
         <Button as={Link} color={"primary"} href={"/components/subjects/history"} variant={"flat"}> <p className={"font-bold text-inherit"}>History</p></Button>
     </div>
 <Divider className="my-1" />
-     <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/topic/bible'>Bible</Link> 
+     <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/topic/bible'>The Bible(s)</Link> 
   </div>
 </div><div className="border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
 
-    <div className="space-y-0.5">
+ 
         <Button as={Link} color={"primary"} href={"/components/subjects/civics"} variant={"flat"}> <p className={"font-bold text-inherit"}>Civics and Law</p></Button>
-    </div>
+
 <Divider className="my-1" />
     <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
         href='/components/subjects/topic/constitution'>Constitution</Link>,
     <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
         href={'/components/subjects/topic/money'}>Money</Link>,
     <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href={'/components/subjects/topic/blackandwhite'}>Black</Link>
+        href={'/components/subjects/topic/blackandwhite'}>Colorable People</Link>
   </div>
 </div>
 

@@ -1,6 +1,5 @@
-const {nextui} = require("@heroui/react");
-// tailwind.config.js
-//import {heroui} from "@heroui/react";
+const {heroui} = require("@heroui/react");
+
 
 const config = {
   content: [
@@ -18,6 +17,6 @@ const config = {
       },
     },
   },
-  plugins: [nextui(),],
+  plugins: [heroui(),],
 };
 export default config;
