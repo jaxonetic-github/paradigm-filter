@@ -4,7 +4,7 @@ import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import Link from 'next/link';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import {Accordion, AccordionItem} from "@heroui/accordion";
+import {Accordion, AccordionItem, Divider} from "@heroui/react";
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}
@@ -21,7 +21,7 @@ export default function Blackness(){
 
  const snippet = {src:'The Invention of the White Race, Vol 1. 1994',
                       quote:theodoreAllenQuote0,
-                      commentaries:['videos/history/commentaries/TheInventionOfTheWhiteRacebyTheodoreWAllenPresentationbyJeffreyBPerry.mp4']};
+                      coqmmentaries:['videos/history/commentaries/TheInventionOfTheWhiteRacebyTheodoreWAllenPresentationbyJeffreyBPerry.mp4']};
 
  const kurimeo_evidenseofblack_snippet = {src:'Africans and Native Americans',
                       quote:'&quot;It is apparent from the evidence that the term negro or its equivalent was not used for a race or a single stock of people or to point to ancestry or ethnicity. It was usually a simple description for perceived color.&quot;',
@@ -43,10 +43,13 @@ export default function Blackness(){
 {YoutubeEmbed('SrxJcik7O')}
 
 </div>
+
 <div>
 <p>Kurimeo is known for finding, showing, and even reading primary and secondary sources.  
 Here, he reads from sources like Africans and Native Americans which illustrates how the terms negro and black has been applied to people of American decent. </p>
 {YoutubeEmbed('a3GaFbkRwYo')}
+<Divider/>
+{YoutubeEmbed('gH8NJvtaRMQ')}
 </div>
 
 
@@ -55,8 +58,9 @@ Here, he reads from sources like Africans and Native Americans which illustrates
         <p>{snippet.quote}</p>
         {YoutubeEmbed('2Gq77rOuZck')}
         <span>Takeaways</span>
-    <p>***How many years of records? did Allen go through?  (13:28) This is an example of researching the researches.  </p>
-    <p>***Back in the 16th century negro was used with an uppercase N.</p>
+    <p>*** (13:28) An example of researching the researchers...  </p>
+    <p>***Back in the 16th century ne
+    gro was used with an uppercase N.</p>
     <p>***A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>
     <p>***The invention of the white race was political and no part of genetic evolution</p>
      </div>

@@ -24,6 +24,7 @@ export default function ContentMap() {
     </div>
 <Divider className="my-1" />
      <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/topic/bible'>The Bible(s)</Link> 
+     <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/topic/njinga'>Queen Njinga</Link> 
   </div>
 </div><div className="border-1 flex flex-col gap-2 p-1 sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
