@@ -25,9 +25,16 @@ export default function HistoryHome () {
 
  return (
 <div>
+
  	<p className="justify-center  flex"> Brazilian Resources -- http://www.interpretesdobrasil.org/</p>
 	<p className='support-sabir'>Al Fustat.</p>
   <Link className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>Indian Citizen Act</Link>
+
+  <div>
+  <h2>Aspects of US Colonialism</h2>
+  <Link className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>Origins of Lynching, Ida B Wells</Link>
+
+  </div>
 </div>
 );
 }
