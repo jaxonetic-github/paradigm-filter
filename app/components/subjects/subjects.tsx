@@ -78,7 +78,7 @@ export default function ContentMap() {
     </div>
     <Divider className="my-1" />
         <Link className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href={'/components/subjects/illuminators'}>Capoeira</Link>
+        href={'/components/subjects/topic/capoeira'}>Capoeira</Link>
     <Link target={'_blank'} className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
         href={'https://www.thetempleofhiphop.org'}>Temple of Hip Hop</Link>
   </div>
