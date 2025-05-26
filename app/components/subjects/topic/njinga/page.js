@@ -32,9 +32,7 @@ console.log("prec-->",profileRecord);
     </div>
    </div>
 
-
      <HonorableMentionVideos id="Discussions"  dataArray={profileRecord.videoArray}  /> 
-
 </div>);
 }
 

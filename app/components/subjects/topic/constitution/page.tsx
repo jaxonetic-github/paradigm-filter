@@ -27,6 +27,9 @@ const naturalizationact=
     
   <p>View Michael Badnarik's class on the basics of the <Link href='https://www.youtube.com/embed/wp-48d_jSb4?si=DDK3NUmwLY3QzqYI'>US Constitution</Link> </p>
 <p></p>
+<p>University of Montana School of Law Review ::<Link target='_blank' href="https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1018&context=faculty_lawreviews">The Constitution and the Public Trust</Link></p>
+
+<p></p>
 <p></p>
 <div className='my-2 '>
     <ol className='border-1 '><h3>Citizenship and the 14th Amendment</h3>
@@ -53,16 +56,21 @@ const naturalizationact=
       </CardBody>
       <CardFooter>
         <p>Law Reviews</p>
-        <p>William &amp; Mary Law Review ::</p><Link target='_blank' href="https://scholarship.law.wm.edu/wmlr/vol65/iss5/3/">The "Free White Person" Clause of the Naturalization Act of 1790 as Super-Statute</Link>
+        <p>William &amp; Mary Law Review ::</p><Link target='_blank' href="https://scholarship.law.wm.edu/wmlr/vol65/iss5/3/">The "Free White Person" Clause of the Naturalization Act of 1790 as Super-Statute</Link>      
       </CardFooter>
     </Card>
       </PopoverContent>
     </Popover>sheds light on the early recognized citizenship</p></li>
       <li><p className='my-2  indent-12'>The first lowercase instance of the word "citizen" in the U.S. Constitution is found in the 14th Amendment. <Link  target='_blank' href={'http://www.pulj.org/the-roundtable/the-influence-of-grammar-upon-law'}>(@See The Influence of Grammer Upon Law</Link></p></li>
       <li><p className='my-2  indent-12'>The United States of America, and the Republic for which it stands, only recognized state citizenship before the 14th Amendment<Link target='_blank' href={'https://1024terabox.com/s/1lFKs0OECUS_zg80BITw2Zg'}>(@See Dred Scott case)</Link></p></li>
-      <li><p>For example, George Washington was a Citizen of Virginia; he was Virginian, not a US citizen which did not exist 1868</p></li>
-      <li><p className='my-2 indent-12'>&quot;The federal and state governments are in fact but different agents and trustees of the people, constituted with different powers, and designed for different purposes.&quot; -James Madison, Federalist No. 46.</p></li>
+      <li><p className='my-2 indent-12'>For example, George Washington was a Citizen of Virginia; he was Virginian, not a US citizen which did not exist 1868</p></li>
+      <li></li>
       </ol>
+      <p >&quot;The federal and state governments are in fact but different agents and trustees of the people, constituted with different powers, and designed for different purposes.&quot; -James Madison, Federalist No. 46.</p>
+</div>
+
+<div><p>There is often talk about the thoughts and ideas of the "Founding Fathers"</p>
+<p>The Federalist and Anti-Federalists Papers</p>
 </div>
           
     </div>

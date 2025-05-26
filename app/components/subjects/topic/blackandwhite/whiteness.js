@@ -1,14 +1,10 @@
 
-'use client';
 import React from "react";
 import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
-import Blackness from './blackness.js';
-import Whiteness from './whiteness.js';
 import Link from 'next/link';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import {Accordion, AccordionItem, Divider} from "@heroui/react";
-import {Tabs, Tab, Card, CardBody} from "@heroui/react";
+import {Accordion, AccordionItem} from "@heroui/accordion";
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}
@@ -16,7 +12,7 @@ import {Tabs, Tab, Card, CardBody} from "@heroui/react";
                 <HonorableMentionVideos  dataArray={specificallyCompiledVideos[BLACKVWHITE_VIDEOLIST_KEY]}  /> 
       </div>
    */
-export default function Colorisms(){
+export default function Whiteness(){
    const theodoreAllenQuote0 = 'When the first Africans arrived in Virginia in 1619 there were no white people, nor according to the colonial records, would there be for another 60 years';
  const browderSnippet1Quote = 'The first step, the first step we want to focus on, is the step that you must be actively engaged be actively in the process of freeing your mind.  You must work to free your mind. You have to do that, begin the process of freeing your mind by  evaluating everything that you&apos;ve been taught. Everything. And develop a discriminating eye so that you can ultimately learn what not to  believe. You don&apos;t want to believe what everyone tells you. You want to get some information to reinforce that, to validate. that information to determine  whether or not it should be programmed within your consciousness';
 
@@ -25,56 +21,43 @@ export default function Colorisms(){
 
  const snippet = {src:'The Invention of the White Race, Vol 1. 1994',
                       quote:theodoreAllenQuote0,
-                      coqmmentaries:['videos/history/commentaries/TheInventionOfTheWhiteRacebyTheodoreWAllenPresentationbyJeffreyBPerry.mp4']};
+                      commentaries:['videos/history/commentaries/TheInventionOfTheWhiteRacebyTheodoreWAllenPresentationbyJeffreyBPerry.mp4']};
 
  const kurimeo_evidenseofblack_snippet = {src:'Africans and Native Americans',
                       quote:'&quot;It is apparent from the evidence that the term negro or its equivalent was not used for a race or a single stock of people or to point to ancestry or ethnicity. It was usually a simple description for perceived color.&quot;',
                       commentaries:['https://www.youtube.com/live/a3GaFbkRwYo?si=XBuVTNUSI6_Fys7o']};
 
-  return (<div className='mx-5'>
-        
+  return (<><div className='mx-5'>
+        <div>
+        <h3 className="font-bold text-lg">The colorable "White" Construct</h3>
+        <p>These videos should make the conversation about, &quot;how much black lives matter?&quot; more interesting.</p>
+        <p></p>
 
- <div className="flex flex-wrap gap-4">
 
- <div className="flex w-full flex-col">
-      <Tabs aria-label="Options">
-        <Tab key="photos" title="Blacks">
-          <Card>
-            <CardBody>
-                <Blackness/>
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="music" title="Whites">
-          <Card>
-            <CardBody>
-                <Whiteness/>
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab key="videos" title="Colonizers and Foreigners">
-          <Card>
-            <CardBody>
-              <div>
-<p>The From Colonizer to Enslaved, The Whitewash, Paper Genocide</p>  
-{YoutubeEmbed('5I_qy8wcYjE')}
-<Divider/>
-
-</div>
-
-            </CardBody>
-          </Card>
-        </Tab>
-      </Tabs>
+           <p>Sabir is always reliable for verifiable sources...</p>
+    {YoutubeEmbed('1O1cy-z1tYk')}
+      {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
     
-    </div>
-
-
-
-   
+    <div>
+        <h1 className="font-bold text-lg">{snippet.src}</h1>
+        <p>{snippet.quote}</p>
+        It took 100 years after the British's 1st North American colonial attempt at Roanoke before any record of a white person
+         was ever found.
+        <span>Takeaways</span>
+    <p>***How many years of records? did Allen go through?  (13:28) This is an example of researching the researches.  </p>
+    <p>***Back in the 16th century negro was used with an uppercase N.</p>
+    <p>***A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>
+    <p>***The invention of the white race was political and no part of genetic evolution</p>
+     </div>
           
-</div>);
+</div></>);
 }
-
+/**
+   <ul>
+    <li>Chapter 3 of Africans and Native Americans talks illustrates how the terms negro and black has been applied to people of American decent.  (28)[https://www.youtube.com/live/a3GaFbkRwYo?si=XBuVTNUSI6_Fys7o]</li>
+    <li>&quot;It is apparent from the evidence that the term negro or its equivalent was not used for a race or a single stock of people or to point to ancestry or ethnicity. It was usually a simple
+    description for perceived color.</li>
+    <li>Negro or its functional equivalent mohr, moor, more (German Dutch French) in a very  broad sense.  The Portuguese also tended to use the term negro to encompass non Africans, people whose skin colow was a shade of brown... Negro or more almost  becomes equivalent to non-white or third-world in recent usage. </li>
+</ul>**/
 

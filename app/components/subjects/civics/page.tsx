@@ -17,6 +17,7 @@ import {Image, Button, Link, } from "@heroui/react";
 //	{quoted: 'Declaration of Independance', quotersImage:'declaration-of-independence.jpg', extraInfo:'', quote:' ...that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, ...'},
 export default function Civics () {
 	const PROFILE_IMG_PATH = '/images/profiles/';
+const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine.webp', extraInfo:'', quote:'Government is there to do only what the private sector won\'t, can\'t or shouldn\'t do.'};
 
  	const openWindow = (event:any) => {
   window.open('https://youtube.com/playlist?list=PL-DGnkOdP-k3ChNwDLSf7hfnqT5XvefK0&si=n6y9u_Xa7Wfo6E5N', "_blank", 'left=100,top=100,width=320,height=320');
@@ -25,6 +26,17 @@ export default function Civics () {
       let _literaryQuoteArray = [{quoted:'C. J. Keyset', source:'Human Worth of Rigorous Thinking', quote:`Out of that past we have come. Into it we are constantly returning. Meanwhile it is of the utmost importance to our lives. It contains the roots of all we are, and of all we have of wisdom."`,}]
 
  return (<div>
+ 	<div key={quoteRecord.quoted} className="md-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+      		<div className="align-center flex">
+    <div className="mx-auto self
+    -center flex" >
+    <Image  src={ PROFILE_IMG_PATH + quoteRecord.quotersImage } alt="ChitChat Logo"  />
+      <p className="text-xs font-medium text-black dark:text-white">{quoteRecord.quoted}</p>
+      <p className ="text-gray-500 dark:text-gray-400">{quoteRecord.quote}</p>
+      <p>{quoteRecord.extraInfo}</p>
+    </div>
+    </div>
+</div>
 
 WHAT IS YOUR NATIONALITY? WHO ARE YOU IN AMERICA?
  	<p> </p> 
