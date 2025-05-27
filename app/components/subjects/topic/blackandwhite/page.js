@@ -32,7 +32,7 @@ export default function Colorisms(){
                       commentaries:['https://www.youtube.com/live/a3GaFbkRwYo?si=XBuVTNUSI6_Fys7o']};
 
   return (<div className='mx-5'>
-        
+        <Link target='_blank' href={'http://doi.org/10.29164/23raceandracism'}>Race?</Link>
 
  <div className="flex flex-wrap gap-4">
 

@@ -8,7 +8,9 @@ export default function Page() {
   <h2>A Capoeira</h2>
   A Capoeira é aprendido nos pés e palavras dos Mestres
   <div className='flex'>
+  <p>Mestre Moraes</p>
   {YoutubeEmbed('Whvj-gZHR_g')}
+   {YoutubeEmbed('E5GuFHKGovE')}
  </div>
   </div></>;
 

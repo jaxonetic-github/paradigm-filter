@@ -1,7 +1,6 @@
 'use client';
 import React from "react";
-import {Tabs, Tab, Card, CardBody, Divider,Image} from "@heroui/react";
-
+import {Tabs, Tab, Card, CardBody, Divider,Image, Link} from "@heroui/react";
 
  
 export default function ComponentsHome() {
@@ -38,20 +37,26 @@ export default function ComponentsHome() {
 </div>
       
 
+
   <div className="flex w-full flex-col">
       <Tabs aria-label="Options">
         <Tab key="Vedanta" title="Vedanta">
           <Card>
             <CardBody>
-              Advaita Vedanta
-              Tattwa Shuddhhi
+              <Link target="_blank" href='https://www.indiadivine.org/'>The Bhaktivedanta Ashram</Link><p>::IndiaDivine.org,All things Vedanta</p>
+              <Link target="_blank" href='https://www.satyamyogaprasad.net/'>Satyam Yoga Prasad</Link><p>a digital library of the entire collected publications of the Bihar Yoga tradition.</p>
+
+              <Link target="_blank" href='https://www.biharyoga.net/ypt-books.php/'>Bihar Yoga Books</Link><p>especially, Tattwa Shuddhi</p>
             </CardBody>
           </Card>
         </Tab>
         <Tab key="Qabalah" title="Qabalah">
           <Card>
             <CardBody>
-             Suggested Reading :: Dione Fortune - Mystical Qabalah
+
+             Suggested Reading :: 
+             <Link target="_blank" href='https://1024terabox.com/s/1YOZNeZR5ACjCAU8OOs65Ig'>Dione Fortune - Mystical Qabalah</Link>
+
              Travis Magus Book Reading
             </CardBody>
           </Card>
@@ -59,14 +64,13 @@ export default function ComponentsHome() {
         <Tab key="sincretistic" title="Sincretic">
           <Card>
             <CardBody>
-              [Complete Magicians Table]
+            <Link href='https://archive.org/details/StephenSkinner-TheCompleteMagiciansTables-2007' > Complete Magicians Table</Link>
               Flat Earth::== <video key={'sevanbomarflatearth'} width="320" height="240" controls preload="none"><source src={'https://1024terabox.com/s/1MjULJ_5uNKDCitVWJS3v2A'} type="video/mp4" />Your browser does not support the video tag.</video>
             </CardBody>
           </Card>
         </Tab>
       </Tabs>
     </div>
-
 
 
 </div>);

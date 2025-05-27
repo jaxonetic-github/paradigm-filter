@@ -35,7 +35,8 @@ export default function HistoryHome () {
 		  <Link target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>Indian Citizen Act</Link>
 		  <Link target={'_blank'} className='' href={'https://youtu.be/jDFPVc2kPvE?si=bF7DdpwU3-mzh4-M'}>European &quot;White&quot;  Slavery -- First Europeans, The Felons of Briton</Link>
 		  <Link target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>The Birth of the Second UNITED STATES- The Act of 1871</Link>
-	    </div>
+	    <Link target={'_blank'} className='' href={'https://backstory.newamericanhistory.org/episodes/why-they-fought/'}>Civil War, fought over Union not Slavery</Link>
+      </div>
  	</div>
 
     <div className='my-4'>
@@ -77,12 +78,21 @@ export default function HistoryHome () {
   <div className='my-4'>
   <h2>The Moors</h2>
   <div  className='flex'>
-  <p className='support-sabir'>Al Fustat.</p>
+  <p className='support-sabir'>Avverroes</p>
   <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/2DXBNGX9SR#wnHth5oCVavx'}>History of the conquest of Spain by the Arab-Moors</Link>
   <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/2TG48QESJM#jYUPHyccuNJ5'}>Portuguese in West Africa</Link>
   <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/KHV5GPS964#k1ZRcUKVQll1'}>Expeditions into the valley of the Amazons, 1539, 1540, 1639</Link>
   <Link target={'_blank'} className='' href={'https://1024terabox.com/s/1WemAs-pzW1OHGbEfd8yqIw'}>Narrative of the 5 year expedition, against the revolted negros...</Link>
   <Link target={'_blank'} className='' href={'https://1024terabox.com/s/1WemAs-pzW1OHGbEfd8yqIw'}>vs. the christians</Link>
+  <Link target={'_blank'} className='' href={'https://1024terabox.com/s/1TqSki8fmkqYN5ua0uEUXrQ'}>The Mali Empire</Link>
+  <Link target={'_blank'} className='' href={'https://1024terabox.com/s/14Nw8kB_qvRkwzZHyL_LQ_A'}>The Moorish Empire</Link>
+  </div>
+  </div>
+
+    <div className='my-4'>
+  <h2>Religious History</h2>
+  <div className='flex'>
+  <Link target={'_blank'} className='' href={'https://www.youtube.com/watch?v=a2YHzWi697c'}>Dr Smalls,History and Spirituality </Link>
   </div>
   </div>
 
