@@ -28,7 +28,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
         const resources:ProfilesDictionary = await profiles;
         const profileKey= decodeURIComponent(slug);
         const profileRecord:ProfileType = resources[profileKey];
- //console.log((profileKey==NJINGA_VIDEOLIST_KEY)+'----'+(typeof profiles[NJINGA_VIDEOLIST_KEY])+'.');
+ console.log(Object.keys(resources),"--------=======------",profileKey,'---', profileRecord);
 
     // let resource = args.dataArray|| initialStoreState.resourcesData.youTubeResources ;
 //console.log(resources[profileKey].lifespan, resources[profileKey].name,resources[profileKey].thumbnail );

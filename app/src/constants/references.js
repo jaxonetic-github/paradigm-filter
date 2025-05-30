@@ -152,15 +152,15 @@ export const drjeffrisProfileRecord =
 
 
 export const profiles ={
-    NJINGA_PROFILES_KEY : nzingaProfileRecord,
-    CARTERG_PROFILES_KEY : carterGWoodsonProfileRecord,
-    HUBERTH_PROFILES_KEY : huberthProfileRecord,
-    WESLING_PROFILES_KEY: drcressweslingProfileRecord,
-    DRBEN_PROFILES_KEY : drbenProfileRecord,
-    SERTIMA_PROFILES_KEY : sertimaProfileRecord,
-    CLARKE_PROFILES_KEY : drclarkProfileRecord,
-    DRJEFFRIES_PROFILES_KEY : drjeffrisProfileRecord,
-    DRLLAILA_PROFILES_KEY : drllailaafrikaProfileRecord,
+    "Njinga Mbande" : nzingaProfileRecord,
+    "Dr Carter G Woodson" : carterGWoodsonProfileRecord,
+    "Hubert Harrison" : huberthProfileRecord,
+    "Dr Frances Wesling": drcressweslingProfileRecord,
+    "Dr Ben Jochannon" : drbenProfileRecord,
+    "Dr Ivan Sertima" : sertimaProfileRecord,
+    "Dr John Henrik Clarke" : drclarkProfileRecord,
+    "Dr Leonard Jeffries" : drjeffrisProfileRecord,
+    "Dr Llaila Afrika" : drllailaafrikaProfileRecord,
 }
 
 export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70'}

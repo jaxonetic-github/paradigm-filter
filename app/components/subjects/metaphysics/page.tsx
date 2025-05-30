@@ -56,7 +56,7 @@ export default function ComponentsHome() {
             <CardBody>
  <Image
         className=" p-1   "
-        src={'/images/kamitictreeoflife'} 
+        src={'/images/kamitictreeoflife.png'} 
         fallbackSrc={'/images/imagenotavailable.jpeg'}
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
       />

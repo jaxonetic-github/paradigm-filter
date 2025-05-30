@@ -55,9 +55,10 @@ import React from "react";
        </div> 
       </CardHeader>
       <CardBody>
-    <Image  src={item.imageURI} alt="Card background"
+    <Image  src={item.imageURI} alt="Card background" 
           className="object-cover "
-          />{item.description}
+           fallbackSrc={'/images/imagenotavailable.jpeg'} />
+    {item.description}
         </CardBody>
         <CardFooter className="before:bg-white/22 border-white/20 border-1 overflow-hidden py-1  before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
         <div >

@@ -21,16 +21,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.topdiv{min-width: 175px;
-        width: fit-content;
-        }
-.video-repos{min-width: 300px;
-        width: 750px;
-        left: 0px;
-        position: static;
-background-color: beige;
-  }
-
 
 @theme {
   --font-weight-extrablack: 1000; 
@@ -47,11 +37,25 @@ h3 {
 
 
 a {
-   @apply  underline mx-1 hover:bg-[#eee];
+   @apply  underline mx-1 ;
 }
 
 .filter-select {
   background-color: peachpuff;
 }
+.content-division{
+   @apply  hover:bg-[#444] hover:text-[beige] border-1 gap-2 p-1; 
+}
+
+.topdiv{min-width: 175px;
+        width: fit-content;
+        }
+.video-repos{min-width: 300px;
+        width: 750px;
+        left: 0px;
+        position: static;
+background-color: beige;
+  }
+
 
 
