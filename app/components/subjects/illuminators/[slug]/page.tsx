@@ -1,7 +1,7 @@
 //import Image from "next/image";
 
-import {profiles, references, NJINGA_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
-import {VideoArrayType, ProfileType} from './../../../../src/constants/appTypes.ts';
+import {profiles, references} from './../../../../src/constants/references.js';
+import {VideoArrayType, ProfileType, ProfilesDictionary} from './../../../../src/constants/appTypes.ts';
 //import PropTypes from 'prop-types'; // ES6
 import { Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
@@ -25,10 +25,10 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
    {
 
         const { slug } = await params;
-        //const resources = await profiles;
+        const resources:ProfilesDictionary = await profiles;
         const profileKey= decodeURIComponent(slug);
-        const profileRecord:ProfileType = profiles[profileKey];
- console.log((profileKey==NJINGA_VIDEOLIST_KEY)+'----'+(typeof profiles[NJINGA_VIDEOLIST_KEY])+'.');
+        const profileRecord:ProfileType = resources[profileKey];
+ //console.log((profileKey==NJINGA_VIDEOLIST_KEY)+'----'+(typeof profiles[NJINGA_VIDEOLIST_KEY])+'.');
 
     // let resource = args.dataArray|| initialStoreState.resourcesData.youTubeResources ;
 //console.log(resources[profileKey].lifespan, resources[profileKey].name,resources[profileKey].thumbnail );

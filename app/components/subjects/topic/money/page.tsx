@@ -1,13 +1,11 @@
 import React from "react";
-import {specificallyCompiledVideos, MONEYMATTERS_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
-import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
+//import {specificallyCompiledVideos} from './../../../../src/constants/references.js';
 
 
  
 export default function TopicHome() {
 
 
-console.log("---d--",specificallyCompiledVideos[MONEYMATTERS_VIDEOLIST_KEY]);
   return (<div className='mx-5'>
 
     <div>

@@ -105,14 +105,24 @@ export const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key
 const NJINGAHISTORICALCONTECT = 'https://1024terabox.com/s/1exN5tBxoNgiH6eJ9gog1dg'
 const NJINGAWARRIORQUEEN_URL = 'https://drive.proton.me/urls/DXTPB31TPM#MpMeoTOUvbGS';
   const _njingaArray=[{displayHeading:"Nzinga From Historical Context", youtubeUrl:'YSLpm75IaFU', pathName:NJINGAHISTORICALCONTECT, subject:'', comments:['The Legacy of Queen Njinga/Nzinga From Historical Context','']},   
-                           {displayHeading:"Njinga Warrior Queen", youtubeUrl:'GxpswAL_9_U', pathName:NJINGAWARRIORQUEEN_URL, subject:'', comments:['Lecture on the Diplomacy of Ngolo Njinga Mbande','']},];
+                      {displayHeading:"Njinga Warrior Queen",           youtubeUrl:'GxpswAL_9_U', pathName:NJINGAWARRIORQUEEN_URL, subject:'', comments:['Lecture on the Diplomacy of Ngolo Njinga Mbande','']},
+                    ];
  
-export const NJINGA_VIDEOLIST_KEY =  'Njinga Mbande';             
-export const MONEYMATTERS_VIDEOLIST_KEY =  "Money Matters";             
-export const BLACKVWHITE_VIDEOLIST_KEY =  'White vs Black';             
+export const NJINGA_PROFILES_KEY =  'Njinga Mbande';             
+export const CARTERG_PROFILES_KEY =  'Dr Carter G Woodson';             
+export const HUBERTH_PROFILES_KEY =  'Hubert Harrison';             
+export const DRBEN_PROFILES_KEY =  'Dr Ben Jochannon';             
+export const SERTIMA_PROFILES_KEY =  'Dr Ivan Sertima';             
+export const CLARKE_PROFILES_KEY =  'Dr John Henrik Clarke';             
+export const DRLLAILA_PROFILES_KEY =  'Dr Llaila Afrika';             
+export const WESLING_PROFILES_KEY =  'Dr Frances Wesling';             
+export const DRJEFFRIES_PROFILES_KEY =  'Dr Leonard Jeffries';             
+
+export const MONEYMATTERS_PROFILES_KEY =  "Money Matters";             
+export const BLACKVWHITE_PROFILES_KEY =  'White vs Black';
+
 export const specificallyCompiledVideos={'Njinga Mbande':_njingaArray, "Money Matters":_moneyAndBankingArray, 'Civics': _civicsFundamentalsArray, 'White vs Black': _negro_videos };
 
-      
 export const nzingaProfileRecord = 
     { key: 1, name: "Njinga Mbande", lifespan:'(1582 Ndongo - December 17, 1663 Matamba)', thumbnail:'/images/profiles/njinga/njingaDrawing.jpg', sources:[15], videoArray:_njingaArray };
 
@@ -142,15 +152,15 @@ export const drjeffrisProfileRecord =
 
 
 export const profiles ={
-    "Njinga Mbande" : nzingaProfileRecord,
-    "Dr Carter G Woodson" : carterGWoodsonProfileRecord,
-    "Hubert Harrison" : huberthProfileRecord,
-    "Dr Frances Wesling": drcressweslingProfileRecord,
-    "Dr Ben Jochannon" : drbenProfileRecord,
-    "Dr Ivan Sertima" : sertimaProfileRecord,
-    "Dr John Henrik Clarke" : drclarkProfileRecord,
-    "Dr Leonard Jeffries" : drjeffrisProfileRecord,
-    "Dr Llaila Afrika" : drllailaafrikaProfileRecord,
+    NJINGA_PROFILES_KEY : nzingaProfileRecord,
+    CARTERG_PROFILES_KEY : carterGWoodsonProfileRecord,
+    HUBERTH_PROFILES_KEY : huberthProfileRecord,
+    WESLING_PROFILES_KEY: drcressweslingProfileRecord,
+    DRBEN_PROFILES_KEY : drbenProfileRecord,
+    SERTIMA_PROFILES_KEY : sertimaProfileRecord,
+    CLARKE_PROFILES_KEY : drclarkProfileRecord,
+    DRJEFFRIES_PROFILES_KEY : drjeffrisProfileRecord,
+    DRLLAILA_PROFILES_KEY : drllailaafrikaProfileRecord,
 }
 
 export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70'}

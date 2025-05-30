@@ -27,10 +27,16 @@ export type YoutubeResponse = {
     }[],
   
 };
+
+
+
  
 export type VideoArrayType = { displayHeading:string,youtubeUrl:string, pathName:string, subject:string, comments:string[]};
 export type ProfileType = { key: number, name: string, lifespan:string, thumbnail:string, sources:number[], videoArray:any };
 
+export interface ProfilesDictionary {
+  [index: string]: ProfileType;
+}
 
  export type NjingaArrayType={displayHeading:string, pathName:string, subject:string, comments:string[]};
 export type NzingaProfileType = { key: number, name: string, lifespan:string, thumbnail:string, sources:number[], videoArray:NjingaArrayType };
