@@ -27,7 +27,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
         const { slug } = await params;
         //const resources = await profiles;
         const profileKey= decodeURIComponent(slug);
-        const profileRecord:ProfileType = profiles["Njinga Mbande"];
+        const profileRecord:ProfileType = profiles[profileKey];
  console.log((profileKey==NJINGA_VIDEOLIST_KEY)+'----'+(typeof profiles[NJINGA_VIDEOLIST_KEY])+'.');
 
     // let resource = args.dataArray|| initialStoreState.resourcesData.youTubeResources ;
