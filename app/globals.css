@@ -47,7 +47,7 @@ h3 {
 
 
 a {
-   @apply border-1 underline;
+   @apply  underline mx-1 hover:bg-[#eee];
 }
 
 .filter-select {

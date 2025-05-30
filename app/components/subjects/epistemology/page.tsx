@@ -59,7 +59,7 @@ export default function Epistemology() {
         <Tab key="definitions" title="Definitions">
         <Definitions/>
         </Tab>
-        <Tab key="criticalthink" title="Historical Thinking">
+        <Tab key="criticalthink" title="Critical Thinking">
           <Card>
             <CardBody>
             <Link target="_blank" href=''>Critical Thinking</Link>
@@ -72,7 +72,9 @@ export default function Epistemology() {
         <Tab key="propoganda" title="Social Control">
           <Card>
             <CardBody>
-Edward Barnay 
+Edward Barnay
+Adler
+Freud
             </CardBody>
           </Card>
         </Tab>

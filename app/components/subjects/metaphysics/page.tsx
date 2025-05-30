@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
 import {Tabs, Tab, Card, CardBody, Divider,Image, Link} from "@heroui/react";
+import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
 
  
 export default function ComponentsHome() {
@@ -50,10 +51,15 @@ export default function ComponentsHome() {
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="Qabalah" title="Qabalah">
+        <Tab key="Qabalah" title="Tree of Life">
           <Card>
             <CardBody>
-
+ <Image
+        className=" p-1   "
+        src={'/images/kamitictreeoflife'} 
+        fallbackSrc={'/images/imagenotavailable.jpeg'}
+        alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
+      />
              Suggested Reading :: 
              <Link target="_blank" href='https://1024terabox.com/s/1YOZNeZR5ACjCAU8OOs65Ig'>Dione Fortune - Mystical Qabalah</Link>
 
@@ -61,11 +67,15 @@ export default function ComponentsHome() {
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="sincretistic" title="Sincretic">
+        <Tab key="sincretistic" title="Sincretism">
           <Card>
             <CardBody>
             <Link href='https://archive.org/details/StephenSkinner-TheCompleteMagiciansTables-2007' > Complete Magicians Table</Link>
-              Flat Earth::== <video key={'sevanbomarflatearth'} width="320" height="240" controls preload="none"><source src={'https://1024terabox.com/s/1MjULJ_5uNKDCitVWJS3v2A'} type="video/mp4" />Your browser does not support the video tag.</video>
+              
+              
+              Flat Earth::== 
+              {YoutubeEmbed('mhc8ydSFhxI')}28:03-- notice the reference about
+              <Link href={'https://1024terabox.com/s/1MjULJ_5uNKDCitVWJS3v2A'}>Sevan </Link>
             </CardBody>
           </Card>
         </Tab>

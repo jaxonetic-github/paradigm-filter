@@ -1,6 +1,6 @@
 'use client' 
-
 import React from "react";
+import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
 
 const VIDEOS_PATH = "/videos/";
 /**
@@ -31,15 +31,15 @@ export default function HonorableMentionVideos ({dataArray}) {
  let videoArray =_dataArray?.map((videoRecord, index) =>{
  	console.log(videoRecord, index);
 	return (<div key={'hmv_key_' + index} className="md:flex">
-	    <div className="p-8">
+	    <div className="">
 	      <div className="md:shrink-0 flex justify-center">
-	      	<Video videoSource={{path:videoRecord.pathName}}/>
+	      	{ YoutubeEmbed( videoRecord.youtubeUrl)}
 	      </div>     
-	      <div className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">{videoRecord.displayHeading}</div>
+	      <div className="md:shrink-0 flex justify-center text-sm font-semibold tracking-wide text-indigo-500 uppercase">{videoRecord.displayHeading}</div>
 	      <a href="#" className="mt-1 block text-lg leading-tight font-medium text-black hover:underline">
 	      {videoRecord.displayHeading}
 	      </a>
-	      <p className="mt-2 text-gray-500">
+	      <p className="md:shrink-0 flex justify-center text-gray-500">
 	      {videoRecord.comments[0]}
 	      </p>
 	    </div>

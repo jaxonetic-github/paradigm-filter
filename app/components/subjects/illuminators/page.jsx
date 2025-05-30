@@ -1,6 +1,8 @@
 'use client' 
 import React from "react";
 import {initialStoreState} from './../../../src/constants/state.js';
+import {profiles} from './../../../src/constants/references.js';
+
 //import PropTypes from 'prop-types'; // ES6
 import { Button, Divider,  Avatar} from "@heroui/react";
 
@@ -35,12 +37,59 @@ import Link from 'next/link';
            <p>{filteredTeachers.length} {discipline} teachers</p>
            <div className={'h-800'}>
            
-            <VideoRepository dataArray={filteredTeachers} />
+            <BioRepository dataArray={profiles} />
             </div>
             <span>** Please excuse any delay in removing bad links.</span>
           </div>
     </div>)
 }
+
+
+
+
+/**       
+ *       <Avatar showFallback name="Jane" src="https://images.unsplash.com/broken" />
+className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-5 
+ * param dataArray : initialStoreState.resourcesData.youTubeResources
+ *  <VideoRepository dataArray={filteredTeachers}/>
+ * href={`/reference_spa/illuminators/${resource.key}`
+ */
+
+ function BioRepository({dataArray}) {
+      const [filteredTeachers,filterTeachers] =React.useState(dataArray);
+
+    const [hoveringKey, setHoveringKey] = React.useState(true);
+
+  const [resourceID, setResourceID] = React.useState(-1);
+  const [showVideos, toggleShowVideos] = React.useState(false);
+
+
+  const PROFILE_GRID_CSS = "grid grid-cols-1 sm:grid-cols-3 gap-5";
+
+
+const profileRecords= Object.values(dataArray);
+console.log(profileRecords);
+      let links =profileRecords?.map((resource, index)=><Link key={resource.key} className={"hover:border-1 p-2" } href={`illuminators/${resource.name}`} >
+        <div  key={resource.key} className={"topdiv hover:border-1 m-5 p-2"+(resourceID==-1 || (hoveringKey==resource.key))? "":"hidden" }
+          onMouseEnter={() => {      
+            setHoveringKey(resource.key);
+           }}
+          onMouseLeave={() => {setHoveringKey(false)}}
+         >
+         {(hoveringKey==resource.key)?"hovering":null}
+        <div><Avatar className='w-25 h-25 text-large rounded-full'
+            showFallback  width='35' height='35' src={resource.thumbnail}/>
+            {resource.name}
+            </div>
+              {resource.lifespan}
+
+           </div></Link>);
+     
+     return (<div id="linksdiv" className={ PROFILE_GRID_CSS } >{links} </div>);
+}
+
+
+
 
 
 /**       
@@ -62,20 +111,18 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
 
   const PROFILE_GRID_CSS = "grid grid-cols-1 sm:grid-cols-3 gap-5";
 
-      let links =filteredTeachers?.map((resource, index)=><Link key={resource.key} className={"hover:border-1 p-2" } href={`illuminators/${resource.key}`} >
-        <div  key={resource.key} className={"topdiv hover:border-1 m-5 p-2"+(resourceID==-1 || (hoveringKey==resourceID==resource.key))? "":"hidden" }
+      let links =filteredTeachers?.map((resource, index)=><Link key={resource.key} className={"hover:border-1 p-2" } href={`illuminators/${resource.key-1}`} >
+        <div  key={resource.key} className={"topdiv hover:border-1 m-5 p-2"+(resourceID==-1 || (hoveringKey==resource.key))? "":"hidden" }
           onMouseEnter={() => {
-            console.log("Entering ",resource.key);
-            if(resourceID==resource.key) setHovering(true);
-             else setHovering(false);
+           
             setHoveringKey(resource.key);
            }}
-          onMouseLeave={() => {setHovering(false)}}
+          onMouseLeave={() => {setHoveringKey(false)}}
          >
+         {(hoveringKey==resource.key)?<p>"is hovering"</p>:null}
         <div><Avatar className='w-25 h-25 text-large rounded-full'
-            showFallback isBordered width='35' height='35' src={resource.images[0]}/>
+            showFallback  width='35' height='35' src={resource.images[0]}/>
             <p>{resource.title}</p><p>{resource.description}</p>
-            <p>{(hoveringKey==resource.key)?"is":" is not"} hovering over {resource.key}</p><p>resource.key={resource.key}, resourceID={resourceID}</p>
             </div>
             <div  aria-label={resource.title} subtitle={resource.generalCategory} title={'Videos'} >
               </div></div></Link>);

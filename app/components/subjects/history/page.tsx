@@ -31,11 +31,13 @@ export default function HistoryHome () {
 	<div  className='my-4'>
 	  <h2>Aspects of US Colonialism</h2>
 	    <div className='flex'>
+      <Link target={'_blank'} className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>Origins of Lynching, Ida B Wells</Link>      
 		  <Link target={'_blank'} className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>Origins of Lynching, Ida B Wells</Link>
 		  <Link target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>Indian Citizen Act</Link>
 		  <Link target={'_blank'} className='' href={'https://youtu.be/jDFPVc2kPvE?si=bF7DdpwU3-mzh4-M'}>European &quot;White&quot;  Slavery -- First Europeans, The Felons of Briton</Link>
 		  <Link target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>The Birth of the Second UNITED STATES- The Act of 1871</Link>
 	    <Link target={'_blank'} className='' href={'https://backstory.newamericanhistory.org/episodes/why-they-fought/'}>Civil War, fought over Union not Slavery</Link>
+
       </div>
  	</div>
 
@@ -49,15 +51,6 @@ export default function HistoryHome () {
     <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/4G8X564N68#gkZwifmRSbwm'}>The Barbary Wars-Tangiers 1600s</Link>
   	</div>
     
-
-  <div className='my-4'>
-  <h2>Australian History</h2>
-  <div className='flex'>
-  <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/43NKY460V0#TmMBEMA8XFwy'}>The History of Tasmania</Link>
-  <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/7SFCEW2PZ8#fFxV2aHazlJ8'}>The Last Tasmanian, James Bonwick</Link>
-  </div>
-  </div>
-
     <div className='my-4'>
   <h2>South American History</h2>
   <div className='flex'>
@@ -67,6 +60,35 @@ export default function HistoryHome () {
     <Link target={'_blank'} className='' href={'https://1024terabox.com/s/1WemAs-pzW1OHGbEfd8yqIw'}>Narrative of the 5 year expedition, against the revolted negros...</Link>
   </div>
   </div>
+
+
+  <div className='my-4'>
+  <h2>American History</h2>
+  <div className='flex'>
+  <Link target={'_blank'} className='' href={'https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf'}>History of America before Columbus, according to documents and...</Link>
+  </div>
+  </div>
+
+
+
+  <div className='my-4'>
+  <h2>Australian History</h2>
+  <div className='flex'>
+  <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/43NKY460V0#TmMBEMA8XFwy'}>The History of Tasmania</Link>
+  <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/7SFCEW2PZ8#fFxV2aHazlJ8'}>The Last Tasmanian, James Bonwick</Link>
+  </div>
+  </div>
+
+
+
+    <div className='my-4'>
+  <h2>Eurasian History</h2>
+  <div className='flex'>
+  <Link target={'_blank'} isDisabled className='disabled' href={''}>Ancient and Modern Brits, James Macritchie</Link>
+  <Link target={'_blank'} isDisabled className='disabled' href={''}>Nature Knows No ColorLine</Link>
+  </div>
+  </div>
+
 
     <div className='my-4'>
   <h2>Pacific Slave Trade</h2>
@@ -86,6 +108,10 @@ export default function HistoryHome () {
   <Link target={'_blank'} className='' href={'https://1024terabox.com/s/1WemAs-pzW1OHGbEfd8yqIw'}>vs. the christians</Link>
   <Link target={'_blank'} className='' href={'https://1024terabox.com/s/1TqSki8fmkqYN5ua0uEUXrQ'}>The Mali Empire</Link>
   <Link target={'_blank'} className='' href={'https://1024terabox.com/s/14Nw8kB_qvRkwzZHyL_LQ_A'}>The Moorish Empire</Link>
+  <Link target={'_blank'} className='' href={'https://1024terabox.com/s/1sF4ECAalPjZv82MP42JSkg'}>Life of Columbus</Link>
+  <Link target={'_blank'} className='' href={'https://1024terabox.com/s/1j_TE3wD2M51WKT31SYDmsQ'}>Chronicles of the Conquest of Granada</Link>
+  <Link target={'_blank'} className='' href={''}>CHRONICLE OF THE CONQUEST OF GRANADA</Link>
+
   </div>
   </div>
 

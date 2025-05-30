@@ -1,12 +1,14 @@
 //import Image from "next/image";
 
-import {initialStoreState} from './../../../../src/constants/state.js';
+import {profiles, references, NJINGA_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
+import {VideoArrayType, ProfileType} from './../../../../src/constants/appTypes.ts';
 //import PropTypes from 'prop-types'; // ES6
 import { Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import {Accordion, AccordionItem, Avatar,Button, Image} from "@heroui/react";
+import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
+
+import {Accordion, AccordionItem, Avatar,Button, Image, Link} from "@heroui/react";
 import React from "react";
-import Link from 'next/link'
 
 
 
@@ -19,34 +21,39 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  * @param dataArray : initialStoreState.resourcesData.youTubeResources
  *  
  */
-   export default async function Illuminator({params}: {params: Promise<{ slug: string }>})  
+   export default async function IlluminatorSlug({params}: {params: Promise<{ slug: string }>})  
    {
-        console.log("1args=>",params);
 
         const { slug } = await params;
-        const resources = await initialStoreState.resourcesData.youTubeResources;
-    console.log(parseInt(slug),"<-slug=>");
+        //const resources = await profiles;
+        const profileKey= decodeURIComponent(slug);
+        const profileRecord:ProfileType = profiles["Njinga Mbande"];
+ console.log((profileKey==NJINGA_VIDEOLIST_KEY)+'----'+(typeof profiles[NJINGA_VIDEOLIST_KEY])+'.');
 
-  const PROFILE_GRID_CSS = "grid grid-cols-1 sm:grid-cols-3 gap-5";
- 
     // let resource = args.dataArray|| initialStoreState.resourcesData.youTubeResources ;
+//console.log(resources[profileKey].lifespan, resources[profileKey].name,resources[profileKey].thumbnail );
+      return(<div className="mx-auto sm:max-w-md max-w-md overflow-hidden rounded-xl bg-[#eee] shadow-md md:max-w-4xl">
+  <div className="md:flex">
+    <div className="md:shrink-0"> 
+      <Image className="p-4 h-[12%] w-full object-cover sm:w-full md:h-full md:w-48"
+            src={profileRecord.thumbnail} 
+            fallbackSrc={'images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for [${profileRecord.name}]`}
+          />
+        </div>
+    <div className="p-8">
+      <div className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">{profileRecord.name}</div>
+       <p>{profileRecord.name}</p>
+       <p>{profileRecord.lifespan}</p> 
+    </div>
+   </div>
 
-      return(resources[parseInt(slug)].images? <div className={"hover:border-1" } >
-        
-        <div><Avatar className='w-25 h-25 text-large rounded-full'
-            name={resources[parseInt(slug)].title} isBordered  src={resources[parseInt(slug)].images[0]}/>
-            <p>{resources[parseInt(slug)].title}</p><p>{resources[parseInt(slug)].description}</p>
-            </div>
-            <div  aria-label={resources[parseInt(slug)].title} >
-           
-                             <span> Lectures </span>
-         
-              {resourceView(resources[parseInt(slug)]) }
-        </div></div>:<p>{parseInt(slug)+'--of--'+resources.length}</p>);
+     <HonorableMentionVideos   dataArray={profileRecord.videoArray}  /> 
+</div>);
     
 }
 /*{
-    key: 1,
+    key: 1, {resourceView(resources[profileKey]) }
     title: 'Dr Ivan Sertima',
     url: 'http://www.journalofafricancivilizations.com/VanSertima',
     images: [
@@ -91,7 +98,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  *       <Avatar showFallback name="Jane" src="https://images.unsplash.com/broken" />
  * className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-5 
  * @param dataArray : initialStoreState.resourcesData.youTubeResources
- */  
+
  
     function resourceView(resource: any) {
       return (<div  className="bg-beige grid  sm:grid-cols-2 gap-2 md:grid-cols-2 video-repos">
@@ -106,7 +113,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
                 </CardBody><CardFooter > {YoutubeEmbed(videoRecord.id.videoId)}</CardFooter></Card>
               )}</div>);
      
-}
+} */  
 
 
 

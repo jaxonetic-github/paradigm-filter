@@ -29,6 +29,12 @@ export default function TopicHome() {
 
 
   return (<div className='mx-5 bg-yellow-400'> 
+
+Outline::
+Phase 1: Load and Organize Content, Facts, and Evidences
+Phase 2: A Cognitive Dissonance check
+
+
 In order to effect change; 
 https://www.youtube.com/live/qvdqYkOKMsE?si=XUvSUFpzHDkF8hxd&t=9284
     

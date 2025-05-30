@@ -39,17 +39,23 @@ export default function Whiteness(){
       {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
     
+
+
     <div>
         <h1 className="font-bold text-lg">{snippet.src}</h1>
         <p>{snippet.quote}</p>
-        It took 100 years after the British's 1st North American colonial attempt at Roanoke before any record of a white person
-         was ever found.
+        {YoutubeEmbed('2Gq77rOuZck')}
         <span>Takeaways</span>
-    <p>***How many years of records? did Allen go through?  (13:28) This is an example of researching the researches.  </p>
-    <p>***Back in the 16th century negro was used with an uppercase N.</p>
+    <p>*** (13:28) An example of researching the researchers...  </p>
+    <p>***Back in the 16th century ne
+    gro was used with an uppercase N.</p>
     <p>***A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>
     <p>***The invention of the white race was political and no part of genetic evolution</p>
+     <p>       It took 100 years after the British&apos;s 1st North American colonial attempt at Roanoke before any record of a white person
+         was ever found.</p>
      </div>
+          
+
           
 </div></>);
 }

@@ -6,7 +6,8 @@ import { Divider, Image} from "@heroui/react";
 
 
 export default function Page() {
-  return <>  <Divider />     
+  return <>  <Divider />    
+  
    <ReferencesView/>
         <Divider /></>;
 

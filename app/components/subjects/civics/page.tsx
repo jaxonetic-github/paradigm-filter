@@ -38,6 +38,8 @@ const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine
     </div>
 </div>
 
+<Link target='_blank' href='https://1024terabox.com/s/1L1LCfrsL5qOSJbdt-PNf6g'>Alton Maddox (audio)on What Brings People Together.</Link>
+
 WHAT IS YOUR NATIONALITY? WHO ARE YOU IN AMERICA?
  	<p> </p> 
  	<ol className={'max-w-md'}>
@@ -77,4 +79,33 @@ as={Link}
 
  	</div>);
 }
+
+ function Preface() {
+     
+  const PROFILE_GRID_CSS = "grid grid-cols-1 sm:grid-cols-3 gap-5";
+
+     return (<div id="linksdiv" className={ PROFILE_GRID_CSS } >
+       
+<p> So many modern controversies..., wMch have obtained 
+in this country, have originated mostly itt the absence of a just
+and pr0per understanding and appreciation of the Theory of our Government &quot; its National, State, and Territorial relations, 
+under the Constitution, and the changes which these have undergone by the extension of our National 
+domaiil and jurisdiction beyond the anticipations and calculations of its framers
+</p>
+<p>
+In preparing this work 
+for the press, I have endeavored to develope these relations and changes in their complicity with this agitating
+ topic, with A view to a more general understanding of it^ and a more harmonious acquiesence in the privileges,
+  as well as the restraints, of which it has been made the subject.
+</p>
+<p>
+The Earl of Chatham, standing ill his place in the British House of Lords to oppose the aggressions of Ministry 
+upon the rights of the American Colonies, in 1775, made the memorable and truthful declaration — 
+" In every free State it is the Constitution, and the Constitution only, which limits both Sovereignty and Allegiance. 
+This doctrine is no temporary doctrine taken up on particular occasions, to answer particular purposes. It is involved in no metaphysical doubts and intricacies, but is clear, precise, and determinate. It is recorded in all our Law books. It is written in the great Volume of Nature."
+</p>
+
+     </div>);
+}
+
 

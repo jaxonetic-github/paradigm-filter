@@ -62,7 +62,9 @@ export default function ReferencesMain( ) {
     </Select>
 </div>
      <Divider className="my-8" />
-     <Link href='https://www.gilderlehrman.org/collection-search'>https://www.gilderlehrman.org/</Link>
+     <Link href='https://welib.org'>https://welib.org/</Link>
+     <Link href='https://onlinebooks.library.upenn.edu/archives.html'>UPenn Online archives</Link>
+     
      <Divider className="my-8" />
 
 <div>

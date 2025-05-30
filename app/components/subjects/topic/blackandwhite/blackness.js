@@ -54,18 +54,6 @@ Documented Paper Genocide, evidence of denationalization.
 </div>
 
 
-    <div>
-        <h1 className="font-bold text-lg">{snippet.src}</h1>
-        <p>{snippet.quote}</p>
-        {YoutubeEmbed('2Gq77rOuZck')}
-        <span>Takeaways</span>
-    <p>*** (13:28) An example of researching the researchers...  </p>
-    <p>***Back in the 16th century ne
-    gro was used with an uppercase N.</p>
-    <p>***A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>
-    <p>***The invention of the white race was political and no part of genetic evolution</p>
-     </div>
-          
 </div></>);
 }
 /**

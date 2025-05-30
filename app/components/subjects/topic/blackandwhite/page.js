@@ -35,6 +35,22 @@ export default function Colorisms(){
         <Link target='_blank' href={'http://doi.org/10.29164/23raceandracism'}>Race?</Link>
 
  <div className="flex flex-wrap gap-4">
+ <p>Humans come in various shades of melanin or skin tones.   Words are spells 
+ and the use of colors to identify a people perpetuates a myth... a belief, a spell cast by 
+ the shadow of colonial propaganda called which culminated into a concept called white supremacy. 
+</p>
+<p className={'take-away'}>During the formation of the British US colonies from colonial territories
+ into  nations, the US Congress passed the Naturalization Act in 1790 to describe the parameter for state citezenship.
+ There was no Federal US Citizen yet; only citizens of one of the 13 states(nations) of the Union.</p>
+ <p>In the late 1700's, property holders, those with vested interest or business with the state were citizens.
+ They were, in fact, &quot;free white people&quot;.  On the surface, it seems racist until you see how the colonizers
+ defined white.  Of course there would need to be protections(@Swarthy Colonizers, @Treaty of Peace and Friendship),
+  for the Sephardic Moors.   
+  </p>  
+<div> Johan BlumenBach and Carl von Jonais helped popularize the idea of scientifically justified racism.</div>
+
+  
+<p>Someone&apos;s &quot;white&quot;-ness was and is (as of 2025) not based on skin color</p>
 
  <div className="flex w-full flex-col">
       <Tabs aria-label="Options">
