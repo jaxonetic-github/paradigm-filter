@@ -176,23 +176,7 @@ const onlineMediaContent = [
     description:
       'House of Re-Awakening Minds is a holistic center for spiritual grounding, free thought, self-discovery and Moorish Science. An awakening experience for all ages.',
   },
-  {
-    title: 'Saneter TV',
-    links: [
-      {type: 'patreon', url: 'https://www.patreon.com/sanetertv'},
-      {
-        type: 'youtube',
-        url: 'https://www.youtube.com/channel/UCyYZ6-LdEXaZzxA0RsJ93GQ/videos',
-      },
-    ],
-    imageURI:
-      'https://yt3.ggpht.com/a-/AAuE7mAZj8RUYnGN9sYWSBt8o3DzWPKK7SUpaIt32Q=s176-c-k-c0x00ffffff-no-rj-mo',
-    url: 'https://www.youtube.com/channel/UCyYZ6-LdEXaZzxA0RsJ93GQ/videos',
-    category: 'Debates',
-
-    description:
-      'Regular guests from the community giving information that matters to the community.',
-  },
+  
   {
     title: 'BlackMagik363',
     links: [
@@ -200,7 +184,7 @@ const onlineMediaContent = [
       {type: 'youtube', url: 'https://www.youtube.com/@blackmagik363/videos'},
     ],
     description:
-      'Phillip Matthews has been spreading the message and doing the work for over 20 years. He brings together and interviews giants like Brothers Haiwatha Kamene, Oba T Shaka, Dr Nichols with topics ranging from epigentics to history...to solutions.',
+      'An Excellent variety of Esoteric topics',
     url: 'none',
     category: 'occult',
     youtubePlaylist: 'https://www.youtube.com/@blackmagik363/videos',
@@ -208,13 +192,13 @@ const onlineMediaContent = [
       'https://yt3.googleusercontent.com/ytc/AOPolaRijb7IwXDXMFFUhvIYMvSVfUpMXa7N8um-oImT=s176-c-k-c0x00ffffff-no-rj',
   },
   {
-    links: [{type: 'patreon', url: 'https://www.patreon.com/sanetertv'}],
+    links: [{type: 'patreon', url: 'https://www.patreon.com/blakmagik363'}],
 
     title: 'Aseer the Duke of Tiers',
     category: 'history',
 
     description:
-      'Phillip Matthews has been spreading the message and doing the work for over 20 years. He brings together and interviews giants like Brothers Haiwatha Kamene, Oba T Shaka, Dr Nichols with topics ranging from epigentics to history...to solutions.',
+      'Aseer is alwawys dropping gems to guide our research',
     url: 'http://www.aseerthedukeoftiers.com',
     youtubePlaylist: 'https://www.youtube.com/@TheDukeOfTiers',
     imageURI:
@@ -231,7 +215,7 @@ const onlineMediaContent = [
       },
     ],
     description:
-      'Phillip Matthews has been spreading the message and doing the work for over 20 years. He brings together and interviews giants like Brothers Haiwatha Kamene, Oba T Shaka, Dr Nichols with topics ranging from epigentics to history...to solutions.',
+      'A lot of pointers about the American System, especially dissecting things like the UCC',
     url: 'www.Blacksite32.com',
     category: 'civics',
 

@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import  {Image, Link, Divider} from "@heroui/react";
-import {Popover, PopoverTrigger, PopoverContent, Button} from "@heroui/react";
+import  {PopoverView} from "./../../../../_utils/popoverView.tsx";
 import {Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 
 import {
@@ -14,14 +14,17 @@ import {
   getKeyValue, 
 } from "@heroui/react";
 
+
  
 export default function Constitution() {
 
-const naturalizationact=
-{what:'H. R. 40, Naturalization Bill', when:'March 4, 1790', imgURL:'/images/naturalizationActP1.jpg',
+const naturalizationact_Popover =
+{title:'Naturalization Act', what:'H. R. 40, Naturalization Bill', when:'March 4, 1790', imgURL:'/images/naturalizationActP1.jpg',
  desc:'The First Congress (1789-1791) established federal procedures and criteria for foreign-born individuals to become U.S. citizens. These criteria permitted free whites of good character with two years&apos; residence in the United States to become naturalized citizens. Congress also allowed citizens’ children born outside the U.S. to be considered natural-born citizens. Over the following centuries, Congress readdressed the issue in a series of naturalization acts that sometimes excluded, but increasingly included, people of diverse races and origins.'
 }
 
+ const Footerhtml = ()=><div><p>Law Reviews</p><p>William &amp; Mary Law Review ::</p><Link target='_blank' href="https://scholarship.law.wm.edu/wmlr/vol65/iss5/3/">The "Free White Person" Clause of the Naturalization Act of 1790 as Super-Statute</Link></div>;      
+ 
   return (<div className='mx-5'>
     <div className='mx-auto'><h3 className="font-bold">The 1787 Constitution for the United States of America</h3>
     
@@ -33,34 +36,7 @@ const naturalizationact=
 <p></p>
 <div className='my-2 '>
     <ol className='border-1 '><h3>Citizenship and the 14th Amendment</h3>
-    <li><p className='my-2  indent-12'>The <Popover placement="right">
-      <PopoverTrigger>
-        <Button className={'underline'}>Naturalization Act</Button>
-      </PopoverTrigger>
-      <PopoverContent>
-       
-         <Card className="py-4 bg-[#deb887]">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">{naturalizationact.what}</p>
-        <small className="text-default-500">{naturalizationact.when}</small>
-        <h4 className="font-bold text-large">{naturalizationact.desc}</h4>
-      </CardHeader>
-      <CardBody className="overflow-visible py-2">
-        <Image
-          alt="Card background"
-          className="object-cover rounded-xl"
-          src={naturalizationact.imgURL}
-          width={270}
-        />
-        <Divider/>
-      </CardBody>
-      <CardFooter>
-        <p>Law Reviews</p>
-        <p>William &amp; Mary Law Review ::</p><Link target='_blank' href="https://scholarship.law.wm.edu/wmlr/vol65/iss5/3/">The "Free White Person" Clause of the Naturalization Act of 1790 as Super-Statute</Link>      
-      </CardFooter>
-    </Card>
-      </PopoverContent>
-    </Popover>sheds light on the early recognized citizenship</p></li>
+    <li><p className='my-2  indent-12'>The <PopoverView  infoRecord={naturalizationact_Popover}> <Footerhtml/></PopoverView>sheds light on the early recognized citizenship</p></li>
       <li><p className='my-2  indent-12'>The first lowercase instance of the word "citizen" in the U.S. Constitution is found in the 14th Amendment. <Link  target='_blank' href={'http://www.pulj.org/the-roundtable/the-influence-of-grammar-upon-law'}>(@See The Influence of Grammer Upon Law</Link></p></li>
       <li><p className='my-2  indent-12'>The United States of America, and the Republic for which it stands, only recognized state citizenship before the 14th Amendment<Link target='_blank' href={'https://1024terabox.com/s/1lFKs0OECUS_zg80BITw2Zg'}>(@See Dred Scott case)</Link></p></li>
       <li><p className='my-2 indent-12'>For example, George Washington was a Citizen of Virginia; he was Virginian, not a US citizen which did not exist 1868</p></li>

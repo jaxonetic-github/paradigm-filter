@@ -8,6 +8,7 @@ import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationCol
 import {Input, Select, SelectItem,Divider} from "@heroui/react";
 import { FaFilter } from "react-icons/fa";
 import Topics from './../topic/page.tsx';
+import AccordionView from './../../../_utils/CustomAccordion.tsx';
 
 //      <ReferencesTable columns={tableColumns} rows={references}/>
 
@@ -49,8 +50,21 @@ export default function ReferencesMain( ) {
 
 
   return (<div> 
+<AccordionView title={'Online Archives'}>
+     <h2  className="my-2">Online Archives</h2>
+    <div>
+     <Link href='https://welib.org'>https://welib.org/</Link>
+     <Link href='https://omnika.org/'>Omnika</Link>
+     <Link href=' https://books.openedition.org/'>Open Addition Books</Link>
+     <Link href='https://onlinebooks.library.upenn.edu'>The Online Books Page</Link>
+     <Link href='https://www.loc.gov/'>US Library of Congress</Link>
+     <Link href='https://eada.lib.umd.edu/'> Early Americas Digital Archive</Link>
+     <Link href='https://onlinebooks.library.upenn.edu/archives.html'>UPenn Online archives</Link>
+     </div>
+     </AccordionView>
+          <Divider className="my-8" />
 
-<div className="sticky top-25 py-2 z-10 bg-white">
+<div className="sticky top-10 z-10 bg-white">
    <Select color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
             label="Filter By Category" placeholder="Select a Category"
             className=" max-w-xs"
@@ -61,11 +75,9 @@ export default function ReferencesMain( ) {
     {item => <SelectItem className="filter-select"  >{item.label}</SelectItem>}
     </Select>
 </div>
-     <Divider className="my-8" />
-     <Link href='https://welib.org'>https://welib.org/</Link>
-     <Link href='https://onlinebooks.library.upenn.edu/archives.html'>UPenn Online archives</Link>
-     
-     <Divider className="my-8" />
+
+     <Divider className="my-2" />
+       
 
 <div>
 {filteredReferences.length}<h1>Source and Resources</h1>

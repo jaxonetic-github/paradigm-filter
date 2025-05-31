@@ -25,12 +25,10 @@ export default function HistoryHome () {
 
  return (
 <div>
-	  <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/74J66M625G#21bBhAfh8fXM'}>American Indian Contribution to the World</Link>
-	  <Link target={'_blank'} className='' href={'https://linguistics.osu.edu/herodotos/ethnonym/european/pelasgians'}>ThePelasgians</Link>
  <div  className='mx-8'>
 	<div  className='my-4'>
 	  <h2>Aspects of US Colonialism</h2>
-	    <div className='flex'>
+	    <div className='flex-flow'>
       <Link target={'_blank'} className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>Origins of Lynching, Ida B Wells</Link>      
 		  <Link target={'_blank'} className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>Origins of Lynching, Ida B Wells</Link>
 		  <Link target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>Indian Citizen Act</Link>
@@ -43,7 +41,7 @@ export default function HistoryHome () {
 
     <div className='my-4'>
     <h2>Christian History</h2>
-	  	<div className='flex'>
+	  	<div className='flex-flow'>
 	  	<Link target={'_blank'} className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>The Jesus Wars</Link>is essential for understanding the formation of christianity up until the end of the Counsels.
 	  	</div>
     <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/45YHBEMRYM#xqPGcR6qZrf9'}>Bull_Romanus_Pontifex_1455</Link>
@@ -53,7 +51,7 @@ export default function HistoryHome () {
     
     <div className='my-4'>
   <h2>South American History</h2>
-  <div className='flex'>
+  <div className='flex-flow'>
   <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/9SYHH6XKW8#3JeC0GNnT64Y'}>The Masters and the Slaves(eng), Gilberto Freyre</Link>
   <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/KA0EXQMD5M#GTDAC4d7BzLC'}>The Mysteries of Ancient South America</Link>
   <p className="justify-center  flex"> Brazilian Resources -- http://www.interpretesdobrasil.org/</p>
@@ -64,7 +62,8 @@ export default function HistoryHome () {
 
   <div className='my-4'>
   <h2>American History</h2>
-  <div className='flex'>
+  <div className='flex-flow'>
+  <Link target={'_blank'} className='' href={'https://drive.proton.me/urls/74J66M625G#21bBhAfh8fXM'}>American Indian Contribution to the World</Link>
   <Link target={'_blank'} className='' href={'https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf'}>History of America before Columbus, according to documents and...</Link>
   </div>
   </div>
@@ -86,6 +85,7 @@ export default function HistoryHome () {
   <div className='flex'>
   <Link target={'_blank'} isDisabled className='disabled' href={''}>Ancient and Modern Brits, James Macritchie</Link>
   <Link target={'_blank'} isDisabled className='disabled' href={''}>Nature Knows No ColorLine</Link>
+  <Link target={'_blank'} className='' href={'https://linguistics.osu.edu/herodotos/ethnonym/european/pelasgians'}>ThePelasgians</Link>
   </div>
   </div>
 

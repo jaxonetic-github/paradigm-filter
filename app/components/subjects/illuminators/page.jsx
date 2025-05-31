@@ -1,3 +1,4 @@
+
 'use client' 
 import React from "react";
 import {initialStoreState} from './../../../src/constants/state.js';
@@ -56,10 +57,8 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
  */
 
  function BioRepository({dataArray}) {
-      const [filteredTeachers,filterTeachers] =React.useState(dataArray);
-
-    const [hoveringKey, setHoveringKey] = React.useState(true);
-
+  const [filteredTeachers,filterTeachers] =React.useState(dataArray);
+  const [hoveringKey, setHoveringKey] = React.useState(true);
   const [resourceID, setResourceID] = React.useState(-1);
   const [showVideos, toggleShowVideos] = React.useState(false);
 
@@ -68,7 +67,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
 
 
 const profileRecords= Object.values(dataArray);
-console.log(profileRecords);
+
       let links =profileRecords?.map((resource, index)=><Link key={resource.key} className={"hover:border-1 p-2" } href={`illuminators/${resource.name}`} >
         <div  key={resource.key} className={"topdiv hover:border-1 m-5 p-2"+(resourceID==-1 || (hoveringKey==resource.key))? "":"hidden" }
           onMouseEnter={() => {      
@@ -76,7 +75,6 @@ console.log(profileRecords);
            }}
           onMouseLeave={() => {setHoveringKey(false)}}
          >
-         {(hoveringKey==resource.key)?"hovering":null}
         <div><Avatar className='w-25 h-25 text-large rounded-full'
             showFallback  width='35' height='35' src={resource.thumbnail}/>
             {resource.name}

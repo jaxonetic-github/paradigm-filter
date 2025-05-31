@@ -37,7 +37,8 @@ const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine
     </div>
     </div>
 </div>
-
+Conversation--Before we were Black -- zXNJRAb5RbA
+Analysis Yusef--[v4-EvoEilkk]
 <Link target='_blank' href='https://1024terabox.com/s/1L1LCfrsL5qOSJbdt-PNf6g'>Alton Maddox (audio)on What Brings People Together.</Link>
 
 WHAT IS YOUR NATIONALITY? WHO ARE YOU IN AMERICA?
