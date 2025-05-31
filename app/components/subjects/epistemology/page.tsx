@@ -48,13 +48,15 @@ import  {SimplePopoverView} from "./../../../_utils/popoverView.tsx";
 export default function Epistemology() {
 const cgwoodsonact_Popover =
 {title:'Carter G Woodson', what:'', when:'', imgURL:'/images/profiles/drcartergwoodson1934.jpg', desc:''}
+const osage_Popover =
+{title:'Osage and US Schools', what:'', when:'', imgURL:'/images/osage-forced-indoctrination.png', desc:''}
 
   return (<div className='mx-5'>
       <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality
       with the spell your words or other symbolic expressions or gestures which communicate to us.  We might say that bad 
       magick is akin to an untruth because it imposes a false or artificial idea, an illusion, in the perception of your victim.`}</p> 
       <p>{` In a world of infinite beliefs and opinions and AI generated content and information, an ultra high level of Discernment is required to avoid following the incidental fallacies set by Cognigive Dissonance.`}</p> 
-      <p>Epistomology is the philosophy that deals with how we know what we know.  After over a millenia of book burnings, destruction of evidence, and a willfull transplantation of education into indoctrination(@See <SimplePopoverView infoRecord={cgwoodsonact_Popover}> <ul><li> ** Miseducation Of the Negro</li><li> ** Education of the Negro</li></ul></SimplePopoverView>, @See Osage schools), it seems wise to audit and verify what we think we know to be true with facts.  The alternative is to risk following the paradigm, the wish or even spell of someone else, instead of your purpose.</p>
+      <p>Epistomology is the philosophy that deals with how we know what we know.  After over a millenia of book burnings, destruction of evidence, and a willfull transplantation of education into indoctrination(@See <SimplePopoverView infoRecord={cgwoodsonact_Popover}> <ul><li> ** Miseducation Of the Negro</li><li> ** Education of the Negro</li></ul></SimplePopoverView>, @See <SimplePopoverView infoRecord={osage_Popover}> Osage schools</SimplePopoverView>), it seems wise to audit and verify what we think we know to be true with facts.  The alternative is to risk following the paradigm, the wish or even spell of someone else, instead of your purpose.</p>
       <p>It seems appropriate to start this epistomological journey with a quick survey of what is meant by &quot;Truth&quot;, and it&apos;s associates, &quot;Belief&quot;, &quot;Facts&quot;, Opinions. </p>
     <Divider />
  <div className="flex w-full flex-col">
