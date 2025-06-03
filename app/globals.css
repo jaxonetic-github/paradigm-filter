@@ -37,7 +37,7 @@ h3 {
 
 
 a {
-   @apply  underline mx-1 ;
+   @apply   mx-1 ;
 }
 
 details {
@@ -72,7 +72,7 @@ details[open] summary {
   background-color: peachpuff;
 }
 .content-division{
-   @apply  hover:bg-[#444] hover:text-[beige] border-1 gap-2 p-1; 
+   @apply  hover:bg-[#444] hover:text-[beige] border-1 ; 
 }
 
 .topdiv{min-width: 175px;

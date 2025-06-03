@@ -29,7 +29,7 @@ export type YoutubeResponse = {
 };
 
 
-
+export type CitationType = {authors:string[], title:string, year:number, srcTitle:string, srcURL:string};
 export type PopoverType = {title:string, what:string, when:string, imgURL:string, desc:string};
 export type VideoArrayType = { displayHeading:string,youtubeUrl:string, pathName:string, subject:string, comments:string[]};
 export type ProfileType = { key: number, name: string, lifespan:string, thumbnail:string, sources:number[], videoArray:any };

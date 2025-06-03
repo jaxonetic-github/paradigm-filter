@@ -2,9 +2,9 @@
 import React from "react";
 import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
-import Link from 'next/link';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import {Accordion, AccordionItem} from "@heroui/accordion";
+import Link from 'next/link';
+import { Image} from "@heroui/react";
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}
@@ -30,16 +30,21 @@ export default function Whiteness(){
   return (<><div className='mx-5'>
         <div>
         <h3 className="font-bold text-lg">The colorable "White" Construct</h3>
-        <p>These videos should make the conversation about, &quot;how much black lives matter?&quot; more interesting.</p>
+        <p></p>
         <p></p>
 
+<div>   
+     <Image   
+      alt="james baldwin white people in America"
+      className="m-1"
+      src='/images/blackandwhite/On-Being-White-and-Other-Lies.jpg'
+      width={340}
+    />
+    <p>James Baldwin, On Being White And Other Lies, 1984</p>
+</div>
 
-           <p>Sabir is always reliable for verifiable sources...</p>
-    {YoutubeEmbed('1O1cy-z1tYk')}
       {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
-    
-
 
     <div>
         <h1 className="font-bold text-lg">{snippet.src}</h1>
@@ -47,11 +52,10 @@ export default function Whiteness(){
         {YoutubeEmbed('2Gq77rOuZck')}
         <span>Takeaways</span>
     <p>*** (13:28) An example of researching the researchers...  </p>
-    <p>***Back in the 16th century ne
-    gro was used with an uppercase N.</p>
+    <p>***Back in the 16th century negro was used with an uppercase N.</p>
     <p>***A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>
     <p>***The invention of the white race was political and no part of genetic evolution</p>
-     <p>       It took 100 years after the British&apos;s 1st North American colonial attempt at Roanoke before any record of a white person
+     <p>It took 100 years after the British&apos;s 1st North American colonial attempt at Roanoke before any record of a white person
          was ever found.</p>
      </div>
           

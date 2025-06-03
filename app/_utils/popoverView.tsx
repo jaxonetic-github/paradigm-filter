@@ -20,11 +20,11 @@ export const SimplePopoverView =({ infoRecord, children}:{infoRecord:PopoverType
       <div className="mx-auto sm:max-w-md max-w-md overflow-hidden rounded-xl bg-[#eee] shadow-md md:max-w-4xl">
   <div className="md:flex">
         <div className="md:shrink-0"> 
-          <Image className="p-4 h-[10%] object-cover sm:w-full md:h-full md:w-89"
+          {infoRecord.imgURL ? <Image className="p-4 h-[10%] object-cover sm:w-full md:h-full md:w-89"
                 src={infoRecord.imgURL} 
                 fallbackSrc={'/images/imagenotavailable.jpeg'}
                 alt={`Default Image not found for [${infoRecord.imgURL}]`}
-              />
+              />:null}
 
      <div className="p-8">
       <p className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">{infoRecord.title}</p>
@@ -48,7 +48,9 @@ export const SimplePopoverView =({ infoRecord, children}:{infoRecord:PopoverType
 
 
 export const PopoverView =({ infoRecord, children}:{infoRecord:PopoverType, children:React.ReactNode})  =>{
- return (<Popover placement="right">
+    const [isOpen, setIsOpen] = React.useState(false);
+
+ return (<Popover isOpen={isOpen} onOpenChange={(open) => setIsOpen(open)}>
       <PopoverTrigger>
         <Button className={'underline'}>{infoRecord.title}</Button>
       </PopoverTrigger>

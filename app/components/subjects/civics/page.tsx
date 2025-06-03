@@ -41,8 +41,7 @@ Conversation--Before we were Black -- zXNJRAb5RbA
 Analysis Yusef--[v4-EvoEilkk]
 <Link target='_blank' href='https://1024terabox.com/s/1L1LCfrsL5qOSJbdt-PNf6g'>Alton Maddox (audio)on What Brings People Together.</Link>
 
-WHAT IS YOUR NATIONALITY? WHO ARE YOU IN AMERICA?
- 	<p> </p> 
+ 	<p>Nationality and Citizenship</p> 
  	<ol className={'max-w-md'}>
 		<li><Link target='_blank' href='https://www.govinfo.gov/content/pkg/GPO-STYLEMANUAL-2016/pdf/GPO-STYLEMANUAL-2016-7.pdf'>US Governmental Publishing Office Style Manual</Link></li>
 		<li><Button
@@ -64,7 +63,7 @@ as={Link}
       variant="bordered"
      href='https://youtu.be/WYoWu5Hr_Ks?si=qL9rDntDCoIzNYWy'
     >
-      Who or What are you in America
+      Analizing Nationality and Citizenship through Statutes and Codes.
     </Button>
     </li>
  	</ol>

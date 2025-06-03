@@ -14,8 +14,12 @@ export default function ContentMap() {
 <div className="content-division  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-        <Button as={Link} color={"primary"} href={"/components/subjects/epistemology"} variant={"flat"}> <p className={"font-bold text-inherit"}>Epistemology</p></Button>
+       <p className={"font-bold text-inherit"}>Philosophy</p>
     </div>
+ <Divider className="my-1" />
+   
+       <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href={"/components/subjects/epistemology"} >
+       Epistemology</Link>
 
   </div>
 </div>
@@ -23,89 +27,88 @@ export default function ContentMap() {
 <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-        <Button as={Link} color={"primary"} href={"/components/subjects/history"} variant={"flat"}> <p className={"font-bold text-inherit"}>History</p></Button>
+       <p className={"font-bold text-inherit"}>History</p>
     </div>
 <Divider className="my-1" />
-     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/topic/bible'>The Bible(s)</Link> 
-     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " href={'/components/subjects/illuminators'}>Characters and Bios</Link>
+     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/history'>World</Link> 
+     <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/topic/bible'>Biblical</Link> 
+     <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " href={'/components/subjects/illuminators'}>Characters and Bios</Link>
   </div>
 </div>
 
 
 <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
- 
-        <Button as={Link} color={"primary"} href={"/components/subjects/civics"} variant={"flat"}> <p className={"font-bold text-inherit"}>Civics and Law</p></Button>
-
+    <div className="space-y-0.5">
+        <Link color={"primary"} underline="always" href={"/components/subjects/civics"} > <p className={"font-bold text-inherit"}>Civics and Law</p></Link>
+     </div>
 <Divider className="my-1" />
  <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href='/components/subjects/topic/rights'>Rights</Link>
+     underline="always"   href='/components/subjects/topic/rights'>Rights</Link>
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href='/components/subjects/topic/constitution'>Constitution</Link>
+     underline="always"   href='/components/subjects/topic/constitution'>Constitution</Link>
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href={'/components/subjects/topic/money'}>Money</Link>
+      underline="always"  href={'/components/subjects/topic/money'}>Money</Link>
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href={'/components/subjects/topic/blackandwhite'}>Colorable People</Link>
+      underline="always"  href={'/components/subjects/topic/blackandwhite'}>Colorable People</Link>
   </div>
 </div>
 
 <div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-    <Button as={Link} color={"primary"} href={"/components/subjects/metaphysics"} variant={"flat"}> <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Button>
-      <p className="hidden font-medium text-gray-500">Where reality and spirituality diverge or converge depending on what you know or what your beliefs hinder you from knowing.</p>
+    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} variant={"flat"}> <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Link>
     </div>
+<Divider className="my-1" />
+     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled  underline="none" href='#'>Mantras</Link> 
+     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/components/subjects/topic/mantras'>Breath/Spirit</Link> 
+     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled   underline="none" href='/components/subjects/topic/mantras'>Focus/Darshan</Link> 
 
   </div>
 </div>
 
-<div className="content-division hidden  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-    <Button as={Link} color={"primary"} href={"/components/subjects/metaphysics"} variant={"flat"}> <p className={"font-bold text-inherit"}>Health</p></Button>
-    </div>
-
-  </div>
-</div>
-
-<div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-2">
-     <p className={"font-bold text-inherit"}>Cultures &amp; Arts</p>
-    </div>
-    <Divider className="my-1" />
-        <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href={'/components/subjects/topic/capoeira'}>Capoeira</Link>
-
-  </div>
-</div>
 
 
 <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-    <Button as={Link} color={"primary"} href={"/components/subjects/topic/communication"} variant={"flat"}> <p className={"font-bold text-inherit"}>Communication</p></Button>
+       <p className={"font-bold text-inherit"}>Cultures &amp; Arts</p>
+    </div>
+<Divider className="my-1" />
+     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/capoeira'>Capoeira</Link> 
+</div>
+</div>
+
+
+
+
+<div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
+  <div className="space-y-2 text-center sm:text-left">
+    <div className="space-y-0.5">
+    <Link color={"primary"} underline="always" href={"/components/subjects/topic/communication"} variant={"flat"}> <p className={"font-bold text-inherit"}>Communication</p></Link>
     </div>
 
   </div>
 </div>
 
-
-  <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 sm:py-4 ">
+<div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
-   <p className={"font-bold text-inherit"}>Misc</p>
-   <Divider className="my-1" />
+    <div className="space-y-0.5">
+    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} variant={"flat"}> <p className={"font-bold text-inherit"}>Misc</p></Link>
+    </div>
+<Divider className="my-1" />
              <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href={'/components/subjects/media'}>Media</Link>
-     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-        href={'/components/subjects/topic/blackandwhite'}>Frequently Asked Questions</Link>
-  </div></div>
+         underline="always" href={'/components/subjects/media'}>Media</Link>
+              <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/components/subjects/topic/mantras'>FAQs</Link> 
+
+  </div>
+</div>
 
 
 <div className="content-division  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-        <Button as={Link} color={"primary"} href={"/components/subjects"} variant={"flat"}> <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Button>
+        <Button as={Link} underline="always" color={"primary"} href={"/components/subjects"} variant={"flat"}> <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Button>
     </div>
 
   </div>

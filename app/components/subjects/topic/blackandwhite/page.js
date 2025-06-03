@@ -5,9 +5,10 @@ import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import Blackness from './blackness.js';
 import Whiteness from './whiteness.js';
+import Greyness from './greyness.js';
 import Link from 'next/link';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import {Accordion, AccordionItem, Divider} from "@heroui/react";
+import {Accordion, AccordionItem, Divider, Image} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
@@ -37,7 +38,7 @@ export default function Colorisms(){
  <div className="flex flex-wrap gap-4">
  <p>Humans come in various shades of melanin or skin tones.   Words are spells 
  and the use of colors to identify a people perpetuates a myth... a belief, a spell cast by 
- the shadow of colonial propaganda called which culminated into a concept called white supremacy. 
+ the shadow of colonial propaganda called &quot;white supremacy&quot;. 
 </p>
 <p className={'take-away'}>During the formation of the British US colonies from colonial territories
  into  nations, the US Congress passed the Naturalization Act in 1790 to describe the parameter for state citezenship.
@@ -54,19 +55,54 @@ export default function Colorisms(){
 
  <div className="flex w-full flex-col">
       <Tabs aria-label="Options">
-        <Tab key="photos" title="Blacks">
+        <Tab key="blacks" title="Blacks">
           <Card>
             <CardBody>
                 <Blackness/>
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="music" title="Whites">
+        <Tab key="whites" title="Whites">
           <Card>
             <CardBody>
                 <Whiteness/>
             </CardBody>
           </Card>
+        </Tab>
+          <Tab key="grey" title="Grey People">
+          <Card>
+            <CardBody>
+                <Greyness/>
+            </CardBody>
+          </Card>
+        </Tab>
+          <Tab key="timeline" title="Timeline">
+          There is a difference between noticing that a percentage of a group  of  peoples have  
+          certain features or characteristics and systemically excluding them from the social order
+           because of those features. 
+          
+
+          Here is a light investigation into ideas of skin based sistemic racial prejudices of past civilizations.
+          From Blacks in Antiquity...
+          <div className="">
+          <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#444] rounded-md">
+                      <Image className=" flex p-4  "
+            src={'/images/blackandwhite/blackinantiquityP1.jpg'} 
+            fallbackSrc={'images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for Blacks In Antiquity`}
+          />
+                      <Image className="flex p-4"
+            src={'/images/blackandwhite/blackinantiquityP2.jpg'} 
+            fallbackSrc={'images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for Blacks In Antiquity`}
+          />
+                                <Image className="flex p-4  "
+            src={'/images/blackandwhite/blacksInAntiquityP3.jpg'} 
+            fallbackSrc={'images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for Blacks In Antiquity`}
+          />
+          </div>
+ </div>
         </Tab>
         <Tab key="videos" title="Colonizers and Foreigners">
           <Card>
