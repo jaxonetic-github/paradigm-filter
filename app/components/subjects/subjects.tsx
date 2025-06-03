@@ -48,6 +48,8 @@ export default function ContentMap() {
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/topic/constitution'>Constitution</Link>
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+      underline="always"  href={'/components/subjects/topic/freedom'}>Freedom</Link>
+    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
       underline="always"  href={'/components/subjects/topic/money'}>Money</Link>
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
       underline="always"  href={'/components/subjects/topic/blackandwhite'}>Colorable People</Link>
@@ -76,10 +78,9 @@ export default function ContentMap() {
     </div>
 <Divider className="my-1" />
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/capoeira'>Capoeira</Link> 
+     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/yoruba'>Yoruba</Link> 
 </div>
 </div>
-
-
 
 
 <div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
@@ -97,10 +98,8 @@ export default function ContentMap() {
     <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Misc</p></Link>
     </div>
 <Divider className="my-1" />
-             <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-         underline="always" href={'/components/subjects/media'}>Media</Link>
-              <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/components/subjects/topic/mantras'>FAQs</Link> 
-
+     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " underline="always" href={'/components/subjects/media'}>Media</Link>
+     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/components/subjects/calendar/'>Calendar</Link> 
   </div>
 </div>
 

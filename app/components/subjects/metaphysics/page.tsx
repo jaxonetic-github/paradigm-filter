@@ -7,28 +7,31 @@ import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
 export default function ComponentsHome() {
    return (<div className='mx-5'>
 
-<div className={'flex items-center space-x-2 text-base nota-bene border-1 '}>
+<div className={'flex  space-x-2 text-base nota-bene '}>
   <div className='nota-bene mx-5'>
   <Divider />     
 
-    <div className='flex max-w-sm'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 '>
         <Image
-        className=" p-1   "
+        className=""
         src={'/images/truth-sohom-one.jpeg'} 
         fallbackSrc={'/images/imagenotavailable.jpeg'}
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
+        width={360}
       />
           <Image
-        className=" p-1  "
+        className=""
         src={'/images/truth-sohom-two.jpg'} 
         fallbackSrc={'/images/imagenotavailable.jpeg'}
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
+                width={360}
       />
               <Image
-        className=" p-1  "
+        className=""
         src={'/images/truth-sohom-end.jpg'} 
         fallbackSrc={'/images/imagenotavailable.jpeg'}
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
+                width={360}
       />
       </div>
       <p className='flex float-right'>(17)--Truth by Swami, Paramhangsa Sohom</p>
@@ -38,7 +41,40 @@ export default function ComponentsHome() {
 </div>
       
 
+<div className={'flex items-center space-x-2 text-base nota-bene border-1 '}>
+  <div className='nota-bene '>
+  <Divider />     
 
+    <div className='mx-20'>
+    <p>Spirit is the breath of life.  All things may exist in our limited 3d  perceived  reality but 
+    it is spirit that  gives earthlings the sense of movement, motion; or better yet, vibration. 
+    An appropriate anology can be found in the Vedic metaphor of the interplay between Shiva and Shakti or
+     Prakriti and Purusha.  Shiva the still Consciousness is "motivated" to action, to a change in awareness,
+     arguably even the earthly concept of time by Shakti's dance.  Shakti, Mother Nature, the Divine Mother,
+     Iyanna, Ishtar(Easter), Astarte, Asherath, The Holy Spirit, Baal, the Madonna,..., the Serpent Qabalah-ically
+     zig zagging up the Tree, or the meditation of the breadth up the Sushunna, are all aspect of the adoration of Spirit, Our Mother.</p>
+
+
+     <p>
+       She, as Mother Nature acting through our biological mothers, provides the axiomatic biological Laws
+        that allow us to be born and guarantee us an "end" to this human experience.  This Divine Mother is our Generator,
+        Operator, and Destoyer; that Divine Trinity of truth that permeates the trivial differences between theists, athiests, and everyone in between.
+     </p>
+
+
+     <p>
+     The divine fractal of the G.O.D. aspect of Spirit evidenced through human physiology is the act of breathing.  Breathing 
+     involves inhaling (Generatoring), exhaling (Destroying), and in between those states, we are operating by holding our breath.
+     </p>
+<p>Divine Fractals like Pranayama, Qi-gong, ..., Astrology are doorways onto the path of finding your so called Higher Self or Truer Self.</p>
+
+      </div>
+      <p className='flex float-right'>------</p>
+
+        <Divider />    
+   </div>   
+</div>
+      
   <div className="flex w-full flex-col">
       <Tabs aria-label="Options">
         <Tab key="Vedanta" title="Vedanta">
@@ -51,6 +87,7 @@ export default function ComponentsHome() {
             </CardBody>
           </Card>
         </Tab>
+        
         <Tab key="Qabalah" title="Tree of Life">
           <Card>
             <CardBody>
