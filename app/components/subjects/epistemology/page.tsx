@@ -52,7 +52,7 @@ const cgwoodsonact_Popover =
 const osage_Popover =
 {title:'Osage and US Schools', what:'', when:'', imgURL:'/images/osage-forced-indoctrination.png', desc:''}
 const bookburnings_Popover =
-{title:'book burnings, destruction of evidence,', what:'', when:'', imgURL:null, desc:''}
+{title:'book burnings, destruction of evidence,', what:'', when:'', imgURL:'/images/profiles/drcartergwoodson1934.jpg', desc:''}
 
   return (<div className='mx-5'>
       <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality

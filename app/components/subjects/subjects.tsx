@@ -57,7 +57,7 @@ export default function ContentMap() {
 <div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} variant={"flat"}> <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Link>
+    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Link>
     </div>
 <Divider className="my-1" />
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled  underline="none" href='#'>Mantras</Link> 
@@ -85,7 +85,7 @@ export default function ContentMap() {
 <div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-    <Link color={"primary"} underline="always" href={"/components/subjects/topic/communication"} variant={"flat"}> <p className={"font-bold text-inherit"}>Communication</p></Link>
+    <Link color={"primary"} underline="always" href={"/components/subjects/topic/communication"} > <p className={"font-bold text-inherit"}>Communication</p></Link>
     </div>
 
   </div>
@@ -94,7 +94,7 @@ export default function ContentMap() {
 <div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} variant={"flat"}> <p className={"font-bold text-inherit"}>Misc</p></Link>
+    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Misc</p></Link>
     </div>
 <Divider className="my-1" />
              <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
@@ -108,7 +108,7 @@ export default function ContentMap() {
 <div className="content-division  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-        <Button as={Link} underline="always" color={"primary"} href={"/components/subjects"} variant={"flat"}> <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Button>
+        <Button as={Link} underline="always" color={"primary"} href={"/components/subjects"} > <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Button>
     </div>
 
   </div>
