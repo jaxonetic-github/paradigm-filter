@@ -55,20 +55,15 @@ const bookburnings_Popover =
 {title:'book burnings, destruction of evidence,', what:'', when:'', imgURL:'/images/profiles/drcartergwoodson1934.jpg', desc:''}
 
   return (<div className=''>
-      <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality
-      with the spell your words or other symbolic expressions or gestures which communicate to us.  We might say that bad 
-      magick is akin to an untruth because it imposes a false or artificial idea, an illusion, in the perception of your victim.`}</p> 
-    <p hidden>{`<!-- 
-       After over a millenia of <SimplePopoverView infoRecord={bookburnings_Popover}> <iframe width="560" height="315" src="https://1024terabox.com/s/1P-DsBMK9ZJ7a8YhdLhMZlA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></SimplePopoverView> 
-       and a willfull transplantation of education into indoctrination(@See <SimplePopoverView infoRecord={cgwoodsonact_Popover}> <ul><li> ** Miseducation Of the Negro</li><li> ** Education of the Negro</li></ul></SimplePopoverView>, @See <SimplePopoverView infoRecord={osage_Popover}> Osage schools</SimplePopoverView>), it seems wise to audit and verify what we think we know to be true with facts.  The alternative is to risk following the paradigm, the wish or even spell of someone else, instead of your purpose.
--->`}</p> 
+     
      <h1>Introduction</h1>
      <div className='grid grid-cols-1 lg:grid-cols-2  mx-15'>
      <div >
       <p className='indent-8'>Epistomology is the philosophy that deals with how we know what we know.  It is the tool you can use to filter the information that comes to you
       and discern whether it (or parts of it) is worthy of incorporating into your worldview, discarding it, or perhaps shelving it for need of future thought or investigation. </p> 
-      <p className='indent-8'> An ultra high level of discernment is necessary to maneuver honorably and free in this world full of so many beliefs, assumption, and, opinions, AI generated content and information, shameful acts of book burnings, and thefts and destruction of monuments, artifacts, and documents,...</p> 
-      
+      <p className='indent-8'> An ultra high level of discernment is necessary to maneuver honorably and free in this world full of so many beliefs, assumption, and, opinions, AI generated
+       content and information, shameful acts of book burnings, and thefts and destruction of monuments, artifacts, and documents,...</p> 
+            
       <p className='indent-8'>The result of not filtering incoming information is like being caught in someone else's spell.  The older we get after, forming layer upon layer of concepts and ideas based on  
       what was heard and believed, the harder it is to want to "reinvint" or relayer their philosophy.  Thus many children are born 
       into this time loop of growing up in an evironment that perpetuates and promotes the belief and naturally accepting it 
@@ -92,6 +87,13 @@ const bookburnings_Popover =
       <Tabs className='border-1' aria-label="Options" >
         <Tab className='content-division' key="definitions" title="Definitions">
         <Definitions/>
+        </Tab>
+        <Tab className='content-division' key="etymology" title="Etymology">
+        <p>Words themselves have a life of their own that is brought out by a useful dive into the world of etymology.</p>
+              <p className='indent-8'>By placing words and events back into the fields from which they were abstracted, we create a context which
+               helps to  avoid misleading inferences.</p> <Link target='_blank' href='https://languagelog.ldc.upenn.edu/nll/?p=33594'>Tory MP suspended for racist remark</Link>
+
+
         </Tab>
         <Tab key="criticalthink" className='content-division' title="Critical Thinking" >
           <Card>
@@ -130,6 +132,18 @@ Freud
 
 /**  
  * 
+
+
+
+ <p hidden>d{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality
+      with the spell your words or other symbolic expressions or gestures which communicate to us.  We might say that bad 
+      magick is akin to an untruth because it imposes a false or artificial idea, an illusion, in the perception of your victim.`}</p> 
+    <p hidden>d{`<!-- 
+       After over a millenia of <SimplePopoverView infoRecord={bookburnings_Popover}> <iframe width="560" height="315" src="https://1024terabox.com/s/1P-DsBMK9ZJ7a8YhdLhMZlA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></SimplePopoverView> 
+       and a willfull transplantation of education into indoctrination(@See <SimplePopoverView infoRecord={cgwoodsonact_Popover}> <ul><li> ** Miseducation Of the Negro</li><li> ** Education of the Negro</li></ul></SimplePopoverView>, @See <SimplePopoverView infoRecord={osage_Popover}> Osage schools</SimplePopoverView>), it seems wise to audit and verify what we think we know to be true with facts.  The alternative is to risk following the paradigm, the wish or even spell of someone else, instead of your purpose.
+-->`}</p> 
+
+
  <Button
       disableRipple
       className="relative overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-red/60 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
