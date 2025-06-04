@@ -6,9 +6,9 @@ import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import Blackness from './blackness.js';
 import Whiteness from './whiteness.js';
 import Greyness from './greyness.js';
-import Link from 'next/link';
+
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import {Accordion, AccordionItem, Divider, Image} from "@heroui/react";
+import {Accordion, AccordionItem, Divider, Image, Link} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
@@ -36,9 +36,8 @@ export default function Colorisms(){
         <Link target='_blank' href={'http://doi.org/10.29164/23raceandracism'}>Race?</Link>
 
  <div className="flex flex-wrap gap-4">
- <p>Humans come in various shades of melanin or skin tones.   Words are spells 
- and the use of colors to identify a people perpetuates a myth... a belief, a spell cast by 
- the shadow of colonial propaganda called &quot;white supremacy&quot;. 
+ <p>Humans come in various shades of melanin or skin tones.   The use of crayon colors to identify a people perpetuates a myth... a belief, a spell cast by 
+ the shadow of colonial propaganda called infamously called &quot;white supremacy&quot;. 
 </p>
 <p className={'take-away'}>During the formation of the British US colonies from colonial territories
  into  nations, the US Congress passed the Naturalization Act in 1790 to describe the parameter for state citezenship.
@@ -51,7 +50,10 @@ export default function Colorisms(){
 <div> Johan BlumenBach and Carl von Jonais helped popularize the idea of scientifically justified racism.</div>
 
   
-<p>Someone&apos;s &quot;white&quot;-ness was and is (as of 2025) not based on skin color</p>
+<p>Someone&apos;s &quot;white&quot;-ness was and is (as of 2025) not based on skin color.</p>
+
+  <Link underline="always" target={'_blank'}  className='disabled' href={'https://1024terabox.com/s/1w39vKsM91IWnJyX2Cblm1Q'}>Nature Still Knows no Color Line</Link>
+
 
  <div className="flex w-full flex-col">
       <Tabs aria-label="Options">

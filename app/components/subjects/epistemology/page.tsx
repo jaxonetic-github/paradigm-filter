@@ -95,6 +95,7 @@ const bookburnings_Popover =
 
 
         </Tab>
+
         <Tab key="criticalthink" className='content-division' title="Critical Thinking" >
           <Card>
             <CardBody>
@@ -114,6 +115,7 @@ const bookburnings_Popover =
         <Tab className='content-division'  key="propoganda" title="Social Control">
           <Card>
             <CardBody>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/11VBzp7m5O8?si=3KYmds_TjSJQ4gM9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 Edward Barnay
 Adler
 Freud
@@ -124,7 +126,6 @@ Freud
     </div>
         <Divider />
         
-      
 </div>);
 }
 

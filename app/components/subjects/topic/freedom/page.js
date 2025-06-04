@@ -9,10 +9,7 @@ import {references, nzingaProfileRecord} from './../../../../src/constants/refer
 
 
 export default function FreedomPage() {
- const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key: "type", label: "TYPE"},
-  {    key: "title", label: "TITLE" },{    key: "subtitle", label: "SUBTITLE" },
-  {    key: "url",label: "url" },
-];
+
   const profileRecord = nzingaProfileRecord;
   return (   <div className="mx-auto sm:max-w-md max-w-md overflow-hidden rounded-xl bg-[#eee] shadow-md md:max-w-4xl">
   <div className="md:flex">

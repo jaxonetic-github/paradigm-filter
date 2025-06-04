@@ -115,6 +115,9 @@ export default function ReferenceSnippet(){
 <p>Ultimately, developing communication skills is a lifelong process that contributes to personal growth,
  continuous learning, and enhanced self-awareness, all of which enrich both personal and professional experiences.</p>
 
+        <div className='flex justify-center'>    
+      <iframe src="https://archive.org/embed/ERIC_ED323790" width="560" height="384" frameBorder="0" allowFullScreen></iframe>
+       </div>
 <Divider />
     <Link href={'https://archive.org/details/crucialconversat0000unse_o5j4'}>Crucial conversations : tools for talking when stakes are high</Link>
     <Link href={''}>Art of Deception</Link>

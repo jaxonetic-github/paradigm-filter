@@ -44,7 +44,8 @@ export default function ContentMap() {
      </div>
 <Divider className="my-1" />
  <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-     underline="always"   href='/components/subjects/topic/rights'>Rights</Link>
+     underline="always"   href='/components/subjects/topic/rights'>Rights</Link> 
+      <p>Property</p> 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/topic/constitution'>Constitution</Link>
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "

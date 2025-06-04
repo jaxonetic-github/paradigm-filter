@@ -30,11 +30,19 @@ export default function HistoryHome () {
 	<div  className='my-4'>
 	  <h2>Aspects of US Colonialism</h2>
 	    <div className='flex-flow'>
-		  <Link underline="always" target={'_blank'} className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>Origins of Lynching, Ida B Wells</Link>
-		  <Link underline="always" target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>Indian Citizen Act</Link>
-		  <Link underline="always" target={'_blank'} className='' href={'https://youtu.be/jDFPVc2kPvE?si=bF7DdpwU3-mzh4-M'}>European &quot;White&quot;  Slavery -- First Europeans, The Felons of Briton</Link>
-		  <Link underline="always" target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>The Birth of the Second UNITED STATES- The Act of 1871</Link>
-	    <Link underline="always" target={'_blank'} className='' href={'https://backstory.newamericanhistory.org/episodes/why-they-fought/'}>Civil War, fought over Union not Slavery</Link>
+      <div className='border-1'>
+      <p>Overview and Summaries</p>
+      <Link underline="always" target={'_blank'} className='' href={'https://www.youtube.com/watch?v=zXNJRAb5RbA'}>General Overview:: 2 Milli interview with Mansa the Moor</Link>
+		  </div>
+
+      <div className='border-1'>
+      <p>Details and Particulars</p>
+      <Link underline="always" target={'_blank'} className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>Origins of Lynching, Ida B Wells</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>Indian Citizen Act</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://youtu.be/jDFPVc2kPvE?si=bF7DdpwU3-mzh4-M'}>European &quot;White&quot;  Slavery -- First Europeans, The Felons of Briton</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>The Birth of the Second UNITED STATES- The Act of 1871</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://backstory.newamericanhistory.org/episodes/why-they-fought/'}>Civil War, fought over Union not Slavery</Link>
+      </div>
       </div>
  	</div>
 
@@ -64,6 +72,16 @@ export default function HistoryHome () {
   <div className='flex-flow'>
   <Link underline="always" target={'_blank'} className='' href={'https://drive.proton.me/urls/74J66M625G#21bBhAfh8fXM'}>American Indian Contribution to the World</Link>
   <Link underline="always" target={'_blank'} className='' href={'https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf'}>History of America before Columbus, according to documents and...</Link>
+  
+  <Link underline="always" target={'_blank'} className='' href={'https://archive.org/details/questionboxserie01chic/mode/2up'}>Secret Societies: The Great School</Link>
+      <div className='border-1'>
+      <p>Secret Societies - The Great Brotherhood</p>
+      <Link underline="always" target={'_blank'} className='' href={'https://archive.org/details/firstbookofazrae0001unse/mode/2up'}>First book of Azrael : teachings of the Great White Brotherhood</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://archive.org/details/flashlightsoftru00king'}>The Flashlights of Truth</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://dn790007.ca.archive.org/0/items/lotuspath00kingrich/lotuspath00kingrich.pdf'}>The Lotus Path</Link>
+      </div>
+
+ELIZABETH  DELVINE  KING 
   </div>
   </div>
 
@@ -81,20 +99,20 @@ export default function HistoryHome () {
     <div className='my-4'>
   <h2>Asian History</h2>
   <div className='flex'>
-     <Link underline="always" target={'_blank'} isDisabled className='disabled' href={'https://1024terabox.com/s/1BsqcYUuTnIF85DO2od1Htwz'}>A History of Egypt Under Ptolemy</Link>
+     <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1BsqcYUuTnIF85DO2od1Htwz'}>A History of Egypt Under Ptolemy</Link>
   </div>
   </div>
 
 
 <div className='my-4'>
-  <h2>Al Andalusia</h2>
+  <h2>Iberia, Al Andalusia, España(Spain)</h2>
   <div>
      In 1492,  all non-christians were ordered to convert to Christianity or leave Al Andalusia.  By From 1609 and 1610, the rest of 
      the Moriscos (Crypto Moors) were expelled to North Alkebelan or France.
   </div>
   <div className='flex'>
-  <Link underline="always" target={'_blank'} isDisabled className='disabled' href={''}>Ancient and Modern Brits, James Macritchie</Link>
-  <Link underline="always" target={'_blank'} isDisabled className='disabled' href={''}>Nature Knows No ColorLine</Link>
+  <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1XdLJfyi9xRcWM-3JX_Y1AQ'}>Ancient and Modern Brits, James Macritchie</Link>
+  <Link underline="always" target={'_blank'}  className='' href={'https://hdl.handle.net/20.500.12285/mdcte/2297'}>La política indigenista de Isabel La Catolica</Link>
   <Link underline="always" target={'_blank'} className='' href={'https://linguistics.osu.edu/herodotos/ethnonym/european/pelasgians'}>ThePelasgians</Link>
   </div>
 </div>
@@ -102,7 +120,7 @@ export default function HistoryHome () {
     <div className='my-4'>
   <h2>Asian History</h2>
   <div className='flex'>
-  <Link underline="always" target={'_blank'} isDisabled className='disabled' href={''}>Ancient and Modern Brits, James Macritchie</Link>
+  <Link underline="always" target={'_blank'} isDisabled className='disabled' href={''}>Attila</Link>
   </div>
   </div>
 
@@ -128,7 +146,7 @@ export default function HistoryHome () {
   <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/14Nw8kB_qvRkwzZHyL_LQ_A'}>The Moorish Empire</Link>
   <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/1sF4ECAalPjZv82MP42JSkg'}>Life of Columbus</Link>
   <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/1j_TE3wD2M51WKT31SYDmsQ'}>Chronicles of the Conquest of Granada</Link>
-  <Link underline="always" target={'_blank'} className='' href={''}>CHRONICLE OF THE CONQUEST OF GRANADA</Link>
+  <Link underline="always" target={'_blank'} className='' href={''}></Link>
 
   </div>
   </div>

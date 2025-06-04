@@ -6,7 +6,7 @@ import {SimplePopoverView} from "./../../../../_utils/popoverView.tsx";
 
 const enochrefs =()=><div className='border-1 my-2' >
 <h2>The Book of Enoch</h2>
-<p>Jude 1:14 has often been usd as a prophecy of Yeshua in the New Testament</p>
+<p>Jude 1:14, contains a quote from Enoch1:9 has often been usd as a prophecy of Yeshua in the New Testament.  In  the rhetorical context, of both passages, the stories are presented as possessing some intrinsic authority but not necessarily as scripturally or canonically except by Clement of Alexandria.</p>
 <p>Clement of Alexandria (150-215) references the Book of Enoch in his theological works (Stromata book 6) and thought it essential for understand christian doctrine..</p>
 <p>Tertullian also defends and praises Enoch saying,  &quot;it&apos;s too christian for jews.&quot;</p> 
 <p>The Book of Enoch is a gateway  or bridge to the Sumerian creation stories as it includes themes like the Watchers and their fall from grace.  </p> 
@@ -42,8 +42,8 @@ export default function BiblePage() {
  <div className='border-1 my-2' >
 <h2>Yahweh</h2>    
 
-              <Link target="_blank" href={'https://youtu.be/XxKQGqDbg9k?si=WyLoHaca3emlSryD'}>From Storm God to Creator</Link>
-              <Link target="_blank" href={''}>Yahu</Link>
+              <Link underline="always" target="_blank" href={'https://youtu.be/XxKQGqDbg9k?si=WyLoHaca3emlSryD'}>From Storm God to Creator</Link>
+              <Link underline="always" target="_blank" href={''}>Yahu</Link>
  </div>
 
 
@@ -59,12 +59,12 @@ export default function BiblePage() {
            <p>The oldest complete bible in the world is the Ethiopian Bible written in Geez with 81 texts</p>
 
           <div>
-              <Link target="_blank" href={''}>About the Ethiopian canon</Link>
-              <Link target="_blank" href={''}>View the Ethiopian Bible</Link>
-              <Link target="_blank" href={''}>Ethiopian Orthodox Tewahedo Church</Link>  
-              <Link target='_blank' href='https://www.yorku.ca/inpar/kebra_budge.pdf'>Kebra Negast</Link>
-              <Link target='_blank' href='https://www.ethiopianorthodox.org/biography/01thelawofkings.pdf'>Fetha Negast</Link>
-              <Link target="_blank" href={'https://www.researchgate.net/publication/349018787_Negus_Ezana_Revisiting_the_Christianisation_of_Aksum'}>Revisiting the christianization of Aksum</Link>  
+              <Link underline="always" target="_blank" href={''}>About the Ethiopian canon</Link>
+              <Link underline="always"  target="_blank" href={''}>View the Ethiopian Bible</Link>
+              <Link underline="always" target="_blank" href={''}>Ethiopian Orthodox Tewahedo Church</Link>  
+              <Link underline="always" target='_blank' href='https://www.yorku.ca/inpar/kebra_budge.pdf'>Kebra Negast</Link>
+              <Link underline="always" target='_blank' href='https://www.ethiopianorthodox.org/biography/01thelawofkings.pdf'>Fetha Negast</Link>
+              <Link underline="always" target="_blank" href={'https://www.researchgate.net/publication/349018787_Negus_Ezana_Revisiting_the_Christianisation_of_Aksum'}>Revisiting the christianization of Aksum</Link>  
 </div>
 </div>
 

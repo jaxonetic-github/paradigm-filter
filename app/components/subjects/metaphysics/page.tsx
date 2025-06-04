@@ -65,7 +65,8 @@ export default function ComponentsHome() {
      <p>
      The divine fractal of the G.O.D. aspect of Spirit evidenced through human physiology is the act of breathing.  Breathing 
      involves inhaling (Generatoring), exhaling (Destroying), and in between those states, we are operating by holding our breath.
-     </p>
+     Use a sprinkle of imagination to envision your spiritual self inspired into human experience/life by breath/spirit, 
+      just as Shiva uses Shakti for inspiration. </p>
 <p>Divine Fractals like Pranayama, Qi-gong, ..., Astrology are doorways onto the path of finding your so called Higher Self or Truer Self.</p>
 
       </div>
@@ -77,9 +78,9 @@ export default function ComponentsHome() {
       
   <div className="flex w-full flex-col">
       <Tabs aria-label="Options">
-        <Tab key="Vedanta" title="Vedanta">
+        <Tab key="Vedanta" title="Vedanta" className='content-division'>
           <Card>
-            <CardBody>
+            <CardBody className='content-division'>
               <Link target="_blank" href='https://www.indiadivine.org/'>The Bhaktivedanta Ashram</Link><p>::IndiaDivine.org,All things Vedanta</p>
               <Link target="_blank" href='https://www.satyamyogaprasad.net/'>Satyam Yoga Prasad</Link><p>a digital library of the entire collected publications of the Bihar Yoga tradition.</p>
 
@@ -87,8 +88,8 @@ export default function ComponentsHome() {
             </CardBody>
           </Card>
         </Tab>
-        
-        <Tab key="Qabalah" title="Tree of Life">
+
+        <Tab key="Qabalah" title="Tree of Life" className='content-division'>
           <Card>
             <CardBody>
  <Image
@@ -104,9 +105,11 @@ export default function ComponentsHome() {
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="sincretistic" title="Sincretism">
+        <Tab key="sincretistic" title="Sincretism" className='content-division'>
           <Card>
             <CardBody>
+            <iframe src="https://archive.org/embed/firstbookofazrae0001unse" width="560" height="384" frameBorder="0"  allowFullScreen></iframe>
+
             <Link href='https://archive.org/details/StephenSkinner-TheCompleteMagiciansTables-2007' > Complete Magicians Table</Link>
               
               
