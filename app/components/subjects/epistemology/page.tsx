@@ -54,12 +54,38 @@ const osage_Popover =
 const bookburnings_Popover =
 {title:'book burnings, destruction of evidence,', what:'', when:'', imgURL:'/images/profiles/drcartergwoodson1934.jpg', desc:''}
 
-  return (<div className='mx-5'>
+  return (<div className=''>
       <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality
       with the spell your words or other symbolic expressions or gestures which communicate to us.  We might say that bad 
       magick is akin to an untruth because it imposes a false or artificial idea, an illusion, in the perception of your victim.`}</p> 
-      <p>{` In a world of infinite beliefs and opinions and AI generated content and information, an ultra high level of Discernment is required to avoid following the incidental fallacies set by Cognigive Dissonance.`}</p> 
-      <p>Epistomology is the philosophy that deals with how we know what we know.  After over a millenia of <SimplePopoverView infoRecord={bookburnings_Popover}> <iframe width="560" height="315" src="https://1024terabox.com/s/1P-DsBMK9ZJ7a8YhdLhMZlA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></SimplePopoverView> and a willfull transplantation of education into indoctrination(@See <SimplePopoverView infoRecord={cgwoodsonact_Popover}> <ul><li> ** Miseducation Of the Negro</li><li> ** Education of the Negro</li></ul></SimplePopoverView>, @See <SimplePopoverView infoRecord={osage_Popover}> Osage schools</SimplePopoverView>), it seems wise to audit and verify what we think we know to be true with facts.  The alternative is to risk following the paradigm, the wish or even spell of someone else, instead of your purpose.</p>
+    <p hidden>{`<!-- 
+       After over a millenia of <SimplePopoverView infoRecord={bookburnings_Popover}> <iframe width="560" height="315" src="https://1024terabox.com/s/1P-DsBMK9ZJ7a8YhdLhMZlA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></SimplePopoverView> 
+       and a willfull transplantation of education into indoctrination(@See <SimplePopoverView infoRecord={cgwoodsonact_Popover}> <ul><li> ** Miseducation Of the Negro</li><li> ** Education of the Negro</li></ul></SimplePopoverView>, @See <SimplePopoverView infoRecord={osage_Popover}> Osage schools</SimplePopoverView>), it seems wise to audit and verify what we think we know to be true with facts.  The alternative is to risk following the paradigm, the wish or even spell of someone else, instead of your purpose.
+-->`}</p> 
+     <h1>Introduction</h1>
+     <div className='grid grid-cols-1 lg:grid-cols-2  mx-15'>
+     <div >
+      <p className='indent-8'>Epistomology is the philosophy that deals with how we know what we know.  It is the tool you can use to filter the information that comes to you
+      and discern whether it (or parts of it) is worthy of incorporating into your worldview, discarding it, or perhaps shelving it for need of future thought or investigation. </p> 
+      <p className='indent-8'> An ultra high level of discernment is necessary to maneuver honorably and free in this world full of so many beliefs, assumption, and, opinions, AI generated content and information, shameful acts of book burnings, and thefts and destruction of monuments, artifacts, and documents,...</p> 
+      
+      <p className='indent-8'>The result of not filtering incoming information is like being caught in someone else's spell.  The older we get after, forming layer upon layer of concepts and ideas based on  
+      what was heard and believed, the harder it is to want to "reinvint" or relayer their philosophy.  Thus many children are born 
+      into this time loop of growing up in an evironment that perpetuates and promotes the belief and naturally accepting it 
+      because of its broader cultural acceptance.</p>
+      </div>
+
+<div className='flex justify-center'>
+<ul><h3>Heard vs Learned</h3>
+<li>A: I learned X today</li>
+<li>B: X isn’t true</li>
+<li>A: but C told me X and c is an authority</li>
+<li>B: oh! If X is true you did learn it.</li>
+<li>C: wait, I was mistaken about X being true…</li>
+<li>B: so A, you only heard X, you didn’t learn it.</li>
+</ul>
+</div>
+</div>
       <p>It seems appropriate to start this epistomological journey with a quick survey of what is meant by &quot;Truth&quot;, and it&apos;s associates, &quot;Belief&quot;, &quot;Facts&quot;, Opinions. </p>
     <Divider />
  <div className="flex w-full flex-col">
