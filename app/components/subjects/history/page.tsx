@@ -102,8 +102,8 @@ ELIZABETH  DELVINE  KING
     <div className='my-4'>
   <h2>Asian History</h2>
   <div className='flex'>
-     <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1BsqcYUuTnIF85DO2od1Htwz'}>A History of Egypt Under Ptolemy</Link>
-     <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1BsqcYUuTnIF85DO2od1Htwz'}>Introduction to African Civilization, John G Jackson</Link>  </div>
+     <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1HBp43xc23SszcoeKJoxKtA'}>A History of Egypt Under Ptolemy</Link>
+     <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1kbbZV_33wyKFmWwXV-0Cjg'}>Introduction to African Civilization, John G Jackson</Link>  </div>
   </div>
 
 
