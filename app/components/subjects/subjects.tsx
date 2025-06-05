@@ -108,11 +108,12 @@ export default function ContentMap() {
 <div className="content-division  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-        <Button as={Link} underline="always" color={"primary"} href={"/components/subjects"} > <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Button>
+        <Link underline="always" color={"primary"} href={"/components/subjects"} > <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Link>
     </div>
 
   </div>
 </div>
+
 
 </div> 
 </div>

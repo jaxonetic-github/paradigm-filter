@@ -33,12 +33,14 @@ export default function Colorisms(){
                       commentaries:['https://www.youtube.com/live/a3GaFbkRwYo?si=XBuVTNUSI6_Fys7o']};
 
   return (<div className='mx-5'>
-        <Link target='_blank' href={'http://doi.org/10.29164/23raceandracism'}>Race?</Link>
+        <Link  underline="always" target='_blank' href={'http://doi.org/10.29164/23raceandracism'}>Race?</Link>
 
  <div className="flex flex-wrap gap-4">
- <p>Humans come in various shades of melanin or skin tones.   The use of crayon colors to identify a people perpetuates a myth... a belief, a spell cast by 
+ <p>Humans come in various shades of melanin or skin tones.   The use of crayon colors to identify a people perpetuates a moderm myth, belief, a spell; cast by 
  the shadow of colonial propaganda called infamously called &quot;white supremacy&quot;. 
 </p>
+  <Link underline="always" target={'_blank'}  className='disabled' href={''}>Before Color Prejudice Ancient View of Blacks</Link>
+
 <p className={'take-away'}>During the formation of the British US colonies from colonial territories
  into  nations, the US Congress passed the Naturalization Act in 1790 to describe the parameter for state citezenship.
  There was no Federal US Citizen yet; only citizens of one of the 13 states(nations) of the Union.</p>
@@ -52,7 +54,6 @@ export default function Colorisms(){
   
 <p>Someone&apos;s &quot;white&quot;-ness was and is (as of 2025) not based on skin color.</p>
 
-  <Link underline="always" target={'_blank'}  className='disabled' href={'https://1024terabox.com/s/1w39vKsM91IWnJyX2Cblm1Q'}>Nature Still Knows no Color Line</Link>
 
 
  <div className="flex w-full flex-col">

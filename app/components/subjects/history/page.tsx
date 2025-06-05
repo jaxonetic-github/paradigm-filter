@@ -37,6 +37,9 @@ export default function HistoryHome () {
 
       <div className='border-1'>
       <p>Details and Particulars</p>
+
+      <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/18WLu6_dHYp3jHbaOBPPjaA'}>Creature From Jeykll Island</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/15QDT0JB16946U_rZgXe4yQ'}>Secret Treaty of Verona p.6781</Link>
       <Link underline="always" target={'_blank'} className='' href={'https://youtu.be/cYtOiGZUERs?si=rzClcLD52ifda5K7'}>Origins of Lynching, Ida B Wells</Link>
       <Link underline="always" target={'_blank'} className='' href={'https://www.loc.gov/item/today-in-history/june-02/'}>Indian Citizen Act</Link>
       <Link underline="always" target={'_blank'} className='' href={'https://youtu.be/jDFPVc2kPvE?si=bF7DdpwU3-mzh4-M'}>European &quot;White&quot;  Slavery -- First Europeans, The Felons of Briton</Link>
@@ -100,7 +103,7 @@ ELIZABETH  DELVINE  KING
   <h2>Asian History</h2>
   <div className='flex'>
      <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1BsqcYUuTnIF85DO2od1Htwz'}>A History of Egypt Under Ptolemy</Link>
-  </div>
+     <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1BsqcYUuTnIF85DO2od1Htwz'}>Introduction to African Civilization, John G Jackson</Link>  </div>
   </div>
 
 
@@ -114,6 +117,8 @@ ELIZABETH  DELVINE  KING
   <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1XdLJfyi9xRcWM-3JX_Y1AQ'}>Ancient and Modern Brits, James Macritchie</Link>
   <Link underline="always" target={'_blank'}  className='' href={'https://hdl.handle.net/20.500.12285/mdcte/2297'}>La política indigenista de Isabel La Catolica</Link>
   <Link underline="always" target={'_blank'} className='' href={'https://linguistics.osu.edu/herodotos/ethnonym/european/pelasgians'}>ThePelasgians</Link>
+  <Link underline="always" target={'_blank'} className='' href={'https://archive.org/embed/historyreignferd01pres'}>History of the Reign of Ferdinand and Isabella</Link>
+  
   </div>
 </div>
 
@@ -154,7 +159,11 @@ ELIZABETH  DELVINE  KING
     <div className='my-4'>
   <h2>Religious History</h2>
   <div className='flex'>
+
   <Link underline="always" target={'_blank'} className='' href={'https://www.youtube.com/watch?v=a2YHzWi697c'}>Dr Smalls,History and Spirituality </Link>
+  <Link underline="always" target={'_blank'} className='' href={''}>
+  e u s e b i u s Life of Constantine
+</Link>
   </div>
   </div>
 

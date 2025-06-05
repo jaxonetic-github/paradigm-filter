@@ -2,8 +2,8 @@
 import React from "react";
 import  {Image, Button} from "@heroui/react";
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
-import {Tabs, Tab, Card, CardBody, Divider} from "@heroui/react";
-import Link from 'next/link';
+import {Tabs, Tab, Card, CardBody, Divider, Link} from "@heroui/react";
+
 import  {SimplePopoverView} from "./../../../_utils/popoverView.tsx";
 import  {YoutubeEmbed} from "./../../../_utils/youtubeEmbed.js";
 
@@ -106,7 +106,7 @@ const bookburnings_Popover =
            
 
 
-            <Link target="_blank" href=''>Unseen Hand</Link>
+            <Link underline="always" target="_blank" href='https://1024terabox.com/s/1aAryN7gwnULvA262JHxNhA'>Unseen Hand</Link>
             <Image alt="HeroUI hero Image" src="/images/HistoricalThinking.png" className={'max-w-108'}/>
              Historical Thinking
             </CardBody>
@@ -116,6 +116,15 @@ const bookburnings_Popover =
           <Card>
             <CardBody>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/11VBzp7m5O8?si=3KYmds_TjSJQ4gM9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+Edward Barnay
+Adler
+Freud
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab className='content-division'  key="dissonnance" title="Dissonnance">
+          <Card>
+            <CardBody>
 Edward Barnay
 Adler
 Freud
