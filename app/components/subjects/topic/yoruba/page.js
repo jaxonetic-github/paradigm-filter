@@ -1,15 +1,19 @@
 import React from "react";
-import  {Link, Button,Image} from "@heroui/react";
+import  {Link, Button,Image,Divider} from "@heroui/react";
 
 import {ReferencesView} from './../../references/referencesView.jsx';
 
 import {references} from './../../../../src/constants/references.js';
-
+import CustomDialog from './../../../../_utils/CustomDialog.tsx';
 
 
 export default function YorubaPage() {
 
   return (   <div className="mx-auto sm:max-w-md max-w-md overflow-hidden rounded-xl bg-[#eee] shadow-md md:max-w-4xl">
+<CustomDialog title='The history of the Yorubas'>
+<iframe src="https://archive.org/embed/historyofyorubas00john" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</CustomDialog>    
+<Divider className="my-1" />
   <div className="md:flex">
       <p className="text-sm font-semibold text-indigo-500 uppercase"> Kojoda Calendar</p>
       <p>The Yoruba traditional calendar, called Kójódá starts the new year on June 3rd and ends on June 2nd the following year.  It's

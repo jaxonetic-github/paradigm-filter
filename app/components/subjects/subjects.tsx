@@ -43,9 +43,10 @@ export default function ContentMap() {
         <Link color={"primary"} underline="always" href={"/components/subjects/civics"} > <p className={"font-bold text-inherit"}>Civics and Law</p></Link>
      </div>
 <Divider className="my-1" />
- <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/topic/rights'>Rights</Link> 
-      <p>Property</p> 
+    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+     underline="always"   href='/components/subjects/topic/rights'>Property</Link> 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/topic/constitution'>Constitution</Link>
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
@@ -77,23 +78,22 @@ export default function ContentMap() {
     <div className="space-y-0.5">
        <p className={"font-bold text-inherit"}>Cultures &amp; Arts</p>
     </div>
-<Divider className="my-1" />
+      <Divider className="my-1" />
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/capoeira'>Capoeira</Link> 
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/yoruba'>Yoruba</Link> 
-</div>
+  </div>
 </div>
 
 
-<div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
+<div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
     <Link color={"primary"} underline="always" href={"/components/subjects/topic/communication"} > <p className={"font-bold text-inherit"}>Communication</p></Link>
     </div>
-
   </div>
 </div>
 
-<div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
+<div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
     <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Misc</p></Link>

@@ -5,6 +5,7 @@ import  {Image,Divider, Link} from "@heroui/react";
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
 import {Popover, PopoverTrigger, PopoverContent, Button} from "@heroui/react";
+import CustomDialog from './../../../../_utils/CustomDialog.tsx';
 
 function DebateExamples(){
     return (<div>
@@ -66,7 +67,7 @@ function TabView(){
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="KwameToure" title="Composure Examples">
+        <Tab key="KwameToure" title="Composure Under Fire">
           <Card>
             <CardBody>
                  <DebateExamples/>
@@ -103,7 +104,7 @@ function TricksOfTrade(){
       <li>{`Cite your sources and stand on your square with facts not beliefs.`}</li>
       <li><span>{`Epistemology is important, research your researchers</span hidden>, and their sources, and even their sources' sources, if necessary.`}</span></li>
       <li>{`Be ware of monologuing. Do checkins to ensure the other is still engaged.  `}</li>
-      <li>{``}</li>
+      <li>{`Be aware of the emotional state and interest of your audience.`}</li>
     </ul>
 </div>
 </div></>)
@@ -115,13 +116,13 @@ export default function ReferenceSnippet(){
 <p>Ultimately, developing communication skills is a lifelong process that contributes to personal growth,
  continuous learning, and enhanced self-awareness, all of which enrich both personal and professional experiences.</p>
 
-        <div className='flex justify-center'>    
-      <iframe src="https://archive.org/embed/ERIC_ED323790" width="560" height="384" frameBorder="0" allowFullScreen></iframe>
+        <div className='flex justify-center'>
+        <CustomDialog title='Connotative Dissonance'><iframe src="https://archive.org/embed/ERIC_ED323790" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
+              <CustomDialog title='Crucial conversations : tools for talking when stakes are high'><iframe src="https://archive.org/details/crucialconversat0000unse_o5j4" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
+        <CustomDialog title='Art of Deception'><iframe src="https://archive.org/embed/artofdeception00capa" width="560" height="384" frameBorder="0" allowFullScreen></iframe>        </CustomDialog>    
+
        </div>
 <Divider />
-    <Link href={'https://archive.org/details/crucialconversat0000unse_o5j4'}>Crucial conversations : tools for talking when stakes are high</Link>
-    <Link href={''}>Art of Deception</Link>
-
 
      <Divider/>
 <TabView/>

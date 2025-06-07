@@ -25,6 +25,11 @@ export default function HistoryHome () {
 
  return (
 <div>
+      <Link underline="always" target={'_blank'} className='' href={'https://penelope.uchicago.edu/josephus/index.html'}>Works of Josephus</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://penelope.uchicago.edu/josephus/index.html'}>Ibn Khaldun</Link> and the 
+      <Link underline="always" target={'_blank'} className='' href={'https://penelope.uchicago.edu/josephus/index.html'}>Muqaddimah, by Ibn Khaldun</Link>
+
+
  <div  className='mx-8'>
 
 	<div  className='my-4'>
@@ -76,15 +81,18 @@ export default function HistoryHome () {
   <Link underline="always" target={'_blank'} className='' href={'https://drive.proton.me/urls/74J66M625G#21bBhAfh8fXM'}>American Indian Contribution to the World</Link>
   <Link underline="always" target={'_blank'} className='' href={'https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf'}>History of America before Columbus, according to documents and...</Link>
   
-  <Link underline="always" target={'_blank'} className='' href={'https://archive.org/details/questionboxserie01chic/mode/2up'}>Secret Societies: The Great School</Link>
       <div className='border-1'>
       <p>Secret Societies - The Great Brotherhood</p>
       <Link underline="always" target={'_blank'} className='' href={'https://archive.org/details/firstbookofazrae0001unse/mode/2up'}>First book of Azrael : teachings of the Great White Brotherhood</Link>
       <Link underline="always" target={'_blank'} className='' href={'https://archive.org/details/flashlightsoftru00king'}>The Flashlights of Truth</Link>
       <Link underline="always" target={'_blank'} className='' href={'https://dn790007.ca.archive.org/0/items/lotuspath00kingrich/lotuspath00kingrich.pdf'}>The Lotus Path</Link>
+      <Link underline="always" target={'_blank'} className='' href={'https://archive.org/details/questionboxserie01chic/mode/2up'}>Secret Societies: The Great School</Link>
       </div>
 
-ELIZABETH  DELVINE  KING 
+      <div className='border-1'>
+      <p>Haitian Revolution (1793-1804)</p>
+      <Link underline="always" target={'_blank'} className='' href={'https://ia801906.us.archive.org/18/items/oapen-20.500.12657-31609/626410.pdf'}>Toussaint Louverture</Link>
+      </div>
   </div>
   </div>
 
@@ -103,7 +111,11 @@ ELIZABETH  DELVINE  KING
   <h2>Asian History</h2>
   <div className='flex'>
      <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1HBp43xc23SszcoeKJoxKtA'}>A History of Egypt Under Ptolemy</Link>
-     <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1kbbZV_33wyKFmWwXV-0Cjg'}>Introduction to African Civilization, John G Jackson</Link>  </div>
+     <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1kbbZV_33wyKFmWwXV-0Cjg'}>Introduction to African Civilization, John G Jackson</Link> 
+     <Link underline="always" target={'_blank'}  className='' href={'https://youtu.be/nCUkeHaqlM4?si=61hsFD23eWiTjYMB'} >Early Polynesians</Link>  
+     <Link underline="always" target={'_blank'} isDisabled className='disabled' href={''}>Attila</Link>
+
+</div>
   </div>
 
 
@@ -116,18 +128,10 @@ ELIZABETH  DELVINE  KING
   <div className='flex'>
   <Link underline="always" target={'_blank'}  className='' href={'https://1024terabox.com/s/1XdLJfyi9xRcWM-3JX_Y1AQ'}>Ancient and Modern Brits, James Macritchie</Link>
   <Link underline="always" target={'_blank'}  className='' href={'https://hdl.handle.net/20.500.12285/mdcte/2297'}>La política indigenista de Isabel La Catolica</Link>
-  <Link underline="always" target={'_blank'} className='' href={'https://linguistics.osu.edu/herodotos/ethnonym/european/pelasgians'}>ThePelasgians</Link>
-  <Link underline="always" target={'_blank'} className='' href={'https://archive.org/embed/historyreignferd01pres'}>History of the Reign of Ferdinand and Isabella</Link>
-  
+  <Link underline="always" target={'_blank'}  className='' href={'https://linguistics.osu.edu/herodotos/ethnonym/european/pelasgians'}>ThePelasgians</Link>
+  <Link underline="always" target={'_blank'}  className='' href={'https://archive.org/embed/historyreignferd01pres'}>History of the Reign of Ferdinand and Isabella</Link>
   </div>
 </div>
-
-    <div className='my-4'>
-  <h2>Asian History</h2>
-  <div className='flex'>
-  <Link underline="always" target={'_blank'} isDisabled className='disabled' href={''}>Attila</Link>
-  </div>
-  </div>
 
 
     <div className='my-4'>
@@ -161,9 +165,9 @@ ELIZABETH  DELVINE  KING
   <div className='flex'>
 
   <Link underline="always" target={'_blank'} className='' href={'https://www.youtube.com/watch?v=a2YHzWi697c'}>Dr Smalls,History and Spirituality </Link>
-  <Link underline="always" target={'_blank'} className='' href={''}>
-  e u s e b i u s Life of Constantine
-</Link>
+  <Link underline="always" target={'_blank'} className='' href={''}> e u s e b i u s Life of Constantine</Link>
+  <Link underline="always" target={'_blank'} className='' href={'https://www.youtube.com/watch?v=HSXZnbHstKY'}>Oldest God in WRITTEN History</Link>
+  
   </div>
   </div>
 

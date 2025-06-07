@@ -67,6 +67,10 @@ details[open] summary {
 
 }
 
+.inlinebutton {
+   display: inline ;
+   min-width: fit-content;
+}
 
 .filter-select {
   background-color: peachpuff;

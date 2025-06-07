@@ -83,7 +83,10 @@ export default function ComponentsHome() {
             <CardBody className='content-division'>
               <Link target="_blank" href='https://www.indiadivine.org/'>The Bhaktivedanta Ashram</Link><p>::IndiaDivine.org,All things Vedanta</p>
               <Link target="_blank" href='https://www.satyamyogaprasad.net/'>Satyam Yoga Prasad</Link><p>a digital library of the entire collected publications of the Bihar Yoga tradition.</p>
-
+              <Link target="_blank" href='https://www.sathyasai.org/devotional/gayatri'>Gayatri Mantra</Link><p>a digital library of the entire collected publications of the Bihar Yoga tradition.</p>
+             <Link target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Meditation and Mantra</Link>
+             <Link target="_blank" href='https://1024terabox.com/s/1ejHhOXd2nbFifxfya3nQjg'>Tantra, Mantra, Yantra, The Tantra Psychology</Link>
+             <Link target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Tattwa Shuddhi</Link>
               <Link target="_blank" href='https://www.biharyoga.net/ypt-books.php/'>Bihar Yoga Books</Link><p>especially, Tattwa Shuddhi</p>
             </CardBody>
           </Card>
@@ -93,7 +96,7 @@ export default function ComponentsHome() {
           <Card>
             <CardBody>
  <Image
-        className=" p-1   "
+        className="p-1"
         src={'/images/kamitictreeoflife.png'} 
         fallbackSrc={'/images/imagenotavailable.jpeg'}
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
@@ -110,9 +113,9 @@ export default function ComponentsHome() {
             <CardBody>
             <iframe src="https://archive.org/embed/firstbookofazrae0001unse" width="560" height="384" frameBorder="0"  allowFullScreen></iframe>
 
-            <Link href='https://archive.org/details/StephenSkinner-TheCompleteMagiciansTables-2007' > Complete Magicians Table</Link>
-              
-              
+            <Link  target="_blank" href='https://archive.org/details/StephenSkinner-TheCompleteMagiciansTables-2007' > Complete Magicians Table</Link>
+             
+                          <Link  target="_blank" href='https://1024terabox.com/s/1-S0-P1qszSCSRTADFXRjHQ' >Astral Doorways</Link>
               Flat Earth::== 
               {YoutubeEmbed('mhc8ydSFhxI')}28:03-- notice the reference about
               <Link href={'https://1024terabox.com/s/1MjULJ_5uNKDCitVWJS3v2A'}>Sevan </Link>

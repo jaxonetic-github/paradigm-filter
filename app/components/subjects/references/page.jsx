@@ -53,13 +53,13 @@ export default function ReferencesMain( ) {
 <AccordionView title={'Online Archives'}>
      <h2  className="my-2">Online Archives</h2>
     <div>
-     <Link href='https://welib.org'>https://welib.org/</Link>
-     <Link href='https://omnika.org/'>Omnika</Link>
-     <Link href=' https://books.openedition.org/'>Open Addition Books</Link>
-     <Link href='https://onlinebooks.library.upenn.edu'>The Online Books Page</Link>
-     <Link href='https://www.loc.gov/'>US Library of Congress</Link>
-     <Link href='https://eada.lib.umd.edu/'> Early Americas Digital Archive</Link>
-     <Link href='https://onlinebooks.library.upenn.edu/archives.html'>UPenn Online archives</Link>
+     <Link underline="always" href='https://welib.org'>https://welib.org/</Link>
+     <Link underline="always" href='https://omnika.org/'>Omnika</Link>
+     <Link underline="always" href=' https://books.openedition.org/'>Open Addition Books</Link>
+     <Link underline="always" href='https://onlinebooks.library.upenn.edu'>The Online Books Page</Link>
+     <Link underline="always" href='https://www.loc.gov/'>US Library of Congress</Link>
+     <Link underline="always" href='https://eada.lib.umd.edu/'> Early Americas Digital Archive</Link>
+     <Link underline="always" href='https://onlinebooks.library.upenn.edu/archives.html'>UPenn Online archives</Link>
      </div>
      </AccordionView>
           <Divider className="my-8" />

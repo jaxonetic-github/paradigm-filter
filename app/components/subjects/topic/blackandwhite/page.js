@@ -10,6 +10,7 @@ import Greyness from './greyness.js';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
 import {Accordion, AccordionItem, Divider, Image, Link} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
+import CustomDialog from './../../../../_utils/CustomDialog.tsx'
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}
@@ -54,6 +55,9 @@ export default function Colorisms(){
   
 <p>Someone&apos;s &quot;white&quot;-ness was and is (as of 2025) not based on skin color.</p>
 
+All Asiatics don't fit the yellow scheme 
+
+<CustomDialog title='Andamanese'><iframe src="https://www.youtube.com/embed/lZK_7WLaiXU?si=OnjFsFoUtQdSLsGK" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
 
 
  <div className="flex w-full flex-col">
@@ -117,6 +121,26 @@ export default function Colorisms(){
 
 </div>
 
+<div>   
+    <p>US Colonists ...British Felons</p>
+    {YoutubeEmbed('i2yREDMg5SY')}
+    20:00::"White" Servitude in The Colony Of Virginia / European Servants & Slaves
+</div>
+<div>   
+    <p>US Colonists ...British Felons</p>
+    {YoutubeEmbed('W-aRUJlHd4I')}
+    20:00::"White" Servitude in The Colony Of Maryland / European Servants & Slaves
+</div>
+<div>   
+    <p>US Colonists ...British Felons</p>
+    {YoutubeEmbed('dPdkia69Y7k')}
+    20:00::"White" Servitude in Colonial South Carolina / European Servants & Slaves
+</div>
+<div>   
+    <p>US Colonists ...British Felons</p>
+    {YoutubeEmbed('96qN4dkut4w')}
+    20:00::"White" Servitude in Colonial North Carolina / European Servants & Slaves
+</div>
             </CardBody>
           </Card>
         </Tab>

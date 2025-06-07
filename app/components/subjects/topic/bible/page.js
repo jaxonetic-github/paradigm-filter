@@ -42,8 +42,14 @@ export default function BiblePage() {
  <div className='border-1 my-2' >
 <h2>Yahweh</h2>    
 
+ <form action="#">
+  <fieldset>
+    <legend>Do you agree?</legend>           
               <Link underline="always" target="_blank" href={'https://youtu.be/XxKQGqDbg9k?si=WyLoHaca3emlSryD'}>From Storm God to Creator</Link>
-              <Link underline="always" target="_blank" href={''}>Yahu</Link>
+              <Link underline="always" target="_blank" href={'https://www.youtube.com/watch?v=lGCqv37O2Dg'}>How did Yahweh Become God?:: The Origins of Monotheism</Link>
+              <Link underline="always" target="_blank" href={'https://youtu.be/mdKst8zeh-U?si=6DrDI2hOPvqPNr8_'}>Who is Yahwey</Link>
+  </fieldset>
+</form>
  </div>
 
 

@@ -46,6 +46,8 @@ export default function Whiteness(){
       {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
 
+
+
     <div>
         <h1 className="font-bold text-lg">{snippet.src}</h1>
         <p>{snippet.quote}</p>
@@ -59,7 +61,9 @@ export default function Whiteness(){
          was ever found.</p>
      </div>
           
-
+<div>   
+   
+</div>
           
 </div></>);
 }
