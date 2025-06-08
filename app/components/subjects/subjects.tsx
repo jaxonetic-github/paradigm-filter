@@ -2,7 +2,7 @@ import React from "react";
 //import Link from 'next/link';
 import {Button, Divider, Link} from "@heroui/react";
 
-
+import AccordionView from './../../_utils/CustomAccordion.tsx';
  
 export default function ContentMap() {
    return (<div className='content top-25 py-2 z-10 bg-[#eee] mx-5'>
@@ -12,37 +12,31 @@ export default function ContentMap() {
 
 
 <div className="content-division  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-       <p className={"font-bold text-inherit"}>Philosophy</p>
-    </div>
- <Divider className="my-1" />
-   
-       <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href={"/components/subjects/epistemology"} >
-       Epistemology</Link>
+  <div className=" text-center sm:text-left">
+
+   <AccordionView title="Philosophy">
+       <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href={"/components/subjects/epistemology"} >Epistemology</Link>
+  </AccordionView>
 
   </div>
 </div>
 
 <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-       <p className={"font-bold text-inherit"}>History</p>
-    </div>
-<Divider className="my-1" />
+  <div className=" text-center sm:text-left">
+<AccordionView title="History">
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/history'>World</Link> 
      <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/topic/bible'>Biblical</Link> 
      <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " href={'/components/subjects/illuminators'}>Characters and Bios</Link>
+  </AccordionView >
   </div>
 </div>
 
 
 <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-        <Link color={"primary"} underline="always" href={"/components/subjects/civics"} > <p className={"font-bold text-inherit"}>Civics and Law</p></Link>
-     </div>
-<Divider className="my-1" />
+
+
+  <div className=" text-center sm:text-left">
+<AccordionView title="Civics and Law">
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/topic/rights'>Rights</Link> 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
@@ -55,59 +49,55 @@ export default function ContentMap() {
       underline="always"  href={'/components/subjects/topic/money'}>Money</Link>
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
       underline="always"  href={'/components/subjects/topic/blackandwhite'}>Colorable People</Link>
+  </AccordionView>
   </div>
 </div>
 
 <div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Link>
-    </div>
-<Divider className="my-1" />
+  <div className=" text-center sm:text-left">
+
+<AccordionView title="Occult and Metaphysics">
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled  underline="none" href='#'>Mantras</Link> 
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/components/subjects/topic/mantras'>Breath/Spirit</Link> 
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled   underline="none" href='/components/subjects/topic/mantras'>Focus/Darshan</Link> 
-
+</AccordionView>
   </div>
 </div>
 
 
 
 <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-       <p className={"font-bold text-inherit"}>Cultures &amp; Arts</p>
-    </div>
-      <Divider className="my-1" />
+  <div className=" text-center sm:text-left">
+    
+  <AccordionView title="Cultures &amp; Arts">
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/capoeira'>Capoeira</Link> 
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/yoruba'>Yoruba</Link> 
+  </AccordionView>
   </div>
 </div>
 
 
 <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
+  <div className=" text-center sm:text-left">
+    <div className="">
     <Link color={"primary"} underline="always" href={"/components/subjects/topic/communication"} > <p className={"font-bold text-inherit"}>Communication</p></Link>
     </div>
   </div>
 </div>
 
 <div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Misc</p></Link>
-    </div>
-<Divider className="my-1" />
+  <div className=" text-center sm:text-left">
+   <AccordionView title="Misc">   
      <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " underline="always" href={'/components/subjects/media'}>Media</Link>
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/components/subjects/calendar/'>Calendar</Link> 
+  </AccordionView>
   </div>
 </div>
 
 
 <div className="content-division  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
+  <div className=" text-center sm:text-left">
+    <div className="">
         <Link underline="always" color={"primary"} href={"/components/subjects"} > <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Link>
     </div>
 

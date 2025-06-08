@@ -29,14 +29,14 @@ const congressrecord_fourteethAmmend_Popover =
  desc:'The xyz Congress (19-19) showing how history and law go together...'
 }
 
- const Footerhtml = ()=><div><p>Law Reviews</p><p>William &amp; Mary Law Review ::</p><Link target='_blank' href="https://scholarship.law.wm.edu/wmlr/vol65/iss5/3/">The "Free White Person" Clause of the Naturalization Act of 1790 as Super-Statute</Link></div>;      
+ const Footerhtml = ()=><div><p>Law Reviews</p><p>William &amp; Mary Law Review ::</p><Link showAnchorIcon target='_blank' href="https://scholarship.law.wm.edu/wmlr/vol65/iss5/3/">The "Free White Person" Clause of the Naturalization Act of 1790 as Super-Statute</Link></div>;      
  
   return (<div className='mx-5'>
     <div className='mx-auto'><h3 className="font-bold">The 1787 Constitution for the United States of America</h3>
     
-  <p>View Michael Badnarik's 6 hour class on the Civic principles of principles, rights, and the <Link  underline="always"  isExternal href='https://www.youtube.com/embed/wp-48d_jSb4?si=DDK3NUmwLY3QzqYI'>US Constitution</Link> </p>
+  <p>View Michael Badnarik's 6 hour class on the Civic principles of principles, rights, and the <Link showAnchorIcon underline="always"  isExternal href='https://www.youtube.com/embed/wp-48d_jSb4?si=DDK3NUmwLY3QzqYI'>US Constitution</Link> </p>
 <p></p>
-<p>University of Montana School of Law Review ::<Link  underline="always"  target='_blank' href="https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1018&context=faculty_lawreviews">The Constitution and the Public Trust</Link></p>
+<p>University of Montana School of Law Review ::<Link showAnchorIcon underline="always"  target='_blank' href="https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1018&context=faculty_lawreviews">The Constitution and the Public Trust</Link></p>
 
 <p></p>
 <p></p>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 //import { Inter } from "next/font/google";
-import  Welcome  from "./components/home/welcome.tsx";
 import { WebVitals } from "./_utils/web-vitals";
 import "./globals.css";
 //const inter = Inter({ subsets: ["greek"] });

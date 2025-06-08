@@ -76,7 +76,7 @@ details[open] summary {
   background-color: peachpuff;
 }
 .content-division{
-   @apply  hover:bg-[#444] hover:text-[beige] border-1 ; 
+   @apply  hover:bg-[#444] hover:text-[#885] border-1 ; 
 }
 
 .topdiv{min-width: 175px;

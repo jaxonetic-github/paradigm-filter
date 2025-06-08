@@ -1,6 +1,8 @@
 
 import React from "react";
 import Home from "./home.tsx";
+import Introduction from "./introduction.tsx";
+
 /*//import {nzingaProfileRecord,VIDEOS_PATH,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references,ProfileReferencesTable,} from './../../src/constants/references.js';
 
 export const theodoreAllenQuote0 = 'When the first Africans arrived in Virginia in 1619 there were no white people, nor according to the colonial records, would there be for another 60 years';
@@ -13,10 +15,11 @@ export const quote = {src:'The Invention of the White Race, Vol 1. 1994',
                       quote:theodoreAllenQuote0,
                       commentaries:['videos/history/commentaries/TheInventionOfTheWhiteRacebyTheodoreWAllenPresentationbyJeffreyBPerry.mp4']};
 */
-export default function Welcome(){
 
-  return (<div className='mx-5'>
-<div className='welcome'><h1>Welcome to...</h1>
+export default function Preface(){
+
+  return (<section className='mx-5'>
+<div className='welcome'><h1>Preface</h1>
 <div>
         <h2>What?</h2>
           <p>...a reservoir of sources and resources...</p>
@@ -34,5 +37,7 @@ export default function Welcome(){
          </div>
        <Home/>
         </div>
-</div>);
+</section>);
 }
+
+

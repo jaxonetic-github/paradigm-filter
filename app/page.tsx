@@ -1,6 +1,7 @@
 'use client' 
 
-import Welcome from './components/home/welcome.tsx';
+import Introduction from './components/home/introduction.tsx';
+import Preface from './components/home/preface.tsx';
 import React, { useState, useEffect, useRef } from 'react';
 import {HeroUIProvider} from "@heroui/system";
 import { useCallback } from 'react';
@@ -9,6 +10,7 @@ import {initialStoreState} from "./src/constants/state.js";
 /*
 herbert henry harrison classified as white- youtubeTherapy Session with Sabir Bey- How Irish People become s0-called White?
 */
+
 
   export default function RootLayout() {
     const [prevScrollY, setPrevScrollY] = useState(5);
@@ -40,9 +42,10 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
   }, []);
  
   return (<HeroUIProvider>
-          <Welcome/>
+          <Preface/>
+          <Introduction/>
+
     </HeroUIProvider>);
-    
 }
 
 /** <RouterProvider router={router} />

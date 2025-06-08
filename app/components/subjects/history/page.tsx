@@ -3,6 +3,8 @@
 //import {Divider, Image, Link, Tooltip,Button} from "@heroui/react";
 import React from "react";
 import {Image, Divider, Link} from "@heroui/react";
+import CustomDialog from './../../../_utils/CustomDialog.tsx';
+import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
 
 
 
@@ -42,6 +44,7 @@ export default function HistoryHome () {
 
       <div className='border-1'>
       <p>Details and Particulars</p>
+      <CustomDialog title='The Buck Act' organization='High Frequency Radio (Yusef El)' source='video(32:13)'>{YoutubeEmbed('yPBTdzkf2Ak')}</CustomDialog>    
 
       <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/18WLu6_dHYp3jHbaOBPPjaA'}>Creature From Jeykll Island</Link>
       <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/15QDT0JB16946U_rZgXe4yQ'}>Secret Treaty of Verona p.6781</Link>
