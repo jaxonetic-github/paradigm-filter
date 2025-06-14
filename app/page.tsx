@@ -2,6 +2,7 @@
 
 import Introduction from './components/home/introduction.tsx';
 import Preface from './components/home/preface.tsx';
+import TableOfContents from './components/home/tableOfContents.tsx';
 import Home from './components/home/home.tsx';
 import React, { useState, useEffect, useRef } from 'react';
 import {HeroUIProvider} from "@heroui/system";
@@ -43,10 +44,12 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
   }, []);
  
   return (<HeroUIProvider>
+    <h1>A Treatise on the World by the Amanuensis of Hermis Trismegistus</h1>
           <Preface/>
           <Introduction/>
           <Home/>
-    </HeroUIProvider>);
+          <TableOfContents/>
+          </HeroUIProvider>);
 }
 
 /** <RouterProvider router={router} />

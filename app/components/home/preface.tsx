@@ -26,9 +26,7 @@ export default function Preface(){
         <h2>This is ?</h2>
           <p>...a tool to combat the hypocrisy, cognitive dissonance, and lack of accountability that hinders improvement on Earth</p>
           <h2>For?</h2>
-          <p>...Us, the Family, the Tribe, The Empire, and all who are trying to make sense of the apparent sense-less chaos around us...</p>
-        <h2>By?</h2>
-          <p>...the Family and the Tribe...</p>
+          <p>...the Family, the Tribe, The Empire, and all who are trying to make sense of the apparent sense-less chaos around us...</p>
         <h2>Why?</h2>
           <p>...so that conversations, discussions, debates, and interactions about today&apos;s problems can occur more productively by 
        having quick access to facts and evidences and sources... </p>

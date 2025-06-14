@@ -107,6 +107,7 @@ export default function HistoryHome () {
   <div className='my-4'>
   <h2>American History</h2>
   <div className='flex-flow'>
+<CustomDialog title='Worlds Largest Pyramids in America !!! - Origin of Civilization'><iframe width="560" height="315" src="https://www.youtube.com/embed/uT2DZlIR_TI?si=_q3Y5o9OHU5mPJdB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>
   <CustomDialog title='History of America before Columbus, according to documents and...'><iframe src="https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
   <ExternalWindowButton
           buttonText = 'American Indian Contribution to the World'
