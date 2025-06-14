@@ -2,6 +2,7 @@
 import React from "react";
 import Home from "./home.tsx";
 import Introduction from "./introduction.tsx";
+import {Image, Divider} from "@heroui/react";
 
 /*//import {nzingaProfileRecord,VIDEOS_PATH,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references,ProfileReferencesTable,} from './../../src/constants/references.js';
 
@@ -21,21 +22,29 @@ export default function Preface(){
   return (<section className='mx-5'>
 <div className='welcome'><h1>Preface</h1>
 <div>
-        <h2>What?</h2>
-          <p>...a reservoir of sources and resources...</p>
+        <h2>This is ?</h2>
+          <p>...a tool to combat the hypocrisy, cognitive dissonance, and lack of accountability that hinders improvement on Earth</p>
           <h2>For?</h2>
           <p>...Us, the Family, the Tribe, The Empire, and all who are trying to make sense of the apparent sense-less chaos around us...</p>
         <h2>By?</h2>
           <p>...the Family and the Tribe...</p>
         <h2>Why?</h2>
           <p>...so that conversations, discussions, debates, and interactions about today&apos;s problems can occur more productively by 
-       having quick access to facts and evidences and sources...</p>
+       having quick access to facts and evidences and sources... </p>
         <h2>How?</h2>
         <p>...by your support. Support the soldiers on here like the House of Reawakening Minds, Sabir Bey, Sevan Bomar, Yusef El and others who are doing The Work that needs doing and providing clarity to those of us searching for freedom and information.</p>
         <p>If, you have a little left over, contributions toward this effort are very much appreciated...</p>
-         <h2>Where?</h2>
+    
          </div>
+   <div className="content-division bg-[#0a2b3bb0] mx-auto flex-row max-w-sm items-center gap-x-4 rounded-xl  p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+      
+<Image className="p-4 h-[12%] w-full object-cover sm:w-full md:h-full "
+            src={'/images/down-arrow-ui-svgrepo-com.svg'} 
+            fallbackSrc={'images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for `}
+          />
        <Home/>
+       </div> 
         </div>
 </section>);
 }

@@ -44,7 +44,7 @@ export default function BiblePage() {
 
  <form action="#">
   <fieldset>
-    <legend>Do you agree?</legend>           
+    <legend>Historically</legend>           
               <Link underline="always" target="_blank" href={'https://youtu.be/XxKQGqDbg9k?si=WyLoHaca3emlSryD'}>From Storm God to Creator</Link>
               <Link underline="always" target="_blank" href={'https://www.youtube.com/watch?v=lGCqv37O2Dg'}>How did Yahweh Become God?:: The Origins of Monotheism</Link>
               <Link underline="always" target="_blank" href={'https://youtu.be/mdKst8zeh-U?si=6DrDI2hOPvqPNr8_'}>Who is Yahwey</Link>
@@ -73,6 +73,12 @@ export default function BiblePage() {
               <Link underline="always" target="_blank" href={'https://www.researchgate.net/publication/349018787_Negus_Ezana_Revisiting_the_Christianisation_of_Aksum'}>Revisiting the christianization of Aksum</Link>  
 </div>
 </div>
+
+
+<div className='border-1 my-2' >
+<h2>Canaan</h2>    
+   <p>All of the Canaanite gods have Kemetic headdresses.  The Canaanite supreme gods were Baal and El. </p>
+ </div>
 
 
 <div className='border-1 my-2' >

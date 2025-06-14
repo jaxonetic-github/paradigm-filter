@@ -91,5 +91,11 @@ export default function TopicHome() {
       </ul>
     </div>
 
+        <div  className='mx-5'>
+          <h3 className="font-bold"></h3>
+          <p hidden className='my-2  indent-12'> There used to be a common phrase or code in the urban community, &quot;Word is Bond&quot;  
+          With a bit of poetic imagination, it is often advantageous to avoid contracting yourself into someone else's paradigm by asking questions as a form of a counter offer.</p>
+        </div>
+
 </div>);
 }

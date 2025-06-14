@@ -4,6 +4,10 @@
 'use client';
 import React from "react";
 import {Image, Button, Link, } from "@heroui/react";
+import CustomDialog from './../../../_utils/CustomDialog.tsx';
+import {YoutubeEmbed, openWindow,} from './../../../_utils/youtubeEmbed.js';
+import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+
 
 /**
  * 
@@ -19,17 +23,12 @@ export default function Civics () {
 	const PROFILE_IMG_PATH = '/images/profiles/';
 const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine.webp', extraInfo:'', quote:'Government is there to do only what the private sector won\'t, can\'t or shouldn\'t do.'};
 
- 	const openWindow = (event:any) => {
-  window.open('https://youtube.com/playlist?list=PL-DGnkOdP-k3ChNwDLSf7hfnqT5XvefK0&si=n6y9u_Xa7Wfo6E5N', "_blank", 'left=100,top=100,width=320,height=320');
-	}
-
       let _literaryQuoteArray = [{quoted:'C. J. Keyset', source:'Human Worth of Rigorous Thinking', quote:`Out of that past we have come. Into it we are constantly returning. Meanwhile it is of the utmost importance to our lives. It contains the roots of all we are, and of all we have of wisdom."`,}]
 
  return (<div>
  	<div key={quoteRecord.quoted} className="md-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
       		<div className="align-center flex">
-    <div className="mx-auto self
-    -center flex" >
+    <div className="mx-auto self-center flex" >
     <Image  src={ PROFILE_IMG_PATH + quoteRecord.quotersImage } alt="ChitChat Logo"  />
       <p className="text-xs font-medium text-black dark:text-white">{quoteRecord.quoted}</p>
       <p className ="text-gray-500 dark:text-gray-400">{quoteRecord.quote}</p>
@@ -37,19 +36,25 @@ const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine
     </div>
     </div>
 </div>
-Conversation--Before we were Black -- zXNJRAb5RbA
-Analysis Yusef--[v4-EvoEilkk]
+
+<CustomDialog title='Conversation--Before we were Black'>{YoutubeEmbed('zXNJRAb5RbA')}</CustomDialog>
+<CustomDialog title='Analysis Yusef'>{YoutubeEmbed('v4-EvoEilkk')}</CustomDialog>
+
 <Link target='_blank' href='https://1024terabox.com/s/1L1LCfrsL5qOSJbdt-PNf6g'>Alton Maddox (audio)on What Brings People Together.</Link>
 
  	<p>Nationality and Citizenship</p> 
  	<ol className={'max-w-md'}>
-		<li><Link target='_blank' href='https://www.govinfo.gov/content/pkg/GPO-STYLEMANUAL-2016/pdf/GPO-STYLEMANUAL-2016-7.pdf'>US Governmental Publishing Office Style Manual</Link></li>
+		<li>
+      <ExternalWindowButton
+      buttonText = 'US Governmental Publishing Office Style Manual'
+      externalURL = 'https://www.govinfo.gov/content/pkg/GPO-STYLEMANUAL-2016/pdf/GPO-STYLEMANUAL-2016-7.pdf' /> 
+    </li>
 		<li><Button
       disableRipple
       className="relative border-1 overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
       size="md"
       variant="bordered"
-      onPress={openWindow}
+      onPress={()=>openWindow('https://youtube.com/playlist?list=PL-DGnkOdP-k3ChNwDLSf7hfnqT5XvefK0&si=n6y9u_Xa7Wfo6E5N')}
     >
       14 video Youtube playlist
     </Button>of Richard McDonald speaking on the multiple citizenships in the "US States".</li>
@@ -61,7 +66,7 @@ as={Link}
       className="relative border-1 overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
       size="md"
       variant="bordered"
-     href='https://youtu.be/WYoWu5Hr_Ks?si=qL9rDntDCoIzNYWy'
+      onPress={()=>openWindow('https://youtu.be/WYoWu5Hr_Ks?si=qL9rDntDCoIzNYWy')}
     >
       Analizing Nationality and Citizenship through Statutes and Codes.
     </Button>

@@ -2,6 +2,7 @@
 import React from "react";
 import {Tabs, Tab, Card, CardBody, Divider,Image, Link} from "@heroui/react";
 import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
+import CustomDialog from   './../../../_utils/CustomDialog.tsx';
 
  
 export default function ComponentsHome() {
@@ -77,17 +78,17 @@ export default function ComponentsHome() {
 </div>
       
   <div className="flex w-full flex-col">
-      <Tabs aria-label="Options">
+      <Tabs aria-label="Options" >
         <Tab key="Vedanta" title="Vedanta" className='content-division'>
           <Card>
-            <CardBody className='content-division'>
-              <Link target="_blank" href='https://www.indiadivine.org/'>The Bhaktivedanta Ashram</Link><p>::IndiaDivine.org,All things Vedanta</p>
-              <Link target="_blank" href='https://www.satyamyogaprasad.net/'>Satyam Yoga Prasad</Link><p>a digital library of the entire collected publications of the Bihar Yoga tradition.</p>
-              <Link target="_blank" href='https://www.sathyasai.org/devotional/gayatri'>Gayatri Mantra</Link><p>a digital library of the entire collected publications of the Bihar Yoga tradition.</p>
-             <Link target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Meditation and Mantra</Link>
-             <Link target="_blank" href='https://1024terabox.com/s/1ejHhOXd2nbFifxfya3nQjg'>Tantra, Mantra, Yantra, The Tantra Psychology</Link>
-             <Link target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Tattwa Shuddhi</Link>
-              <Link target="_blank" href='https://www.biharyoga.net/ypt-books.php/'>Bihar Yoga Books</Link><p>especially, Tattwa Shuddhi</p>
+            <CardBody className="grid-cols-2">
+              <div><Link showAnchorIcon underline="always" target="_blank" href='https://www.indiadivine.org/'>The Bhaktivedanta Ashram</Link><span>::IndiaDivine.org,All things Vedanta</span></div>
+              <div><Link showAnchorIcon underline="always" target="_blank" href='https://www.satyamyogaprasad.net/'>Satyam Yoga Prasad</Link><span>a digital library of the entire collected publications of the Bihar Yoga tradition.</span></div>
+              <div><Link showAnchorIcon underline="always" target="_blank" href='https://www.sathyasai.org/devotional/gayatri'>Gayatri Mantra</Link><p></p></div>
+             <Link showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Meditation and Mantra</Link>
+             <Link showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1ejHhOXd2nbFifxfya3nQjg'>Tantra, Mantra, Yantra, The Tantra Psychology</Link>
+             <Link showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Tattwa Shuddhi</Link>
+              <div><Link showAnchorIcon underline="always" target="_blank" href='https://www.biharyoga.net/ypt-books.php/'>Bihar Yoga Books</Link><span>especially, Tattwa Shuddhi</span></div>
             </CardBody>
           </Card>
         </Tab>
@@ -102,8 +103,9 @@ export default function ComponentsHome() {
         alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
       />
              Suggested Reading :: 
-             <Link target="_blank" href='https://1024terabox.com/s/1YOZNeZR5ACjCAU8OOs65Ig'>Dione Fortune - Mystical Qabalah</Link>
+            <CustomDialog title='Dione Fortune - Mystical Qabalah'><iframe src="https://archive.org/embed/mysticalqabalah00fort_0" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
 
+           
              Travis Magus Book Reading
             </CardBody>
           </Card>
@@ -111,14 +113,15 @@ export default function ComponentsHome() {
         <Tab key="sincretistic" title="Sincretism" className='content-division'>
           <Card>
             <CardBody>
-            <iframe src="https://archive.org/embed/firstbookofazrae0001unse" width="560" height="384" frameBorder="0"  allowFullScreen></iframe>
+            
+    <CustomDialog title='First Book of Azrael'><iframe src="https://archive.org/embed/firstbookofazrae0001unse" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
+    <CustomDialog title='Complete Magicians Table'><iframe src="https://archive.org/embed/StephenSkinner-TheCompleteMagiciansTables-2007" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
+    <CustomDialog title='astral doorways j h brennan'><iframe src="https://archive.org/embed/astral-doorways-j-h-brennan" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
 
-            <Link  target="_blank" href='https://archive.org/details/StephenSkinner-TheCompleteMagiciansTables-2007' > Complete Magicians Table</Link>
-             
-                          <Link  target="_blank" href='https://1024terabox.com/s/1-S0-P1qszSCSRTADFXRjHQ' >Astral Doorways</Link>
+                         
               Flat Earth::== 
               {YoutubeEmbed('mhc8ydSFhxI')}28:03-- notice the reference about
-              <Link href={'https://1024terabox.com/s/1MjULJ_5uNKDCitVWJS3v2A'}>Sevan </Link>
+              <Link href={'https://1024terabox.com/s/1MjULJ_5uNKDCitVWJS3v2A'}>Sevan</Link>
             </CardBody>
           </Card>
         </Tab>

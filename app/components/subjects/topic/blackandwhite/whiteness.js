@@ -3,8 +3,9 @@ import React from "react";
 import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import Link from 'next/link';
-import { Image} from "@heroui/react";
+import CustomDialog from './../../../../_utils/CustomDialog.tsx';
+
+import { Image, Divider, Link} from "@heroui/react";
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}
@@ -46,18 +47,39 @@ export default function Whiteness(){
       {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
 
-
-
-    <div>
-        <h1 className="font-bold text-lg">{snippet.src}</h1>
-        <p>{snippet.quote}</p>
-        {YoutubeEmbed('2Gq77rOuZck')}
+        <CustomDialog title='Taming Cannibals' organization='Race and the Victorians' source=''>
+        <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-11.jpg" />
+  <Image width={450} height={600}  src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-12.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-13.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-14.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-15.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-16.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-17.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-18.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-19.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-20.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-21.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-22.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-23.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-24.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-25.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-26.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-27.jpg" />
+  <Image  width={450} height={600} src="/images/blackandwhite/tamingcannibals-preview/0e32aa6b-eba2-469d-b34e-05549ea6cf73-28.jpg" />
+  </CustomDialog>  
+  <Divider className="my-4" />
+ 
+        <CustomDialog title={snippet.src} organization='' source=''>{YoutubeEmbed('2Gq77rOuZck')}</CustomDialog>
+   
+     <Divider className="my-4" />
+<div>
         <span>Takeaways</span>
     <p>*** (13:28) An example of researching the researchers...  </p>
     <p>***Back in the 16th century negro was used with an uppercase N.</p>
     <p>***A system of racial priviledge was deliberately instituted in the 17th Century by Anglo-American borgoisie in order to define and establish a &quot;white race&quot; and establish a system of racial oppression.</p>
     <p>***The invention of the white race was political and no part of genetic evolution</p>
-     <p>It took 100 years after the British&apos;s 1st North American colonial attempt at Roanoke before any record of a white person
+    <p>***{snippet.quote}</p>
+    <p>***It took 100 years after the British&apos;s 1st North American colonial attempt at Roanoke before any record of a white person
          was ever found.</p>
      </div>
           

@@ -9,10 +9,7 @@ export const metadata: Metadata = {
   description: "Virtual Resources, References and Playground",
 };
 
-export default function HomeLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function HomeLayout({ children}: { children: React.ReactNode})
+{
   return <section>{children}</section>
 }

@@ -53,8 +53,7 @@ const congressrecord_fourteethAmmend_Popover =
           alt="Card background"
           className="rounded-xl align-center"
           src={naturalizationact_Popover.imgURL}
-          width={550}
-          height={700}
+          width={550} height={700}
         />
       </div></CustomDialog>
     sheds light on the early recognized citizenship</p></li>

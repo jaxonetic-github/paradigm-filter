@@ -7,12 +7,12 @@ export  const Introduction=()=>
 (<section className='mx-5'>
 <h1>Introduction</h1>
 <div>
-            <div className='flex container'>
+            <div hidden className='flex container'>
             <h3 className='align-center'></h3>
             </div>
             <p className='indent-8'>Permeating throughout this work is a surging global indignous demand for freedom and it spans many branches of knowledge across 
             thousands of years. The intent is that you will leave innerstanding the need for critical thinking, accountability, creativity,
-            empathy, and humility in our daily activities and interactions in order to encourage the type of change that we hope our Brother
+            empathy, and humility in our daily activities and interactions in order to encourage the type of change that we hope those like our Brother
              in arms Ibrahim Traore will affect for Burkino Faso, for the south asian peninsula called Africa, and for all the peoples on this earthly plane.
              </p>
             <p className='indent-8'>High critical thinking skills allows each of us to filter the information and stimuli and energy in and around us. 
@@ -22,9 +22,17 @@ export  const Introduction=()=>
              If emotions are arising than the ego is super-involved.  A bit of emotional intelligence by all goes along way toward ensuring the negative,
              defensive, aggressive, combative emotions are diminished if not avoided entirely.
              </p>
-             <p className='indent-8'>History and Law go together.  In Law there is multidefined word called interest. Schools have presented history to its 
-             students in a way that few students actually see themselves in history except as slaves coming from Africa in 1619.
-             As such, there is no interest in learning history as it's taught by the so-called Victors (History is written by the Victors).
+            <p> These Victors depend and thrive on that [Propaganda].  The effect and intention of 
+             the American school system was born with the intention to assimilate us using that Propaganda. (@srcs @example Osage Indians ). 
+             This site is full of sources and facts that are very interesting, though they break against the Propaganda of the masses.  The intention is to show
+             the horrible effects and results of not using critical thinking when filtering the infinite Propaganda that permeates our families, schools, media,...
+             </p>
+
+            <p>
+            </p>
+
+
+             <p>
              Hopefully, the increasingly interactive nature of this Obra Magna will authentically show the contrary; that OurStories of the 
              past are not just interesting but relevant in order to understand more clearly the colonized predicament we STILL find ourselves.
               </p>

@@ -40,15 +40,14 @@ export default function Colorisms(){
  <p>Humans come in various shades of melanin or skin tones.   The use of crayon colors to identify a people perpetuates a moderm myth, belief, a spell; cast by 
  the shadow of colonial propaganda called infamously called &quot;white supremacy&quot;. 
 </p>
-  <Link underline="always" target={'_blank'}  className='disabled' href={''}>Before Color Prejudice Ancient View of Blacks</Link>
-
+<CustomDialog title='Before Color Prejudice Ancient View of Blacks'><iframe src="https://archive.org/embed/beforecolorpreju0000snow" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></CustomDialog>
+<CustomDialog title='&quot;Black&quot; slave owners--Anthony Johnson'><iframe width="560" height="315" src="https://www.youtube.com/embed/RibI0Nd4UD4?si=-d5idPrXHSOeIVOY&amp;start=284" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></CustomDialog>
 <p className={'take-away'}>During the formation of the British US colonies from colonial territories
  into  nations, the US Congress passed the Naturalization Act in 1790 to describe the parameter for state citezenship.
  There was no Federal US Citizen yet; only citizens of one of the 13 states(nations) of the Union.</p>
  <p>In the late 1700's, property holders, those with vested interest or business with the state were citizens.
  They were, in fact, &quot;free white people&quot;.  On the surface, it seems racist until you see how the colonizers
- defined white.  Of course there would need to be protections(@Swarthy Colonizers, @Treaty of Peace and Friendship),
-  for the Sephardic Moors.   
+ defined  <CustomDialog title='free men'></CustomDialog> and  <CustomDialog title='free white people'></CustomDialog>.   
   </p>  
 <div> Johan BlumenBach and Carl von Jonais helped popularize the idea of scientifically justified racism.</div>
 

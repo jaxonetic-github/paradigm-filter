@@ -40,6 +40,8 @@ export default function ContentMap() {
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/topic/rights'>Rights</Link> 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
+     underline="always"   href='/components/subjects/civics'>Nationality &amp; Citizenship</Link> 
+    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/topic/rights'>Property</Link> 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/topic/constitution'>Constitution</Link>
@@ -55,12 +57,15 @@ export default function ContentMap() {
 
 <div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
   <div className=" text-center sm:text-left">
-
-<AccordionView title="Occult and Metaphysics">
+    <div className="">
+    <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Link>
+    </div>
+{/*<AccordionView title="Occult and Metaphysics">
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled  underline="none" href='#'>Mantras</Link> 
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/components/subjects/topic/mantras'>Breath/Spirit</Link> 
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled   underline="none" href='/components/subjects/topic/mantras'>Focus/Darshan</Link> 
 </AccordionView>
+*/}
   </div>
 </div>
 

@@ -83,7 +83,7 @@ export default function ReferencesMain( ) {
 <div>
 {filteredReferences.length}<h1>Source and Resources</h1>
 </div>
-  <ReferencesView className={'-z-100'} columns={tableColumns} rows={filteredReferences}/>
+  <ReferencesView className={'-z-10'} columns={tableColumns} rows={filteredReferences}/>
   </div>);
 }
 

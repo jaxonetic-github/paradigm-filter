@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import React from "react";
-import {Table,TableHeader, TableColumn, TableBody, TableRow, TableCell,
-        getKeyValue,  Button, Link, Image } from "@heroui/react";
+import {Table,TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyValue,  Button, Link, Image } from "@heroui/react";
 import { tableColumns, REFERENCE_TYPES} from './../../../src/constants/references.js';
-
+import CustomDialog from './../../../_utils/CustomDialog.tsx';
+import {YoutubeEmbed, openWindow} from './../../../_utils/youtubeEmbed.js';
 //      <ReferencesTable columns={tableColumns} rows={references}/>
 
 
@@ -16,10 +16,9 @@ import { tableColumns, REFERENCE_TYPES} from './../../../src/constants/reference
         {(item) => (
           <TableRow key={item.id}>
             {(columnKey) => <TableCell className={((columnKey =='category' || columnKey=='subtitle') ?'hidden md:block':'')}>
-                              {(columnKey=='url')? 
-                                    <Button  as={Link} color="primary" variant='solid' href={getKeyValue(item, columnKey)}>
-                                      {`View ${(item.type=='book')?'reviews':item.type}`}
-                                    </Button>
+                              {(columnKey=='url') ? 
+                                    <Button   className="relative border-1 overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
+                                     variant='solid' onPress={()=> openWindow(getKeyValue(item, columnKey))}>{`View ${(item.type=='book')?'reviews':item.type}`}</Button>
                               :     getKeyValue(item, columnKey)}</TableCell>}
           </TableRow>
         )}

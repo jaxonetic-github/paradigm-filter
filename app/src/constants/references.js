@@ -32,30 +32,29 @@ export const categories = [
 
 export const faqs = [
   { key : 1,
-    question: 'Where did "white" people come from?',
+    question: 'Why do things like philosophy and history matter?',
     answers: [
-      {url: 'https://www.youtube.com/watch?v=YLgK0xzK_2U', desc: ''},
+      {url: '', desc: ''},
       {
-        url: 'https://www.youtube.com/watch?v=I_v77StW7tM',
-        desc: 'Drs Imhotep and Hiawatha',
-        title:
-          'Ancient African History and the Six Physical Transmutations of the Human Family',
+        url: '',
+        desc: ' If we know better, than we will do better, and our environment and societies will follow suit and be better.',
+        title:'',
       },
     ],
   },
   { key : 2,
-    question: 'Why do we call some people white and others black?',
+    question: 'Sample Question',
     answers: [
       {
         url: 'https://www.youtube.com/watch?v=HhAjycvAN8k',
-        desc: 'Dr Jaqueline Battalora and Jane Elliot',
+        desc: 'Sample Answer 1',
         title:
-          'Dr. Jacqueline Battalora and Jane Elliott Debate White Privilege',
+          '---',
       },
       {
         url: 'https://www.youtube.com/watch?v=rPhlteY1knA',
-        desc: 'Dr Jaqueline Battalora',
-        title: '1681 - The Invention of Race: The Laws that Changed the World!',
+        desc: 'Sample Answer 2',
+        title: '--- ---',
       },
     ],
   },
@@ -94,7 +93,7 @@ export const headingClasses = "flex w-full sticky top-1 z-20 py-1.5 px-2 bg-defa
 
 export const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key: "type", label: "TYPE"},
   {    key: "title", label: "TITLE" },{    key: "subtitle", label: "SUBTITLE" },
-  {    key: "authors", label: "AUTHOR(S)" }, {    key: "copyright",label: "copyright" },{    key: "url",label: "url" },
+  {    key: "authors", label: "AUTHOR(S)" },{    key: "url",label: "url" },
 ];
 
  export const citationColumns = [ 
@@ -104,7 +103,7 @@ export const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key
 
 const NJINGAHISTORICALCONTECT = 'https://1024terabox.com/s/1exN5tBxoNgiH6eJ9gog1dg'
 const NJINGAWARRIORQUEEN_URL = 'https://drive.proton.me/urls/DXTPB31TPM#MpMeoTOUvbGS';
-  const _njingaArray=[{displayHeading:"Nzinga From Historical Context", youtubeUrl:'YSLpm75IaFU', pathName:NJINGAHISTORICALCONTECT, subject:'', comments:['The Legacy of Queen Njinga/Nzinga From Historical Context','']},   
+  const _njingaArray = [{displayHeading:"Nzinga From Historical Context", youtubeUrl:'YSLpm75IaFU', pathName:NJINGAHISTORICALCONTECT, subject:'', comments:['The Legacy of Queen Njinga/Nzinga From Historical Context','']},   
                       {displayHeading:"Njinga Warrior Queen",           youtubeUrl:'GxpswAL_9_U', pathName:NJINGAWARRIORQUEEN_URL, subject:'', comments:['Lecture on the Diplomacy of Ngolo Njinga Mbande','']},
                     ];
  
@@ -117,11 +116,10 @@ export const CLARKE_PROFILES_KEY =  'Dr John Henrik Clarke';
 export const DRLLAILA_PROFILES_KEY =  'Dr Llaila Afrika';             
 export const WESLING_PROFILES_KEY =  'Dr Frances Wesling';             
 export const DRJEFFRIES_PROFILES_KEY =  'Dr Leonard Jeffries';             
-
 export const MONEYMATTERS_PROFILES_KEY =  "Money Matters";             
 export const BLACKVWHITE_PROFILES_KEY =  'White vs Black';
 
-export const specificallyCompiledVideos={'Njinga Mbande':_njingaArray, "Money Matters":_moneyAndBankingArray, 'Civics': _civicsFundamentalsArray, 'White vs Black': _negro_videos };
+export const specificallyCompiledVideos = {'Njinga Mbande':_njingaArray, "Money Matters":_moneyAndBankingArray, 'Civics': _civicsFundamentalsArray, 'White vs Black': _negro_videos };
 
 export const nzingaProfileRecord = 
     { key: 1, name: "Njinga Mbande", lifespan:'(1582 Ndongo - December 17, 1663 Matamba)', thumbnail:'/images/profiles/njinga/njingaDrawing.jpg', sources:[15], videoArray:_njingaArray };

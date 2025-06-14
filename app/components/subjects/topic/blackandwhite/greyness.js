@@ -3,6 +3,7 @@
 import {Button, Divider, Link, Image} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody, CardFooter} from "@heroui/react";
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.tsx';
 
 
  
@@ -18,6 +19,18 @@ return (<div>
 <p>Th North American concept of race is flawed from the outset by even giving credence to the concept.that there are multiple human races based on color. It is up to all of us to take hold of our reality
  by controlling our language and actively participating and developing our culture instead of letting a Federal Government  with foreign, alien, immoral, and irrational ideas, control our thoughts, ideas and lives in general.
 </p>
+
+
+
+         
+            <div className='m-8'>
+            <Card>
+            <CardBody>
+           <ExternalWindowButton
+          buttonText = 'Phillipa Hainault 1313-1369'
+          externalURL = 'https://www.youtube.com/shorts/8B3a1qGTuJ4' /> 
+           </CardBody></Card></div>
+
 
 <div className='m-8'><Card>
             <CardBody>
