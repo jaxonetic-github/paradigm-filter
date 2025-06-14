@@ -7,7 +7,21 @@ import {Image} from "@heroui/react";
 // https://www.youtube.com/live/yLUKoXziuec?si=dMZUeyZT4JE0kUJ1   {displayHeading:"Real vs Artificial", pathName:"https://www.youtube.com/live/yLUKoXziuec?si=dMZUeyZT4JE0kUJ1", subject:'Deceptions',  comments:['Beware Chat GPT, 100 Facts about the Negro roots','']}
 export default function Home() {
 
-  return (<div className="flex">
+  return (<>
+
+   <div className="content-division bg-[#0a2b3bb0] mx-auto flex-row max-w-sm items-center gap-x-4 rounded-xl  p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+      
+<Image className="p-4 h-[12%] w-full object-cover sm:w-full md:h-full "
+            src={'/images/down-arrow-ui-svgrepo-com.svg'} 
+            fallbackSrc={'images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for `}
+          />
+      
+     
+
+
+
+    <div className="flex">
        
 <div className="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-[#778899] p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
   <Link  className={"hover:border-1 p-4" } href={`/components/subjects`}> 
@@ -24,5 +38,14 @@ export default function Home() {
   </div>
   </Link>
 </div>
-        </div>);
+      </div>     </div>
+        </>);
 }
+
+
+/**
+ * 
+ import Preface from './components/home/preface.tsx';
+
+ * 
+ * */

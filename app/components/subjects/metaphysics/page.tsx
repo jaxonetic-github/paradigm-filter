@@ -71,6 +71,10 @@ export default function ComponentsHome() {
 <p>Divine Fractals like Pranayama, Qi-gong, ..., Astrology are doorways onto the path of finding your so called Higher Self or Truer Self.</p>
 
       </div>
+       <div className='mx-20'>
+    <p>Occult 101</p>
+    <p></p>
+    </div>
       <p className='flex float-right'>------</p>
 
         <Divider />    

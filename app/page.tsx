@@ -2,6 +2,7 @@
 
 import Introduction from './components/home/introduction.tsx';
 import Preface from './components/home/preface.tsx';
+import Home from './components/home/home.tsx';
 import React, { useState, useEffect, useRef } from 'react';
 import {HeroUIProvider} from "@heroui/system";
 import { useCallback } from 'react';
@@ -44,7 +45,7 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
   return (<HeroUIProvider>
           <Preface/>
           <Introduction/>
-
+          <Home/>
     </HeroUIProvider>);
 }
 

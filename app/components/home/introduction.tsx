@@ -1,11 +1,12 @@
 
 import React from "react";
+import AccordionView from './../../_utils/CustomAccordion.tsx';
 
 /*//import {nzingaProfileRecord,VIDEOS_PATH,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references,ProfileReferencesTable,} from './../../src/constants/references.js';*/
 
 export  const Introduction=()=>
 (<section className='mx-5'>
-<h1>Introduction</h1>
+<AccordionView title={'Introduction'}>
 <div>
             <div hidden className='flex container'>
             <h3 className='align-center'></h3>
@@ -37,6 +38,7 @@ export  const Introduction=()=>
              past are not just interesting but relevant in order to understand more clearly the colonized predicament we STILL find ourselves.
               </p>
               </div>
+</AccordionView>
 </section>);
 
 export default Introduction;
