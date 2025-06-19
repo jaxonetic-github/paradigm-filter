@@ -44,7 +44,8 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
   }, []);
  
   return (<HeroUIProvider>
-    <h1>A Treatise on the World by the Amanuensis of Hermis Trismegistus</h1>
+    <h1>A Treatise on the World</h1>
+    <p className="indent-8"> by the Amanuensis of Hermis Trismegistus</p>
           <Preface/>
           <Introduction/>
           <Home/>

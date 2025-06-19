@@ -1,8 +1,9 @@
-'use client'
+'use client';
 import React from "react";
 import  {Image, Button} from "@heroui/react";
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
 import {Tabs, Tab, Card, CardBody, Divider, Link} from "@heroui/react";
+import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
 
 import  {SimplePopoverView} from "./../../../_utils/popoverView.tsx";
 import  {YoutubeEmbed} from "./../../../_utils/youtubeEmbed.js";
@@ -115,6 +116,10 @@ const bookburnings_Popover =
         <Tab className='content-division'  key="propoganda" title="Social Control">
           <Card>
             <CardBody>
+            <ExternalWindowButton
+          buttonText = 'white supremacy [short]'
+          externalURL = 'https://youtube.com/shorts/ySg04v4HfmA?si=5dTtf4nT7dQkrORK' /> 
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/11VBzp7m5O8?si=3KYmds_TjSJQ4gM9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 Edward Barnay
 Adler
@@ -125,9 +130,13 @@ Freud
         <Tab className='content-division'  key="dissonnance" title="Dissonnance">
           <Card>
             <CardBody>
-Edward Barnay
-Adler
-Freud
+
+           <ExternalWindowButton
+          buttonText =  ' The West Against African Interests'
+          externalURL = 'https://youtube.com/shorts/Yxi32ORSs4I?si=aWI1hGrYetZUVBAk' /> 
+           <ExternalWindowButton
+          buttonText =  'James McCune Smithe'
+          externalURL = 'https://youtube.com/shorts/aSITRF4SRNI?si=_qjCZce8iFrePD1A' /> 
             </CardBody>
           </Card>
         </Tab>

@@ -5,9 +5,16 @@ import { tableColumns, REFERENCE_TYPES} from './../../../src/constants/reference
 import CustomDialog from './../../../_utils/CustomDialog.tsx';
 import {YoutubeEmbed, openWindow} from './../../../_utils/youtubeEmbed.js';
 //      <ReferencesTable columns={tableColumns} rows={references}/>
+import {Card, CardHeader, CardBody, CardFooter, Divider} from "@heroui/react";
+import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
 
 
- export default function ReferencesView({columns, rows}) {
+/**
+ * Tabular View
+ */
+ export const ReferencesTableView = ({columns, rows}) => {
+    console.log(columns,'-----',rows);
+
   return (<><Table  aria-label="Example table with dynamic content">
       <TableHeader columns={columns}>
         {(column) => <TableColumn className={((column.key=='category' ||column.key=='subtitle') ?'hidden md:block':'')} key={column.key}>{column.label}</TableColumn>}
@@ -26,6 +33,36 @@ import {YoutubeEmbed, openWindow} from './../../../_utils/youtubeEmbed.js';
     </Table></>);
 }
 
+
+/**
+ * Grid View
+ */
+ export const ReferencesGridView = ({columns, rows}) => {
+  console.log(columns,'=======',rows);
+  return (<>
+    <div id="linksdiv" className={ "grid grid-cols-1 sm:grid-cols-3 gap-3" } >
+
+{rows.map((reference) => 
+  <Card key={reference.id}  className="max-w-[400px] border-1">
+      <CardHeader className="flex gap-3">  
+        <div className="flex flex-col">
+          <p className="text-md">{reference.title}</p>
+          <p className="text-small text-default-500">{reference.subtitle}</p>
+        </div>
+      </CardHeader>
+      <Divider />
+      <CardBody>
+        <p>{reference.authors}</p>
+      </CardBody>
+      <Divider />
+      <CardFooter>
+       <ExternalWindowButton
+       buttonText={'view'}
+       externalURL={reference.url} />  
+      </CardFooter>
+    </Card>)}</div>
+  </>);
+}
 
 //    console.log(referenceRecord,'----',(selectedCategory=='all'||referenceRecord.category==selectedCategory);
 

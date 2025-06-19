@@ -19,6 +19,9 @@ import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.ts
 <ExternalWindowButton
           buttonText = 'The First Banking System'
           externalURL = 'https://vocal.media/history/igudar-morocco-s-ancient-banking-system-and-the-story-of-communal-trust' /> 
+<ExternalWindowButton
+          buttonText = 'the BIS'
+          externalURL = 'https://youtube.com/shorts/81ewQVY3vII?si=CGoRMoVbsjYjw4Ju' /> 
 
        Different concepts of banking 
     <div>

@@ -27,6 +27,14 @@ return (<div>
             <Card>
             <CardBody>
            <ExternalWindowButton
+          buttonText = 'Chinese, Japanese, Korean, Indian, American'
+          externalURL = 'https://youtube.com/shorts/7fEbA6xV1eI?si=Viz5mn6_2ia-tbVv' /> 
+           </CardBody></Card></div>
+
+        <div className='m-8'>
+            <Card>
+            <CardBody>
+           <ExternalWindowButton
           buttonText = 'Phillipa Hainault 1313-1369'
           externalURL = 'https://www.youtube.com/shorts/8B3a1qGTuJ4' /> 
            </CardBody></Card></div>

@@ -11,6 +11,7 @@ import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
 import {Accordion, AccordionItem, Divider, Image, Link} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
 import CustomDialog from './../../../../_utils/CustomDialog.tsx'
+import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.tsx';
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}
@@ -34,11 +35,13 @@ export default function Colorisms(){
                       commentaries:['https://www.youtube.com/live/a3GaFbkRwYo?si=XBuVTNUSI6_Fys7o']};
 
   return (<div className='mx-5'>
-        <Link  underline="always" target='_blank' href={'http://doi.org/10.29164/23raceandracism'}>Race?</Link>
+            <ExternalWindowButton
+          buttonText = 'Race?'
+          externalURL = 'http://doi.org/10.29164/23raceandracism' /> 
 
  <div className="flex flex-wrap gap-4">
  <p>Humans come in various shades of melanin or skin tones.   The use of crayon colors to identify a people perpetuates a moderm myth, belief, a spell; cast by 
- the shadow of colonial propaganda called infamously called &quot;white supremacy&quot;. 
+ the shadow of colonial propaganda infamously called &quot;white supremacy&quot;. 
 </p>
 <CustomDialog title='Before Color Prejudice Ancient View of Blacks'><iframe src="https://archive.org/embed/beforecolorpreju0000snow" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></CustomDialog>
 <CustomDialog title='&quot;Black&quot; slave owners--Anthony Johnson'><iframe width="560" height="315" src="https://www.youtube.com/embed/RibI0Nd4UD4?si=-d5idPrXHSOeIVOY&amp;start=284" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></CustomDialog>
@@ -49,11 +52,17 @@ export default function Colorisms(){
  They were, in fact, &quot;free white people&quot;.  On the surface, it seems racist until you see how the colonizers
  defined  <CustomDialog title='free men'></CustomDialog> and  <CustomDialog title='free white people'></CustomDialog>.   
   </p>  
+
 <div> Johan BlumenBach and Carl von Jonais helped popularize the idea of scientifically justified racism.</div>
 
   
 <p>Someone&apos;s &quot;white&quot;-ness was and is (as of 2025) not based on skin color.</p>
-
+<CustomDialog title='Gradual progression of color prejudice in 1600s'>
+ <Image className=" flex p-4  "
+            src={'/images/blackandwhite/johnpunch_maroonsocieties.jpeg'} 
+            fallbackSrc={'/images/imagenotavailable.jpeg'}
+          />
+</CustomDialog>
 All Asiatics don't fit the yellow scheme 
 
 <CustomDialog title='Andamanese'><iframe src="https://www.youtube.com/embed/lZK_7WLaiXU?si=OnjFsFoUtQdSLsGK" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    

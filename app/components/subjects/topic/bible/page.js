@@ -1,6 +1,7 @@
 import React from "react";
 import { Image,Link} from "@heroui/react";
 import {SimplePopoverView} from "./../../../../_utils/popoverView.tsx";
+import CustomDialog from './../../../../_utils/CustomDialog.tsx';
 
 //import {specificallyCompiledVideos, MONEYMATTERS_VIDEOLIST_KEY} from './../../../src/constants/references.js';
 
@@ -31,9 +32,8 @@ export default function BiblePage() {
  and from Catholism sprang the various protestant branches. </p>
 
 <span>Catholicism and the Protestants carry between 54 and 66 biblical books where as the Ethiopian christian church carries
-81 books. Despite being </span><SimplePopoverView infoRecord={{title:'popular and respected', what:'', when:'', imgURL:'', desc:''}}>
-<h2>The Book of Enoch</h2>
-{enochrefs()}</SimplePopoverView>
+81 books. Despite being </span>
+ <CustomDialog title='popular and respected' organization='' source=''>{enochrefs()}</CustomDialog>    
 
 <span> the Book of Enoch was ommitted from all of the major churches except the Ethiopian Orthodox and Coptic Christian Churches, (@See  Tawedo)
 </span>

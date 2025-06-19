@@ -14,6 +14,7 @@ export const CATEGORY_CIVICS = 'Civics';
 export const SUBCATEGORY_CONTRACTS = 'Contracts'
 
 export const REFERENCE_TYPES = [
+  {key: SELECT_All_OPTION, label: "All"},
   {key: TYPE_BOOK, label: "Book"},
   {key: TYPE_WEBSITE, label: "Website"},
   {key: TYPE_VIDEO, label: "Video"},
