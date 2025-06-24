@@ -11,9 +11,9 @@ export default function ContentMap() {
 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 '>
 
 
-<div className="content-division  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className=" text-center sm:text-left">
 
+<div className="content-division flex flex-col items-center ">
+  <div className=" flex text-center ">
    <AccordionView title="Philosophy">
        <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href={"/components/subjects/epistemology"} >Epistemology</Link>
   </AccordionView>
@@ -21,42 +21,33 @@ export default function ContentMap() {
   </div>
 </div>
 
-<div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className=" text-center sm:text-left">
+
+<div className="content-division flex flex-col items-center ">
+  <div className=" flex text-center ">
 <AccordionView title="History">
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/history'>World</Link> 
      <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/components/subjects/topic/bible'>Biblical</Link> 
-     <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " href={'/components/subjects/illuminators'}>Characters and Bios</Link>
   </AccordionView >
   </div>
 </div>
 
 
-<div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
 
-
-  <div className=" text-center sm:text-left">
+<div className="content-division flex flex-col items-center ">
+  <div className=" flex text-center ">
 <AccordionView title="Civics and Law">
+
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-     underline="always"   href='/components/subjects/topic/rights'>Rights</Link> 
+     underline="always"   href='/components/subjects/civics'>The Union of Nations </Link> 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-     underline="always"   href='/components/subjects/civics'>Nationality &amp; Citizenship</Link> 
-    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-     underline="always"   href='/components/subjects/topic/rights'>Property</Link> 
-    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-     underline="always"   href='/components/subjects/topic/constitution'>Constitution</Link>
-    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-      underline="always"  href={'/components/subjects/topic/freedom'}>Freedom</Link>
-    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-      underline="always"  href={'/components/subjects/topic/money'}>Money</Link>
-    <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-      underline="always"  href={'/components/subjects/topic/blackandwhite'}>Colorable People</Link>
+      underline="always"  href={'/components/subjects/topic/blackandwhite'}>Colored People</Link>
   </AccordionView>
   </div>
 </div>
 
-<div className=" content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className=" text-center sm:text-left">
+
+<div className="content-division flex flex-col items-center ">
+  <div className=" flex text-center my-auto">
     <div className="">
     <Link color={"primary"} underline="always" href={"/components/subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Link>
     </div>
@@ -71,9 +62,9 @@ export default function ContentMap() {
 
 
 
-<div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className=" text-center sm:text-left">
-    
+
+<div className="content-division flex flex-col items-center ">
+  <div className=" flex text-center ">
   <AccordionView title="Cultures &amp; Arts">
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/capoeira'>Capoeira</Link> 
      <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/components/subjects/topic/yoruba'>Yoruba</Link> 
@@ -82,16 +73,16 @@ export default function ContentMap() {
 </div>
 
 
-<div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className=" text-center sm:text-left">
-    <div className="">
-    <Link color={"primary"} underline="always" href={"/components/subjects/topic/communication"} > <p className={"font-bold text-inherit"}>Communication</p></Link>
-    </div>
+<div className="content-division flex flex-col items-center ">
+  <div className=" text-center  my-auto">
+  
+    <Link color={"primary"} underline="always" href={"/components/subjects/topic/communication"} > <p className={"flex font-bold "}>Communication</p></Link>
+
   </div>
 </div>
 
-<div className="content-division flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className=" text-center sm:text-left">
+<div className="content-division flex flex-col items-center ">
+  <div className=" text-center  my-auto">
    <AccordionView title="Misc">   
      <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " underline="always" href={'/components/subjects/media'}>Media</Link>
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/components/subjects/calendar/'>Calendar</Link> 
@@ -100,12 +91,22 @@ export default function ContentMap() {
 </div>
 
 
-<div className="content-division  flex flex-col sm:flex-row sm:items-center sm:gap-4 ">
-  <div className=" text-center sm:text-left">
+<div className="content-division flex flex-col items-center ">
+  <div className=" text-center  my-auto">
+
+    <div className="">
+        <Link underline="always" color={"primary"} href={"/components/subjects/illuminators"} > <p className={"font-bold text-inherit"}>Characters and Bios</p></Link>
+    </div>
+  </div>
+</div>
+
+
+<div className="content-division flex flex-col items-center ">
+  <div className=" text-center  my-auto">
+
     <div className="">
         <Link underline="always" color={"primary"} href={"/components/subjects"} > <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Link>
     </div>
-
   </div>
 </div>
 

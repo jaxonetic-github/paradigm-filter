@@ -2,6 +2,7 @@ import React from "react";
 import { Image,Link} from "@heroui/react";
 import {SimplePopoverView} from "./../../../../_utils/popoverView.tsx";
 import CustomDialog from './../../../../_utils/CustomDialog.tsx';
+import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
 
 //import {specificallyCompiledVideos, MONEYMATTERS_VIDEOLIST_KEY} from './../../../src/constants/references.js';
 
@@ -41,13 +42,14 @@ export default function BiblePage() {
 </div>
  <div className='border-1 my-2' >
 <h2>Yahweh</h2>    
-
  <form action="#">
   <fieldset>
     <legend>Historically</legend>           
-              <Link underline="always" target="_blank" href={'https://youtu.be/XxKQGqDbg9k?si=WyLoHaca3emlSryD'}>From Storm God to Creator</Link>
-              <Link underline="always" target="_blank" href={'https://www.youtube.com/watch?v=lGCqv37O2Dg'}>How did Yahweh Become God?:: The Origins of Monotheism</Link>
-              <Link underline="always" target="_blank" href={'https://youtu.be/mdKst8zeh-U?si=6DrDI2hOPvqPNr8_'}>Who is Yahwey</Link>
+        <CustomDialog title='From Storm God to Creator' organization='' source=''>{YoutubeEmbed('XxKQGqDbg9k')}</CustomDialog>    
+        <CustomDialog title='How did Yahweh Become God?:: The Origins of Monotheism' organization='' source=''>{YoutubeEmbed('lGCqv37O2Dg')}</CustomDialog>    
+        <CustomDialog title='An analysis of Yahu' organization='Dr. Nicholas Peter Leigh Allen' source=''>{YoutubeEmbed('XxKQGqDbg9k')}</CustomDialog>    
+        <CustomDialog title='Who is Yahweh' organization='' source=''>{YoutubeEmbed('mdKst8zeh-U')}</CustomDialog>    
+
   </fieldset>
 </form>
  </div>

@@ -70,7 +70,7 @@ welfare functions.</dd>
 </dl>
 </div>
 </div>
-<Link show isExternal underline="always" target={'_blank'}  href='https://www.federalregister.gov/executive-order/10997'>Federal Register</Link>
+<Link show="true" isExternal underline="always" target={'_blank'}  href='https://www.federalregister.gov/executive-order/10997'>Federal Register</Link>
 <p>
 Did reading this affect your sense of freedom? Do you still feel free and in control of your life. Or do you just feel 
 comfortable enough to not be apart of or set up , if necessary, a network of communities that are able to function

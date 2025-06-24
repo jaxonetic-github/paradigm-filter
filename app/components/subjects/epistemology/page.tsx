@@ -2,11 +2,12 @@
 import React from "react";
 import  {Image, Button} from "@heroui/react";
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
-import {Tabs, Tab, Card, CardBody, Divider, Link} from "@heroui/react";
+import {Tabs, Tab, Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
 import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
 
 import  {SimplePopoverView} from "./../../../_utils/popoverView.tsx";
 import  {YoutubeEmbed} from "./../../../_utils/youtubeEmbed.js";
+import CustomDialog from './../../../_utils/CustomDialog.tsx';
 
 
  const Definitions  =()=> 
@@ -93,8 +94,6 @@ const bookburnings_Popover =
         <p>Words themselves have a life of their own that is brought out by a useful dive into the world of etymology.</p>
               <p className='indent-8'>By placing words and events back into the fields from which they were abstracted, we create a context which
                helps to  avoid misleading inferences.</p> <Link target='_blank' href='https://languagelog.ldc.upenn.edu/nll/?p=33594'>Tory MP suspended for racist remark</Link>
-
-
         </Tab>
 
         <Tab key="criticalthink" className='content-division' title="Critical Thinking" >
@@ -105,17 +104,24 @@ const bookburnings_Popover =
             *Breaking Down the Barrier*
             <iframe width="560" height="315" src="https://www.youtube.com/embed/sYOeilUSRLU?si=aWbx4hWGXFN-U90q&amp;start=240" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
            
-
-
-            <Link underline="always" target="_blank" href='https://1024terabox.com/s/1aAryN7gwnULvA262JHxNhA'>Unseen Hand</Link>
             <Image alt="HeroUI hero Image" src="/images/HistoricalThinking.png" className={'max-w-108'}/>
              Historical Thinking
             </CardBody>
+            <CardFooter>
+           <CustomDialog title='Mistakes Were Made (but Not by Me) 3rd Ed' organization='' source=''><iframe width="560" height="315" src="/images/covers/dokumen.pub_mistakes-were-made.pdf" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
+           <CustomDialog title='The Unseen Hand' organization='' source=''><iframe width="560" height="315" src="https://dn790007.ca.archive.org/0/items/TheUnseenHand-Epperson/The-Unseen-Hand_-_Epperson.pdf" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
+           
+            </CardFooter>
           </Card>
         </Tab>
         <Tab className='content-division'  key="propoganda" title="Social Control">
           <Card>
             <CardBody>
+            
+            <ExternalWindowButton
+          buttonText = 'Anti - Semeticism [short]'
+          externalURL = 'https://youtube.com/shorts/-gZ1grKlmrA?si=I1vePOzoSER1riWL' /> 
+
             <ExternalWindowButton
           buttonText = 'white supremacy [short]'
           externalURL = 'https://youtube.com/shorts/ySg04v4HfmA?si=5dTtf4nT7dQkrORK' /> 

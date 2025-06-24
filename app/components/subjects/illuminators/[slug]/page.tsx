@@ -7,7 +7,7 @@ import { Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 
-import {Accordion, AccordionItem, Avatar,Button, Image, Link} from "@heroui/react";
+import {Accordion, AccordionItem, Avatar,Button, Image, Link,User} from "@heroui/react";
 import React from "react";
 
 
@@ -48,7 +48,14 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
     </div>
    </div>
 
+<div>{profileRecord.sources.map((source:number)=><div className="flex gap-4 items-center" key={references[source-1].id}>
+    <Image
 
+    className="w-26 h-36"
+    src= {references[source-1].iconurl}
+    />
+{references[source-1].title}
+ </div> )}</div>
      <HonorableMentionVideos   dataArray={profileRecord.videoArray}  /> 
 </div>);
     

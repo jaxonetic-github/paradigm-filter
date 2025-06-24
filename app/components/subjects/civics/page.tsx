@@ -3,12 +3,17 @@
 //import {Divider, Image, Link, Tooltip,Button} from "@heroui/react";
 'use client';
 import React from "react";
-import {Image, Button, Link, } from "@heroui/react";
+import {Image, Button, Link, Divider} from "@heroui/react";
 import CustomDialog from './../../../_utils/CustomDialog.tsx';
 import {YoutubeEmbed, openWindow,} from './../../../_utils/youtubeEmbed.js';
+import AccordionView from './../../../_utils/CustomAccordion.tsx';
+
 import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
-
-
+import Constitution from './../topic/constitution/page.tsx';
+import Rights from './../topic/rights/page.tsx';
+import Money from './../topic/money/page.tsx';
+import Freedom from './../topic/freedom/page.js';
+import {Tabs, Tab} from "@heroui/react";
 /**
  * 
  * @Description This element displays a Card with information from @param dataArray
@@ -26,6 +31,8 @@ const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine
       let _literaryQuoteArray = [{quoted:'C. J. Keyset', source:'Human Worth of Rigorous Thinking', quote:`Out of that past we have come. Into it we are constantly returning. Meanwhile it is of the utmost importance to our lives. It contains the roots of all we are, and of all we have of wisdom."`,}]
 
  return (<div>
+
+
  	<div key={quoteRecord.quoted} className="md-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
       		<div className="align-center flex">
     <div className="mx-auto self-center flex" >
@@ -37,50 +44,44 @@ const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine
     </div>
 </div>
 
-<CustomDialog title='Conversation--Before we were Black'>{YoutubeEmbed('zXNJRAb5RbA')}</CustomDialog>
+
+
 <CustomDialog title='Analysis Yusef'>{YoutubeEmbed('v4-EvoEilkk')}</CustomDialog>
 
-<Link target='_blank' href='https://1024terabox.com/s/1L1LCfrsL5qOSJbdt-PNf6g'>Alton Maddox (audio)on What Brings People Together.</Link>
 
  	<p>Nationality and Citizenship</p> 
  	<ol className={'max-w-md'}>
-		<li>
-      <ExternalWindowButton
-      buttonText = 'US Governmental Publishing Office Style Manual'
-      externalURL = 'https://www.govinfo.gov/content/pkg/GPO-STYLEMANUAL-2016/pdf/GPO-STYLEMANUAL-2016-7.pdf' /> 
-    </li>
-		<li><Button
-      disableRipple
-      className="relative border-1 overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
-      size="md"
-      variant="bordered"
-      onPress={()=>openWindow('https://youtube.com/playlist?list=PL-DGnkOdP-k3ChNwDLSf7hfnqT5XvefK0&si=n6y9u_Xa7Wfo6E5N')}
-    >
-      14 video Youtube playlist
-    </Button>of Richard McDonald speaking on the multiple citizenships in the "US States".</li>
-    <li>
-    	<Button
-as={Link}
-	target='_blank'
-      disableRipple
-      className="relative border-1 overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
-      size="md"
-      variant="bordered"
-      onPress={()=>openWindow('https://youtu.be/WYoWu5Hr_Ks?si=qL9rDntDCoIzNYWy')}
-    >
-      Analizing Nationality and Citizenship through Statutes and Codes.
-    </Button>
-    </li>
- 	</ol>
- 	
-
- 	 
+<li><Link target='_blank' href='https://1024terabox.com/s/1L1LCfrsL5qOSJbdt-PNf6g'>Alton Maddox (audio)on What Brings People Together.</Link></li>
+  	</ol>	 
  	
 <p></p>
 <p></p>
 
 <p></p>
 <p></p>
+
+    <div className='mx-5'>   
+    <AccordionView title="Constitution">
+       <Constitution/>
+  </AccordionView>
+       </div>
+
+    <div className='mx-5'>
+        <AccordionView title="Rights &amp; Freedoms">
+       <div className="flex flex-wrap gap-4">
+        <Tabs key="warning" aria-label="Tabs colors" color="warning" radius="full">
+          <Tab key="rights" title="Rights"><Rights/></Tab>
+          <Tab key="freedom" title="Freedom"><Freedom/></Tab>
+        </Tabs> 
+    </div>
+  </AccordionView>
+       </div>
+
+    <div className='mx-5'>   
+    <AccordionView title="Money &amp; Economics">
+       <Money/>
+  </AccordionView>
+       </div>
 
  	</div>);
 }

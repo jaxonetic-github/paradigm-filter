@@ -8,7 +8,7 @@ import {ReferencesView} from './../../references/referencesView.jsx';
 import {references, carterGWoodsonProfileRecord} from './../../../../src/constants/references.js';
 
 
-export default function NjingaPage() {
+export default function CarterGWoodson() {
  const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key: "type", label: "TYPE"},
   {    key: "title", label: "TITLE" },{    key: "subtitle", label: "SUBTITLE" },
   {    key: "url",label: "url" },

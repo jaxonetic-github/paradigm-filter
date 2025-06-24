@@ -61,7 +61,19 @@ export default function TableOfContents(){
           </ul>
           </div>
      </AccordionView>
-
+<AccordionView title={'History'}>
+          <div >
+          <ul> The British Colonies
+          <li><p>Chapter : Arrival</p></li>
+          <li><p>Chapter : Virginia</p></li>
+          <li><p>Chapter : Maryland</p></li>
+          <li><p>Chapter : Carolina</p></li> 
+         <li><p>Chapter : Delaware</p></li>
+          <li><p>Chapter : New Amsterdam</p></li>
+          <li><p>Chapter : Massachussetts</p></li>
+          </ul>
+          </div>
+     </AccordionView>
 
 </section>);
 }

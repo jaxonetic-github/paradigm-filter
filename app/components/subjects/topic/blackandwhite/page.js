@@ -39,10 +39,13 @@ export default function Colorisms(){
           buttonText = 'Race?'
           externalURL = 'http://doi.org/10.29164/23raceandracism' /> 
 
+           <ExternalWindowButton
+          buttonText = 'James, Michael and Adam Burgos, "Race", The Stanford Encyclopedia of Philosophy (Spring 2025 Edition), Edward N. Zalta & Uri Nodelman (eds.)'
+          externalURL = 'https://plato.stanford.edu/archives/spr2025/entries/race/' /> 
+
+
  <div className="flex flex-wrap gap-4">
- <p>Humans come in various shades of melanin or skin tones.   The use of crayon colors to identify a people perpetuates a moderm myth, belief, a spell; cast by 
- the shadow of colonial propaganda infamously called &quot;white supremacy&quot;. 
-</p>
+ <p>Humans come in various shades of melanin or skin tones.  Biases and prejudices both positive and negative, against people who are different </p>
 <CustomDialog title='Before Color Prejudice Ancient View of Blacks'><iframe src="https://archive.org/embed/beforecolorpreju0000snow" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></CustomDialog>
 <CustomDialog title='&quot;Black&quot; slave owners--Anthony Johnson'><iframe width="560" height="315" src="https://www.youtube.com/embed/RibI0Nd4UD4?si=-d5idPrXHSOeIVOY&amp;start=284" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></CustomDialog>
 <p className={'take-away'}>During the formation of the British US colonies from colonial territories
@@ -50,12 +53,15 @@ export default function Colorisms(){
  There was no Federal US Citizen yet; only citizens of one of the 13 states(nations) of the Union.</p>
  <p>In the late 1700's, property holders, those with vested interest or business with the state were citizens.
  They were, in fact, &quot;free white people&quot;.  On the surface, it seems racist until you see how the colonizers
- defined  <CustomDialog title='free men'></CustomDialog> and  <CustomDialog title='free white people'></CustomDialog>.   
+ defined  <CustomDialog title='free white men'>
+  <Image  className="w-md md:w-lg lg:w-lg" src={'/images/blackandwhite/freewhitepeople_Blacks1ed.jpg'} fallbackSrc={'/images/imagenotavailable.jpeg'} /></CustomDialog>.  
   </p>  
 
 <div> Johan BlumenBach and Carl von Jonais helped popularize the idea of scientifically justified racism.</div>
 
   
+<CustomDialog title='Conversation--Before we were Black'>{YoutubeEmbed('zXNJRAb5RbA')}</CustomDialog>
+
 <p>Someone&apos;s &quot;white&quot;-ness was and is (as of 2025) not based on skin color.</p>
 <CustomDialog title='Gradual progression of color prejudice in 1600s'>
  <Image className=" flex p-4  "
