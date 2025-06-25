@@ -203,8 +203,17 @@ export default function HistoryHome () {
 
   <div className='my-4'>
   <h2>The Moors</h2>
-  <div></div>
+  
   <div className=''>
+  <div className="border-1">
+  <p className='font-bold'>Moorish Science</p>
+  <CustomDialog title='Constitution of Man (Lecture)' organization='' source=''>{YoutubeEmbed('TtbgBRhIX0E')}</CustomDialog>    
+  <CustomDialog title='Constitution of Man (separate Lecture)' organization='' source=''>{YoutubeEmbed('lw__aR2tQac')}</CustomDialog>    
+  <CustomDialog title='Taj Tarik Bey and RV Bey &apos;Lets Talk Estate&apos; Part 1 of 4' organization='' source=''>{YoutubeEmbed('DcLosSXehq8')}</CustomDialog>    
+  </div>
+
+ <CustomDialog title='Truth about the Moors - Dana Marniche' organization='' source=''>{YoutubeEmbed('1lju1EPYseY')}</CustomDialog>    
+
   <p className='support-sabir'>Ibn Assina (Avverroes)</p>
   <p className='support-sabir'>Ibn Battuta</p>
 <div className="border-1">

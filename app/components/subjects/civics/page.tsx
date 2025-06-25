@@ -7,12 +7,12 @@ import {Image, Button, Link, Divider} from "@heroui/react";
 import CustomDialog from './../../../_utils/CustomDialog.tsx';
 import {YoutubeEmbed, openWindow,} from './../../../_utils/youtubeEmbed.js';
 import AccordionView from './../../../_utils/CustomAccordion.tsx';
-
 import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
 import Constitution from './../topic/constitution/page.tsx';
 import Rights from './../topic/rights/page.tsx';
 import Money from './../topic/money/page.tsx';
 import Freedom from './../topic/freedom/page.js';
+import Trials from './../topic/blackandwhite/trialsAndcases.tsx';
 import {Tabs, Tab} from "@heroui/react";
 /**
  * 
@@ -83,6 +83,11 @@ const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine
   </AccordionView>
        </div>
 
+    <div className='mx-5'>   
+    <AccordionView title="Trials and Cases">
+       <Trials/>
+  </AccordionView>
+       </div>
  	</div>);
 }
 

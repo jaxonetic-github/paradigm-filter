@@ -6,7 +6,7 @@ import AccordionView from './../../_utils/CustomAccordion.tsx';
  
 export default function ContentMap() {
    return (<div className='content top-25 py-2 z-10 bg-[#eee] mx-5'>
-<h1>Content Map</h1>
+<h2>Content Map</h2>
 <div className={'space-x-2 '}>
 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 '>
 
@@ -40,7 +40,7 @@ export default function ContentMap() {
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
      underline="always"   href='/components/subjects/civics'>The Union of Nations </Link> 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-      underline="always"  href={'/components/subjects/topic/blackandwhite'}>Colored People</Link>
+      underline="always"  href={'/components/subjects/topic/blackandwhite'}>Colored People</Link>   
   </AccordionView>
   </div>
 </div>

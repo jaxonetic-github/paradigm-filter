@@ -9,14 +9,22 @@ export default function Home() {
 
   return (<>
 
-   <div className="content-division bg-[#0a2b3bb0] mx-auto flex-row max-w-sm items-center gap-x-4 rounded-xl  p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-      
-<Image className="p-4 h-[12%] w-full object-cover sm:w-full md:h-full "
+   <div className="content-division bg-[#0a2b3bb0] mx-auto flex-row max-w-sm items-center gap-x-4 rounded-xl  p-1 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+   <div className="flex mx-auto ">   
+<Image className="h-40"
+            src={'/images/down-arrow-ui-svgrepo-com.svg'} 
+            fallbackSrc={'images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for `}
+          /><Image className="h-40"
+            src={'/images/down-arrow-ui-svgrepo-com.svg'} 
+            fallbackSrc={'images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for `}
+          /><Image className="h-40"
             src={'/images/down-arrow-ui-svgrepo-com.svg'} 
             fallbackSrc={'images/imagenotavailable.jpeg'}
             alt={`Default Image not found for `}
           />
-      
+      </div>
      
 
 

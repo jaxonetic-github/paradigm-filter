@@ -159,7 +159,6 @@ export const profiles ={
     "Dr Carter G Woodson" : carterGWoodsonProfileRecord,
     "Franz Fanon" : franzfanonProfileRecord,
     "Richard Wright" : richardWProfileRecord,
-
     "Hubert Harrison" : huberthProfileRecord,
     "Dr Frances Wesling": drcressweslingProfileRecord,
     "Dr Ben Jochannon" : drbenProfileRecord,
