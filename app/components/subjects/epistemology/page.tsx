@@ -127,10 +127,18 @@ const bookburnings_Popover =
           externalURL = 'https://youtube.com/shorts/ySg04v4HfmA?si=5dTtf4nT7dQkrORK' /> 
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/11VBzp7m5O8?si=3KYmds_TjSJQ4gM9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+    <CustomDialog title='The Crowd: A study of the popular mind' organization='' source=''><iframe width="560" height="315" src="https://archive.org/embed/in.ernet.dli.2015.223078" title="archive.org" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
+
+<div className='border-1'>
 Edward Barnay
+<CustomDialog title='Propaganda by Edward Bernays' organization='audio' source=''>{YoutubeEmbed('revWgCdPyQQ')}</CustomDialog>    
+<CustomDialog title='Crystallizing Public Opinion - Edward L Bernays - Full' organization='audio' source=''>{YoutubeEmbed('sxB_T_jCij4')}</CustomDialog>    
 <CustomDialog title='Truth Unveiled' organization='' source=''><iframe width="560" height="315" src="https://archive.org/embed/truthunveiled00barn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
+</div>
+<div>
 
-
+</div>
 Adler
 Freud
             </CardBody>

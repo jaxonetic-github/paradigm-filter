@@ -43,7 +43,10 @@ export default function ComponentsHome() {
 
              Suggested Reading :: 
             <CustomDialog title='Dione Fortune - Mystical Qabalah'><iframe src="https://archive.org/embed/mysticalqabalah00fort_0" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
-             Travis Magus Book Reading
+            <CustomDialog title='Mystical Qabalah Book Study (Editorial Update) | Travis Magus'>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HhiBcF6QziQ?si=7i09NWGT6BDCFOFE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            </CustomDialog>    
+
             </CardBody>
           </Card>
         </Tab>
@@ -127,6 +130,7 @@ export default function ComponentsHome() {
     <CustomDialog title='Complete Magicians Table'><iframe src="https://archive.org/embed/StephenSkinner-TheCompleteMagiciansTables-2007" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
     <CustomDialog title='astral doorways j h brennan'><iframe src="https://archive.org/embed/astral-doorways-j-h-brennan" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
 
+<CustomDialog title='Qabalistic Symbolism Vol 2 (24th path) | Travis Magus | Death Card' organization='' source=''>{YoutubeEmbed('BoqvoNLVy8k')}</CustomDialog>    
                          
               Flat Earth::== 
               {YoutubeEmbed('mhc8ydSFhxI')}28:03-- notice the reference about

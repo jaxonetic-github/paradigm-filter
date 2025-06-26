@@ -37,7 +37,7 @@ className="w-20 h-20 text-large"   grid grid-cols-5 sm:grid-cols-4 md:grid-cols-
     <div className="md:shrink-0"> 
       <Image className="p-4 h-[12%] w-full object-cover sm:w-full md:h-full md:w-48"
             src={profileRecord.thumbnail} 
-            fallbackSrc={'images/imagenotavailable.jpeg'}
+            fallbackSrc={'/images/imagenotavailable.jpeg'}
             alt={`Default Image not found for [${profileRecord.name}]`}
           />
         </div>

@@ -33,7 +33,7 @@ export default function HistoryHome () {
       <Link underline="always" target={'_blank'} className='' href={'https://penelope.uchicago.edu/josephus/index.html'}>Muqaddimah, by Ibn Khaldun</Link>
  
 
- <div  className='mx-8'>
+ <div  className='mx-2 md:mx-12'>
 
        
 
@@ -42,11 +42,17 @@ export default function HistoryHome () {
 
 
 
-  <div className='my-'>
+  <div className='my-8'>
   <h3>American History</h3>
   <div className='flex-flow'>
   <CustomDialog title='Worlds Largest Pyramids in America !!! - Origin of Civilization'><iframe width="560" height="315" src="https://www.youtube.com/embed/uT2DZlIR_TI?si=_q3Y5o9OHU5mPJdB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>
   <CustomDialog title='History of America before Columbus, according to documents and...'><iframe src="https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
+  <CustomDialog title='The History of the American Indians' organization='' source=''><iframe src="https://archive.org/embed/GR_10" width="560" height="384" frameborder="0" allowFullScreen></iframe></CustomDialog>    
+ 
+
+  <CustomDialog title='Histoire de la découverte et de la conquête de l&apos;Amérique' organization='' source=''><iframe src="https://archive.org/embed/histoiredeladc00camp" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
+
+
   <ExternalWindowButton
           buttonText = 'American Indian Contribution to the World'
           externalURL = 'https://drive.proton.me/urls/74J66M625G#21bBhAfh8fXM' /> 
@@ -95,6 +101,8 @@ export default function HistoryHome () {
           </div>
       <div className='border-1'>
       <p>Details and Particulars</p>
+      <CustomDialog title='British Colonial Mercantilism' organization='' source=''><iframe width="560" height="315" src="https://www.librarycompany.org/Economics/PDF%20Files/lydon_web.pdf" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
+
       <CustomDialog title='The Buck Act' organization='High Frequency Radio (Yusef El)' source='video(32:13)'>{YoutubeEmbed('yPBTdzkf2Ak')}</CustomDialog>    
       <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/18WLu6_dHYp3jHbaOBPPjaA'}>Creature From Jeykll Island</Link>
       <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/15QDT0JB16946U_rZgXe4yQ'}>Secret Treaty of Verona p.6781</Link>
@@ -134,7 +142,7 @@ export default function HistoryHome () {
 
 
 
-    <div  className='my-4'>
+    <div  className='my-8'>
       <h3>Australian</h3>
         <div className='flex-flow'>
       <div className='border-1'>
@@ -147,6 +155,7 @@ export default function HistoryHome () {
 
       <div className='border-1'>
       <p>Details and Particulars</p>
+    <CustomDialog title='Trucanini : queen or traitor?' organization='Written By Truth' source=''><iframe src="https://archive.org/embed/trucaniniqueenor0000raee" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
     <CustomDialog title='History of Tasmania' organization='Written By Truth' source=''><iframe src="https://archive.org/embed/b1252764" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
   <ExternalWindowButton
           buttonText  = 'The Last Tasmanian, James Bonwick'
@@ -156,7 +165,7 @@ export default function HistoryHome () {
     </div>
 
 
-    <div className='my-4'>
+    <div className='my-8'>
   <h2>Asian History</h2>
   <div className=''>
      <CustomDialog title='A History of Egypt Under Ptolemy' organization='' source=''><iframe src="https://archive.org/embed/in.ernet.dli.2015.279352" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
@@ -172,7 +181,7 @@ export default function HistoryHome () {
   </div>
 
 
-<div className='my-4'>
+<div className='my-8'>
   <h2>Iberia, Al Andalusia, España(Spain)</h2>
 <div>
      In 1492,  all non-christians were ordered to convert to Christianity or leave Al Andalusia.  By From 1609 and 1610, the rest of 
@@ -194,14 +203,14 @@ export default function HistoryHome () {
 </div>
 
 
-    <div className='my-4'>
+    <div className='my-8'>
   <h2>Pacific Slave Trade</h2>
   <div  className=''>
     <CustomDialog title='Pt. 3 - The Real Slave Trade' organization='Asians Enslaved And Labeled As Chinos, Negros, Indians & Africans' source='video(32:13)'>{YoutubeEmbed('9s0wce713iU')}</CustomDialog>    
   </div>
   </div>
 
-  <div className='my-4'>
+  <div className='my-8'>
   <h2>The Moors</h2>
   
   <div className=''>
@@ -210,8 +219,10 @@ export default function HistoryHome () {
   <CustomDialog title='Constitution of Man (Lecture)' organization='' source=''>{YoutubeEmbed('TtbgBRhIX0E')}</CustomDialog>    
   <CustomDialog title='Constitution of Man (separate Lecture)' organization='' source=''>{YoutubeEmbed('lw__aR2tQac')}</CustomDialog>    
   <CustomDialog title='Taj Tarik Bey and RV Bey &apos;Lets Talk Estate&apos; Part 1 of 4' organization='' source=''>{YoutubeEmbed('DcLosSXehq8')}</CustomDialog>    
+  <CustomDialog title='Zodeakus El Roundtable Etymology, Astronomy and Biblica' organization='' source=''>{YoutubeEmbed('Tg37mtaouvw')}</CustomDialog>    
   </div>
 
+ <CustomDialog title='Who Were We Before 1492? Sabir Bey Breaks Down Moorish History' organization='' source=''>{YoutubeEmbed('drjUMOnQ5kk')}</CustomDialog>      
  <CustomDialog title='Truth about the Moors - Dana Marniche' organization='' source=''>{YoutubeEmbed('1lju1EPYseY')}</CustomDialog>    
 
   <p className='support-sabir'>Ibn Assina (Avverroes)</p>
@@ -232,6 +243,7 @@ export default function HistoryHome () {
    </div>
 
   <CustomDialog title='Golden Trade of the Moors' organization='' source=''><iframe src="https://modules.oc4d.org/BookBridge/books/Ghana%20History/The-golden-trade-of-the-Moors-Bovill-E-W-Hallett-Robin-1968-London-New-York-Oxford-U-P.pdf" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>
+  <CustomDialog title='The Great Siege of Malta' organization='The Epic Battle Between The Ottoman Empire And The Knights of St. John' source=''><iframe width="560" height="315" src="https://archive.org/embed/the-great-siege-of-malta-the-epic-battle-between-the-ottoman-empire-and-the-knights-of-st.-john" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
 
    <ExternalWindowButton
           buttonText  = 'History of the conquest of Spain by the Arab-Moors'
@@ -260,7 +272,7 @@ export default function HistoryHome () {
   </div>
   </div>
 
-    <div className='my-4'>
+    <div className='my-8'>
   <h2>Religious History</h2>
         <div className='border-1'>
          <p>Overview and Summaries</p>

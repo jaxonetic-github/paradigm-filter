@@ -43,6 +43,7 @@ export default function Colorisms(){
           buttonText = 'James, Michael and Adam Burgos, "Race", The Stanford Encyclopedia of Philosophy (Spring 2025 Edition), Edward N. Zalta & Uri Nodelman (eds.)'
           externalURL = 'https://plato.stanford.edu/archives/spr2025/entries/race/' /> 
 
+<CustomDialog title='Nature Knows No Color Line' organization='' source=''><iframe width="560" height="315" src="https://archive.org/embed/nature-knows-no-color-line-research-into-the-negro-ancestry-in-the-white-race-j.-a.-rogers-1952" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
 
  <div className="flex flex-wrap gap-4">
  <p>Humans come in various shades of melanin or skin tones.  Biases and prejudices both positive and negative, against people who are different </p>
@@ -155,6 +156,11 @@ All Asiatics don't fit the yellow scheme
     {YoutubeEmbed('96qN4dkut4w')}
     20:00::"White" Servitude in Colonial North Carolina / European Servants & Slaves
 </div>
+<div>   
+    <p>US Colonists ...Moorish Quakers</p>
+    {YoutubeEmbed('A-jUu5z1Q8c')}
+    Pennsylvania's Colonial Sephardic Moorish Quakers...
+</div>
             </CardBody>
           </Card>
         </Tab>
@@ -162,10 +168,6 @@ All Asiatics don't fit the yellow scheme
     </div>
     
     </div>
-
-
-
-   
           
 </div>);
 }

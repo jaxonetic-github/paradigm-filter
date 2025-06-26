@@ -40,7 +40,11 @@ const congressrecord_fourteethAmmend_Popover =
 <p></p>
 <p>University of Montana School of Law Review ::<Link showAnchorIcon underline="always"  target='_blank' href="https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1018&context=faculty_lawreviews">The Constitution and the Public Trust</Link></p>
 
-<p></p>
+<p>
+<CustomDialog title='Constitutional Law'><iframe src="https://archive.org/embed/constitutionalla0000morr" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></CustomDialog>
+<CustomDialog title='Principles of constitutional law'><iframe src="https://archive.org/embed/principlesofcons0000rotu" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></CustomDialog>
+
+</p>
 <p></p>
 
 <div className='my-2 '>

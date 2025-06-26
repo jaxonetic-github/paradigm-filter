@@ -152,9 +152,12 @@ export const franzfanonProfileRecord =
     { key: 10, name: "Franz Fanon", lifespan:'(1925 – 1961)', externalbio:'https://plato.stanford.edu/archives/spr2019/entries/frantz-fanon', thumbnail:'/images/profiles/frantzfanon/frantzfanon.jpeg', sources:[36,37,38], videoArray:[] };
 export const richardWProfileRecord = 
     { key: 666, name: "Richard Wright", lifespan:'(1908 - 1960)', thumbnail:'/images/profiles/richardwright/richardwright.webp', sources:[40], videoArray:[] };
+export const jaRodgersProfileRecord = 
+    { key: 666, name: "J. A. Rogers", lifespan:'(1908 - 1960)', thumbnail:'/images/profiles/', sources:[], videoArray:[] };
 
 
 export const profiles ={
+    "J. A. Rogers" : jaRodgersProfileRecord,
     "Njinga Mbande" : nzingaProfileRecord,
     "Dr Carter G Woodson" : carterGWoodsonProfileRecord,
     "Franz Fanon" : franzfanonProfileRecord,
@@ -215,7 +218,8 @@ export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70
     { id: 39,   authors:'Mann, Kenny', type:'book', category:'history', title:'Kongo Ndongo : West Central Africa', subtitle:``,  iconurl:'/images/covers/kongoNdongo.jpg', url:'https://archive.org/details/kongondongowestc00mann/mode/1up'},
     { id: 40,   authors:'Richard Wright', type:'book', category:'history', title:'Native Son', subtitle:``,  iconurl:'/images/profiles/richardwright/nativeson.jpg', url:'https://ia801403.us.archive.org/8/items/in.ernet.dli.2015.149739/2015.149739.Native-Son.pdf'},
     { id: 41,   authors:'Richard Wright', type:'video', category:'history', title:'Richard Wright (about)', subtitle:``,  iconurl:'', url:'https://youtube.com/shorts/3MMY9cyX8iM?si=jT1fyLzZgcjl44JG'},
-    { id: 42,   authors:'Carter G Woodson', type:'book', category:'history', title:'The Mind Of The Negro', subtitle:`As Reflected In Letters Written During The Crisis 1800-1860`,  iconurl:'/images/profiles/cartergwoodson/mindofthenegro.jpg', url:'"https://archive.org/embed/dli.ernet.285762"'},
+    { id: 42,   authors:'Carter G Woodson', type:'book', category:'history', title:'The Mind Of The Negro', subtitle:`As Reflected In Letters Written During The Crisis 1800-1860`,  iconurl:'/images/profiles/cartergwoodson/mindofthenegro.jpg', url:"https://archive.org/embed/dli.ernet.285762"},
+    { id: 43,   authors:'Macbeth Forbes', type:'book', category:'history', title:'Jacobite Gleanings From State Manuscripts', subtitle:'',  iconurl:'', url:'https://archive.org/embed/jacobitegleanin00forbgoog'},
 
   ];
 
