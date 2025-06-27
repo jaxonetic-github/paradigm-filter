@@ -95,20 +95,20 @@ export default function ReferencesMain( ) {
 
 <div className="sticky top-10 z-10 bg-white">
    <Select color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
-            label="Filter By Category" placeholder="Select a Category"
-            className=" max-w-xs"
-            items={categories}
-               selectedKey={["All"]}
-               onChange={handleCategoryChange}
-            >
-    {item => <SelectItem className="filter-select"  >{item.label}</SelectItem>}
-    </Select>
-   <Select color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
             label="Filter By Type" placeholder="Select a Type"
             className=" max-w-xs"
             items={REFERENCE_TYPES}
                selectedKey={["All"]}
                onChange={handleTypeChange}
+            >
+    {item => <SelectItem className="filter-select"  >{item.label}</SelectItem>}
+    </Select>
+   <Select color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
+            label="Filter By Category" placeholder="Select a Category"
+            className=" max-w-xs"
+            items={categories}
+               selectedKey={["All"]}
+               onChange={handleCategoryChange}
             >
     {item => <SelectItem className="filter-select"  >{item.label}</SelectItem>}
     </Select>
