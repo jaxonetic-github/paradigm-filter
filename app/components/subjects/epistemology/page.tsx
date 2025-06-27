@@ -4,6 +4,7 @@ import  {Image, Button} from "@heroui/react";
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
 import {Tabs, Tab, Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
 import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+import AccordionView from './../../../_utils/CustomAccordion.tsx';
 
 import  {SimplePopoverView} from "./../../../_utils/popoverView.tsx";
 import  {YoutubeEmbed} from "./../../../_utils/youtubeEmbed.js";
@@ -67,9 +68,15 @@ const bookburnings_Popover =
        content and information, shameful acts of book burnings, and thefts and destruction of monuments, artifacts, and documents,...</p> 
             
       <p className='indent-8'>The result of not filtering incoming information is like being caught in someone else's spell.  The older we get after, forming layer upon layer of concepts and ideas based on  
-      what was heard and believed, the harder it is to want to "reinvint" or relayer their philosophy.  Thus many children are born 
-      into this time loop of growing up in an evironment that perpetuates and promotes the belief and naturally accepting it 
+      what was heard and believed, the harder it is to want to "reinvint" or relayer their philosophy.  Thus we are born 
+      into this time loop of growing up in environment that perpetuates and promotes the belief and naturally accepting it 
       because of its broader cultural acceptance.</p>
+      <p>
+      This section will show and explore examples of propaganda and how it used to our detriment. It behooves all of us to do 
+      an authentic audit on what we think we know or have learned.  If we are upholding concepts for their emotional appeal then
+      we are not living our truth or upto our highest potential; instead, we are living under-standing another persons spell.
+      That spell becomes a sprouting seed mental slavery the longer is not balanced with reality.
+      </p>
       </div>
 
 <div className='flex justify-center'>
@@ -83,21 +90,11 @@ const bookburnings_Popover =
 </ul>
 </div>
 </div>
-      <p>It seems appropriate to start this epistomological journey with a quick survey of what is meant by &quot;Truth&quot;, and it&apos;s associates, &quot;Belief&quot;, &quot;Facts&quot;, Opinions. </p>
     <Divider />
- <div className="flex w-full flex-col">
-      <Tabs className='border-1' aria-label="Options" >
-        <Tab className='content-division' key="definitions" title="Definitions">
-        <Definitions/>
-        </Tab>
-        <Tab className='content-division' key="etymology" title="Etymology">
-        <p>Words themselves have a life of their own that is brought out by a useful dive into the world of etymology.</p>
-              <p className='indent-8'>By placing words and events back into the fields from which they were abstracted, we create a context which
-               helps to  avoid misleading inferences.</p> <Link target='_blank' href='https://languagelog.ldc.upenn.edu/nll/?p=33594'>Tory MP suspended for racist remark</Link>
-        </Tab>
 
-        <Tab key="criticalthink" className='content-division' title="Critical Thinking" >
-          <Card>
+    <AccordionView title={'Critical Thinking'}>
+          <div >
+ <Card>
             <CardBody>
             <p >Alton Maddox on Critical Thinking</p>
             **calling things what they are...*
@@ -113,9 +110,13 @@ const bookburnings_Popover =
            
             </CardFooter>
           </Card>
-        </Tab>
-        <Tab className='content-division'  key="propoganda" title="Social Control">
-          <Card>
+          </div>
+     </AccordionView>
+    <Divider />
+
+        <AccordionView title={'Social Control'}>
+          <div >
+                     <Card>
             <CardBody>
             
             <ExternalWindowButton
@@ -142,11 +143,18 @@ Edward Barnay
 Adler
 Freud
             </CardBody>
-          </Card>
-        </Tab>
-        <Tab className='content-division'  key="dissonnance" title="Dissonnance">
+          </Card>     
+          </div>
+     </AccordionView>
+
+         <AccordionView title={'Appendix of Dissonnance'}>
+          <div >
           <Card>
             <CardBody>
+
+          <ExternalWindowButton
+          buttonText =  'Challenging Who Decides Nuclear Weapon Rights '
+          externalURL = 'https://youtube.com/shorts/bJ-dq8xkigs?si=23dSQ9nh8o3tmnoR' /> 
 
            <ExternalWindowButton
           buttonText =  ' The West Against African Interests'
@@ -156,11 +164,21 @@ Freud
           externalURL = 'https://youtube.com/shorts/aSITRF4SRNI?si=_qjCZce8iFrePD1A' /> 
             </CardBody>
           </Card>
-        </Tab>
-      </Tabs>
-    </div>
+
+          </div>
+     </AccordionView>
+
         <Divider />
-        
+            <AccordionView title={'Definitions'}>
+          <div >
+                  <p>Words themselves have a life of their own that is brought out by a useful dive into the world of etymology.</p>
+              <p className='indent-8'>By placing words and events back into the fields from which they were abstracted, we create a context which
+               helps to  avoid misleading inferences.</p> <Link target='_blank' href='https://languagelog.ldc.upenn.edu/nll/?p=33594'>Tory MP suspended for racist remark</Link>
+
+ <Definitions/>
+          </div>
+     </AccordionView>
+        <Divider />
 </div>);
 }
 

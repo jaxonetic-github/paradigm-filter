@@ -38,7 +38,16 @@ export default function HistoryHome () {
        
 
 
-    
+ 
+       <div className='my-8'>
+  <h2>Atlan(tis)</h2>
+  <div className=''>
+
+  <CustomDialog title='Civilization, An Inheritance From America / Atlantis More Than a Myth'>{YoutubeEmbed('TKzZnxlJDng')}</CustomDialog>
+
+</div>
+  </div>
+
 
 
 
@@ -47,7 +56,7 @@ export default function HistoryHome () {
   <div className='flex-flow'>
   <CustomDialog title='Worlds Largest Pyramids in America !!! - Origin of Civilization'><iframe width="560" height="315" src="https://www.youtube.com/embed/uT2DZlIR_TI?si=_q3Y5o9OHU5mPJdB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>
   <CustomDialog title='History of America before Columbus, according to documents and...'><iframe src="https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
-  <CustomDialog title='The History of the American Indians' organization='' source=''><iframe src="https://archive.org/embed/GR_10" width="560" height="384" frameborder="0" allowFullScreen></iframe></CustomDialog>    
+  <CustomDialog title='The History of the American Indians' organization='' source=''><iframe src="https://archive.org/embed/GR_10" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
  
 
   <CustomDialog title='Histoire de la découverte et de la conquête de l&apos;Amérique' organization='' source=''><iframe src="https://archive.org/embed/histoiredeladc00camp" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
@@ -164,21 +173,6 @@ export default function HistoryHome () {
       </div>
     </div>
 
-
-    <div className='my-8'>
-  <h2>Asian History</h2>
-  <div className=''>
-     <CustomDialog title='A History of Egypt Under Ptolemy' organization='' source=''><iframe src="https://archive.org/embed/in.ernet.dli.2015.279352" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
-
-     <CustomDialog title='African Origin of Civilization - Diope' organization='' source=''><iframe src="https://www.almendron.com/tribuna/wp-content/uploads/2019/10/african-origin-of-civilization-complete.pdf" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
-     <CustomDialog title='Introduction to African Civilization, John G Jackson' organization='' source=''><iframe src="https://archive.org/embed/introductiontoaf00jack" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
-     <CustomDialog title='Early Polynesians' organization='' source=''>{YoutubeEmbed('nCUkeHaqlM4')}</CustomDialog> 
-     <CustomDialog title='Historia do Congo' organization='Written By Truth' source=''><iframe src="https://dn790007.ca.archive.org/0/items/historiadocongo00mansgoog/historiadocongo00mansgoog.pdf" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
-   <ExternalWindowButton
-          buttonText  = 'Africans not from Africans '
-          externalURL = 'https://youtube.com/playlist?list=PLWAGI-2J1-NRUfIXv8M4_7kqmpLYr5zcJ&si=c1-JnOTIdrBwnpB-' /> 
-</div>
-  </div>
 
 
 <div className='my-8'>

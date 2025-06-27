@@ -2,8 +2,10 @@ import React from "react";
 import  {Link, Button,Image} from "@heroui/react";
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import {Accordion, AccordionItem} from "@heroui/react";
+import CustomDialog from './../../../../_utils/CustomDialog.tsx';
 
 import {ReferencesView} from './../../references/referencesView.jsx';
+import  {YoutubeEmbed} from "./../../../../_utils/youtubeEmbed.js";
 
 import {references, nzingaProfileRecord} from './../../../../src/constants/references.js';
 
@@ -24,6 +26,9 @@ export default function FreedomPage() {
    </div>
 </div>
 
+
+
+  <CustomDialog title='The Wonder Twins: Message To The Moors, The Israelites And The Kemetics.' organization='' source=''>{YoutubeEmbed('kGI6LNu-Vgk')}</CustomDialog>    
 
   <div><p className="indent-8">What does freedom mean to you?  Take some time to think about this because it is not a trivial question.
   Is freedom simply not being called a slave or not having chains, or having civil rights or...? </p>

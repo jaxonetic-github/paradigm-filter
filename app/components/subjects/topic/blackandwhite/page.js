@@ -129,7 +129,13 @@ All Asiatics don't fit the yellow scheme
         <Tab key="videos" title="Colonizers and Foreigners">
           <Card>
             <CardBody>
-              <div>
+
+
+        <ExternalWindowButton
+          buttonText = 'Black slave owners more common in Carribean'
+          externalURL = 'https://youtube.com/shorts/Mwfmzjvli4A?si=e5pEW06LH4_AgK1v' /> 
+
+  <div>
 <p>The From Colonizer to Enslaved, The Whitewash, Paper Genocide</p>  
 {YoutubeEmbed('5I_qy8wcYjE')}
 <Divider/>
