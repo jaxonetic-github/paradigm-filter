@@ -6,6 +6,9 @@ import {Image, Divider, Link} from "@heroui/react";
 import CustomDialog from './../../../_utils/CustomDialog.tsx';
 import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
 import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+import {ReferenceView, ReferencesGridView} from './../references/referencesView.jsx';
+import { references, tableColumns, REFERENCE_TYPES} from './../../../src/constants/references.js';
+import AccordionView from './../../../_utils/CustomAccordion.tsx';
 
 
 
@@ -25,6 +28,14 @@ export default function HistoryHome () {
         textInset:{ border:'3px solid rgba(0, 0, 0, 0.05)'}, 
    };
 
+const referenceFilter = (arrayToDisplay:number[]) => {
+  const a2d = arrayToDisplay;
+ let filtered = references.filter((reference)=>(a2d.includes(reference.id) ));
+// if (filtered.length==1) 
+//   filtered=[filtered];
+
+return filtered;
+};
 
  return (
 <div>
@@ -35,17 +46,13 @@ export default function HistoryHome () {
 
  <div  className='mx-2 md:mx-12'>
 
-       
-
-
- 
        <div className='my-8'>
-  <h2>Atlan(tis)</h2>
-  <div className=''>
 
-  <CustomDialog title='Civilization, An Inheritance From America / Atlantis More Than a Myth'>{YoutubeEmbed('TKzZnxlJDng')}</CustomDialog>
-
-</div>
+  <AccordionView title={'Atlan(tis)'}>
+    <div>
+       <ReferencesGridView  rows={referenceFilter([44])}/>
+    </div>
+  </AccordionView>
   </div>
 
 
@@ -54,95 +61,46 @@ export default function HistoryHome () {
   <div className='my-8'>
   <h3>American History</h3>
   <div className='flex-flow'>
-  <CustomDialog title='Worlds Largest Pyramids in America !!! - Origin of Civilization'><iframe width="560" height="315" src="https://www.youtube.com/embed/uT2DZlIR_TI?si=_q3Y5o9OHU5mPJdB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>
-  <CustomDialog title='History of America before Columbus, according to documents and...'><iframe src="https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
-  <CustomDialog title='The History of the American Indians' organization='' source=''><iframe src="https://archive.org/embed/GR_10" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
- 
+  <AccordionView title={'General'}>
+    <div>
+       <ReferencesGridView  rows={referenceFilter([46,47,48,49,50])}/>
+    </div>
+  </AccordionView>
 
-  <CustomDialog title='Histoire de la découverte et de la conquête de l&apos;Amérique' organization='' source=''><iframe src="https://archive.org/embed/histoiredeladc00camp" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
-
-
-  <ExternalWindowButton
-          buttonText = 'American Indian Contribution to the World'
-          externalURL = 'https://drive.proton.me/urls/74J66M625G#21bBhAfh8fXM' /> 
 
       <div className='border-1'>
-      <p>Secret Societies - The Great Brotherhood</p>
-      <CustomDialog title='First book of Azrael : teachings of the Great White Brotherhood'><iframe src="https://archive.org/details/firstbookofazrae0001unse/mode/2up" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
-      <CustomDialog title='The Flashlights of Truth'><iframe src="https://archive.org/embed/flashlightsoftru00king" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
-      <CustomDialog title='The Lotus Path'><iframe src="https://dn790007.ca.archive.org/0/items/lotuspath00kingrich/lotuspath00kingrich.pdf" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
-      <CustomDialog title='Secret Societies: The Great School'><iframe src="https://archive.org/details/questionboxserie01chic/mode/2up" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
-      </div>
+      
+        <AccordionView title={'Secret Societies - The Great Brotherhood'}> 
+              <ReferencesGridView  rows={referenceFilter([53,54,55,56])}/>
+        </AccordionView>
+        </div>
 
       <div className='border-1'>
-      <h3>Haitian Revolution (1793-1804)</h3>
-      <CustomDialog title='Toussaint Louverture'><iframe src="https://ia801906.us.archive.org/18/items/oapen-20.500.12657-31609/626410.pdf" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
+          <AccordionView title={'Haitian Revolution (1793-1804)'}> 
+              <ReferencesGridView  rows={referenceFilter([57])}/>
+        </AccordionView>    
       </div>
 
-          <div className='border-1'>
-      <h3>South American History</h3>
-      <div className='flex-flow'>
-        <CustomDialog title='The Masters and the Slaves(eng), Gilberto Freyre'><iframe src="https://ia802900.us.archive.org/15/items/in.ernet.dli.2015.176407/2015.176407.The-Masters-And-The-Slaves.pdf" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
-        <CustomDialog title='The Mysteries of Ancient South America'><iframe src="https://archive.org/embed/mysteriesofancie035488mbp" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>
-        <CustomDialog title='Brazilian Resources '><iframe src="http://www.interpretesdobrasil.org/" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>
-        <CustomDialog title='Narrative of the 5 year expedition, against the revolted negros...'><iframe src="https://archive.org/embed/narrativeoffivey02sted" width="560" height="384" frameBorder="0"  allowFullScreen></iframe> </CustomDialog>
-      </div>
+          <div className='border-1'>    
+      <AccordionView title={'South American History'}> 
+       <ReferencesGridView  rows={referenceFilter([58, 59, 28, 60])}/>
+       </AccordionView> 
     </div>
 
-        <div  className='border-1'>
-      <h3>Aspects of US Colonialism</h3>
+        <div  className='border-1 my-2'>
+         <AccordionView title={'Aspects of US Colonialism'}> 
+
         <div className='flex-flow'>
-      <div className='border-1'>
-      <p>Overview and Summaries</p>
-        <CustomDialog title='General Overview' organization='2 Milli interview with Mansa the Moor' source=''>{YoutubeEmbed('zXNJRAb5RbA')}</CustomDialog>    
-        <ExternalWindowButton 
-          buttonText = '...America... is sick with militarism and excessive materialism - MLK'
-          externalURL = 'https://youtube.com/shorts/bi9G5yqSqXI?si=lekIH6TwjoyHCgDd' /> 
-      <CustomDialog title='Conquest of a continent: or, The expansion of races in American' organization='' source=''><iframe src="https://archive.org/embed/conquestofcontin00gran" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
-
-
-       <ExternalWindowButton 
-          buttonText = 'US Governmental Publishing Office Style Manual'
-          externalURL = 'https://www.govinfo.gov/content/pkg/GPO-STYLEMANUAL-2016/pdf/GPO-STYLEMANUAL-2016-7.pdf' /> 
-       <ExternalWindowButton
-       buttonText='THE SUPPRESSION OF THE AFRICAN SLAVE-TRADE TO THE UNITED STATES OF AMERICA 1638–1870'
-       externalURL='https://www.gutenberg.org/files/17700/17700-h/17700-h.htm' />  
+          <div className='border-1'>
+          <h3>Overview and Summaries</h3>
+           <ReferencesGridView  rows={referenceFilter([61,62,63,64,65])}/>
           </div>
-      <div className='border-1'>
-      <p>Details and Particulars</p>
-      <CustomDialog title='British Colonial Mercantilism' organization='' source=''><iframe width="560" height="315" src="https://www.librarycompany.org/Economics/PDF%20Files/lydon_web.pdf" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-
-      <CustomDialog title='The Buck Act' organization='High Frequency Radio (Yusef El)' source='video(32:13)'>{YoutubeEmbed('yPBTdzkf2Ak')}</CustomDialog>    
-      <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/18WLu6_dHYp3jHbaOBPPjaA'}>Creature From Jeykll Island</Link>
-      <Link underline="always" target={'_blank'} className='' href={'https://1024terabox.com/s/15QDT0JB16946U_rZgXe4yQ'}>Secret Treaty of Verona p.6781</Link>
-      <CustomDialog title='Bakersfield Conversation: So what have we learned this Juneteenth?' organization='' source=''><iframe width="560" height="315" src="https://www.youtube.com/embed/7t0hKo1-pzM?si=KVpi54VGXGkRZO43&amp;start=2174" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-      <CustomDialog title='Juneteenth - THE TRUE HISTORICAL BACKGROUND / American Indians & Black Europeans, Not Africans !!!' organization='Kurimeo' source='1hr 55m'>{YoutubeEmbed('HODuPoHbRhU')}</CustomDialog>    
-      <CustomDialog title='Origins of Lynching, Ida B Wells' organization='' source=''>{YoutubeEmbed('cYtOiGZUERs')}</CustomDialog>    
-      <CustomDialog title='First Europeans, The Felons of Briton' organization='' source=''>{YoutubeEmbed('jDFPVc2kPvE')}</CustomDialog>    
-      <ExternalWindowButton
-          buttonText = 'The Massa and the House Negro - Malik El Shabazz'
-          externalURL = 'https://youtube.com/shorts/2bwBRb6FWaM?si=4Ag450vdWhhMKk_9' /> 
-      <ExternalWindowButton
-          buttonText = 'Journal of Negro History- Carter G Woodson'
-          externalURL = 'https://drive.proton.me/urls/4G8X564N68#gkZwifmRSbwm' /> 
-        <CustomDialog title='Racial Integrity Acts (1824-1924)' organization='' source=''><iframe width="560" height="315" src="https://www.youtube.com/embed/AyatQ-5Kt58?si=hDuKqm9NRI_9uOT3" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-      <ExternalWindowButton
-          buttonText = 'Scott vs SanFord'
-          externalURL = 'https://www.archives.gov/milestone-documents/dred-scott-v-sandford' /> 
-      <ExternalWindowButton
-          buttonText = 'Indian Citizen Act'
-          externalURL = 'https://www.loc.gov/item/today-in-history/june-02/' /> 
-      <ExternalWindowButton
-          buttonText = 'Civil War, fought over Union not Slavery'
-          externalURL = 'https://backstory.newamericanhistory.org/episodes/why-they-fought/' /> 
-     <ExternalWindowButton
-          buttonText = 'US Dept of Education'
-          externalURL = 'https://www.history.com/articles/department-education-andrew-johnson-reconstruction' /> 
-    <ExternalWindowButton
-          buttonText = 'US Indian Boarding Schools'
-          externalURL = 'https://boardingschoolhealing.org/education/us-indian-boarding-school-history/' /> 
+          <div className='border-1'>
+          <h3>Details and Particulars</h3>
+                 <ReferencesGridView  rows={referenceFilter([66,67,68,69,70,71,72,73,74,75,76,35,77,78,79])}/>
+          </div>
       </div>
-      </div>
+   </AccordionView> 
     </div>
 
   </div>
@@ -152,25 +110,21 @@ export default function HistoryHome () {
 
 
     <div  className='my-8'>
-      <h3>Australian</h3>
-        <div className='flex-flow'>
+
+  <AccordionView title={'Australian'}>
+    <div>
+           <div className='flex-flow'>
       <div className='border-1'>
       <p>Overview and Summaries</p>
-
-       <ExternalWindowButton 
-          buttonText = 'The Oldest Continuous Culture in the world'
-          externalURL = 'https://youtube.com/shorts/_Z8vzVL_xpc?si=8EZSpn7f2u0KYOPx' /> 
-        </div>
-
+       <ReferencesGridView  rows={referenceFilter([51])}/>
+   </div>
       <div className='border-1'>
       <p>Details and Particulars</p>
-    <CustomDialog title='Trucanini : queen or traitor?' organization='Written By Truth' source=''><iframe src="https://archive.org/embed/trucaniniqueenor0000raee" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
-    <CustomDialog title='History of Tasmania' organization='Written By Truth' source=''><iframe src="https://archive.org/embed/b1252764" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
-  <ExternalWindowButton
-          buttonText  = 'The Last Tasmanian, James Bonwick'
-          externalURL = 'https://drive.proton.me/urls/7SFCEW2PZ8#fFxV2aHazlJ8' /> 
+       <ReferencesGridView  rows={referenceFilter([52,30,3])}/>
   </div>
-      </div>
+      </div>   
+    </div>
+  </AccordionView>
     </div>
 
 
@@ -219,6 +173,8 @@ export default function HistoryHome () {
  <CustomDialog title='Who Were We Before 1492? Sabir Bey Breaks Down Moorish History' organization='' source=''>{YoutubeEmbed('drjUMOnQ5kk')}</CustomDialog>      
  <CustomDialog title='Truth about the Moors - Dana Marniche' organization='' source=''>{YoutubeEmbed('1lju1EPYseY')}</CustomDialog>    
 
+  <CustomDialog title='Judeus e Mouros em Portugal em tempos passados' organization='' source=''><iframe src="https://archive.org/embed/lusitana341" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>
+
   <p className='support-sabir'>Ibn Assina (Avverroes)</p>
   <p className='support-sabir'>Ibn Battuta</p>
 <div className="border-1">
@@ -236,7 +192,6 @@ export default function HistoryHome () {
           externalURL = 'https://repository.digital.georgetown.edu/handle/10822/557913' />
    </div>
 
-  <CustomDialog title='Golden Trade of the Moors' organization='' source=''><iframe src="https://modules.oc4d.org/BookBridge/books/Ghana%20History/The-golden-trade-of-the-Moors-Bovill-E-W-Hallett-Robin-1968-London-New-York-Oxford-U-P.pdf" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>
   <CustomDialog title='The Great Siege of Malta' organization='The Epic Battle Between The Ottoman Empire And The Knights of St. John' source=''><iframe width="560" height="315" src="https://archive.org/embed/the-great-siege-of-malta-the-epic-battle-between-the-ottoman-empire-and-the-knights-of-st.-john" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
 
    <ExternalWindowButton
@@ -263,6 +218,11 @@ export default function HistoryHome () {
    <ExternalWindowButton
           buttonText  = 'Chronicles of the Conquest of Granada'
           externalURL = 'https://1024terabox.com/s/1j_TE3wD2M51WKT31SYDmsQ' />
+
+ <CustomDialog title='Slaver Kings, Amazon Queens and the Brazilian Spartacus: The African Kingdom of Kongo' organization='' source=''>
+ <iframe width="560" height="345" src="https://www.youtube.com/embed/w6P4KNEBbMQ?si=Z7HItIXfg9Wg9CFZ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+ </CustomDialog>    
+
   </div>
   </div>
 
@@ -271,6 +231,9 @@ export default function HistoryHome () {
         <div className='border-1'>
          <p>Overview and Summaries</p>
     <CustomDialog title='Dr Smalls, History and Spirituality' organization='' source=''>{YoutubeEmbed('a2YHzWi697c')}</CustomDialog>    
+    <CustomDialog title='Phil Valentine the Quintessence of African Spirituality' organization='' source=''>{YoutubeEmbed('RFI52XYmTD0')}</CustomDialog>    
+
+
 </div>
       <div className='border-1'>
 

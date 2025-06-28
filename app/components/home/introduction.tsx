@@ -11,18 +11,20 @@ export  const Introduction=()=>
             <div hidden className='flex container'>
             <h3 className='align-center'></h3>
             </div>
-            <p className='indent-8'>Permeating throughout this work, which spans many branches of knowledge and 
+            <p className='hidden indent-8'>Permeating throughout this work, which spans many branches of knowledge and 
             many millenia, is a hope that you will leave innerstanding the need for critical thinking, accountability, creativity,
             empathy, and humility in our daily activities and interactions in order to encourage steps toward balance for all the peoples on this earthly plane.
              </p>
-            <p className='indent-8'>High critical thinking skills allows each of us to filter the information and stimuli and energy in and around us. 
+            <p className='hidden indent-8'>High critical thinking skills allows each of us to filter the information and stimuli and energy in and around us. 
             If we want to affect change then we must be the change.  That means using critical thinking to hold ourselves accountable
             and holistically evaluate whether we ourselves are living according to that change or just saying the words because they they
              &quot;feel good to say. A dose of humility helps calm our egos enough to access the empathy required as a base to understand the perspective of your audience.
              If emotions are arising than the ego is super-involved.  A bit of emotional intelligence by all goes along way toward ensuring the negative,
              defensive, aggressive, combative emotions are diminished if not avoided entirely.
              </p>
-            <p> 
+            <p>It will be apparent very quickly, the frequency of each of these divisions or categories or sciences overlap. Note how much time is spent by all the teachers
+            and masters are trying to correct paradigm or address common propoganda before discussing their subject.
+
              </p>
 
             <p>

@@ -6,7 +6,9 @@ import {Button} from "@heroui/react";
 console.log(buttonText,'----', externalURL);
 return (<div className="video-responsive">
    <Button
-      className="inlinebutton relative border-1 rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
+      className=" 
+      relative border-1 rounded-full bg-gradient-to-tr from-blue-500 to-yellow-800 text-white shadow-lg
+      hover:-translate-y-1 p-1 shadow-xl  after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
       size="md"
       variant="bordered"
       onPress={()=>{openWindow(externalURL);}}

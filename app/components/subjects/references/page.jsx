@@ -127,7 +127,7 @@ export default function ReferencesMain( ) {
  <ReferencesTableView className={'-z-10'} columns={tableColumns} rows={filteredReferences}/>     
         </Tab>
         <Tab className='content-division' key="Grid View" title="ReferencesGridView">
-   <ReferencesGridView className={'-z-10'} columns={tableColumns} rows={filteredReferences}/>
+   <ReferencesGridView className={'-z-10'}  rows={filteredReferences}/>
         </Tab>        
      </Tabs>
     </div>);

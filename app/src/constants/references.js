@@ -153,7 +153,7 @@ export const franzfanonProfileRecord =
 export const richardWProfileRecord = 
     { key: 666, name: "Richard Wright", lifespan:'(1908 - 1960)', thumbnail:'/images/profiles/richardwright/richardwright.webp', sources:[40], videoArray:[] };
 export const jaRodgersProfileRecord = 
-    { key: 666, name: "J. A. Rogers", lifespan:'(1908 - 1960)', thumbnail:'/images/profiles/', sources:[], videoArray:[] };
+    { key: 666, name: "J. A. Rogers", lifespan:' (1880 - 1966)', thumbnail:'/images/profiles/', sources:[], videoArray:[] };
 
 
 export const profiles ={
@@ -206,7 +206,7 @@ export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70
     { id: 27, subcategory:'repository', category :CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'Interpretes do Brasil', subtitle:'Brazilian sources', iconurl:'',relevance:'primary sources', authors:'', url:'http://www.interpretesdobrasil.org/'},
     { id: 28, subcategory:'', category:'reference', type:'book', title: "Interpretes do Brasil", subtitle:'',  relevance:'primary source,  Brazil -- Civilization',   authors:['Editora Nova Aguilar'] ,  description:' Brazil -- Civilization', url:'https://archive.org/details/interpretesdobra0001unse/mode/2up'}, 
     { id: 29, subcategory:'', category :CATEGORY_HISTORY ,type:TYPE_BOOK, title:'Africans and Native Americans', subtitle:'The Language of Race and Red - Black peoples',iconurl:'', relevance:'', authors:'Jack D Forbes', url:'https://archive.org/details/africansnativeam0000forb'},
-    { id: 30, category:'history', type:'book', title: "History of Tasmania", subtitle:'',  relevance:'Europe meets Australia and... well...',   authors:['Truth Magazine'] ,  description:'', url:'https://drive.proton.me/urls/43NKY460V0#TmMBEMA8XFwy',path:'/books/history/europeancolonization/historyoftasmania.pdf', protonurl:'https://drive.proton.me/urls/43NKY460V0#TmMBEMA8XFwy'}, 
+    { id: 30, category:'history', type:'book', title: "History of Tasmania", subtitle:'',  relevance:'Europe meets Australia and... well...',   authors:['Truth Magazine'] ,  description:'', url:'https://archive.org/embed/b1252764',path:'/books/history/europeancolonization/historyoftasmania.pdf', protonurl:'https://drive.proton.me/urls/43NKY460V0#TmMBEMA8XFwy'}, 
     { id: 31, subcategory:'repository', category :CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'WeLib', subtitle:'document repository', iconurl:'',relevance:'primary sources', authors:'', url:'https://welib.org/ '},
     { id: 32, subcategory:'', category :CATEGORY_HISTORY ,type:TYPE_BOOK, title:'The Negro in our History', subtitle:'---', iconurl:'/images/profiles/cartergwoodson/carterg_negroinourhistory.jpg',relevance:'reference', authors:'', url:''},
     { id: 33,   authors:'Carter G Woodson', type:'book', category:'history', title:'The MisEducation of the Negro', subtitle:``,  iconurl:'/images/profiles/cartergwoodson/miseducationOftheNegro.jpg', url:'https://archive.org/embed/negroinourhistor0000unse_k7k7'},
@@ -220,6 +220,44 @@ export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70
     { id: 41,   authors:'Richard Wright', type:'video', category:'history', title:'Richard Wright (about)', subtitle:``,  iconurl:'', url:'https://youtube.com/shorts/3MMY9cyX8iM?si=jT1fyLzZgcjl44JG'},
     { id: 42,   authors:'Carter G Woodson', type:'book', category:'history', title:'The Mind Of The Negro', subtitle:`As Reflected In Letters Written During The Crisis 1800-1860`,  iconurl:'/images/profiles/cartergwoodson/mindofthenegro.jpg', url:"https://archive.org/embed/dli.ernet.285762"},
     { id: 43,   authors:'Macbeth Forbes', type:'book', category:'history', title:'Jacobite Gleanings From State Manuscripts', subtitle:'',  iconurl:'', url:'https://archive.org/embed/jacobitegleanin00forbgoog'},
-
+    { id: 44,   authors:'Kurimeo', type:'video', category:'history', title:'Civilization, An Inheritance From America / Atlantis More Than a Myth', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/TKzZnxlJDng?si=BB6tcuhw_8A9dB3s'},
+    { id: 45,   authors:'Heroes and Legends Documentary Channel', type:'video', category:'history', title:'The African Kingdom of Kongo', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/w6P4KNEBbMQ?si=VcfvvaDBIzvAmwyN'},
+    { id: 46,   authors:'Kurimeo', type:'video', category:'history', title:'Worlds Largest Pyramids in America !!! - Origin of Civilization', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/uT2DZlIR_TI?si=_q3Y5o9OHU5mPJdB'},
+    { id: 47,   authors:'P. D. Roo', type:'book', category:'history', title:'History of America before Columbus, according to documents and...', subtitle:'',  iconurl:'', url:'https://ia904507.us.archive.org/27/items/historyofamerica01derouoft/historyofamerica01derouoft.pdf'},
+    { id: 48,   authors:'James Adair', type:'book', category:'history', title:'The History of the American Indians', subtitle:'',  iconurl:'', url:'https://archive.org/embed/GR_10'},
+    { id: 49,   authors:'J. H. Campe', type:'book', category:'history', title:'Histoire de la découverte et de la conquête de l&apos;Amérique', subtitle:'',  iconurl:'', url:'https://archive.org/embed/histoiredeladc00camp'},
+    { id: 50,   authors:'Emory Keoke And Kay Porterfield', type:'book', category:'history', title:'American Indian Contribution to the World', subtitle:'',  iconurl:'', url:'https://drive.proton.me/urls/74J66M625G#21bBhAfh8fXM'},
+    { id: 51,   authors:'Ashlee the Baroness', type:'video', category:'history', title:'The Oldest Continuous Culture in the world', subtitle:'',  iconurl:'', url:'https://youtube.com/shorts/_Z8vzVL_xpc?si=8EZSpn7f2u0KYOPx'},
+    { id: 52,   authors:'Vivienne Rae Ellis', type:'book', category:'history', title:'Trucanini : queen or traitor?', subtitle:'',  iconurl:'', url:'https://archive.org/embed/trucaniniqueenor0000raee'},
+    { id: 53,   authors:'Anonymous' , type:'book', category:'history', title:'First book of Azrael : teachings of the Great White Brotherhood', subtitle:'',  iconurl:'', url:'https://archive.org/details/firstbookofazrae0001unse/mode/2up'},
+    { id: 54,   authors:'Elizabeth Delvine King', type:'book', category:'history', title:'The Flashlights of Truth', subtitle:'',  iconurl:'', url:'https://archive.org/embed/flashlightsoftru00king'},
+    { id: 55,   authors:'Elizabeth Delvine King', type:'book', category:'history', title:'The Lotus Path', subtitle:'',  iconurl:'', url:'https://dn790007.ca.archive.org/0/items/lotuspath00kingrich/lotuspath00kingrich.pdf'},
+    { id: 56,   authors:'TK', type:'book', category:'history', title:'Secret Societies: The Great School', subtitle:'',  iconurl:'', url:'https://archive.org/details/questionboxserie01chic/mode/2up'},
+    { id: 57,   authors:'Charles Forsdick, Christian HogsBjerg', type:'book', category:'history', title:'Toussaint Louverture', subtitle:'A Black Jacobin in the Age of Revolutions',  iconurl:'', url:'https://ia801906.us.archive.org/18/items/oapen-20.500.12657-31609/626410.pdf'},
+    { id: 58,   authors:'Gilberto Freyre', type:TYPE_WEBSITE, category:'history', title:'The Masters and the Slaves(eng)', subtitle:'',  iconurl:'', url:'https://ia802900.us.archive.org/15/items/in.ernet.dli.2015.176407/2015.176407.The-Masters-And-The-Slaves.pdf'},
+    { id: 59,   authors:'Harold T. Wilkins', type:'book', category:'history', title:'The Mysteries of Ancient South America', subtitle:'',  iconurl:'', url:'https://archive.org/embed/mysteriesofancie035488mbp'},
+    { id: 60,   authors:'CAFTT J. G. STEDMAN', type:'book', category:'history', title:'Narrative of the 5 year expedition, against the revolted negros...', subtitle:'',  iconurl:'', url:'ttps://archive.org/embed/narrativeoffivey02sted'},
+    { id: 61,   authors:'Mansa the Moor', type:'video', category:'history', title:'interview with Mansa the Moor', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/zXNJRAb5RbA'},
+    { id: 62,   authors:'MLK', type:'book', category:'history', title:'...America...sick with militarism and excessive materialism ', subtitle:'',  iconurl:'', url:'https://youtube.com/shorts/bi9G5yqSqXI?si=lekIH6TwjoyHCgDd'},
+    { id: 63,   authors:'', type:'book', category:'history', title:'Conquest of a continent: or, The expansion of races in American', subtitle:'',  iconurl:'', url:'https://archive.org/embed/conquestofcontin00gran'},
+    { id: 64,   authors:'US Govt', type:'book', category:'history', title:'US Governmental Publishing Office Style Manual', subtitle:'',  iconurl:'', url:'https://www.govinfo.gov/content/pkg/GPO-STYLEMANUAL-2016/pdf/GPO-STYLEMANUAL-2016-7.pdf'},
+    { id: 65,   authors:'W. E. B. Du Bois', type: TYPE_WEBSITE, category:'history', title:'THE SUPPRESSION OF THE AFRICAN SLAVE-TRADE TO THE UNITED STATES OF AMERICA 1638–1870', subtitle:'',  iconurl:'', url:'https://www.gutenberg.org/files/17700/17700-h/17700-h.htm'},
+    { id: 66,   authors:'', type: TYPE_WEBSITE, category:'history', title:'British Colonial Mercantilism', subtitle:'',  iconurl:'', url:'https://www.librarycompany.org/Economics/PDF%20Files/lydon_web.pdf'},
+    { id: 67,   authors:'High Frequency Radio (Yusef El)', type: TYPE_VIDEO, category:'history', title:'The Buck Act', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/yPBTdzkf2Ak'},
+    { id: 68,   authors:'', type: TYPE_BOOK, category:'history', title:'Creature From Jeykll Island', subtitle:'',  iconurl:'', url:'https://1024terabox.com/s/18WLu6_dHYp3jHbaOBPPjaA'},
+    { id: 69,   authors:'', type: TYPE_BOOK, category:'history', title:'Secret Treaty of Verona p.6781', subtitle:'',  iconurl:'', url:'https://1024terabox.com/s/15QDT0JB16946U_rZgXe4yQ'},
+    { id: 70,   authors:'Kurimeo', type: TYPE_VIDEO, category:'history', title:'First Europeans, The Felons of Briton', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/jDFPVc2kPvE'},
+    { id: 71,   authors:'Sabir Bey', type: TYPE_VIDEO, category:'history', title:'Juneteenth - THE TRUE HISTORICAL BACKGROUND / American Indians & Black Europeans, Not Africans !!!', subtitle:'1hr 55m',  iconurl:'', url:'https://www.youtube.com/embed/HODuPoHbRhU'},
+    { id: 72,   authors:'National Archive', type: TYPE_WEBSITE, category:'history', title:'Scott vs SanFord', subtitle:'',  iconurl:'', url:'https://www.archives.gov/milestone-documents/dred-scott-v-sandford'},
+    { id: 73,   authors:'Malik El Shabazz', type: TYPE_VIDEO, category:'history', title:'The Massa and the House Negro', subtitle:'',  iconurl:'', url:'https://youtube.com/shorts/2bwBRb6FWaM?si=4Ag450vdWhhMKk_9'},
+    { id: 74,   authors:'Sabir Bey', type: TYPE_VIDEO, category:'history', title:'Bakersfield Conversation: So what have we learned this Juneteenth?', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/7t0hKo1-pzM?si=KVpi54VGXGkRZO43&amp;start=2174'},
+    { id: 75,   authors:'backstory.newamericanhistory.org', type: TYPE_WEBSITE, category:'history', title:'Civil War, fought over Union not Slavery', subtitle:'',  iconurl:'', url:'https://backstory.newamericanhistory.org/episodes/why-they-fought/'},
+    { id: 76,   authors:'Deleted Programming', type: TYPE_VIDEO, category:'history', title:'Origins of Lynching, Ida B Wells', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/cYtOiGZUERs'},
+    { id: 77,   authors:'Kurimeo', type: TYPE_VIDEO, category:'history', title:'Racial Integrity Acts (1824-1924)', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/AyatQ-5Kt58?si=hDuKqm9NRI_9uOT3'},
+    { id: 78,   authors:'Library of Congress', type: TYPE_WEBSITE, category:'history', title:'Indian Citizen Act', subtitle:'',  iconurl:'', url:'https://www.loc.gov/item/today-in-history/june-02/'},
+    { id: 79,   authors:'boardingschoolhealing.org', type: TYPE_VIDEO, category:'history', title:'US Indian Boarding Schools', subtitle:'',  iconurl:'', url:''},
+    { id: 78,   authors:'', type: TYPE_VIDEO, category:'history', title:'', subtitle:'',  iconurl:'', url:''},
+    { id: 78,   authors:'', type: TYPE_VIDEO, category:'history', title:'', subtitle:'',  iconurl:'', url:''},
+    { id: 78,   authors:'', type: TYPE_VIDEO, category:'history', title:'', subtitle:'',  iconurl:'', url:''},
   ];
 

@@ -13,7 +13,6 @@ import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
  * Tabular View
  */
  export const ReferencesTableView = ({columns, rows}) => {
-    console.log(columns,'-----',rows);
 
   return (<><Table  aria-label="Example table with dynamic content">
       <TableHeader columns={columns}>
@@ -37,33 +36,39 @@ import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
 /**
  * Grid View
  */
- export const ReferencesGridView = ({columns, rows}) => {
-  console.log(columns,'=======',rows);
+ export const ReferencesGridView = ({rows}) => {
   return (<>
     <div id="linksdiv" className={ "grid grid-cols-1 sm:grid-cols-3 gap-3" } >
 
-{rows.map((reference) => 
-  <Card key={reference.id}  className="max-w-[400px] border-1">
-      <CardHeader className="flex gap-3">  
-        <div className="flex flex-col">
+{rows.map((referenceEntry) =><div key={referenceEntry.id}  className="max-w-[400px] border-1">  <ReferenceView reference={referenceEntry} /></div>)}
+  </div>
+  </>);
+}
+
+
+/**
+ * Grid View
+ */
+ export const ReferenceView = ({reference,children}) => {
+  return (  <Card className=" border-1">
+      <CardHeader className="">  
+        <div className="">
           <p className="text-md">{reference.title}</p>
           <p className="text-small text-default-500">{reference.subtitle}</p>
         </div>
       </CardHeader>
-      <Divider />
+
       <CardBody>
         <p>{reference.authors}</p>
       </CardBody>
       <Divider />
       <CardFooter>
        <ExternalWindowButton
-       buttonText={'view'}
-       externalURL={reference.url} />  
+       buttonText={'new window view'}
+       externalURL={reference.url} /> 
       </CardFooter>
-    </Card>)}</div>
-  </>);
+    </Card>);
 }
-
 //    console.log(referenceRecord,'----',(selectedCategory=='all'||referenceRecord.category==selectedCategory);
 
   /*<Select color={"primary"} color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
