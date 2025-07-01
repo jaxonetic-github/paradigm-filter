@@ -1,10 +1,11 @@
 'use client';
 import React from "react";
-import {Tabs, Tab, Card, CardBody, Divider,Image, Link} from "@heroui/react";
+import {Tabs, Tab, Card, CardHeader, CardBody, Divider,Image, Link} from "@heroui/react";
 import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
 import CustomDialog from   './../../../_utils/CustomDialog.tsx';
 import AccordionView from './../../../_utils/CustomAccordion.tsx';
 import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+import {ReferenceView, referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
 
  
 export default function ComponentsHome() {
@@ -14,38 +15,24 @@ export default function ComponentsHome() {
       <Tabs aria-label="Options" >
         <Tab key="Vedanta" title="Vedanta" className='content-division'>
           <Card>
-            <CardBody className="grid-cols-2">
-              <div><Link showAnchorIcon underline="always" target="_blank" href='https://www.indiadivine.org/'>The Bhaktivedanta Ashram</Link><span>::IndiaDivine.org,All things Vedanta</span></div>
-              <div><Link showAnchorIcon underline="always" target="_blank" href='https://www.satyamyogaprasad.net/'>Satyam Yoga Prasad</Link><span>a digital library of the entire collected publications of the Bihar Yoga tradition.</span></div>
-              <div><Link showAnchorIcon underline="always" target="_blank" href='https://www.sathyasai.org/devotional/gayatri'>Gayatri Mantra</Link><p></p></div>
-             <Link showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Meditation and Mantra</Link>
-             <Link showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1ejHhOXd2nbFifxfya3nQjg'>Tantra, Mantra, Yantra, The Tantra Psychology</Link>
-             <Link showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Tattwa Shuddhi</Link>
-              <div><Link showAnchorIcon underline="always" target="_blank" href='https://www.biharyoga.net/ypt-books.php/'>Bihar Yoga Books</Link><span>especially, Tattwa Shuddhi</span></div>
-            </CardBody>
+          <CardHeader className=' py-2'><p>Recommended External Links</p> 
+           <p>
+ <Link isDisabled showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Meditation and Mantra</Link>
+             <Link isDisabled showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1ejHhOXd2nbFifxfya3nQjg'>Tantra, Mantra, Yantra, The Tantra Psychology</Link>
+             <Link  isDisabled showAnchorIcon underline="always" target="_blank" href='https://1024terabox.com/s/1hGHcDYdXTsiYEvZ-wfPhuA'>Tattwa Shuddhi</Link>
+</p>
+          </CardHeader>
+            <CardBody className="">
+<ReferencesGridView  rows={referenceFilter([175, 176,177,178])}/>
+                        </CardBody>
           </Card>
         </Tab>
 
         <Tab key="Qabalah" title="Tree of Life" className='content-division'>
           <Card>
             <CardBody>
-            
-<CustomDialog title='What is Qabalah?' organization='A 30-Minute overview of the Mystical tree of life' source='Travis Magus | LVX777'>{YoutubeEmbed('iDCNPc1RyMg')}</CustomDialog>    
-<CustomDialog title='Dr Phil Valentine - Tree of life KABBALAH metaphysical lecture (early 1990s)'><iframe width="560" height="315" src="https://www.youtube.com/embed/XGtRhRh4G60?si=4mVmoY3A7MfmsGTP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-<CustomDialog title='Kamitic Tree of Life (image)'>
- <Image
-        className="p-1"
-        src={'/images/kamitictreeoflife.png'} 
-        fallbackSrc={'/images/imagenotavailable.jpeg'}
-        alt={`Default Image not found for ['images/imagenotavailable.jpeg']`}
-      />
-</CustomDialog>    
+                        <ReferencesGridView  rows={referenceFilter([170,171,172,173,174])}/>
 
-             Suggested Reading :: 
-            <CustomDialog title='Dione Fortune - Mystical Qabalah'><iframe src="https://archive.org/embed/mysticalqabalah00fort_0" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
-            <CustomDialog title='Mystical Qabalah Book Study (Editorial Update) | Travis Magus'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HhiBcF6QziQ?si=7i09NWGT6BDCFOFE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            </CustomDialog>    
 
             </CardBody>
           </Card>
@@ -102,41 +89,15 @@ export default function ComponentsHome() {
            Rashi, Yoga, Rashi Yoga, Parashara techniques,
             Jaimini Sutra (Who the person really is, What they are here for, how long they will leave, techniques for concrete things)
             Parashara takes the whole person into account.  Can be made for predictions,It gives pschological and spiritual insights.  
-    <CustomDialog title='Astrologigal Interview - Verifying techniques'><iframe width="560" height="315" src="https://www.youtube.com/embed/3H27_V3S4QE?si=DC8fnH5V0aJMN0il" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-<CustomDialog title='Why would a Vedic Astrologer use Tropical - Ryan Kurcak'><iframe width="560" height="315" src="https://www.youtube.com/embed/wkLcDk2fESk?si=Npvs4onhtZaSFURR" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-    <CustomDialog title='Tropical vs Sidereal in Vedic - Vic De Cara'><iframe width="560" height="315" src="https://www.youtube.com/embed/eiGrAwe78-A?si=u2Khm8ijq0J_0LBt" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-<ExternalWindowButton 
-          buttonText = 'Vedic Astrology Course -Ryan Cursack'
-          externalURL = 'https://www.youtube.com/playlist?list=PLoHfx_U4o06SYXKUgTmugg3VqYDsR1ud0' /> 
-
-<CustomDialog title='Traditional Dignities and Debilitations' organization='' source=''>{YoutubeEmbed('pVz6xT7yHDs')}</CustomDialog>    
-<CustomDialog title='Ancient House Divisions' organization='' source=''>{YoutubeEmbed('pVz6xT7yHDs')}</CustomDialog>    
-<CustomDialog title='Vedic vs Tropical - Santos Bonacci' organization='' source=''>{YoutubeEmbed('ZrXHeOm_QPE')}</CustomDialog>    
-<CustomDialog title='Differences in Western and Easter Astrology' organization='' source=''>{YoutubeEmbed('NRF2ledC7Io')}</CustomDialog>    
-
-<CustomDialog title='Sidereal vs Tropical in Vedic' organization='' source=''>{YoutubeEmbed('bHN8HhV5NrQ')}</CustomDialog>    
-<CustomDialog title='Sidereal and Tropical animated explanation' organization='' source=''>{YoutubeEmbed('iV0W26XDmrk')}</CustomDialog>    
-<CustomDialog title='Tropical in Vedic - Vic De Cara' organization='' source=''>{YoutubeEmbed('GXXqddxfjUM')}</CustomDialog>    
-<CustomDialog title='How Pluto and Outer planets got their meanings' organization='' source=''>{YoutubeEmbed('3kZlUQGj-1k')}</CustomDialog>    
-<CustomDialog title='House  Divisions Explained' organization='' source=''>{<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZmqOgdxkK4?si=O2AVtydetFKEqpck" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>}</CustomDialog>    
+   
+<ReferencesGridView  rows={referenceFilter([158,159,160,161,162,163,164,165,166,167,168,169])}/>
 </CardBody>
           </Card>
+
+
         </Tab>       
         <Tab key="sincretistic" title="Sincretism" className='content-division'>
-          <Card>
-            <CardBody>
-            
-    <CustomDialog title='First Book of Azrael'><iframe src="https://archive.org/embed/firstbookofazrae0001unse" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
-    <CustomDialog title='Complete Magicians Table'><iframe src="https://archive.org/embed/StephenSkinner-TheCompleteMagiciansTables-2007" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
-    <CustomDialog title='astral doorways j h brennan'><iframe src="https://archive.org/embed/astral-doorways-j-h-brennan" width="560" height="384" frameBorder="0"  allowFullScreen></iframe></CustomDialog>    
-
-<CustomDialog title='Qabalistic Symbolism Vol 2 (24th path) | Travis Magus | Death Card' organization='' source=''>{YoutubeEmbed('BoqvoNLVy8k')}</CustomDialog>    
-                         
-              Flat Earth::== 
-              {YoutubeEmbed('mhc8ydSFhxI')}28:03-- notice the reference about
-              <Link href={'https://1024terabox.com/s/1MjULJ_5uNKDCitVWJS3v2A'}>Sevan</Link>
-            </CardBody>
-          </Card>
+            <ReferencesGridView  rows={referenceFilter([153, 154, 53, 155, 156, 157])}/>
         </Tab>
       </Tabs>
     </div>

@@ -111,7 +111,13 @@ Freud
           <div >
           <Card>
             <CardBody>
+            <ExternalWindowButton
+          buttonText =  'Oneness in Diversity'
+          externalURL = 'https://youtube.com/shorts/8Ycz1ptRI7Q?si=0cRz5zhSP4r_6Opx' /> 
 
+          <ExternalWindowButton
+          buttonText =  'Powerful Truth by Joshua Maponga | Cultural Identity'
+          externalURL = 'https://youtube.com/shorts/YYqbPL1kznA?si=788QDFayJE9UcHij' /> 
           <ExternalWindowButton
           buttonText =  'Challenging Who Decides Nuclear Weapon Rights '
           externalURL = 'https://youtube.com/shorts/bJ-dq8xkigs?si=23dSQ9nh8o3tmnoR' /> 

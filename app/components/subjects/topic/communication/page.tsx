@@ -6,6 +6,7 @@ import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
 import {Popover, PopoverTrigger, PopoverContent, Button} from "@heroui/react";
 import CustomDialog from './../../../../_utils/CustomDialog.tsx';
+import {ReferenceView, referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
 
 function DebateExamples(){
     return (<div>
@@ -116,12 +117,8 @@ export default function ReferenceSnippet(){
 <p>Developing communication skills is a lifelong process that contributes to personal growth,
  continuous learning, and enhanced self-awareness, all of which enrich both personal and professional experiences.</p>
 
-        <div className=''>
-        <CustomDialog title='Connotative Dissonance'><iframe src="https://archive.org/embed/ERIC_ED323790" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
-        <CustomDialog title='Crucial conversations : tools for talking when stakes are high'><iframe src="https://archive.org/details/crucialconversat0000unse_o5j4" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>    
-        <CustomDialog title='Art of Deception'><iframe src="https://archive.org/embed/artofdeception00capa" width="560" height="384" frameBorder="0" allowFullScreen></iframe>        </CustomDialog>    
-        </div>
-<Divider />
+   
+        <ReferencesGridView  rows={referenceFilter([150,151,152])}/>
 
      <Divider/>
 <TabView/>

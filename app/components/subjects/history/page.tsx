@@ -87,7 +87,7 @@ export default function HistoryHome () {
           </div>
           <div className='border-1'>
           <h3>Details and Particulars</h3>
-                 <ReferencesGridView  rows={referenceFilter([66,67,68,69,70,71,72,73,74,75,76,35,77,78,79])}/>
+                 <ReferencesGridView  rows={referenceFilter([66,67,68,69,70,71,72,73,74,75,76,35,77,78,79,143])}/>
           </div>
       </div>
    </AccordionView> 

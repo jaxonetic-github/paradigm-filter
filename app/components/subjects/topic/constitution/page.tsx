@@ -41,75 +41,13 @@ const congressrecord_fourteethAmmend_Popover =
 <ReferencesGridView  rows={referenceFilter([142,141,137,138,139,140])}/>
 
 <div className='my-2 '>
-    <ol className='border-1 '><h3>Citizenship and the 14th Amendment</h3>
 
-    <li><p className='my-2  indent-12'>The <CustomDialog  title={naturalizationact_Popover.title}> 
-    
-      <div className='flex justify-center'>
-        <Image 
-          alt="Card background"
-          className="rounded-xl align-center"
-          src={naturalizationact_Popover.imgURL}
-          width={550} height={700}
-        />
-      </div></CustomDialog>
-    sheds light on the early recognized citizenship</p></li>
-       <li>
+<h3>Citizenship and the 14th Amendment</h3>
+  
+<ReferencesGridView  rows={referenceFilter([144,145,146,72,149,148, 147])}/>
 
-
-<CustomDialog  title='Analizing Nationality and Citizenship through Statutes and Codes.'> 
-    
-      {YoutubeEmbed('WYoWu5Hr_Ks')}</CustomDialog>
-
-
-    </li>
-    <li>
-      <ExternalWindowButton
-      buttonText = '14 video Youtube playlist'
-      externalURL = 'https://youtube.com/playlist?list=PL-DGnkOdP-k3ChNwDLSf7hfnqT5XvefK0&si=n6y9u_Xa7Wfo6E5N' /> 
-of Richard McDonald speaking on the multiple citizenships in the "US States".
-       </li>
-      <li><p className='my-2  indent-12'>The first lowercase instance of the word "citizen" in the U.S. Constitution is found in the 14th Amendment. <Link  underline="always"  isExternal showAnchorIcon  href={'http://www.pulj.org/the-roundtable/the-influence-of-grammar-upon-law'}>(@See The Influence of Grammer Upon Law</Link></p></li>
-      <li><p className='my-2  indent-12'>The United States of America, and the Republic for which it stands, only recognized citizens or property owners of one of the states of the Union before the 14th Amendment<Link  underline="always"  showAnchorIcon isExternal href={'https://1024terabox.com/s/1lFKs0OECUS_zg80BITw2Zg'}>(@See Dred Scott case)</Link></p></li>
-    
-      <li><p className='my-2 indent-12'>For example, George Washington was a Citizen of Virginia; he was Virginian, not a US citizen which did not exist 1868</p></li>
-    <li>
-      <ExternalWindowButton
-      buttonText = 'US Governmental Publishing Office Style Manual'
-      externalURL = 'https://www.govinfo.gov/content/pkg/GPO-STYLEMANUAL-2016/pdf/GPO-STYLEMANUAL-2016-7.pdf' /> 
-    </li>
-
-      <li>
-      <p>The sneaky 14th Ammendment according to the <CustomDialog title={'Congressional Record'}>
-        
-      <Card className="py-4 bg-[#deb887]">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">{congressrecord_fourteethAmmend_Popover.what}</p>
-        <small className="text-default-500">{congressrecord_fourteethAmmend_Popover.when}</small>
-        <h4 className="font-bold text-large">{congressrecord_fourteethAmmend_Popover.desc}</h4>
-      </CardHeader>
-      <CardBody className="overflow-visible py-2 flex ">
-      <div className='flex justify-center'>
-        <Image 
-          alt="Card background"
-          className="rounded-xl align-center"
-          src={congressrecord_fourteethAmmend_Popover.imgURL}
-          width={460}
-          height={350}
-        />
-      </div>
-      </CardBody>
-      <CardFooter>
-      
-      </CardFooter>
-    </Card>
-
-      </CustomDialog> is supposed to be a primary source so there will be a branch about </p>
-     
-        
-      </li>
-      </ol>
-      <p >&quot;The federal and state governments are in fact but different agents and trustees of the people, constituted with different powers, and designed for different purposes.&quot; -James Madison, Federalist No. 46.</p>
+      <p >&quot;The federal and state governments are in fact but different agents and trustees of the people, 
+      constituted with different powers, and designed for different purposes.&quot; -James Madison, Federalist No. 46.</p>
 </div>
 
 <div><p>There is often talk about the thoughts and ideas of the "Founding Fathers"</p>

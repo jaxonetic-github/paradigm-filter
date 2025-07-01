@@ -51,8 +51,8 @@ export default function ReferencesMain( ) {
   const filteredReferences = (selectedCategory === "All")
     ? appRefs.filter((item) =>  (selectedType.toLowerCase()===item.type.toLowerCase() ||  selectedType.toLowerCase()==='all'))
     : appRefs.filter((item) => {
-                                    console.log("item--", item);
-                                    console.log(item.category, '<-->',selectedCategory, '---', (typeof item.category));
+                                    //console.log("item--", item);
+                                    //console.log(item.category, '<-->',selectedCategory, '---', (typeof item.category));
                                     return ( (
                                             selectedCategory.toLowerCase() ===item.category.toLowerCase()) &&
                                             selectedType.toLowerCase()===item.type.toLowerCase() ||  selectedType.toLowerCase()==='all'
