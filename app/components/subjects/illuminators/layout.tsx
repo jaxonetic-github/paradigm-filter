@@ -11,5 +11,5 @@ import React from "react";
 }: {
   children: React.ReactNode
 }) {
-  return <section>{children}</section>
+  return <section><h3>If you don't study the masters, how do you know your culture</h3>{children}</section>
 }

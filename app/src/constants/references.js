@@ -153,7 +153,7 @@ export const franzfanonProfileRecord =
 export const richardWProfileRecord = 
     { key: 666, name: "Richard Wright", lifespan:'(1908 - 1960)', thumbnail:'/images/profiles/richardwright/richardwright.webp', sources:[40], videoArray:[] };
 export const jaRodgersProfileRecord = 
-    { key: 666, name: "J. A. Rogers", lifespan:' (1880 - 1966)', thumbnail:'/images/profiles/', sources:[], videoArray:[] };
+    { key: 667, name: "J. A. Rogers", lifespan:' (1880 - 1966)', thumbnail:'/images/profiles/', sources:[], videoArray:[] };
 
 
 export const profiles ={
@@ -174,6 +174,8 @@ export const profiles ={
 export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70'}
 //  {id, category, subcategory ,type, title, subtitle,iconurl,relevance, authors:'', url:''}
 //  https://eada.lib.umd.edu/ https://press-pubs.uchicago.edu/founders/
+
+
 
  export const references = [
     { id: 1, category:'history', type:'book',  title: `Africa versus America`, subtitle:'La Fuerza de la Paradigma', iconurl:'/books/africa_versus_america.pdf' , relevance:AvAautobio,   authors:['Luisa Isabel Álvarez de Toledo, Duquesa de Medina Sidonia'] ,  description:'', path:'/books/history/africa_versus_america_orig.pdf',url:'https://drive.proton.me/urls/QHF27N8DYM#ZruDSB7zqDTz', protonurl:'https://drive.proton.me/urls/QHF27N8DYM#ZruDSB7zqDTz', mentionedBy:{mentioner:'Sabir Bey'} },
@@ -212,13 +214,13 @@ export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70
     { id: 33,   authors:'Carter G Woodson', type:'book', category:'history', title:'The MisEducation of the Negro', subtitle:``,  iconurl:'/images/profiles/cartergwoodson/miseducationOftheNegro.jpg', url:'https://archive.org/embed/negroinourhistor0000unse_k7k7'},
     { id: 34,   authors:'Carter G Woodson', type:'book', category:'history', title:'Education of the Negro prior to 1861', subtitle:``,  iconurl:'/images/profiles/cartergwoodson/carterg-educationOfthenegro.jpg', url:'https://archive.org/details/educationofnegro00wooduoft'},
     { id: 35,   authors:'Carter G Woodson', type:'book', category:'history', title:'The Journal of Negro History', subtitle:``,  iconurl:'/images/profiles/cartergwoodson/carterg-journalofnegrohistory.jpg', url:'https://archive.org/embed/bwb_P9-AQJ-319'},
-    { id: 36,   authors:'Franz Fanon', type:'book', category:'history', title:'Black Skin, White Mask', subtitle:``,  iconurl:'/images/profiles/frantzfanon/fanon-blackskinwhitemasks.png', url:'https://archive.org/embed/BlackSkinWhiteMasksPlutoClassics_201501'},
+    { id: 36,   authors:'Franz Fanon', type:'book', category:CATEGORY_PSYCHOLOGY, title:'Black Skin, White Mask', subtitle:``,  iconurl:'/images/profiles/frantzfanon/fanon-blackskinwhitemasks.png', url:'https://archive.org/embed/BlackSkinWhiteMasksPlutoClassics_201501'},
     { id: 37,   authors:'Franz Fanon', type:'book', category:'history', title:'The Wretched of the Earth', subtitle:``,  iconurl:'/images/profiles/frantzfanon/wretchedoftheearth.jpg', url:'https://archive.org/embed/BlackSkinWhiteMasksPlutoClassics_201501'},
     { id: 38,   authors:'Franz Fanon', type:'book', category:'history', title:'Les Damnes de la Terre', subtitle:``,  iconurl:'/images/profiles/frantzfanon/lesdamnesdelaterre.jpg', url:'https://web.english.upenn.edu/~cavitch/pdf-library/Fanon_Les_damne%CC%81s_de_la_terre.pdf'},
     { id: 39,   authors:'Mann, Kenny', type:'book', category:'history', title:'Kongo Ndongo : West Central Africa', subtitle:``,  iconurl:'/images/covers/kongoNdongo.jpg', url:'https://archive.org/details/kongondongowestc00mann/mode/1up'},
     { id: 40,   authors:'Richard Wright', type:'book', category:'history', title:'Native Son', subtitle:``,  iconurl:'/images/profiles/richardwright/nativeson.jpg', url:'https://ia801403.us.archive.org/8/items/in.ernet.dli.2015.149739/2015.149739.Native-Son.pdf'},
     { id: 41,   authors:'Richard Wright', type:'video', category:'history', title:'Richard Wright (about)', subtitle:``,  iconurl:'', url:'https://youtube.com/shorts/3MMY9cyX8iM?si=jT1fyLzZgcjl44JG'},
-    { id: 42,   authors:'Carter G Woodson', type:'book', category:'history', title:'The Mind Of The Negro', subtitle:`As Reflected In Letters Written During The Crisis 1800-1860`,  iconurl:'/images/profiles/cartergwoodson/mindofthenegro.jpg', url:"https://archive.org/embed/dli.ernet.285762"},
+    { id: 42,   authors:'Carter G Woodson', type:'book', category:CATEGORY_PSYCHOLOGY, title:'The Mind Of The Negro', subtitle:`As Reflected In Letters Written During The Crisis 1800-1860`,  iconurl:'/images/profiles/cartergwoodson/mindofthenegro.jpg', url:"https://archive.org/embed/dli.ernet.285762"},
     { id: 43,   authors:'Macbeth Forbes', type:'book', category:'history', title:'Jacobite Gleanings From State Manuscripts', subtitle:'',  iconurl:'', url:'https://archive.org/embed/jacobitegleanin00forbgoog'},
     { id: 44,   authors:'Kurimeo', type:'video', category:'history', title:'Civilization, An Inheritance From America / Atlantis More Than a Myth', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/TKzZnxlJDng?si=BB6tcuhw_8A9dB3s'},
     { id: 45,   authors:'Heroes and Legends Documentary Channel', type:'video', category:'history', title:'The African Kingdom of Kongo', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/w6P4KNEBbMQ?si=VcfvvaDBIzvAmwyN'},
@@ -245,7 +247,7 @@ export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70
     { id: 66,   authors:'', type: TYPE_WEBSITE, category:'history', title:'British Colonial Mercantilism', subtitle:'',  iconurl:'', url:'https://www.librarycompany.org/Economics/PDF%20Files/lydon_web.pdf'},
     { id: 67,   authors:'High Frequency Radio (Yusef El)', type: TYPE_VIDEO, category:'history', title:'The Buck Act', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/yPBTdzkf2Ak'},
     { id: 68,   authors:'', type: TYPE_BOOK, category:'history', title:'Creature From Jeykll Island', subtitle:'',  iconurl:'', url:'https://1024terabox.com/s/18WLu6_dHYp3jHbaOBPPjaA'},
-    { id: 69,   authors:'', type: TYPE_BOOK, category:'history', title:'Secret Treaty of Verona p.6781', subtitle:'',  iconurl:'', url:'https://1024terabox.com/s/15QDT0JB16946U_rZgXe4yQ'},
+    { id: 69,   authors:'???', type: TYPE_BOOK, category:'history', title:'Secret Treaty of Verona p.6781', subtitle:'',  iconurl:'', url:'https://1024terabox.com/s/15QDT0JB16946U_rZgXe4yQ'},
     { id: 70,   authors:'Kurimeo', type: TYPE_VIDEO, category:'history', title:'First Europeans, The Felons of Briton', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/jDFPVc2kPvE'},
     { id: 71,   authors:'Sabir Bey', type: TYPE_VIDEO, category:'history', title:'Juneteenth - THE TRUE HISTORICAL BACKGROUND / American Indians & Black Europeans, Not Africans !!!', subtitle:'1hr 55m',  iconurl:'', url:'https://www.youtube.com/embed/HODuPoHbRhU'},
     { id: 72,   authors:'National Archive', type: TYPE_WEBSITE, category:'history', title:'Scott vs SanFord', subtitle:'',  iconurl:'', url:'https://www.archives.gov/milestone-documents/dred-scott-v-sandford'},
@@ -255,9 +257,77 @@ export const historywebsitenorthcarolinaLeaf = {url:'https://omnika.org/texts/70
     { id: 76,   authors:'Deleted Programming', type: TYPE_VIDEO, category:'history', title:'Origins of Lynching, Ida B Wells', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/cYtOiGZUERs'},
     { id: 77,   authors:'Kurimeo', type: TYPE_VIDEO, category:'history', title:'Racial Integrity Acts (1824-1924)', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/AyatQ-5Kt58?si=hDuKqm9NRI_9uOT3'},
     { id: 78,   authors:'Library of Congress', type: TYPE_WEBSITE, category:'history', title:'Indian Citizen Act', subtitle:'',  iconurl:'', url:'https://www.loc.gov/item/today-in-history/june-02/'},
-    { id: 79,   authors:'boardingschoolhealing.org', type: TYPE_VIDEO, category:'history', title:'US Indian Boarding Schools', subtitle:'',  iconurl:'', url:''},
-    { id: 78,   authors:'', type: TYPE_VIDEO, category:'history', title:'', subtitle:'',  iconurl:'', url:''},
-    { id: 78,   authors:'', type: TYPE_VIDEO, category:'history', title:'', subtitle:'',  iconurl:'', url:''},
-    { id: 78,   authors:'', type: TYPE_VIDEO, category:'history', title:'', subtitle:'',  iconurl:'', url:''},
+    { id: 79,   authors:'boardingschoolhealing.org', type: TYPE_WEBSITE, category:'history', title:'US Indian Boarding Schools', subtitle:'',  iconurl:'', url:'https://boardingschoolhealing.org/education/us-indian-boarding-school-history/'},
+    { id: 80,   title:'The Corpus Hermeticum', authors:'Hermes Trismesgestis', type: TYPE_BOOK, category:CATEGORY_OCCULT, subtitle:'',  iconurl:'', url:'https://www.globalgreyebooks.com/ebooks1/george-robert-stowe-mead/corpus-hermeticum/corpus-hermeticum.pdf'},
+    { id: 81,   title:'The Ancient Wisdom', authors:'Anne Besant', type: TYPE_BOOK, category:CATEGORY_OCCULT,  subtitle:'',  iconurl:'', url:'https://www.globalgreyebooks.com/online-ebooks/annie-besant_ancient-wisdom_complete-text.html#ch1'},
+    { id: 82,   title:'Ancient and Modern Brits', authors:'James MacRitchie', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/ancientmodernbri0000macr'},
+    { id: 83,   title:'The conquest of America : the question of the other', authors:'Tzvetan', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/conquestofameric00todo'},
+    { id: 84,   title:'Do you know where your Rights are?', authors:'American Patriot Network', type: TYPE_WEBSITE, category:'history', subtitle:'A unique look at U.S. History, Civil Liberties and the U.S. Constitution',  iconurl:'', url:'https://www.civil-liberties.com/'},
+    { id: 85,   title:'La política indigenista de Isabel La Catolica', authors:'ANTONIO  RUMETJ  DE ARMAS', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://hdl.handle.net/20.500.12285/mdcte/2297'},
+    { id: 86,   title:'The Pelasgians', authors:'Ohio State Univ, Department of Linguistics', type: TYPE_WEBSITE, category:'history', subtitle:'',  iconurl:'', url:'https://linguistics.osu.edu/herodotos/ethnonym/european/pelasgians'},
+    { id: 87,   title:'History of the Reign of Ferdinand and Isabella', authors:'WILLIAM H. PRESCOTT', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/historyreignferd01pres'},
+    { id: 88,   title:'Constitution of Man (Lecture)', authors:'Taj Tarik Bey', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/TtbgBRhIX0E'},
+    { id: 89,   title:'Constitution of Man (separate Lecture)', authors:'Taj Tarik Bey', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/lw__aR2tQac'},
+    { id: 90,   title:'&apos;Lets Talk Estate&apos;', authors:'Taj Tarik Bey and RV Bey ', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/DcLosSXehq8'},
+    { id: 91,   title:'Roundtable Etymology, Astronomy and Biblica', authors:'Zodeakus El ', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/Tg37mtaouvw'},
+    { id: 92,   title:'Who Were We Before 1492?', authors:'Sabir Bey', type: TYPE_VIDEO, category:'history', subtitle:'Sabir Bey Breaks Down Moorish History',  iconurl:'', url:'https://www.youtube.com/embed/drjUMOnQ5kk'},
+    { id: 93,   title:'Truth about the Moors', authors:'Dana Marniche', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/1lju1EPYseY'},
+    { id: 94,   title:'Judeus e Mouros em Portugal em tempos passados', authors:'Henrique da Gama Barros', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/lusitana341'},
+    { id: 95,   title:'An Andalusian Traveller for Penance', authors:'Ibn Jubayr', type: TYPE_WEBSITE, category:'history', subtitle:'',  iconurl:'', url:'https://www.aramcoworld.com/articles/2015/travelers-of-alandalus-part-1-the-travel-writer-ibn-jubayr'},
+    { id: 96,   title:'The Rihla', authors:'Ibn Jubayr', type: TYPE_WEBSITE, category:'history', subtitle:'',  iconurl:'', url:'https://repository.digital.georgetown.edu/handle/10822/557913'},
+    { id: 97,   title:'The Great Siege of Malta', authors:'Bruce Ware Allen', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/the-great-siege-of-malta-the-epic-battle-between-the-ottoman-empire-and-the-knights-of-st.-john'},
+    { id: 98,   title:'History of the conquest of Spain by the Arab-Moors', authors:'HENRY COPPÉE ', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://drive.proton.me/urls/2DXBNGX9SR#wnHth5oCVavx'},
+    { id: 99,   title:'Portuguese in West Africa', authors:'Malyn Newitt', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://drive.proton.me/urls/2TG48QESJM#jYUPHyccuNJ5'},
+    { id: 100,   title:'Expeditions into the valley of the Amazons, 1539, 1540, 1639', authors:'CLEMENTS R. MARKHAM, F.R.G.S.,', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/expeditionsintov00markrich'},
+    { id: 101,   title:'Narrative of the 5 year expedition, against the revolted negros...', authors:'John Gabriel  Stedman', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/narrativeoffivey02sted'},
+    { id: 102,   title:'The Mali Empire', authors:'', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://1024terabox.com/s/1TqSki8fmkqYN5ua0uEUXrQ'},
+    { id: 103,   title:'The Moorish Empire', authors:'Budgett Meakin', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://1024terabox.com/s/14Nw8kB_qvRkwzZHyL_LQ_A'},
+    { id: 104,   title:'Life of Columbus', authors:'EDWARD EVERETT HALE', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'http://gutenberg.org/files/1492/1492-h/1492-h.htm'},
+    { id: 105,   title:'Chronicles of the Conquest of Granada', authors:'Washington Irving', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/chronicleofconqu01irvi'},
+    { id: 106,   title:'Slavery Kings, Amazon Queens and the Brazilian Spartacus', authors:'The African Kingdom of Kongo', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/w6P4KNEBbMQ?si=Z7HItIXfg9Wg9CFZ'},
+    { id: 107,   title:'Dr Smalls, History and Spirituality', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/a2YHzWi697c'},
+    { id: 108,   title:'Phil Valentine the Quintessence of African Spirituality', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/RFI52XYmTD0'},
+    { id: 109,   title:'Life of Constantine', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/eusebiuschurchhi0001euse'},
+    { id: 110,   title:'Oldest God in WRITTEN History', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/HSXZnbHstKY'},
+    { id: 111,   title:'Yahwism to Judaism : What Really Happened? (332-175 BCE)', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/bV6j3NR6iPg'},
+    { id: 112,   title:'The Bull Inter Caetera (Alexander VI)', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.gilderlehrman.org/history-resources/spotlight-primary-source/doctrine-discovery-1493'},
+    { id: 113,   title:'The Popes, the Catholic Church and the Transatlantic Enslavement of Black Africans 1418-1839', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://library.oapen.org/bitstream/id/8aa95306-9256-443f-9e89-de5871874288/external_content.pdf'},
+    { id: 114,   title:'Pt. 3 - The Real Slave Trade', authors:'Kurimeo', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/9s0wce713iU'},
+    { id: 115,   title:'Mistakes Were Made (but Not by Me) 3rd Ed', authors:'Malyn Newitt', type: TYPE_BOOK, category:CATEGORY_PSYCHOLOGY, subtitle:'',  iconurl:'', url:'/images/covers/dokumen.pub_mistakes-were-made.pdf'},
+    { id: 116,   title:'The Unseen Hand', authors:'Epperson', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://dn790007.ca.archive.org/0/items/TheUnseenHand-Epperson/The-Unseen-Hand_-_Epperson.pdf'},
+    { id: 117,   title:'The Crowd: A study of the popular mind', authors:'Gustave Le Bon', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/in.ernet.dli.2015.223078'},
+    { id: 118,   title:'Propaganda', authors:'Edward Bernay', type: TYPE_AUDIO, category:CATEGORY_PSYCHOLOGY, subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/revWgCdPyQQ'},
+    { id: 119,   title:'Crystallizing Public Opinion ', authors:'Edward Bernay', type: TYPE_AUDIO, category:CATEGORY_PSYCHOLOGY, subtitle:'',  iconurl:'', url:'https://www.youtube.com/embed/sxB_T_jCij4'},
+    { id: 120,   title:'Truth Unveiled', authors:'Edward Bernay', type: TYPE_BOOK, category:CATEGORY_PSYCHOLOGY, subtitle:'',  iconurl:'', url:'https://archive.org/embed/truthunveiled00barn'},
+    { id: 121,   title:'Works of Josephus', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'',  iconurl:'', url:'https://penelope.uchicago.edu/josephus/index.html'},
+    { id: 122,   title:'Muqaddimah', authors:'Ibn Khaldun', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://ignca.gov.in/Asi_data/16173.pdf'},
+    { id: 123,   title:'The First Banking System', authors:'Deji Akomolafe', type: TYPE_WEBSITE, category:'history', subtitle:'',  iconurl:'', url:'https://vocal.media/history/igudar-morocco-s-ancient-banking-system-and-the-story-of-communal-trust'},
+    { id: 124,   title:'the BIS', authors:'Financian', type: TYPE_VIDEO, category:'civics', subtitle:'',  iconurl:'', url:'https://youtube.com/shorts/81ewQVY3vII?si=CGoRMoVbsjYjw4Ju'},
+    { id: 125,   title:'US Dual Banking System', authors:'William M. Isaac', type: TYPE_BOOK, category:'civics', subtitle:'', description:':: Some Reflections on Our Dual Banking System : Address Before the Georgia Bankers Association, Jekyll Island, Georgia Date: May 7, 1979',  iconurl:'', url:'https://fraser.stlouisfed.org/title/statements-speeches-william-m-isaac-5815/reflections-dual-banking-system-578307'},
+    { id: 126,   title:'Money Masters', authors:'', type: TYPE_VIDEO, category:'civics', subtitle:'',description:'', description:':: This gives context and details on US banking history and the corruptions that has caused to be in the bankrupt state it currently is in (as of 2025).', iconurl:'', url:'https://www.youtube.com/embed/AOk3wBuQNcE?si=68K3zqhgk87Xq0eA'},
+
+    { id: 127,   title:'Economic Dissonance', authors:'Mike Adams', type: TYPE_VIDEO, category:'history', subtitle:'', description:':: The American Dollar is currency but NOT money.  This early 2025 snippet gives an example of why it matters both locally and globally.',  iconurl:'', url:'https://www.youtube.com/embed/g3kjQS8qh7E?si=QGSbgUExv3qkxneZ'},
+    { id: 128,   title:'US Federal Foreign Aide (Thomas Sowell short)', authors:'', type: TYPE_VIDEO, category:'history', subtitle:'', description:':: Us Foreign Aide :: Subsidizing irresponsability...', iconurl:'', url:'/shorts/WhyAmericaShouldStopForeignAid-ThomasSowellTV.mp4'},
+    { id: 129,   title:'Modern Money Mechanics', authors:'Federal Bank of Chicago', type: TYPE_BOOK, category:'civics', subtitle:'', description:':: Federal reserve Bank of Chicago', iconurl:'', url:'https://archive.org/embed/modern-money-mechanics'},
+    { id: 130,   title:'The Creature from Jekyll Island', authors:'G Edwin Griffin', type: TYPE_BOOK, category:'history', subtitle:'The deception behind the Federal Reserve', description:'The deception behind the Federal Reserve', iconurl:'', url:'https://archive.org/embed/'},
+    { id: 131,   title:'American state trials; a collection ...', authors:'John D Lawson', type: TYPE_BOOK, category:'history', subtitle:'',  iconurl:'', url:'https://archive.org/embed/americanstatetri14laws'},
+    { id: 132,   title:'Judicial cases concerning American slavery and the Negro, vol I', authors:'Carnegie Institution of Washington', type: TYPE_BOOK, category:'civics', subtitle:'',  iconurl:'',description:'', url:'https://archive.org/embed/volume1judicialc00unse'},    
+    { id: 133,   title:'Judicial cases concerning American slavery and the Negro, vol II', authors:'Carnegie Institution of Washington', type: TYPE_BOOK, category:'civics', subtitle:'',  iconurl:'',description:'', url:'https://archive.org/embed/volume2judicialc00unse'},   
+    { id: 134,   title:'Judicial cases concerning American slavery and the Negro, vol III', authors:'Carnegie Institution of Washington', type: TYPE_BOOK, category:'civics', subtitle:'',  iconurl:'',description:'', url:'https://archive.org/embed/volume3judicialc00unse'},   
+    { id: 135,   title:'Race law stories', authors:'Rachel Moran', type: TYPE_VIDEO, category:'civics', subtitle:'',  iconurl:'',description:'', url:'https://archive.org/embed/isbn_9781599410012'},   
+    { id: 136,   title:'Yellow By Law : Ozawa v. United States (1922)', authors:'Rachel Moran, Devon Carbado', type: TYPE_VIDEO, category:'civics', subtitle:'',  iconurl:'',description:'', url:'https://www.dismantlingracism.org/uploads/4/3/5/7/43579015/yellow_by_law.pdf'},
+    { id: 137,   title:'Constitutional Law', authors:'Professor Fred Morrison', type: TYPE_BOOK, category:'civics', subtitle:'',  iconurl:'',description:'', url:'https://archive.org/embed/constitutionalla0000morr'},   
+    { id: 138,   title:'Constitutional law : principles and policies', authors:'Erwin Chemerinsky', type: TYPE_BOOK, category:'civics', subtitle:'',  iconurl:'',description:'', url:'https://archive.org/embed/constitutionalla0000chem_m1i0'},   
+    { id: 139,   title:'Principles of constitutional law', authors:'Ronald Rotunda, John Nowack', type: TYPE_BOOK, category:'civics', subtitle:'',  iconurl:'',description:'', url:'https://archive.org/embed/principlesofcons0000rotu'},   
+    { id: 140,   title:'The "Free White Person" Clause', authors:'Gabriel J. Chin, Paul Finkelman', type: TYPE_BOOK, category:'civics', subtitle:'',  iconurl:'',description:'The "Free White Person" Clause of the Naturalization Act of 1790 as Super-Statute', url:'https://scholarship.law.wm.edu/wmlr/vol65/iss5/3/'},   
+    { id: 141,   title:'The Constitution and the Public Trust', authors:'Robert G. Natelson', type: TYPE_BOOK, category:'civics', subtitle:'',  iconurl:'',description:'University of Montana School of Law Review', url:'https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1018&context=faculty_lawreviews'},   
+    { id: 142,   title:'US Constitution lecture', authors:'', type: TYPE_VIDEO, category:'civics', subtitle:'',  iconurl:'',description:'Michael Badnarik&apos;s 6 hour class on the Civic principles of principles, rights, and the Construction', url:''},   
+//    { id: 137,   title:'', authors:'', type: TYPE_VIDEO, category:'civics', subtitle:'',  iconurl:'',description:'', url:''},   
+//    { id: 137,   title:'', authors:'', type: TYPE_VIDEO, category:'civics', subtitle:'',  iconurl:'',description:'', url:''},   
+//    { id: 137,   title:'', authors:'', type: TYPE_VIDEO, category:'civics', subtitle:'',  iconurl:'',description:'', url:''},   
+//    { id: 137,   title:'', authors:'', type: TYPE_VIDEO, category:'civics', subtitle:'',  iconurl:'',description:'', url:''},   
+
   ];
+
+
 

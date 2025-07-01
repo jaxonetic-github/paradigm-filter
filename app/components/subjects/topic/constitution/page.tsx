@@ -16,6 +16,7 @@ import {
 import CustomDialog from './../../../../_utils/CustomDialog.tsx'
 import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.tsx';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import {ReferenceView, referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
 
 
  
@@ -35,17 +36,9 @@ const congressrecord_fourteethAmmend_Popover =
  
   return (<div className='mx-5'>
     <div className='mx-auto'><h3 className="font-bold">The 1787 Constitution for the United States of America</h3>
-    
-  <p>View Michael Badnarik's 6 hour class on the Civic principles of principles, rights, and the <Link showAnchorIcon underline="always"  isExternal href='https://www.youtube.com/embed/wp-48d_jSb4?si=DDK3NUmwLY3QzqYI'>US Constitution</Link> </p>
-<p></p>
-<p>University of Montana School of Law Review ::<Link showAnchorIcon underline="always"  target='_blank' href="https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1018&context=faculty_lawreviews">The Constitution and the Public Trust</Link></p>
 
-<p>
-<CustomDialog title='Constitutional Law'><iframe src="https://archive.org/embed/constitutionalla0000morr" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>
-<CustomDialog title='Principles of constitutional law'><iframe src="https://archive.org/embed/principlesofcons0000rotu" width="560" height="384" frameBorder="0" allowFullScreen></iframe></CustomDialog>
 
-</p>
-<p></p>
+<ReferencesGridView  rows={referenceFilter([142,141,137,138,139,140])}/>
 
 <div className='my-2 '>
     <ol className='border-1 '><h3>Citizenship and the 14th Amendment</h3>
@@ -124,5 +117,6 @@ of Richard McDonald speaking on the multiple citizenships in the "US States".
 </div>
           
     </div>
+   
 </div>);
 }

@@ -1,7 +1,7 @@
-"use client";
+
 import React from "react";
 import {Table,TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyValue,  Button, Link, Image } from "@heroui/react";
-import { tableColumns, REFERENCE_TYPES} from './../../../src/constants/references.js';
+import { references, tableColumns, REFERENCE_TYPES} from './../../../src/constants/references.js';
 import CustomDialog from './../../../_utils/CustomDialog.tsx';
 import {YoutubeEmbed, openWindow} from './../../../_utils/youtubeEmbed.js';
 //      <ReferencesTable columns={tableColumns} rows={references}/>
@@ -24,7 +24,7 @@ import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
             {(columnKey) => <TableCell className={((columnKey =='category' || columnKey=='subtitle') ?'hidden md:block':'')}>
                               {(columnKey=='url') ? 
                                     <Button   className="relative border-1 overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
-                                     variant='solid' onPress={()=> openWindow(getKeyValue(item, columnKey))}>{`View ${(item.type=='book')?'reviews':item.type}`}</Button>
+                                     variant='solid' onPress={()=> openWindow(getKeyValue(item, columnKey))}>{`View ${(item.type=='book')?'book/text':item.type}`}</Button>
                               :     getKeyValue(item, columnKey)}</TableCell>}
           </TableRow>
         )}
@@ -50,7 +50,7 @@ import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
  * Grid View
  */
  export const ReferenceView = ({reference,children}) => {
-  return (  <Card className=" border-1">
+  return (  <Card className="content-division">
       <CardHeader className="">  
         <div className="">
           <p className="text-md">{reference.title}</p>
@@ -60,15 +60,25 @@ import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
 
       <CardBody>
         <p>{reference.authors}</p>
+        <p>{reference.description}</p>
       </CardBody>
       <Divider />
       <CardFooter>
        <ExternalWindowButton
-       buttonText={'new window view'}
+       buttonText={`View ${(reference.type=='book')?'book/type':reference.type}`}
        externalURL={reference.url} /> 
       </CardFooter>
     </Card>);
 }
+
+export const referenceFilter = (arrayToDisplay) => {
+  const a2d = arrayToDisplay||[];
+ let filtered = references.filter((reference)=>(a2d.includes(reference.id) ));
+// if (filtered.length==1) 
+//   filtered=[filtered];
+
+return filtered;
+};
 //    console.log(referenceRecord,'----',(selectedCategory=='all'||referenceRecord.category==selectedCategory);
 
   /*<Select color={"primary"} color={"success"} variant={"bordered"} labelPlacement={'outside-left'}

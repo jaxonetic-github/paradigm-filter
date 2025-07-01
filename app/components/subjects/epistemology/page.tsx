@@ -5,49 +5,13 @@ import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationCol
 import {Tabs, Tab, Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
 import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
 import AccordionView from './../../../_utils/CustomAccordion.tsx';
+import {ReferenceView,referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
+
 
 import  {SimplePopoverView} from "./../../../_utils/popoverView.tsx";
 import  {YoutubeEmbed} from "./../../../_utils/youtubeEmbed.js";
 import CustomDialog from './../../../_utils/CustomDialog.tsx';
 
-
- const Definitions  =()=> 
-(<div className="flex">
-<div className={'onion-etymon-dictionary'}>
-<p>{'Onions Etymological Dictionary'}</p>
-<dl className='onion-etymon-dictionary-entries max-w-sm'>
-  <dt className='onion-etymon-dictionary-entries'><b>Opinions</b></dt>
-  <dd>what one thinks, belief XIII (Cursor M.); estimate, estimation XIV. - (O)F. opinion- L. opinii5(n-), f. stem of opiniiri think, believe (whence opine oupai·n XVI), the sb. and vb. being used in philosophical language to repr. Gr. o6fa, oofa,£w</dd>
-  <dt><b>Believe</b></dt>
-  <dd>have faith (in). Late OE. belyfan, belefan, replacing, by prefix-substitution, earlier gelejan, (WS. geliefan) = OFris. geleva, OS. giloliian (Du. gelooven), OHG. gilouben (G.glauben), Goth.galaubjan :- CGerm. (exc. ON.) *galaulijan hold dear, cherish, trust in, f. *ga- Y--t- *laulJ- dear, lief. So belie·f, xu (bileafe), replacing OE. geleafa; the loss of the final syll. resulted in unvoicing of the final cons.</dd>
-  <dt><b>Fact</b></dt>
-  <dd>deed (now only in leg. use after, before the fact, etc.); something that has occurred, what has happened; truth, reality
-      XVI; (pl.) circumstances and incidents of a case XVIII. - L. factum, sb. use of n. pp. of facere no1 • Hence (after ACTUAL) fa·ctual. XIX (Coleridge). Cf. EFFECTUAL.</dd>
-</dl>
-</div>
-<div className={'websters-online-dictionary'}>
-<p>{'Websters Online Etymological Dictionary'}</p>
-<dl className='websters-online-dictionary-entries max-w-md'>
- <dt className='websters-online-dictionary-entry'><b>Discernment,</b> noun</dt>
-  <dd> the quality of being able to comprehend what is obscure : skill in discerning</dd>
-  <dd>an act of perceiving or discerning something</dd>
- 
-  <dt className='websters-online-dictionary-entry'><b>Opinions,</b>
-  <span>[noun opin&apos;yon]</span></dt>
-  <dd>[Latin opinio, from opinor, to thing, Gr., Latin suppono.]</dd>
-  <dd>The judgment which the mind forms of any proposition, statement, theory or event, the truth or falsehood of which is supported by a degree of evidence that renders it probably, but does not produce absolute knowledge or certainty. It has been a received opinion that all matter is comprised in four elements. This opinion is proved by many discoveries to be false. From circumstances we form opinions respecting future events.</dd>
-  <dd>OPINION is when the assent of the understanding is so far gained by evidence of probability, that it rather inclines to one persuasion than to another, yet not without a mixture of uncertainty or doubting.</dd>
-  <dd></dd>
-<dt className='websters-online-dictionary-entry'><b>Belief,</b> noun</dt>
-  <dd> A persuasion of the truth, or an assent of mind to the truth of a declaration, proposition or alleged fact, on the ground of evidence, distinct from personal knowledge; as the belief of the gospel; belief of a witness. belief may also be founded on internal impressions, or arguments and reasons furnished by our own minds; as the belief of our senses; a train of reasoning may result in belief belief is opposed to knowledge and science.</dd>
-  <dd>Religion; the body of tenets held by the professors of faith.</dd>
-  <dd>In some cases, the word is used for persuasion or opinion, when the evidence is not so clear as to leave no doubt; but the shades of strength in opinion can hardly be defined, or exemplified. Hence the use of qualifying words; as a firm, full or strong belief</dd>
- <dt className='websters-online-dictionary-entry'><b>Fact,</b> noun</dt>
-  <dd>[Latin factum, from facio, to make or do.]</dd>
-  <dd> Any thing done, or that comes to pass; an act; a deed; an effect produced or achieved; an event. Witnesses are introduced into court to prove a fact Facts are stubborn things. To deny a fact knowingly is to lie.</dd>
-  <dd>Reality; truth</dd>
-</dl>
-</div></div>);
 
 export default function Epistemology() {
 const cgwoodsonact_Popover =
@@ -68,7 +32,7 @@ const bookburnings_Popover =
        content and information, shameful acts of book burnings, and thefts and destruction of monuments, artifacts, and documents,...</p> 
             
       <p className='indent-8'>The result of not filtering incoming information is like being caught in someone else's spell.  The older we get after, forming layer upon layer of concepts and ideas based on  
-      what was heard and believed, the harder it is to want to "reinvint" or relayer their philosophy.  Thus we are born 
+      what was heard and believed, the harder it is to want to "reinvint" or relayer our philosophieand paradigms .  Thus we are born 
       into this time loop of growing up in environment that perpetuates and promotes the belief and naturally accepting it 
       because of its broader cultural acceptance.</p>
       <p>
@@ -101,13 +65,10 @@ const bookburnings_Popover =
             *Breaking Down the Barrier*
             <iframe width="560" height="315" src="https://www.youtube.com/embed/sYOeilUSRLU?si=aWbx4hWGXFN-U90q&amp;start=240" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
            
-            <Image alt="HeroUI hero Image" src="/images/HistoricalThinking.png" className={'max-w-108'}/>
-             Historical Thinking
+
             </CardBody>
             <CardFooter>
-           <CustomDialog title='Mistakes Were Made (but Not by Me) 3rd Ed' organization='' source=''><iframe width="560" height="315" src="/images/covers/dokumen.pub_mistakes-were-made.pdf" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-           <CustomDialog title='The Unseen Hand' organization='' source=''><iframe width="560" height="315" src="https://dn790007.ca.archive.org/0/items/TheUnseenHand-Epperson/The-Unseen-Hand_-_Epperson.pdf" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
-           
+                          <ReferencesGridView  rows={referenceFilter([115,116])}/>
             </CardFooter>
           </Card>
           </div>
@@ -129,13 +90,12 @@ const bookburnings_Popover =
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/11VBzp7m5O8?si=3KYmds_TjSJQ4gM9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
-    <CustomDialog title='The Crowd: A study of the popular mind' organization='' source=''><iframe width="560" height="315" src="https://archive.org/embed/in.ernet.dli.2015.223078" title="archive.org" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
+ <ReferencesGridView  rows={referenceFilter([117])}/>
 
 <div className='border-1'>
 Edward Barnay
-<CustomDialog title='Propaganda by Edward Bernays' organization='audio' source=''>{YoutubeEmbed('revWgCdPyQQ')}</CustomDialog>    
-<CustomDialog title='Crystallizing Public Opinion - Edward L Bernays - Full' organization='audio' source=''>{YoutubeEmbed('sxB_T_jCij4')}</CustomDialog>    
-<CustomDialog title='Truth Unveiled' organization='' source=''><iframe width="560" height="315" src="https://archive.org/embed/truthunveiled00barn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></CustomDialog>    
+ <ReferencesGridView  rows={referenceFilter([118,119,120])}/>
+           
 </div>
 <div>
 
@@ -182,6 +142,44 @@ Freud
 </div>);
 }
 
+
+ const Definitions  =()=> 
+(<div className="flex">
+<div className={'onion-etymon-dictionary'}>
+<p>{'Onions Etymological Dictionary'}</p>
+<dl className='onion-etymon-dictionary-entries max-w-sm'>
+  <dt className='onion-etymon-dictionary-entries'><b>Opinions</b></dt>
+  <dd>what one thinks, belief XIII (Cursor M.); estimate, estimation XIV. - (O)F. opinion- L. opinii5(n-), f. stem of opiniiri think, believe (whence opine oupai·n XVI), the sb. and vb. being used in philosophical language to repr. Gr. o6fa, oofa,£w</dd>
+  <dt><b>Believe</b></dt>
+  <dd>have faith (in). Late OE. belyfan, belefan, replacing, by prefix-substitution, earlier gelejan, (WS. geliefan) = OFris. geleva, OS. giloliian (Du. gelooven), OHG. gilouben (G.glauben), Goth.galaubjan :- CGerm. (exc. ON.) *galaulijan hold dear, cherish, trust in, f. *ga- Y--t- *laulJ- dear, lief. So belie·f, xu (bileafe), replacing OE. geleafa; the loss of the final syll. resulted in unvoicing of the final cons.</dd>
+  <dt><b>Fact</b></dt>
+  <dd>deed (now only in leg. use after, before the fact, etc.); something that has occurred, what has happened; truth, reality
+      XVI; (pl.) circumstances and incidents of a case XVIII. - L. factum, sb. use of n. pp. of facere no1 • Hence (after ACTUAL) fa·ctual. XIX (Coleridge). Cf. EFFECTUAL.</dd>
+</dl>
+</div>
+<div className={'websters-online-dictionary'}>
+<p>{'Websters Online Etymological Dictionary'}</p>
+<dl className='websters-online-dictionary-entries max-w-md'>
+ <dt className='websters-online-dictionary-entry'><b>Discernment,</b> noun</dt>
+  <dd> the quality of being able to comprehend what is obscure : skill in discerning</dd>
+  <dd>an act of perceiving or discerning something</dd>
+ 
+  <dt className='websters-online-dictionary-entry'><b>Opinions,</b>
+  <span>[noun opin&apos;yon]</span></dt>
+  <dd>[Latin opinio, from opinor, to thing, Gr., Latin suppono.]</dd>
+  <dd>The judgment which the mind forms of any proposition, statement, theory or event, the truth or falsehood of which is supported by a degree of evidence that renders it probably, but does not produce absolute knowledge or certainty. It has been a received opinion that all matter is comprised in four elements. This opinion is proved by many discoveries to be false. From circumstances we form opinions respecting future events.</dd>
+  <dd>OPINION is when the assent of the understanding is so far gained by evidence of probability, that it rather inclines to one persuasion than to another, yet not without a mixture of uncertainty or doubting.</dd>
+  <dd></dd>
+<dt className='websters-online-dictionary-entry'><b>Belief,</b> noun</dt>
+  <dd> A persuasion of the truth, or an assent of mind to the truth of a declaration, proposition or alleged fact, on the ground of evidence, distinct from personal knowledge; as the belief of the gospel; belief of a witness. belief may also be founded on internal impressions, or arguments and reasons furnished by our own minds; as the belief of our senses; a train of reasoning may result in belief belief is opposed to knowledge and science.</dd>
+  <dd>Religion; the body of tenets held by the professors of faith.</dd>
+  <dd>In some cases, the word is used for persuasion or opinion, when the evidence is not so clear as to leave no doubt; but the shades of strength in opinion can hardly be defined, or exemplified. Hence the use of qualifying words; as a firm, full or strong belief</dd>
+ <dt className='websters-online-dictionary-entry'><b>Fact,</b> noun</dt>
+  <dd>[Latin factum, from facio, to make or do.]</dd>
+  <dd> Any thing done, or that comes to pass; an act; a deed; an effect produced or achieved; an event. Witnesses are introduced into court to prove a fact Facts are stubborn things. To deny a fact knowingly is to lie.</dd>
+  <dd>Reality; truth</dd>
+</dl>
+</div></div>);
 
 
 /**  

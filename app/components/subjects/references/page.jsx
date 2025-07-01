@@ -49,13 +49,13 @@ export default function ReferencesMain( ) {
 
 
   const filteredReferences = (selectedCategory === "All")
-    ? appRefs
+    ? appRefs.filter((item) =>  (selectedType.toLowerCase()===item.type.toLowerCase() ||  selectedType.toLowerCase()==='all'))
     : appRefs.filter((item) => {
                                     console.log("item--", item);
                                     console.log(item.category, '<-->',selectedCategory, '---', (typeof item.category));
-                                    return ( (selectedCategory.toLowerCase() === 'all'||
+                                    return ( (
                                             selectedCategory.toLowerCase() ===item.category.toLowerCase()) &&
-                                           ( selectedType.toLowerCase()===item.type.toLowerCase() ||  selectedType.toLowerCase()==='all')
+                                            selectedType.toLowerCase()===item.type.toLowerCase() ||  selectedType.toLowerCase()==='all'
                                           );
                                     });
 
@@ -94,8 +94,9 @@ export default function ReferencesMain( ) {
           <Divider className="my-8" />
 
 <div className="sticky top-10 z-10 bg-white">
+<span>Filters &gt;&gt;</span>
    <Select color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
-            label="Filter By Category" placeholder="Select a Category"
+            placeholder="Select a Category"
             className=" max-w-xs"
             items={categories}
                selectedKey={["All"]}
@@ -104,7 +105,7 @@ export default function ReferencesMain( ) {
     {item => <SelectItem className="filter-select"  >{item.label}</SelectItem>}
     </Select>
    <Select color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
-            label="Filter By Type" placeholder="Select a Type"
+          placeholder="Select a Type"
             className=" max-w-xs"
             items={REFERENCE_TYPES}
                selectedKey={["All"]}
@@ -123,30 +124,14 @@ export default function ReferencesMain( ) {
 </div>
 
      <Tabs className='border-1' aria-label="Options" >
-        <Tab className='content-division' key="Table View" title="ReferencesTableView">
+        <Tab className='' key="Table View" title="ReferencesTableView">
  <ReferencesTableView className={'-z-10'} columns={tableColumns} rows={filteredReferences}/>     
         </Tab>
-        <Tab className='content-division' key="Grid View" title="ReferencesGridView">
+        <Tab className='' key="Grid View" title="ReferencesGridView">
    <ReferencesGridView className={'-z-10'}  rows={filteredReferences}/>
         </Tab>        
      </Tabs>
     </div>);
 }
-//    { id: 31, subcategory:'repository', category :CATEGORY_HISTORY ,type:TYPE_WEBSITE, title:'WeLib', subtitle:'document repository', iconurl:'',relevance:'primary sources', authors:'', url:'https://welib.org/ '},
 
 
-
-
-
-//    console.log(referenceRecord,'----',(selectedCategory=='all'||referenceRecord.category==selectedCategory);
-
-  /*<Select color={"primary"} color={"success"} variant={"bordered"} labelPlacement={'outside-left'}
-            label="Filter By Type" placeholder="Select a Type"
-            className="max-w-xs"
-            onSelectionChange={setType}>
-                      {REFERENCE_TYPES.map((type) => 
-                          <SelectItem className="filter-select" key={type.key} value={type.label}>
-                            {`${type.label}`}
-                          </SelectItem>)
-                      }
-                </Select>*/
