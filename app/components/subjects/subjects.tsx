@@ -1,12 +1,23 @@
 import React from "react";
 //import Link from 'next/link';
-import {Button, Divider, Link} from "@heroui/react";
+import {Button, Divider,Image,  Link} from "@heroui/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+
+  DropdownItem,
+  DropdownTrigger,
+  Dropdown,
+  DropdownMenu,
+} from "@heroui/react";
 
 import AccordionView from './../../_utils/CustomAccordion.tsx';
  
 export default function ContentMap() {
-   return (<div className='content top-25 py-2 z-10 bg-[#eee] mx-5'>
-<h2>Content Map</h2>
+   return (<div className='content top-15  z-10 bg-[#eee] mx-5'>
+
 <div className={'space-x-2 '}>
 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 '>
 
@@ -14,8 +25,8 @@ export default function ContentMap() {
 
 <div className="content-division flex flex-col items-center ">
   <div className=" flex text-center ">
-   <AccordionView title="Philosophy">
-       <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href={"/components/subjects/epistemology"} >Epistemology</Link>
+   <AccordionView title="Epistemology">
+       <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href={"/components/subjects/epistemology"} >Introduction</Link>
   </AccordionView>
 
   </div>

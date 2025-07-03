@@ -43,7 +43,15 @@ export default function Whiteness(){
     />
     <p>James Baldwin, On Being White And Other Lies, 1984</p>
 </div>
-
+<div>   
+     <Image   
+      alt="J. A. Rogers"
+      className="m-1"
+      src='/images/history/civics/factsaboutethiopianjarogers.jpg'
+      width={340}
+    />
+    <p>J. A. Rogers, Facts about the Ethiopian</p>
+</div>
       {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
 

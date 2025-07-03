@@ -1,8 +1,13 @@
 'use client'
 import React from "react";
 
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button} from "@heroui/react";
-import Link from 'next/link'
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, Link, Image} from "@heroui/react";
+import {
+  DropdownItem,
+  DropdownTrigger,
+  Dropdown,
+  DropdownMenu,
+} from "@heroui/react";
 import {Breadcrumbs, BreadcrumbItem} from "@heroui/breadcrumbs";
 
 import { useEffect, useState } from "react";
@@ -12,11 +17,34 @@ import { useEffect, useState } from "react";
 
 export default function MainNavBar() {
 
-  return (<Navbar isBordered className='bg-white'>
-      <NavbarBrand><Button as={Link} color={"primary"} href={"/components/subjects/references"} variant={"flat"}> <p className={"font-bold text-inherit"}>Referencing Our Story</p></Button></NavbarBrand>
+  return (<Navbar isBordered shouldHideOnScroll position="" className='bg-white'>
+      <NavbarBrand><Button as={Link} color={"primary"} href={"/"} variant={"flat"}> <Image className="content-division w-10"
+            src={'/images/book-svgrepo-com.svg'} 
+            fallbackSrc={'/images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for`}
+          />Home</Button></NavbarBrand>
+
+      <NavbarContent justify='center'>
+
+        
+         <NavbarItem><Button as={Link} color={"primary"} href={"/components/subjects/media"} variant={"flat"}>Donate</Button></NavbarItem>
+ </NavbarContent>
       <NavbarContent justify='end'>
-        <NavbarItem><Button as={Link} color={"primary"} href={'/components/subjects/illuminators'} variant={"flat"}>Illuminators</Button></NavbarItem>
-         <NavbarItem><Button as={Link} color={"primary"} href={"/components/subjects/media"} variant={"flat"}>Media</Button></NavbarItem>
+
+        
+         <NavbarItem><Button as={Link} color={"primary"} href={"/components/subjects/media"} variant={"flat"}>Sign/Log In</Button></NavbarItem>
  </NavbarContent>
     </Navbar>);
 }
+
+/*
+ <Navbar>
+       <Link   underline="always"   href='/'><Image className="content-division w-10"
+            src={'/images/book-svgrepo-com.svg'} 
+            fallbackSrc={'/images/imagenotavailable.jpeg'}
+            alt={`Default Image not found for`}
+          />Home
+</Link>
+            <ContentMap/>
+             <Navbar>
+*/

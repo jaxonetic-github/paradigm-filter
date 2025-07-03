@@ -1,10 +1,11 @@
 import { useState } from "react";
+import  {Button} from "@heroui/react";
 
 
 export default function  AccordionView({title, children}:{title:string, children:React.ReactNode})  {
  return (<div className={'my-4'}>
   <details>
-  <summary>{title}</summary>
+  <summary role="button">{title}</summary>
   {children}
 </details>
 </div>

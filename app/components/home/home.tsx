@@ -32,7 +32,7 @@ export default function Home() {
     <div className="flex">
        
 <div className="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-[#778899] p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-  <Link  className={"hover:border-1 p-4" } href={`/components/subjects`}> 
+  <Link id='applink' className={"hover:border-1 p-4" } href={`/components/subjects`}> 
     <div className="mt-3 flex -space-x-2 overflow-hidden">
     <Image className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="images/profiles/bobbyHemmitt.jpeg" alt="Bro Bobby" />
     <Image className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="images/profiles/malcom-x.webp" alt="" />

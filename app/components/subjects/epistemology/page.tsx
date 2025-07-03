@@ -36,7 +36,7 @@ const bookburnings_Popover =
       into this time loop of growing up in environment that perpetuates and promotes the belief and naturally accepting it 
       because of its broader cultural acceptance.</p>
       <p>
-      This section will show and explore examples of propaganda and how it used to our detriment. It behooves all of us to do 
+      This section will show and explore examples of propaganda and how it used to our detriment. As a rule no one looks beyond what is a settled fact/belief or foregone popular conclusion. It behooves all of us to do 
       an authentic audit on what we think we know or have learned.  If we are upholding concepts for their emotional appeal then
       we are not living our truth or upto our highest potential; instead, we are living under-standing another persons spell.
       That spell becomes a sprouting seed mental slavery the longer is not balanced with reality.
@@ -128,6 +128,14 @@ Freud
            <ExternalWindowButton
           buttonText =  'James McCune Smithe'
           externalURL = 'https://youtube.com/shorts/aSITRF4SRNI?si=_qjCZce8iFrePD1A' /> 
+
+          <ExternalWindowButton
+          buttonText =  'Orlando Brown'
+          externalURL = 'https://youtube.com/shorts/ncrfxR6Kuok?si=PcvMmqHof1yR8JXc' /> 
+          <ExternalWindowButton
+          buttonText =  'all black national convention'
+          externalURL = 'https://youtube.com/shorts/j4aI-eMY790?si=MRFLt_gh_7azDmRP' /> 
+
             </CardBody>
           </Card>
 

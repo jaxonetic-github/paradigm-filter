@@ -67,7 +67,7 @@ export default function HistoryHome () {
 
       <div className='border-1'>
           <AccordionView title={'Haitian Revolution (1793-1804)'}> 
-              <ReferencesGridView  rows={referenceFilter([57])}/>
+              <ReferencesGridView  rows={referenceFilter([57, 183, 184,185, 186,188,189])}/>
         </AccordionView>    
       </div>
 
@@ -127,7 +127,7 @@ export default function HistoryHome () {
      the Moriscos (Crypto Moors) were expelled to North Alkebelan or France.
   </div>
   <div className=''>
-       <ReferencesGridView  rows={referenceFilter([82, 83,85,86,87])}/>
+       <ReferencesGridView  rows={referenceFilter([82, 83,85,86,87,193])}/>
 
      </div>
       </AccordionView>
