@@ -35,7 +35,9 @@ h3 {
   @apply text-lg font-extrablack;
 }
 
-button {}
+image {
+    z-index: 0;
+}
 
 a {
    @apply   mx-1 ;

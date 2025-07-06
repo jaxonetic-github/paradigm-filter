@@ -28,9 +28,9 @@ import {
         onOpenChange={onOpenChange}
         backdrop="opaque"
         classNames={{
-          body: "py-6",
+          body: "py-6 max-w-fit",
           backdrop: "bg-[#292f46]/50 backdrop-opacity-40",
-          base: "max-w-fit border-[#292f46] bg-[#19172c] dark:bg-[#19172c] text-[#a8b0d3]",
+          base: "max-w-lg border-[#292f46] bg-[#19172c] dark:bg-[#19172c] text-[#a8b0d3]",
           header: "border-b-[1px] border-[#292f46]",
           footer: "border-t-[1px] border-[#292f46]",
           closeButton: "hover:bg-white/5 active:bg-white/10",
@@ -79,7 +79,7 @@ import {
 
 function ModalPage({children, title}: { children: React.ReactNode, title:string}){
 
-return(<div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+return(<div className="relative z-0" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
   <div className="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
 

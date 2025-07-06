@@ -59,14 +59,24 @@ import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
       </CardHeader>
 
       <CardBody>
+
+      <Image   
+      alt={reference.title}
+      className="m-1 hidden"
+      src={reference.iconurl}
+      />
         <p>{reference.authors}</p>
         <p>{reference.description}</p>
       </CardBody>
-      <Divider />
+ 
       <CardFooter>
-       <ExternalWindowButton
-       buttonText={`View ${(reference.type=='book')?'book/type':reference.type}`}
-       externalURL={reference.url} /> 
+       <ExternalWindowButton buttonText={`View ${(reference.type=='book')?'book/text':reference.type}`}  externalURL={reference.url} /> 
+                {reference?.snippet?.startsWith('https://www.youtube.com')?  
+                    <ExternalWindowButton buttonText={'Video Review'}  externalURL={reference.snippet} /> 
+                 :
+                    <CustomDialog title={'View Snippet'}>
+                               <Image   alt={reference.title} className="m-1" src={reference.snippet} />
+                    </CustomDialog>}
       </CardFooter>
     </Card>);
 }

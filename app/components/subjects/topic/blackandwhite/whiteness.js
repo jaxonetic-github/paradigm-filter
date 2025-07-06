@@ -4,6 +4,7 @@ import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
 import CustomDialog from './../../../../_utils/CustomDialog.tsx';
+import {ReferenceView, referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
 
 import { Image, Divider, Link} from "@heroui/react";
 
@@ -35,23 +36,16 @@ export default function Whiteness(){
         <p></p>
 
 <div>   
-     <Image   
-      alt="james baldwin white people in America"
-      className="m-1"
-      src='/images/blackandwhite/On-Being-White-and-Other-Lies.jpg'
-      width={340}
-    />
-    <p>James Baldwin, On Being White And Other Lies, 1984</p>
+    <p><ReferencesGridView  rows={referenceFilter([195])}/></p>
 </div>
 <div>   
-     <Image   
-      alt="J. A. Rogers"
-      className="m-1"
-      src='/images/history/civics/factsaboutethiopianjarogers.jpg'
-      width={340}
-    />
-    <p>J. A. Rogers, Facts about the Ethiopian</p>
+   <ReferencesGridView  rows={referenceFilter([57])}/>
 </div>
+
+<div>   
+ <ReferencesGridView  rows={referenceFilter([196])}/>
+</div>
+
       {/**<ReferencesTable columns={citationColumns} rows={[references[10]]}/>**/}
     </div>
 
@@ -77,7 +71,8 @@ export default function Whiteness(){
   </CustomDialog>  
   <Divider className="my-4" />
  
-        <CustomDialog title={snippet.src} organization='' source=''>{YoutubeEmbed('2Gq77rOuZck')}</CustomDialog>
+            <p><ReferencesGridView  rows={referenceFilter([197])}/></p>
+
    
      <Divider className="my-4" />
 <div>

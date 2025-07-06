@@ -17,9 +17,8 @@ export default function SubjectsLayout({
 }) {
   return <section >  
       <div className="fixed z-1000">   <AppNavBar/> </div> 
-      <div className="relative  top-15  z-1 bg-[#eee] mx-5">   
+      <div className="relative  top-15   mx-5">   
        <ContentMap/>   
-       <Divider className='my-8'/>
           <div className="bg-white">
             {children}
           </div>

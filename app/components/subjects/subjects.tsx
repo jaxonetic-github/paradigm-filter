@@ -16,7 +16,7 @@ import {
 import AccordionView from './../../_utils/CustomAccordion.tsx';
  
 export default function ContentMap() {
-   return (<div className='content top-15  z-10 bg-[#eee] mx-5'>
+   return (<div className='content'>
 
 <div className={'space-x-2 '}>
 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 '>
