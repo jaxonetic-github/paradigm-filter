@@ -5,7 +5,7 @@ import {Accordion, AccordionItem} from "@heroui/react";
 
 import {ReferencesView} from './../../references/referencesView.jsx';
 
-import {references, carterGWoodsonProfileRecord} from './../../../../src/constants/references.js';
+import {references, carterGWoodsonProfileRecord} from '@/src/constants/references.js';
 
 
 export default function CarterGWoodson() {

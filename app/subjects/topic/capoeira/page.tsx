@@ -1,6 +1,6 @@
 import react from 'react';
 import { Divider, Image} from "@heroui/react";
-import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 
 
 export default function Page() {

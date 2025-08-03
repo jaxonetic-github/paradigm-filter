@@ -2,12 +2,12 @@ import React from "react";
 import  {Link, Button,Image} from "@heroui/react";
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import {Accordion, AccordionItem} from "@heroui/react";
-import CustomDialog from './../../../../_utils/CustomDialog.tsx';
+import CustomDialog from '@/components/utils/CustomDialog.tsx';
 
 import {ReferencesView} from './../../references/referencesView.jsx';
-import  {YoutubeEmbed} from "./../../../../_utils/youtubeEmbed.js";
+import  {YoutubeEmbed} from "@/components/utils/youtubeEmbed.js";
 
-import {references, nzingaProfileRecord} from './../../../../src/constants/references.js';
+import {references, nzingaProfileRecord} from '@/src/constants/references.js';
 
 
 export default function FreedomPage() {

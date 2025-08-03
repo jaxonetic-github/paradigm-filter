@@ -4,7 +4,7 @@
 'use client';
 import React from "react";
 import {Image, Button, Link, Divider} from "@heroui/react";
-import {ReferenceView,referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
+import {ReferenceView, referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
 import CustomDialog from '@/components/utils/CustomDialog.tsx';
 import {YoutubeEmbed, openWindow,} from '@/components/utils/youtubeEmbed.js';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';

@@ -7,7 +7,7 @@ import ReservoirEntryButton from '@/components/bookform/reservoirEntryButton.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import {HeroUIProvider} from "@heroui/system";
 import { useCallback } from 'react';
-import {initialStoreState} from "./../../src/constants/state.js";
+import {initialStoreState} from "@/src/constants/state.js";
 //import  SessionComponent  from "./components/auth/session.tsx";
 import ContentMap from '@/components/subjects/subjects.tsx';
   import ReferencesView from './../subjects/references/page.jsx';

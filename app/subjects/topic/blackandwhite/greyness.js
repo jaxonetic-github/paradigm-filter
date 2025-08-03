@@ -2,8 +2,8 @@
 //import Link from 'next/link';
 import {Button, Divider, Link, Image} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody, CardFooter} from "@heroui/react";
-import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.tsx';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 
 
  
@@ -57,9 +57,7 @@ return (<div>
 <div className='m-8'><Card>
             <CardBody>
             1790
-<Image src={'/images/history/unknownarab_arabsarewhiteasnorthafricans.jpg'} 
-isBlurred
-            fallbackSrc={'/images/imagenotavailable.jpeg'}
+<Image src={'/images/history/unknownarab_arabsarewhiteasnorthafricans.jpg'} isBlurred  fallbackSrc={'/images/imagenotavailable.jpeg'}
                width={420}
             alt={`Default Image not found for unkownn Arab snippet`}
 />

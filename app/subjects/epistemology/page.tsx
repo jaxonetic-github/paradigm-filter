@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import  {Image, Button} from "@heroui/react";
-import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
+import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from '@/src/constants/references.js';
 import {Tabs, Tab, Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
 import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
