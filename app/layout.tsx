@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 //import { Inter } from "next/font/google";
-import { WebVitals } from "./../_utils/web-vitals";
+import { WebVitals } from "@/components/utils/web-vitals";
 import "./globals.css";
 //const inter = Inter({ subsets: ["greek"] });
 //import { Auth0Provider } from "@auth0/auth0-react";
