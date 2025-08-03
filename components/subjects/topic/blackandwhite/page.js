@@ -1,11 +1,11 @@
 
 'use client';
 import React from "react";
-import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
+import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from '@src/constants/references.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
-import Blackness from './blackness.js';
-import Whiteness from './whiteness.js';
-import Greyness from './greyness.js';
+import Blackness from '@components/subjects/topic/blackandwhite/blackness.js';
+import Whiteness from '@components/subjects/topic/blackandwhite/whiteness.js';
+import Greyness from '@components/subjects/topic/blackandwhite/greyness.js';
 
 import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
 import {Accordion, AccordionItem, Divider, Image, Link} from "@heroui/react";

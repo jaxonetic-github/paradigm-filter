@@ -2,7 +2,7 @@
 import React from "react";
 import Introduction from "./introduction.tsx";
 import {Image, Divider} from "@heroui/react";
-import AccordionView from './../../_utils/CustomAccordion.tsx';
+import AccordionView from '@/components/utils/CustomAccordion.tsx';
 
 /*//import {nzingaProfileRecord,VIDEOS_PATH,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references,ProfileReferencesTable,} from './../../src/constants/references.js';
 

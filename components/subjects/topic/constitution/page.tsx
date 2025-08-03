@@ -1,9 +1,9 @@
 "use client"
 import React from "react";
 import  {Image, Link, Button, Divider} from "@heroui/react";
-import  {PopoverView} from "./../../../../_utils/popoverView.tsx";
+import  {PopoverView} from "@/components/utils/popoverView.tsx";
 import {Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
-import   "./../../../../_utils/modal_utility.css";
+import   "@/components/utils/modal_utility.css";
 import {
   Table,
   TableHeader,
