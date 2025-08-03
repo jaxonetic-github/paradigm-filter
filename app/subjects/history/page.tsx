@@ -3,11 +3,11 @@
 //import {Divider, Image, Link, Tooltip,Button} from "@heroui/react";
 import React from "react";
 import {Image, Divider} from "@heroui/react";
-import CustomDialog from './../../../_utils/CustomDialog.tsx';
-import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
-import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+import CustomDialog from '@/components/utils/CustomDialog.tsx';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import {ReferenceView,referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
-import AccordionView from './../../../_utils/CustomAccordion.tsx';
+import AccordionView from '@/components/utils/CustomAccordion.tsx';
 
 
 

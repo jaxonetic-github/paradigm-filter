@@ -1,6 +1,6 @@
 
 import React from "react";
-import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from '@/constants/references.js';
+import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from '@/src/constants/references.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import CustomDialog from '@/components/utils/CustomDialog.tsx';
