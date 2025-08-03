@@ -2,10 +2,10 @@
 "use client"
 import React from "react";
 import  {Image,Divider, Link} from "@heroui/react";
-import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
 import {Popover, PopoverTrigger, PopoverContent, Button} from "@heroui/react";
-import CustomDialog from './../../../../_utils/CustomDialog.tsx';
+import CustomDialog from '@/components/utils/CustomDialog.tsx';
 import {ReferenceView, referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
 
 function DebateExamples(){

@@ -1,10 +1,10 @@
 import React from "react";
 import { Image,Link} from "@heroui/react";
-import {SimplePopoverView} from "./../../../../_utils/popoverView.tsx";
-import CustomDialog from './../../../../_utils/CustomDialog.tsx';
-import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import {SimplePopoverView} from "@/components/utils/popoverView.tsx";
+import CustomDialog from '@/components/utils/CustomDialog.tsx';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import {ReferenceView,referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
-import AccordionView from './../../../../_utils/CustomAccordion.tsx';
+import AccordionView from '@/components/utils/CustomAccordion.tsx';
 
 //import {specificallyCompiledVideos, MONEYMATTERS_VIDEOLIST_KEY} from './../../../src/constants/references.js';
 

@@ -10,8 +10,8 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@heroui/react";
-import CustomDialog from './../../../../_utils/CustomDialog.tsx'
-import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.tsx';
+import CustomDialog from '@/components/utils/CustomDialog.tsx'
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import {ReferenceView,referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
 
  export default function money() {

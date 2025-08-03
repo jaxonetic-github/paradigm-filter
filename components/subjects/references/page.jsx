@@ -4,12 +4,12 @@ import {Table,TableHeader, TableColumn, TableBody, TableRow, TableCell,
         getKeyValue,  Button, Link, Image } from "@heroui/react";
 import Options from './../media/options.js'
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,
-            references as appRefs,categories, REFERENCE_TYPES} from './../../../src/constants/references.js';
+            references as appRefs,categories, REFERENCE_TYPES} from '@/src/constants/references.js';
 import {Input, Select, SelectItem,Divider} from "@heroui/react";
 import { FaFilter } from "react-icons/fa";
 import Topics from './../topic/page.tsx';
-import AccordionView from './../../../_utils/CustomAccordion.tsx';
-import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+import AccordionView from '@/components/utils/CustomAccordion.tsx';
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import {Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 import {Tabs, Tab} from "@heroui/react";
 

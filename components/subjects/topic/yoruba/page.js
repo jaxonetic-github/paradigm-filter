@@ -3,8 +3,8 @@ import  {Link, Button,Image,Divider} from "@heroui/react";
 
 import {ReferencesView} from './../../references/referencesView.jsx';
 
-import {references} from './../../../../src/constants/references.js';
-import CustomDialog from './../../../../_utils/CustomDialog.tsx';
+import {references} from '@/src/constants/references.js';
+import CustomDialog from '@/components/utils/CustomDialog.tsx';
 
 
 export default function YorubaPage() {
