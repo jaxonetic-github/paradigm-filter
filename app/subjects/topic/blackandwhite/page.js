@@ -1,17 +1,17 @@
 
 'use client';
 import React from "react";
-import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
+import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from '@/src/constants/references.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
-import Blackness from './blackness.js';
-import Whiteness from './whiteness.js';
-import Greyness from './greyness.js';
+import Blackness from '@components/subjects/topic/blackandwhite/blackness.js';
+import Whiteness from '@components/subjects/topic/blackandwhite/whiteness.js';
+import Greyness from '@components/subjects/topic/blackandwhite/greyness.js';
 
-import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import {Accordion, AccordionItem, Divider, Image, Link} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
-import CustomDialog from './../../../../_utils/CustomDialog.tsx'
-import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.tsx';
+import CustomDialog from '@/components/utils/CustomDialog.tsx'
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import { referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159

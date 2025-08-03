@@ -1,6 +1,5 @@
 
 import React from "react";
-import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from './../../../../src/constants/references.js';
 
 
 import  Whiteness from "@/components/subjects/topic/whiteness.js";
@@ -12,5 +11,5 @@ import  Whiteness from "@/components/subjects/topic/whiteness.js";
       </div>
    */
 export default function WhitenessTopic(){
-    return <Whiteness>;
+    return <Whiteness/>;
 }
