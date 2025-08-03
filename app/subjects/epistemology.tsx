@@ -1,6 +1,6 @@
 import React from "react";
 import  {Link,Image, Divider} from "@heroui/react";
-import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../src/constants/references.js';
+import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from '@/src/constants/references.js';
 
 
 

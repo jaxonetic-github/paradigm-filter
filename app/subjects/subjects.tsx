@@ -13,7 +13,7 @@ import {
   DropdownMenu,
 } from "@heroui/react";
 
-import AccordionView from './../../_utils/CustomAccordion.tsx';
+import AccordionView from '@/components/utils/CustomAccordion.tsx';
  
 export default function ContentMap() {
    return (<div className='content'>
