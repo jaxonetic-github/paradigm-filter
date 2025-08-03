@@ -2,8 +2,8 @@
 //import Link from 'next/link';
 import {Button, Divider, Link, Image} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody, CardFooter} from "@heroui/react";
-import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
-import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.tsx';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 
 
  
