@@ -1,9 +1,9 @@
 "use client"
 import React from "react";
 import  {Image, Link, Button, Divider} from "@heroui/react";
-import  {PopoverView} from "./../../../../_utils/popoverView.tsx";
+import  {PopoverView} from "@/components/utils/popoverView.tsx";
 import {Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
-import   "./../../../../_utils/modal_utility.css";
+import   "@/components/utils/modal_utility.css";
 import {
   Table,
   TableHeader,
@@ -13,9 +13,9 @@ import {
   TableCell,
   getKeyValue, 
 } from "@heroui/react";
-import CustomDialog from './../../../../_utils/CustomDialog.tsx'
-import {ExternalWindowButton} from './../../../../_utils/externalWindowButton.tsx';
-import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import CustomDialog from '@/components/utils/CustomDialog.tsx'
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import { referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
 
 
