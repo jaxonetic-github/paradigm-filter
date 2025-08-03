@@ -5,10 +5,10 @@
 import React from "react";
 import {Image, Button, Link, Divider} from "@heroui/react";
 import {ReferenceView,referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
-import CustomDialog from './../../../_utils/CustomDialog.tsx';
-import {YoutubeEmbed, openWindow,} from './../../../_utils/youtubeEmbed.js';
-import AccordionView from './../../../_utils/CustomAccordion.tsx';
-import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+import CustomDialog from '@/components/utils/CustomDialog.tsx';
+import {YoutubeEmbed, openWindow,} from '@/components/utils/youtubeEmbed.js';
+import AccordionView from '@/components/utils/CustomAccordion.tsx';
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import Constitution from './../topic/constitution/page.tsx';
 import Rights from './../topic/rights/page.tsx';
 import Money from './../topic/money/page.tsx';
