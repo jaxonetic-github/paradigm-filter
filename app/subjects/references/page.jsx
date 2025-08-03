@@ -8,8 +8,8 @@ import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationCol
 import {Input, Select, SelectItem,Divider} from "@heroui/react";
 import { FaFilter } from "react-icons/fa";
 import Topics from './../topic/page.tsx';
-import AccordionView from './../../../_utils/CustomAccordion.tsx';
-import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+import AccordionView from '@/components/utils/CustomAccordion.tsx';
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import {Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 import {Tabs, Tab} from "@heroui/react";
 

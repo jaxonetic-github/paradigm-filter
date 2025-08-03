@@ -2,11 +2,11 @@
 import React from "react";
 import {Table,TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyValue,  Button, Link, Image } from "@heroui/react";
 import { references, tableColumns, REFERENCE_TYPES} from './../../../src/constants/references.js';
-import CustomDialog from './../../../_utils/CustomDialog.tsx';
-import {YoutubeEmbed, openWindow} from './../../../_utils/youtubeEmbed.js';
+import CustomDialog from '@/components/utils/CustomDialog.tsx';
+import {YoutubeEmbed, openWindow} from '@/components/utils/youtubeEmbed.js';
 //      <ReferencesTable columns={tableColumns} rows={references}/>
 import {Card, CardHeader, CardBody, CardFooter, Divider} from "@heroui/react";
-import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 
 
 /**

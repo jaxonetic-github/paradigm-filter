@@ -3,14 +3,14 @@ import React from "react";
 import  {Image, Button} from "@heroui/react";
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
 import {Tabs, Tab, Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
-import {ExternalWindowButton} from './../../../_utils/externalWindowButton.tsx';
-import AccordionView from './../../../_utils/CustomAccordion.tsx';
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
+import AccordionView from '@/components/utils/CustomAccordion.tsx';
 import {ReferenceView,referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
 
 
-import  {SimplePopoverView} from "./../../../_utils/popoverView.tsx";
-import  {YoutubeEmbed} from "./../../../_utils/youtubeEmbed.js";
-import CustomDialog from './../../../_utils/CustomDialog.tsx';
+import  {SimplePopoverView} from "@/components/utils/popoverView.tsx";
+import  {YoutubeEmbed} from "@/components/utils/youtubeEmbed.js";
+import CustomDialog from '@/components/utils/CustomDialog.tsx';
 
 
 export default function Epistemology() {
