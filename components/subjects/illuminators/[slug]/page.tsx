@@ -1,10 +1,10 @@
 //import Image from "next/image";
 
-import {profiles, references} from './../../../../src/constants/references.js';
-import {VideoArrayType, ProfileType, ProfilesDictionary} from './../../../../src/constants/appTypes.ts';
+import {profiles, references} from '@/src/constants/references.js';
+import {VideoArrayType, ProfileType, ProfilesDictionary} from '@/src/constants/appTypes.ts';
 //import PropTypes from 'prop-types'; // ES6
 import { Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
-import {YoutubeEmbed} from './../../../../_utils/youtubeEmbed.js';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
 
 import {Accordion, AccordionItem, Avatar,Button, Image, Link,User} from "@heroui/react";

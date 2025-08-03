@@ -1,6 +1,6 @@
 import React from "react";
 import  {Image} from "@heroui/react";
-import {faqs} from './../../src/constants/references.js';
+import {faqs} from '@/src/constants/references.js';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 

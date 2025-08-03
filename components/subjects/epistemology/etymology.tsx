@@ -1,11 +1,11 @@
 'use client'
 import React from "react";
 import  {Image, Button} from "@heroui/react";
-import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
+import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from '@/src/constants/references.js';
 import {Tabs, Tab, Card, CardBody, Divider} from "@heroui/react";
 import Link from 'next/link';
-import  {SimplePopoverView} from "./../../../_utils/popoverView.tsx";
-import  {YoutubeEmbed} from "./../../../_utils/youtubeEmbed.js";
+import  {SimplePopoverView} from "@/components/utils/popoverView.tsx";
+import  {YoutubeEmbed} from "@/components/utils/youtubeEmbed.js";
 
 
  const Definitions  =()=> 

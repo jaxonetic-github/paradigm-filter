@@ -1,6 +1,6 @@
 import React from "react";
 import  {Image} from "@heroui/react";
-import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
+import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from '@/src/constants/references.js';
 
 //import  BigCalendar, {momentLocalizer } from "react-big-calendar";
 import moment from "moment";
