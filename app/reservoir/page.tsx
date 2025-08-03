@@ -1,6 +1,5 @@
 'use client' 
 
-import CustomAccordion from '@/components/utils/CustomAccordion.tsx';
 import Introduction from '@/components/bookform/introduction.tsx';
 import Preface from '@/components/bookform/preface.tsx';
 import TableOfContents from '@/components/bookform/tableOfContents.tsx';
@@ -8,16 +7,18 @@ import ReservoirEntryButton from '@/components/bookform/reservoirEntryButton.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import {HeroUIProvider} from "@heroui/system";
 import { useCallback } from 'react';
-import {initialStoreState} from "./../src/constants/state.js";
+import {initialStoreState} from "./../../src/constants/state.js";
 //import  SessionComponent  from "./components/auth/session.tsx";
+import ContentMap from '@/components/subjects/subjects.tsx';
+  import ReferencesView from './../subjects/references/page.jsx';
 import Bookform from '@/components/bookform/bookLayout.tsx';
-
+import AppNavBar from '@/components/appnavbar.js';
 /*
 herbert henry harrison classified as white- youtubeTherapy Session with Sabir Bey- How Irish People become s0-called White?
 */
 
 
-  export default function BookForm() {
+  export default function RootLayout() {
     const [prevScrollY, setPrevScrollY] = useState(5);
     const [count, setCount] = useState(0);
     const [isScrolling, setIsScrolling] = useState(false); //neededto hide nav while scrolling
@@ -45,17 +46,8 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
        window.removeEventListener("scroll", onScroll, { passive: true });
     }
   }, []);
-  return (<HeroUIProvider>
-             
-
-
-              <ReservoirEntryButton/>
-
-  <div className=" mx-auto flex-row max-w-sm text-center gap-x-4 rounded-xl  p-5 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-<div><p>For</p></div>
-</div>
-      <Bookform/>
-  </HeroUIProvider>);
+  return ( <>  <AppNavBar/>
+<ContentMap/><Bookform/> <ReferencesView/></>  );
 }
 
 /** <RouterProvider router={router} />

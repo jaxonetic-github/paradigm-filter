@@ -17,10 +17,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
+     "paths": {
+      "@/*": ["./*"],
+      "auth": ["./auth"],
+      "components": ["./components", ],
     },
     "target": "ES2017",
     "plugins": [

@@ -1,8 +1,8 @@
 'use client';
 //import "../globals.css";
-import AppNavBar from './../components/appnavbar.js';
- import ReferencesTable from './../components/subjects/references/page.js';
-import Subjects from './../components/subjects/subjects.tsx';
+import AppNavBar from './../../components/appnavbar.js';
+ import ReferencesTable from './../../components/subjects/references/page.js';
+import Subjects from './../../components/subjects/subjects.tsx';
 import { FaFilter } from "react-icons/fa";
 import { FaExpandArrowsAlt } from "react-icons/fa";
 
