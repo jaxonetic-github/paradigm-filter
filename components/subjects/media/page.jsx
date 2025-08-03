@@ -1,4 +1,4 @@
-import {initialStoreState} from './../../../src/constants/state.js';
+import {initialStoreState} from '@/src/constants/state.js';
 import OnlineMedia from './onlineMedia.js';
 
 import React from "react";

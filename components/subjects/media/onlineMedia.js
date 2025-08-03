@@ -1,4 +1,4 @@
-import {initialStoreState} from './../../../src/constants/state.js';
+import {initialStoreState} from '@/src/constants/state.js';
 import {Accordion, AccordionItem, Avatar, Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 import {Divider, Image, Link, Tooltip,Button} from "@heroui/react";
 import React from "react";

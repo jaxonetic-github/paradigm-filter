@@ -1,8 +1,8 @@
 
 'use client' 
 import React from "react";
-import {initialStoreState} from './../../../src/constants/state.js';
-import {profiles} from './../../../src/constants/references.js';
+import {initialStoreState} from '@/src/constants/state.js';
+import {profiles} from '@/src/constants/references.js';
 
 //import PropTypes from 'prop-types'; // ES6
 import { Button, Divider,  Avatar} from "@heroui/react";

@@ -1,6 +1,6 @@
 'use client' 
 import React from "react";
-import {YoutubeEmbed} from './../../../_utils/youtubeEmbed.js';
+import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 
 const VIDEOS_PATH = "/videos/";
 /**
