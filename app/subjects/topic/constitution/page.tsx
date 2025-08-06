@@ -16,7 +16,7 @@ import {
 import CustomDialog from '@/components/utils/CustomDialog.tsx'
 import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
-import { referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
+import { referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 
 
  

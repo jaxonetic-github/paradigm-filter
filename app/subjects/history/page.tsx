@@ -6,7 +6,7 @@ import {Image, Divider} from "@heroui/react";
 import CustomDialog from '@/components/utils/CustomDialog.tsx';
 import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
-import {ReferenceView,referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
+import {ReferenceView,referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
 
 

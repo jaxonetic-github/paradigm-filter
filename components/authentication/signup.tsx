@@ -5,13 +5,22 @@ import {Button , Image, Divider, Link} from "@heroui/react";
 //import { signupAuth } from '@/app/actions/auth';
 //import { auth } from "@/auth";
 //import {handleAuth} from "@auth0/nextjs-auth0";
-import { signIn, signOut } from "../../auth.ts";
+import { signIn, signOut,auth } from "auth";
 
 
  
-export default function SignupForm() {
-  return (
-   <> <form
+export default async function SignupForm() {
+  const session = await auth();
+  const actionButtion = session?.user ? <form
+      action={async () => {
+        "use server"
+        await signOut()
+      }}
+    >
+      <button type="submit" > Sign Out  </button>
+    </form>
+
+    :<form
       action={async () => {
         "use server"
         await signIn()
@@ -20,15 +29,8 @@ export default function SignupForm() {
       
       <button type="submit">Signin</button>
     </form>
-        <form
-      action={async () => {
-        "use server"
-        await signOut()
-      }}
-    >
-      <button type="submit" > Sign Out  </button>
-    </form></>
-  )
+
+  return actionButtion;
 } 
 //export default function SignupForm() {
 

@@ -31,9 +31,14 @@ export default function RootLayout({
     <html  data-name="viewport" data-content="width=device-width, initial-scale=1.0" data-lang="en">
       <body >
         <main className="">
+        <div className="fixed">
+         <AppNavBar/>
+         </div>
+
 
          {children} 
         </main>
+               <SessionComponent/>
       </body>
     </html>
   );

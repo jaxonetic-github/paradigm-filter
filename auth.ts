@@ -12,7 +12,14 @@ import type { NextAuthConfig } from "next-auth"
 
 // You'll need to import and pass this
 // to `NextAuth` in `app/api/auth/[...nextauth]/route.ts`
-export const authConfig = { providers: [Auth0,Google], debug: true } satisfies NextAuthConfig
+export const authConfig = { providers: [Auth0,Google], debug: true,
+callbacks: {
+  signIn({ profile }) {
+    console.log("Within Signin Authcallback-",profile);
+    return (profile?.email.length>5)
+  }
+}
+ } satisfies NextAuthConfig
 
 export const { handlers, signIn, signOut, auth } = NextAuth(authConfig)
 

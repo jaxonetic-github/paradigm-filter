@@ -63,7 +63,7 @@ import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx'
       <Image   
       alt={reference.title}
       className="m-1"
-      src={reference.iconurl}
+      src={reference.iconurl?reference.iconurl:null}
       />
         <p>{reference.authors}</p>
         <p>{reference.description}</p>
@@ -74,7 +74,7 @@ import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx'
                 {reference?.snippet?.startsWith('https://www.youtube.com')?  <ExternalWindowButton buttonText={'Video Review'}  externalURL={reference.snippet} /> 
                 :
                 reference?.snippet && <CustomDialog title={'View Snippet'}>
-                               <Image   alt={reference.title} className="m-1" src={reference.snippet} />
+                               <Image   alt={reference.title} className="m-1" src={reference.snippet?reference.snippet:null} />
                     </CustomDialog>}
       </CardFooter>
     </Card>);

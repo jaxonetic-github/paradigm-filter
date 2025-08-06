@@ -5,7 +5,7 @@ import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationCol
 import {Tabs, Tab, Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
 import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
-import {ReferenceView,referenceFilter, ReferencesGridView} from './../references/referencesView.jsx';
+import {ReferenceView,referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 
 
 import  {SimplePopoverView} from "@/components/utils/popoverView.tsx";

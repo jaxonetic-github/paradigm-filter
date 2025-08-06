@@ -2,7 +2,7 @@
 import React from "react";
 import  {Link,Image} from "@heroui/react";
 
-import ReferencesTable from './../../references/page.js';
+import ReferencesTable from '@/components/subjects/references/page.js';
  
 export default function TopicHome() {
   const items = [

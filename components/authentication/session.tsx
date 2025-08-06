@@ -25,7 +25,8 @@ if (!session?.user) return ( <p>No Session</p>);
         <pre className="whitespace-pre-wrap break-all px-4 py-6">
           {JSON.stringify(session, null, 2)}
         </pre>
-  
+      <p>Session status in as -{session.status==true}</p>
+   <p>Signed in as {session.user.email}</p>
 
    </>
   )

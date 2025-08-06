@@ -3,7 +3,7 @@ import { Image,Link} from "@heroui/react";
 import {SimplePopoverView} from "@/components/utils/popoverView.tsx";
 import CustomDialog from '@/components/utils/CustomDialog.tsx';
 import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
-import {ReferenceView,referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
+import {ReferenceView,referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
 
 //import {specificallyCompiledVideos, MONEYMATTERS_VIDEOLIST_KEY} from './../../../src/constants/references.js';

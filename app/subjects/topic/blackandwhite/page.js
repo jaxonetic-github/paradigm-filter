@@ -2,7 +2,7 @@
 'use client';
 import React from "react";
 import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from '@/src/constants/references.js';
-import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
+import HonorableMentionVideos from '@/components/subjects/topic/media/honorableMentionVideos.js';
 import Blackness from '@/components/subjects/topic/blackandwhite/blackness.js';
 import Whiteness from '@/components/subjects/topic/blackandwhite/whiteness.js';
 import Greyness from '@/components/subjects/topic/blackandwhite/greyness.js';
@@ -12,7 +12,7 @@ import {Accordion, AccordionItem, Divider, Image, Link} from "@heroui/react";
 import {Tabs, Tab, Card, CardBody} from "@heroui/react";
 import CustomDialog from '@/components/utils/CustomDialog.tsx'
 import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
-import { referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
+import { referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 
 //https://www.youtube.com/live/bA9-pwts4Tg?si=uguefX7v935svwDA&t=3159
 //export function Video({videoSource}:AppProps) { return (<video key={videoSource.path} width="320" height="240" controls preload="none"><source src={ videoSource.path} type="video/mp4" />Your browser does not support the video tag.</video>)}

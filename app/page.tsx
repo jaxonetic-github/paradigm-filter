@@ -11,6 +11,7 @@ import { useCallback } from 'react';
 import {initialStoreState} from "./../src/constants/state.js";
 //import  SessionComponent  from "./components/auth/session.tsx";
 import Bookform from '@/components/bookform/bookLayout.tsx';
+import AppNavBar from '@/components/appnavbar.js';
 
 /*
 herbert henry harrison classified as white- youtubeTherapy Session with Sabir Bey- How Irish People become s0-called White?
@@ -46,13 +47,13 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
     }
   }, []);
   return (<HeroUIProvider>
-             
+            
 
 
               <ReservoirEntryButton/>
 
   <div className=" mx-auto flex-row max-w-sm text-center gap-x-4 rounded-xl  p-5 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-<div><p>For</p></div>
+<div><p>For</p>  {isScrolling?'is':'not'}  Scrolling</div>
 </div>
       <Bookform/>
   </HeroUIProvider>);
