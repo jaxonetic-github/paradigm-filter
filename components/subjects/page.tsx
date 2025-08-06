@@ -1,7 +1,7 @@
 'use client'
 //import "../globals.css";
 //import AppNavBar from './../appnavbar.js';
- import ReferencesView from './references/page.jsx';
+ import ReferencesView from '@/components/subjects/references/page.jsx';
 import { Suspense } from 'react';
 
 export default function Page() {

@@ -1,10 +1,10 @@
 
 import React from "react";
 import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from '@/src/constants/references.js';
-import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
+import HonorableMentionVideos from '@/components/subjects/media/honorableMentionVideos.js';
 import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import CustomDialog from '@/components/utils/CustomDialog.tsx';
-import {ReferenceView, referenceFilter, ReferencesGridView} from './../../references/referencesView.jsx';
+import {ReferenceView, referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 
 import { Image, Divider, Link} from "@heroui/react";
 

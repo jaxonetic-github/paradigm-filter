@@ -1,10 +1,10 @@
 
 "use client"
 
-import Communication from '@/components/subjects/topic/communication/page.jsx';
+import Communication from '@/components/subjects/topic/communication/page.tsx';
 
 
-export default function Communication(){
+export default function CommunicationPage(){
 
   return (<Communication/>);
 }

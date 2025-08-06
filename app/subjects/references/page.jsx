@@ -2,7 +2,7 @@
 import React from "react";
 import {Table,TableHeader, TableColumn, TableBody, TableRow, TableCell,
         getKeyValue,  Button, Link, Image } from "@heroui/react";
-import Options from '@/components/subjects/topic/media/options.js'
+import Options from '@/components/subjects/media/options.js'
 import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,
             references as appRefs,categories, REFERENCE_TYPES} from '@/src/constants/references.js';
 import {Input, Select, SelectItem,Divider} from "@heroui/react";

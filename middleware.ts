@@ -1,18 +1,27 @@
-import { NextResponse } from "next/server";
-import { auth } from "@/auth";
+import { NextResponse, NextRequest } from "next/server";
+import {  auth, authConfig } from "@/auth";
+import NextAuth from "next-auth"
+ 
+// Use only one of the two middleware options below
+// 1. Use middleware directly
+// export const { auth: middleware } = NextAuth(authConfig)
+ 
+// 2. Wrapped middleware option
+export default auth((req) => {
 
-export default async function auth(request) {
+  // Your custom middleware logic goes here
+
     // 1. Specify protected and public routes
 const protectedRoutes = ['/api-examples'];
 const publicRoutes = ['/', '/api/auth', '/reservoir', ];
  
-    const publicUrl = new URL("/api/auth/signin", request.nextUrl.origin)
+    const publicUrl = new URL("/api/auth/signin", req.nextUrl.origin)
 
-    const { origin } = new URL(request.url);
-    const authUrl = new URL("/api/auth", request.nextUrl.origin);
+    const { origin } = new URL(req.url);
+    const authUrl = new URL("/api/auth", req.nextUrl.origin);
 
       // 2. Check if the current route is protected or public
-  const path = request.nextUrl.pathname;
+  const path = req.nextUrl.pathname;
   const isProtectedRoute = protectedRoutes.includes(path);
   const isPublicRoute = publicRoutes.includes(path);
  //   const session = await auth.getSession();
@@ -39,9 +48,12 @@ const publicRoutes = ['/', '/api/auth', '/reservoir', ];
     return NextResponse.redirect(authUrl)
   }*/
   // 4. Redirect to /login if the user is not authenticated
-  if (isProtectedRoute && !request?.userId) {
+  console.log('request',req);
+  console.log('auth',req.auth);
+console.log('---------------------------**************_______________________');
+  if (isProtectedRoute && !req.auth) {
     console.log('No userid found in request Object');
-    return NextResponse.redirect(new URL('/api/ath/login', req.nextUrl))
+    return NextResponse.redirect(new URL('/api/auth/signin', req.nextUrl))
   }
   if (isPublicRoute ) {
     console.log('No userid found in request Object');
@@ -49,7 +61,7 @@ const publicRoutes = ['/', '/api/auth', '/reservoir', ];
   }
 
     return NextResponse.next();
-}
+})
 
 export const config = {
     matcher: [

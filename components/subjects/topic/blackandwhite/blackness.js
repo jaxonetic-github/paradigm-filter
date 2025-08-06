@@ -1,7 +1,7 @@
 
 import React from "react";
 import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from '@/src/constants/references.js';
-import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
+import HonorableMentionVideos from '@/components/subjects/media/honorableMentionVideos.js';
 import Link from 'next/link';
 import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import {Accordion, AccordionItem, Divider} from "@heroui/react";

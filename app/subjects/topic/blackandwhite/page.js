@@ -2,7 +2,7 @@
 'use client';
 import React from "react";
 import {specificallyCompiledVideos, BLACKVWHITE_VIDEOLIST_KEY} from '@/src/constants/references.js';
-import HonorableMentionVideos from '@/components/subjects/topic/media/honorableMentionVideos.js';
+import HonorableMentionVideos from '@/components/subjects/media/honorableMentionVideos.js';
 import Blackness from '@/components/subjects/topic/blackandwhite/blackness.js';
 import Whiteness from '@/components/subjects/topic/blackandwhite/whiteness.js';
 import Greyness from '@/components/subjects/topic/blackandwhite/greyness.js';

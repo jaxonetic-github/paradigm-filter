@@ -1,4 +1,5 @@
-
+ 
+"use client"
 import react, { useActionState } from 'react'
 import {Button , Image, Divider, Link} from "@heroui/react";
 //import { Auth0Provider } from "@auth0/auth0-react";
@@ -25,7 +26,6 @@ if (!session?.user) return ( <p>No Session</p>);
         <pre className="whitespace-pre-wrap break-all px-4 py-6">
           {JSON.stringify(session, null, 2)}
         </pre>
-      <p>Session status in as -{session.status==true}</p>
    <p>Signed in as {session.user.email}</p>
 
    </>

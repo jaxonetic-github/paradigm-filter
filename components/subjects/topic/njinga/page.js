@@ -1,9 +1,9 @@
 import React from "react";
 import  {Link, Button,Image} from "@heroui/react";
-import HonorableMentionVideos from './../../media/honorableMentionVideos.js';
+import HonorableMentionVideos from '@/components/subjects/media/honorableMentionVideos.js';
 import {Accordion, AccordionItem} from "@heroui/react";
 
-import {ReferencesView} from './../../references/referencesView.jsx';
+import {ReferencesView} from '@/components/subjects/references/referencesView.jsx';
 
 import {references, nzingaProfileRecord} from '@src/constants/references.js';
 
