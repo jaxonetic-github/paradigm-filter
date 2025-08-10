@@ -1,3 +1,4 @@
+import "server-only";
 
 import react, { useActionState } from 'react'
 import {Button , Image, Divider, Link} from "@heroui/react";

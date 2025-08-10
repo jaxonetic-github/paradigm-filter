@@ -1,4 +1,5 @@
 'use client' 
+import ContentMap from '@/components/subjects/subjects.tsx';
 
 import CustomAccordion from '@/components/utils/CustomAccordion.tsx';
 import Introduction from '@/components/bookform/introduction.tsx';
@@ -47,7 +48,7 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
     }
   }, []);
   return (<HeroUIProvider>
-            
+           <ContentMap/>    
 
 
               <ReservoirEntryButton/>

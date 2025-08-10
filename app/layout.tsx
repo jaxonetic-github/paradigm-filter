@@ -8,9 +8,10 @@ import React from 'react';
 //import { UserProvider } from "@auth/nextjs-auth/client";
 //import { useAuth0 } from "@next-auth";
 //import { Auth0Provider } from "@auth0/nextjs-auth0";
-
+import '@stripe/stripe-js';
 import SessionComponent from '@/components/authentication/session.tsx';
 import AppNavBar from '@/components/appnavbar.js';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: "Relevant Movement",
@@ -31,15 +32,15 @@ export default function RootLayout({
     <html  data-name="viewport" data-content="width=device-width, initial-scale=1.0" data-lang="en">
       <body >
         <main className="">
-        <div className="fixed">
+        <div className="">
          <AppNavBar/>
          </div>
 
 
          {children} 
         </main>
-               <SessionComponent/>
       </body>
+        <Script src="https://js.stripe.com/v3/buy-button.js" />
     </html>
   );
 }

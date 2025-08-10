@@ -15,6 +15,8 @@ import {
 
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
  
+
+ 
 export default function ContentMap() {
    return (<div className='content'>
 
@@ -26,7 +28,7 @@ export default function ContentMap() {
 <div className="content-division flex flex-col items-center ">
   <div className=" flex text-center ">
    <AccordionView title="Epistemology">
-       <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href={"subjects/epistemology"} >Introduction</Link>
+       <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href={"/reservoir/epistemology"} >Introduction</Link>
   </AccordionView>
 
   </div>
@@ -36,8 +38,8 @@ export default function ContentMap() {
 <div className="content-division flex flex-col items-center ">
   <div className=" flex text-center ">
 <AccordionView title="History">
-     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='subjects/history'>World</Link> 
-     <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='subjects/topic/bible'>Biblical</Link> 
+     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='/reservoir/history'>World</Link> 
+     <Link underline="always" className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" href='/reservoir/topic/bible'>Biblical</Link> 
   </AccordionView >
   </div>
 </div>
@@ -49,9 +51,9 @@ export default function ContentMap() {
 <AccordionView title="Civics and Law">
 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-     underline="always"   href='subjects/civics'>The Union of Nations </Link> 
+     underline="always"   href='/reservoir/civics'>The Union of Nations </Link> 
     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 "
-      underline="always"  href={'subjects/topic/blackandwhite'}>Colored People</Link>   
+      underline="always"  href={'/reservoir/topic/blackandwhite'}>Colored People</Link>   
   </AccordionView>
   </div>
 </div>
@@ -60,12 +62,12 @@ export default function ContentMap() {
 <div className="content-division flex flex-col items-center ">
   <div className=" flex text-center my-auto">
     <div className="">
-    <Link color={"primary"} underline="always" href={"subjects/metaphysics"} > <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Link>
+    <Link color={"primary"} underline="always" href={"/reservoir/metaphysics"} > <p className={"font-bold text-inherit"}>Occult and Metaphysics</p></Link>
     </div>
 {/*<AccordionView title="Occult and Metaphysics">
      <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled  underline="none" href='#'>Mantras</Link> 
-     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='subjects/topic/mantras'>Breath/Spirit</Link> 
-     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled   underline="none" href='subjects/topic/mantras'>Focus/Darshan</Link> 
+     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='topic/mantras'>Breath/Spirit</Link> 
+     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700" isDisabled   underline="none" href='topic/mantras'>Focus/Darshan</Link> 
 </AccordionView>
 */}
   </div>
@@ -77,8 +79,8 @@ export default function ContentMap() {
 <div className="content-division flex flex-col items-center ">
   <div className=" flex text-center ">
   <AccordionView title="Cultures &amp; Arts">
-     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='subjects/topic/capoeira'>Capoeira</Link> 
-     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='subjects/topic/yoruba'>Yoruba</Link> 
+     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='topic/capoeira'>Capoeira</Link> 
+     <Link underline="always" className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  href='topic/yoruba'>Yoruba</Link> 
   </AccordionView>
   </div>
 </div>
@@ -87,7 +89,7 @@ export default function ContentMap() {
 <div className="content-division flex flex-col items-center ">
   <div className=" text-center  my-auto">
   
-    <Link color={"primary"} underline="always" href={"subjects/topic/communication"} > <p className={"flex font-bold "}>Communication</p></Link>
+    <Link color={"primary"} underline="always" href={"/reservoir/topic/communication"} > <p className={"flex font-bold "}>Communication</p></Link>
 
   </div>
 </div>
@@ -95,8 +97,8 @@ export default function ContentMap() {
 <div className="content-division flex flex-col items-center ">
   <div className=" text-center  my-auto">
    <AccordionView title="Misc">   
-     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " underline="always" href={'subjects/media'}>Media</Link>
-     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='subjects/calendar/'>Calendar</Link> 
+     <Link className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " underline="always" href={'/reservoir/media'}>Media</Link>
+     <Link className=" border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700"  isDisabled  underline="none" href='/reservoir/calendar'>Calendar</Link> 
   </AccordionView>
   </div>
 </div>
@@ -106,7 +108,7 @@ export default function ContentMap() {
   <div className=" text-center  my-auto">
 
     <div className="">
-        <Link underline="always" color={"primary"} href={"subjects/illuminators"} > <p className={"font-bold text-inherit"}>Characters and Bios</p></Link>
+        <Link underline="always" color={"primary"} href={"/reservoir/illuminators"} > <p className={"font-bold text-inherit"}>Characters and Bios</p></Link>
     </div>
   </div>
 </div>
@@ -116,7 +118,7 @@ export default function ContentMap() {
   <div className=" text-center  my-auto">
 
     <div className="">
-        <Link underline="always" color={"primary"} href={"/components/subjects"} > <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Link>
+        <Link underline="always" color={"primary"} href={"/reservoir"} > <p className={"font-bold text-inherit"}>Table of Sources and Resources</p></Link>
     </div>
   </div>
 </div>

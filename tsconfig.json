@@ -19,9 +19,13 @@
     "incremental": true,
      "paths": {
       "@/*": ["./*"],
-      "src": ["./src"],
+            "src": ["./src"],
+            "action":["./action"],
       "auth": ["./auth"],
-      "components": ["./components" ],
+     "components": ["./components" ],
+
+      "utils":["./_utils"],
+  
     },
     "target": "ES2017",
     "plugins": [

@@ -120,9 +120,9 @@ export default function ReferenceSnippet(){
    
         <ReferencesGridView  rows={referenceFilter([150,151,152])}/>
 
-     <Divider/>
-<TabView/>
-      <Divider/>
+     <Divider  className='my-5'/>
+<TricksOfTrade/>
+      <Divider className='my-5'/>
 
      <p> Typically, communication can be classified into two main types:</p>
 
@@ -130,6 +130,6 @@ export default function ReferenceSnippet(){
 <p>Non-Verbal communication: This includes everything else other than words like the posture, appearance, body language and eye movements of the speaker which helps emphasize the message being conveyed.</p>
 
 <p>Both types of communication are equally important since they complement each other in order to eliminate confusion and ensure that the message being conveyed is clearly understood by its intended recipient.</p>
-    
+    <DebateExamples/>
 </div>);
 }

@@ -1,0 +1,13 @@
+import React from "react";
+
+import { ReferencesGridView, referenceFilter} from '@/components/subjects/references/referencesView.jsx'
+
+ export default function Trials() {
+     
+
+     return (<div id="linksdiv"  >   
+ 	Race and Slavery Trials
+  	       <ReferencesGridView  rows={referenceFilter([131,132,133,134,135,136])}/>
+	
+     </div>);
+}

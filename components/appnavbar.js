@@ -24,14 +24,11 @@ export default function MainNavBar() {
           />Home</Button></NavbarBrand>
 
       <NavbarContent justify='center'>
-
-        
-         <NavbarItem><Button as={Link} color={"primary"} href={"/components/subjects/media"} variant={"flat"}>Donate</Button></NavbarItem>
+         <NavbarItem><Button as={Link} color={"primary"} href={"/stripe"} variant={"flat"}>Donate</Button></NavbarItem>
  </NavbarContent>
-      <NavbarContent justify='end'>
+      <NavbarContent justify='center'>
 
                 <NavbarItem><SessionComponent/></NavbarItem>
- 
  </NavbarContent>
     </Navbar>);
 }

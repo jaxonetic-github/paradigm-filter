@@ -1,11 +1,12 @@
 import { NextResponse, NextRequest } from "next/server";
-import {  auth, authConfig } from "@/auth";
-import NextAuth from "next-auth"
- 
+//import NextAuth from "next-auth";
+ //export  const { auth: middleware } = NextAuth(authConfig);
+
+export { auth as middleware } from "@/auth";
 // Use only one of the two middleware options below
 // 1. Use middleware directly
 // export const { auth: middleware } = NextAuth(authConfig)
- 
+ /*
 // 2. Wrapped middleware option
 export default auth((req) => {
 
@@ -13,7 +14,7 @@ export default auth((req) => {
 
     // 1. Specify protected and public routes
 const protectedRoutes = ['/api-examples'];
-const publicRoutes = ['/', '/api/auth', '/reservoir', ];
+const publicRoutes = ['/', '/api/auth', '/reservoir', '/subjects',  ];
  
     const publicUrl = new URL("/api/auth/signin", req.nextUrl.origin)
 
@@ -46,11 +47,8 @@ const publicRoutes = ['/', '/api/auth', '/reservoir', ];
     const newUrl = new URL("/api/auth/signin", request.nextUrl.origin)
     console.log('y r we here',request.nextUrl.pathname);
     return NextResponse.redirect(authUrl)
-  }*/
+  }
   // 4. Redirect to /login if the user is not authenticated
-  console.log('request',req);
-  console.log('auth',req.auth);
-console.log('---------------------------**************_______________________');
   if (isProtectedRoute && !req.auth) {
     console.log('No userid found in request Object');
     return NextResponse.redirect(new URL('/api/auth/signin', req.nextUrl))
@@ -71,7 +69,7 @@ export const config = {
          * - _next/image (image optimization files)
          * - favicon.ico, sitemap.xml, robots.txt (metadata files)
          * - api (API routes)
-         */
-       '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
+         *
+       '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|subjects|reservoir).*)',
     ],
-}
+}*/

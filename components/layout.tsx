@@ -25,7 +25,7 @@ export default function SubjectsLayout({
       <SessionComponent/>
       <div className="fixed z-1000">   <AppNavBar/> </div> 
       <div className="relative  top-15   mx-5">   
-       <ContentMap/>   
+       
           <div className="bg-white">
           {children}
           </div>
