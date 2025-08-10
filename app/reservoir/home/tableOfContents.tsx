@@ -1,7 +1,5 @@
 
 import React from "react";
-import Home from "./home.tsx";
-import Introduction from "./introduction.tsx";
 import {Image, Divider} from "@heroui/react";
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
 

@@ -14,8 +14,8 @@ export async function createCheckoutSession(
   const ui_mode = data.get(
     "uiMode",
   ) as Stripe.Checkout.SessionCreateParams.UiMode;
-
-  const origin: string = headers().get("origin") as string;
+const hdrs = await headers();
+  const origin: string = hdrs.get("origin") as string;
 
   const checkoutSession: Stripe.Checkout.Session =
     await stripe.checkout.sessions.create({

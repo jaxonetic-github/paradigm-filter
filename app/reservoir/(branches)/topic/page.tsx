@@ -1,10 +1,9 @@
 import React from "react";
 import  {Image} from "@heroui/react";
-import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from './../../../src/constants/references.js';
+import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from '@/src/constants/references.js';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 
-import ReferencesTable from './../references/page.js';
 import {
   Table,
   TableHeader,

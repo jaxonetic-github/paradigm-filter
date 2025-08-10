@@ -5,6 +5,7 @@
       "dom.iterable",
       "esnext"
     ],
+
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,8 +20,8 @@
     "incremental": true,
      "paths": {
       "@/*": ["./*"],
-            "src": ["./src"],
-            "action":["./action"],
+      "src": ["./src"],
+       "action":["./action"],
       "auth": ["./auth"],
      "components": ["./components" ],
 
@@ -35,7 +36,7 @@
     ]
   },
   "include": [
-    "next-env.d.ts",
+    "next-env.d.ts","./stripe-buy-button.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"

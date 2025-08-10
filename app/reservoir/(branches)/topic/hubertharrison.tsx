@@ -1,12 +1,12 @@
 "use client"
 import React from "react";
 import  {Link, Button,Image} from "@heroui/react";
-import HonorableMentionVideos from '../media/honorableMentionVideos.js';
+import HonorableMentionVideos from '@/components/subjects/media/honorableMentionVideos.js';
 import {Accordion, AccordionItem} from "@heroui/react";
 
 
 
-import {references, nzingaProfileRecord} from './../../../src/constants/references.js';
+import {references, nzingaProfileRecord} from '@/src/constants/references.js';
 
 
  const tableColumns = [ {    key: "category", label: "CATEGORY"}, {    key: "type", label: "TYPE"},

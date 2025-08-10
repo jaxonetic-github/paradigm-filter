@@ -19,7 +19,7 @@ import * as config from "@/_utils/stripe/config.ts";
 import getStripe from "@/_utils/stripe/stripe-singleton.ts";
 import { createPaymentIntent } from "@/app/actions/stripe.ts";
 
-function CheckoutForm(): JSX.Element {
+function CheckoutForm(): React.JSX.Element {
   const [input, setInput] = React.useState<{
     customDonation: number;
     cardholderName: string;
@@ -170,7 +170,7 @@ function CheckoutForm(): JSX.Element {
   );
 }
 
-export default function ElementsForm(): JSX.Element {
+export default function ElementsForm(): React.JSX.Element {
   return (
     <Elements
       stripe={getStripe()}

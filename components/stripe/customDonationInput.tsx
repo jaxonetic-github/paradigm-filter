@@ -1,4 +1,5 @@
 import { formatAmountForDisplay } from "@/_utils/stripe/stripe-helpers.ts";
+import React from 'react';
 
 export default function CustomDonationInput({
   name,
@@ -18,7 +19,7 @@ export default function CustomDonationInput({
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value: number;
   className?: string;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <label>
       Custom donation amount ({formatAmountForDisplay(min, currency)}-

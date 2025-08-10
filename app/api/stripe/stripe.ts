@@ -4,9 +4,9 @@ import type { Stripe } from "stripe";
 
 import { headers } from "next/headers";
 
-import { CURRENCY } from "@/stripeutils/config";
-import { formatAmountForStripe } from "@/stripeutils/stripe-helpers";
-import { stripe } from "@/stripeutils/stripe";
+import { CURRENCY } from "@/_utils/stripe/config.ts";
+import { formatAmountForStripe } from "@/_utils/stripe/stripe-helpers.ts";
+import { stripe } from "@/_utils/stripe/stripe.ts";
 
 export async function createCheckoutSession(
   data: FormData,
@@ -14,8 +14,8 @@ export async function createCheckoutSession(
   const ui_mode = data.get(
     "uiMode",
   ) as Stripe.Checkout.SessionCreateParams.UiMode;
-
-  const origin: string = headers().get("origin") as string;
+const hdrs = await headers();
+  const origin: string = hdrs.get("origin") as string;
 
   const checkoutSession: Stripe.Checkout.Session =
     await stripe.checkout.sessions.create({
