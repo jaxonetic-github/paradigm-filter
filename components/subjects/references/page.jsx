@@ -77,9 +77,11 @@ export default function ReferencesMain( ) {
 
 
 
-  return ( <div className="">
+  return ( <div>
+
+    <div className="mx-auto flex-row max-w-xl items-center">
 <AccordionView title={'Online Archives'}>
-     <h2  className="my-2">Onlimmne Archives</h2>
+     <h2  className="my-2">Online Archives</h2>
     <div>
          <Link underline="always" href='https://fraser.stlouisfed.org/'>Fraser St Louis Fed</Link>
      <Link underline="always" href='https://welib.org'>https://welib.org/</Link>
@@ -92,6 +94,8 @@ export default function ReferencesMain( ) {
      <Link underline="always" href='https://onlinebooks.library.upenn.edu/archives.html'>UPenn Online archives</Link>
      </div>
      </AccordionView>
+     </div>
+
           <Divider className="my-8" />
 
 <div className="sticky top-10 z-10 bg-white">
