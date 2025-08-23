@@ -1,10 +1,10 @@
 
 import React from "react";
 
- import ReferencesTable from './references/page.js';
-import ContentMap from './subjects.tsx';
-import SessionComponent from './../authentication/session.tsx';
-import AppNavBar from '../appnavbar.js';
+ import ReferencesTable from '@/components/subjects/references/page.js';
+import ContentMap from '@/components/subjects/navigationMap.tsx';
+import SessionComponent from '@/components/authentication/session.tsx';
+import AppNavBar from '@/components/appnavbar.js';
 //import { auth as Auth0Provider } from '../../auth.ts';
 //import { useSession, SessionProvider } from 'next-auth/react';
 

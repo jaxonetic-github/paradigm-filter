@@ -1,5 +1,5 @@
 'use client' 
-import ContentMap from '@/components/subjects/subjects.tsx';
+import ContentMap from '@/components/subjects/navigationMap.tsx';
 
 import CustomAccordion from '@/components/utils/CustomAccordion.tsx';
 import Introduction from '@/components/bookform/introduction.tsx';

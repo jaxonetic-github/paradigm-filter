@@ -10,6 +10,7 @@ import  {YoutubeEmbed} from "@/components/utils/youtubeEmbed.js";
 
  const Definitions  =()=> 
 (<div className="flex">
+  
 <div className={'onion-etymon-dictionary'}>
 <p>{'Onions Etymological Dictionary'}</p>
 <dl className='onion-etymon-dictionary-entries max-w-sm'>
@@ -46,57 +47,9 @@ import  {YoutubeEmbed} from "@/components/utils/youtubeEmbed.js";
 </dl>
 </div></div>);
 
-export default function Epistemology() {
-const cgwoodsonact_Popover =
-{title:'Carter G Woodson', what:'', when:'', imgURL:'/images/profiles/drcartergwoodson1934.jpg', desc:''}
-const osage_Popover =
-{title:'Osage and US Schools', what:'', when:'', imgURL:'/images/osage-forced-indoctrination.png', desc:''}
-const bookburnings_Popover =
-{title:'book burnings, destruction of evidence,', what:'', when:'', imgURL:'/images/profiles/drcartergwoodson1934.jpg', desc:''}
-
-  return (<div className='mx-5'>
-      <p hidden>{`Words are one of the most common and powerful forms of magick. You can shape other people&apos;s reality
-      with the spell your words ...`}</p> 
-      <p>Epistomology is the philosophy that deals with how we know what we know.  After over a millenia of <SimplePopoverView infoRecord={bookburnings_Popover}> <iframe width="560" height="315" src="https://1024terabox.com/s/1P-DsBMK9ZJ7a8YhdLhMZlA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></SimplePopoverView> and a willfull transplantation of education into indoctrination(@See <SimplePopoverView infoRecord={cgwoodsonact_Popover}> <ul><li> ** Miseducation Of the Negro</li><li> ** Education of the Negro</li></ul></SimplePopoverView>, @See <SimplePopoverView infoRecord={osage_Popover}> Osage schools</SimplePopoverView>), it seems wise to audit and verify what we think we know to be true with facts.  The alternative is to risk following the paradigm, the wish or even spell of someone else, instead of your purpose.</p>
-      <p>It seems appropriate to start this epistomological journey with a quick survey of what is meant by &quot;Truth&quot;, and it&apos;s associates, &quot;Belief&quot;, &quot;Facts&quot;, Opinions. </p>
-    <Divider />
- <div className="flex w-full flex-col">
-      <Tabs className='border-1' aria-label="Options" >
-        <Tab className='content-division' key="definitions" title="Definitions">
-        <Definitions/>
-        </Tab>
-        <Tab key="criticalthink" className='content-division' title="Critical Thinking" >
-          <Card>
-            <CardBody>
-            <p >Alton Maddox on Critical Thinking</p>
-            **calling things what they are...*
-            *Breaking Down the Barrier*
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sYOeilUSRLU?si=aWbx4hWGXFN-U90q&amp;start=240" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-           
+export default  Definitions;
 
 
-            <Link target="_blank" href=''>Unseen Hand</Link>
-            <Image alt="HeroUI hero Image" src="/images/HistoricalThinking.png" className={'max-w-108'}/>
-             Historical Thinking
-            </CardBody>
-          </Card>
-        </Tab>
-        <Tab className='content-division'  key="propoganda" title="Social Control">
-          <Card>
-            <CardBody>
-Edward Barnay
-Adler
-Freud
-            </CardBody>
-          </Card>
-        </Tab>
-      </Tabs>
-    </div>
-        <Divider />
-        
-      
-</div>);
-}
 
 
 

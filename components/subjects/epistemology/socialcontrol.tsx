@@ -1,45 +1,55 @@
 'use client';
 import React from "react";
-import {Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
+import  {Image, Button} from "@heroui/react";
+import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from '@/src/constants/references.js';
+import {Tabs, Tab, Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
+import {ReferenceView,referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 
-
+import  {SimplePopoverView} from "@/components/utils/popoverView.tsx";
+import  {YoutubeEmbed} from "@/components/utils/youtubeEmbed.js";
 import CustomDialog from '@/components/utils/CustomDialog.tsx';
-import Definitions from '@/components/subjects/epistemology/definitions.tsx';
-import CriticalThinking from '@/components/subjects/epistemology/criticalthinking.tsx';
-import SocialControl from '@/components/subjects/epistemology/socialcontrol.tsx';
-import Introduction from '@/components/subjects/epistemology/introduction.tsx';
-import Dissonance from '@/components/subjects/epistemology/dissonance.tsx';
 
 
-export default function Epistemology() {
+export default function SocialControl() {
 
   return (<div className=''>
      
-          <Introduction/>
-    <Divider />
 
-    <AccordionView title={'Critical Thinking'}><CriticalThinking/></AccordionView>
-    <AccordionView title={'Social Control'}><SocialControl/></AccordionView>
-    <AccordionView title={'Appendix of Dissonnance'}> <Dissonance/></AccordionView>
-    <AccordionView title={'Definitions'}>
-      <div >
-      <Card className='max-w-md mx-auto'>
-      <CardBody>
-        <p>Words themselves have a life of their own that is brought out by a useful dive into the world of etymology.</p>
-        <p className='indent-8'>By placing words and events back into the fields from which they were abstracted, we create a context which
-               helps to  avoid misleading inferences.</p>
-         <Link target='_blank' href='https://languagelog.ldc.upenn.edu/nll/?p=33594'>Tory MP suspended for racist remark</Link>
-      </CardBody>
-      </Card>
-        <Divider />  <Divider />
-        <Definitions/>
-      </div>
 
-     </AccordionView>
+          <div >
+                     <Card>
+            <CardBody>
+            
+            <ExternalWindowButton
+          buttonText = 'Anti - Semeticism [short]'
+          externalURL = 'https://youtube.com/shorts/-gZ1grKlmrA?si=I1vePOzoSER1riWL' /> 
+
+            <ExternalWindowButton
+          buttonText = 'white supremacy [short]'
+          externalURL = 'https://youtube.com/shorts/ySg04v4HfmA?si=5dTtf4nT7dQkrORK' /> 
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/11VBzp7m5O8?si=3KYmds_TjSJQ4gM9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+ <ReferencesGridView  rows={referenceFilter([117])}/>
+
+<div className='border-1'>
+Edward Barnay
+ <ReferencesGridView  rows={referenceFilter([118,119,120])}/>
+           
+</div>
+<div>
+
+</div>
+Adler
+Freud
+            </CardBody>
+          </Card>     
+          </div>
+        <Divider />
 </div>);
 }
-
 
 
 /**  

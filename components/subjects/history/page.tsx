@@ -157,6 +157,13 @@ export default function HistoryHome () {
   </AccordionView>
   </div>
 
+  <AccordionView title={'Eurasia'}>
+    <div>
+       <p>The Celtic influence permeated the British Islands several centuries vefore Christ, affecting the languages and culture of modern-day Ireland, Scotland, Wales, amd England.  The Roman invasions of Britain resulted in the culture in southern Britain (England and Wales) being heavily influenced by the Roman culture of the conquerors.</p>
+       <p>In northern Britain howeverm the natives remained strong and independant.  The Romans found these lands and these people too distant, too desolate, and possibly too dangerous to conquer.  They sought instead to isolate the natives of north Britain, some fo whom they called Caledonians, from the south by building Hadrian's Wall across the waist of Britain, and to influence them through diplomatic and other means</p>
+       <p>After about CE 400, Roman control waned in southern Britain.  By 700 a new kingdom had grown up in lowland Scotland north of the clyde-Forth line.  Its inhabitants being known as Picts, since the Romans named Picti in Latin due to therir blue tattoos.  In Argyll on the west coast, Gaels known in Latin as Scotti had established Dalriada, a kingdom which the Picts conquered by 750.  By 1000,  Gaelic had become the predominat  in the Pictich kingdom (called Alba in Gaelic), inspiring the... Kenneth Macalpine</p>
+    </div>
+  </AccordionView>
 
 
 </div>

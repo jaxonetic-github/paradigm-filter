@@ -1,45 +1,64 @@
 'use client';
 import React from "react";
-import {Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
+import  {Image, Button} from "@heroui/react";
+import {nzingaProfileRecord,  NO_PHOTO_ALTERNATIVE_URI, tableColumns,citationColumns,references} from '@/src/constants/references.js';
+import {Tabs, Tab, Card, CardFooter, CardBody, Divider, Link} from "@heroui/react";
+import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
+import {ReferenceView,referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 
-
+import  {SimplePopoverView} from "@/components/utils/popoverView.tsx";
+import  {YoutubeEmbed} from "@/components/utils/youtubeEmbed.js";
 import CustomDialog from '@/components/utils/CustomDialog.tsx';
 import Definitions from '@/components/subjects/epistemology/definitions.tsx';
 import CriticalThinking from '@/components/subjects/epistemology/criticalthinking.tsx';
 import SocialControl from '@/components/subjects/epistemology/socialcontrol.tsx';
 import Introduction from '@/components/subjects/epistemology/introduction.tsx';
-import Dissonance from '@/components/subjects/epistemology/dissonance.tsx';
 
-
-export default function Epistemology() {
+export default function Dissonance() {
 
   return (<div className=''>
-     
-          <Introduction/>
-    <Divider />
+   
+         <h3>Appendix of Dissonnance</h3>
+          <div >
+          <Card>
+            <CardBody>
+            <ExternalWindowButton
+          buttonText =  'Oneness in Diversity'
+          externalURL = 'https://youtube.com/shorts/8Ycz1ptRI7Q?si=0cRz5zhSP4r_6Opx' /> 
 
-    <AccordionView title={'Critical Thinking'}><CriticalThinking/></AccordionView>
-    <AccordionView title={'Social Control'}><SocialControl/></AccordionView>
-    <AccordionView title={'Appendix of Dissonnance'}> <Dissonance/></AccordionView>
-    <AccordionView title={'Definitions'}>
-      <div >
-      <Card className='max-w-md mx-auto'>
-      <CardBody>
-        <p>Words themselves have a life of their own that is brought out by a useful dive into the world of etymology.</p>
-        <p className='indent-8'>By placing words and events back into the fields from which they were abstracted, we create a context which
-               helps to  avoid misleading inferences.</p>
-         <Link target='_blank' href='https://languagelog.ldc.upenn.edu/nll/?p=33594'>Tory MP suspended for racist remark</Link>
-      </CardBody>
-      </Card>
-        <Divider />  <Divider />
-        <Definitions/>
-      </div>
+          <ExternalWindowButton
+          buttonText =  'Powerful Truth by Joshua Maponga | Cultural Identity'
+          externalURL = 'https://youtube.com/shorts/YYqbPL1kznA?si=788QDFayJE9UcHij' /> 
+          <ExternalWindowButton
+          buttonText =  'Challenging Who Decides Nuclear Weapon Rights '
+          externalURL = 'https://youtube.com/shorts/bJ-dq8xkigs?si=23dSQ9nh8o3tmnoR' /> 
 
-     </AccordionView>
+           <ExternalWindowButton
+          buttonText =  ' The West Against African Interests'
+          externalURL = 'https://youtube.com/shorts/Yxi32ORSs4I?si=aWI1hGrYetZUVBAk' /> 
+           <ExternalWindowButton
+          buttonText =  'James McCune Smithe'
+          externalURL = 'https://youtube.com/shorts/aSITRF4SRNI?si=_qjCZce8iFrePD1A' /> 
+
+          <ExternalWindowButton
+          buttonText =  'Orlando Brown'
+          externalURL = 'https://youtube.com/shorts/ncrfxR6Kuok?si=PcvMmqHof1yR8JXc' /> 
+          <ExternalWindowButton
+          buttonText =  'all black national convention'
+          externalURL = 'https://youtube.com/shorts/j4aI-eMY790?si=MRFLt_gh_7azDmRP' /> 
+
+            </CardBody>
+          </Card>
+
+          </div>
+
+
+        <Divider />
+
+        <Divider />
 </div>);
 }
-
 
 
 /**  

@@ -1,6 +1,6 @@
 
 import React from "react";
-import ContentMap from '@/components/subjects/subjects.tsx';
+import NavigationMap from '@/components/subjects/navigationMap.tsx';
 
 /**
  * 
@@ -13,6 +13,7 @@ import ContentMap from '@/components/subjects/subjects.tsx';
   children: React.ReactNode
 }) {
   return <section><h3>Reservoir</h3>
-     <ContentMap/>   
+  <NavigationMap/>
+  
     <div>{children}</div></section>
 }

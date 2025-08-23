@@ -9,11 +9,14 @@ import CustomDialog from '@/components/utils/CustomDialog.tsx';
 import {YoutubeEmbed, openWindow,} from '@/components/utils/youtubeEmbed.js';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
 import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
-import Constitution from './../topic/constitution/page.tsx';
-import Rights from './../topic/rights/page.tsx';
-import Money from './../topic/money/page.tsx';
-import Freedom from './../topic/freedom/page.js';
-import Trials from './../topic/blackandwhite/trialsAndcases.tsx';
+
+import Constitution from '@/components/subjects/civics/constitution.tsx';
+import Rights from '@/components/subjects/civics/rights.tsx';
+import Money from '@/components/subjects/civics/money.tsx';
+import Freedom from '@/components/subjects/civics/freedom.js';
+import Trials from '@/components/subjects/civics/blackandwhite/trialsAndcases.tsx';
+import ColoredPeople from '@/components/subjects/civics/freedom.tsx';
+
 import {Tabs, Tab} from "@heroui/react";
 /**
  * 
