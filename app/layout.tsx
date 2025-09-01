@@ -12,7 +12,6 @@ import React from 'react';
 //import { Button } from "@auth0/nextjs-auth0";
 import '@stripe/stripe-js';
 import SessionComponent from '@/components/authentication/session.tsx';
-import ClientLayout from '@/components/redpillBluepill.tsx';
 import Script from 'next/script';
 export const metadata: Metadata = {
   title: "Relevant Movement",
