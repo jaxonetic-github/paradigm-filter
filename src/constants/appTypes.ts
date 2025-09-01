@@ -28,6 +28,9 @@ export type YoutubeResponse = {
   
 };
 
+export type subsectionType = {    key: string, display:string, url: string};
+
+export type section_Type = {title:string, subsections:subsectionType[]}
 
 export type CitationType = {authors:string[], title:string, year:number, srcTitle:string, srcURL:string};
 export type PopoverType = {title:string, what:string, when:string, imgURL:string, desc:string};

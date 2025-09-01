@@ -134,7 +134,7 @@ return(<div>
 
   </ul>
 
-   <section id="works" class="card" aria-labelledby="works-heading">
+   <section id="works" className="card" aria-labelledby="works-heading">
       <h2 id="works-heading">Appendix: Suggested Sources & Authorities</h2>
       <ul>
         <li><strong>Primary Law:</strong> Indian Citizenship Act (1924); U.S. Const. art. I, §2 (“Indians not taxed”); 13th & 14th Amendments.</li>
@@ -143,7 +143,7 @@ return(<div>
         <li><strong>International:</strong> United Nations Declaration on the Rights of Indigenous Peoples (2007).</li>
         <li><strong>Scholars & Voices:</strong> Vine Deloria Jr.; Russell Means; works on boarding schools and cultural genocide; contemporary Indigenous leadership statements.</li>
       </ul>
-      <p class="muted">Tip: Replace these bullets with full citations (author, title, year, publisher/court) if submitting academically.</p>
+      <p className="muted">Tip: Replace these bullets with full citations (author, title, year, publisher/court) if submitting academically.</p>
     </section>
 
 

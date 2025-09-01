@@ -24,9 +24,7 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
 
   return (
  <div className="mx-auto flex-row max-w-xl items-center">
-         <stripe-buy-button  buy-button-id="buy_btn_1RtTZpAqNzQ8LyVVC6eGpxDN"
-   publishable-key="pk_test_51RtG33AqNzQ8LyVVmk5rvUChjkfhmTqHKkyn0Z2DXhu0qva4D7a086Zhmd7AM9P01ugj2vqyBEGKPBNkvUIJEk3600qJQ3xl0v"
- />
+
     <form action="/api/checkout_sessions" method="POST">
       <section>
         <button type="submit" role="link">
