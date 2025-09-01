@@ -16,10 +16,11 @@ import {
 
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
 import {sections} from '@/src/constants/navigation.js';
+import {subsectionType} from '@/src/constants/appTypes.js';
 
 export default function ContentMap() {
 
-function subSectionLinks(subsections) {
+function subSectionLinks(subsections:subsectionType[]) {
   return (  
     subsections.map(subsection =>  <Link key={subsection.key} className="border-purple-200  hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 " underline="always" href={subsection.url}>{subsection.display}</Link>)  
   );
