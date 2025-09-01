@@ -1,7 +1,8 @@
 
 import BritishColonies from '@/components/subjects/history/britishColonies.js';
+import Catholicism from '@/components/subjects/history/catholicism.tsx';
 
-import {britishcolonizers} from '@/src/constants/navigation.js';
+import {britishcolonizers, catholicChurch} from '@/src/constants/navigation.js';
 
    export default async function HistorySections({params}: {params: Promise<{ slug: string }>})  
    {
@@ -11,7 +12,10 @@ import {britishcolonizers} from '@/src/constants/navigation.js';
 var sectionComponent = null;
 switch (slug) {
   case britishcolonizers.key:
-   sectionComponent = <BritishColonies/>;
+    sectionComponent = <BritishColonies/>;
+    break;
+     case catholicChurch.key:
+    sectionComponent = <Catholicism/>;
     break;
   default:
 
@@ -21,7 +25,7 @@ switch (slug) {
   //      const subSection= decodeURIComponent(ExamplesOfDebates);
 //        const profileRecord:ProfileType = resources[profileKey];
        return(<div className="mx-auto sm:max-w-md max-w-md overflow-hidden rounded-xl bg-[#eee] shadow-md md:max-w-4xl">
-  <div className="md:flex">
+  <div className="">
   {sectionComponent}
 </div>
 </div>);

@@ -16,6 +16,7 @@ import Money from '@/components/subjects/civics/money.tsx';
 import Freedom from '@/components/subjects/civics/freedom.js';
 import Trials from '@/components/subjects/civics/blackandwhite/trialsAndcases.tsx';
 import ColoredPeople from '@/components/subjects/civics/freedom.tsx';
+import WashingtonDC from '@/components/subjects/civics/washingtondc.tsx';
 
 import {Tabs, Tab} from "@heroui/react";
 /**
@@ -67,6 +68,11 @@ const 	quoteRecord = {quoted: 'Dr Phil Valentine', quotersImage:'drPhilValentine
     <div className='mx-5'>   
     <AccordionView title="Constitution">
        <Constitution/>
+  </AccordionView>
+       </div>
+    <div className='mx-5'>   
+    <AccordionView title="The District of Columbia">
+       <WashingtonDC/>
   </AccordionView>
        </div>
 

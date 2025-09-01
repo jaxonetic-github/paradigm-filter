@@ -1,4 +1,4 @@
-'use client'
+
 import {Image} from "@heroui/react";
 import ContentMap from './subjects/subjects.tsx';
 import { Suspense } from 'react';
@@ -10,7 +10,8 @@ export default function Page(){
      <h1>My Page</h1>
 
 <Suspense fallback={<p>Loading feed...</p>}>
-        <ContentMap/>   
+        <ContentMap/> 
+          
       </Suspense>
          </section>
   

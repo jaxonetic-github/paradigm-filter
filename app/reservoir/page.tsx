@@ -15,7 +15,6 @@ herbert henry harrison classified as white- youtubeTherapy Session with Sabir Be
 
   //const teachers = (teacherArray:any) => initialStoreState.resourcesData.youTubeResources.filter((resource)=>(resource.generalCategory[0]===discipline)|| discipline==='all');
 
-  return ( <>  
-<Bookform/> <ReferencesMain/></>  );
+  return ( <><ReferencesMain/></>  );
 }
 

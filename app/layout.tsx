@@ -2,17 +2,18 @@ import type { Metadata } from "next";
 //import { Inter } from "next/font/google";
 //import { WebVitals } from "@/components/utils/web-vitals";
 import "./globals.css";
+import AppNavBar from '@/components/appnavbar.js';
+
 //const inter = Inter({ subsets: ["greek"] });
 //import { Auth0Provider } from "@auth0/auth0-react";
 import React from 'react';
 //import { UserProvider } from "@auth/nextjs-auth/client";
 //import { useAuth0 } from "@next-auth";
-//import { Auth0Provider } from "@auth0/nextjs-auth0";
+//import { Button } from "@auth0/nextjs-auth0";
 import '@stripe/stripe-js';
 import SessionComponent from '@/components/authentication/session.tsx';
-import AppNavBar from '@/components/appnavbar.js';
+import ClientLayout from '@/components/redpillBluepill.tsx';
 import Script from 'next/script';
-
 export const metadata: Metadata = {
   title: "Relevant Movement",
   description: "Virtual Resources, References and Playground",
@@ -31,12 +32,8 @@ export default function RootLayout({
   return (
     <html  data-name="viewport" data-content="width=device-width, initial-scale=1.0" data-lang="en">
       <body >
+       <AppNavBar/>
         <main className="">
-        <div className="">
-         <AppNavBar/>
-         </div>
-
-
          {children} 
         </main>
       </body>

@@ -8,6 +8,7 @@ import {YoutubeEmbed} from '@/components/utils/youtubeEmbed.js';
 import {ExternalWindowButton} from '@/components/utils/externalWindowButton.tsx';
 import {ReferenceView,referenceFilter, ReferencesGridView} from '@/components/subjects/references/referencesView.jsx';
 import AccordionView from '@/components/utils/CustomAccordion.tsx';
+import USColoniesVsIndigenous from '@/components/bookform/coloniesVsIndigenous.tsx';
 
 
 
@@ -80,6 +81,7 @@ export default function HistoryHome () {
         <div  className='border-1 my-2'>
          <AccordionView title={'Aspects of US Colonialism'}> 
 
+<USColoniesVsIndigenous/>
         <div className='flex-flow'>
           <div className='border-1'>
           <h3>Overview and Summaries</h3>

@@ -12,8 +12,9 @@ import NavigationMap from '@/components/subjects/navigationMap.tsx';
 }: {
   children: React.ReactNode
 }) {
-  return <section><h3>Reservoir</h3>
-  <NavigationMap/>
+  return <section >
+  <div className="place-self-center w-full my-8 sm:w-3/4 md:w-3/4"> <NavigationMap/></div>
   
-    <div>{children}</div></section>
+
+    <div className="place-self-center w-15/16 ">{children}</div></section>
 }

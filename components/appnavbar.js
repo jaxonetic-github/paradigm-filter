@@ -17,7 +17,7 @@ import SessionComponent from '@/components/authentication/signup.tsx';
 export default function MainNavBar() {
 
   return (<Navbar isBordered shouldHideOnScroll className='bg-white'>
-      <NavbarBrand><Button as={Link} color={"primary"} href={"/"} variant={"flat"}> <Image className="content-division w-10"
+    <NavbarBrand><Button as={Link} color={"primary"} href={"/"} variant={"flat"}> <Image className="content-division w-10"
             src={'/images/book-svgrepo-com.svg'} 
             fallbackSrc={'/images/imagenotavailable.jpeg'}
             alt={`Default Image not found for`}

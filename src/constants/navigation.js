@@ -28,6 +28,7 @@ const section_miscellaneous = {title:'Misc', subsections:[bios, media]}
 export const britishcolonizers = {    key: "britishcolonies", display:'British Colonizers', url: '/reservoir/history/britishcolonies'};
 const worldHistory = {    key: "World", display:'World', url: '/reservoir/history'};
 const biblical = {    key: "Biblical", display:'Biblical', url: '/reservoir/topic/bible'};
-const section_history = {title:'History', subsections:[worldHistory, biblical, britishcolonizers]}
+export const catholicChurch = { key: "catholicism", display:'Catholic Church', url: '/reservoir/history/catholicism'};
+const section_history = {title:'History', subsections:[worldHistory, biblical, britishcolonizers, catholicChurch]}
 
 export const sections = [ section_history, section_civics,section_metaphysics, section_epistemology, section_communication, section_miscellaneous];
